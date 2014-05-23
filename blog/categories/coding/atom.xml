@@ -4,7 +4,7 @@
   <title><![CDATA[Category: coding | BLOG Progress Process]]></title>
   <link href="http://ablwr.github.io/blog/categories/coding/atom.xml" rel="self"/>
   <link href="http://ablwr.github.io/"/>
-  <updated>2014-05-22T23:07:42-04:00</updated>
+  <updated>2014-05-22T23:13:31-04:00</updated>
   <id>http://ablwr.github.io/</id>
   <author>
     <name><![CDATA[Ashley Blewer]]></name>
@@ -24,7 +24,7 @@
 
 <p>I&rsquo;m going to first talk about some more general, theoretical strategies and then go into a guide of some of the learning resources I&rsquo;ve used and recommend.</p>
 
-<p><em>Generally</em></p>
+<p><strong>Generally</strong></p>
 
 <p>The following resources I am going to mention are great and learning how to program has never, ever been easier than now, with a nearly endless supply of videos, podcasts, blog posts, MOOCs, books, and Stack Overflow answers. But the most important thing to realize that if you want to learn how to code, you are gonna have to do a lot of coding and problem-solving all by yourself. The best way to learn things is to try to make them, fail, and try again. That being said, sometimes it&rsquo;s good to just get your feet wet before diving right in.</p>
 
@@ -42,29 +42,29 @@
 
 <p>Both of these coding bootcamps require 100-150 hours of pre-work from their students before the start of their classes. Fortunately for the rest of us, their learning materials are free and available online, so they can be used as guides for people just starting out.</p>
 
-<p><em>CS50x</em></p>
+<p><strong><a href="https://www.edx.org/course/harvardx/harvardx-cs50x-introduction-computer-1022">CS50x</a></strong></p>
 
 <p>I took this at-your-own-pace online MOOC based on Harvard&rsquo;s CS50 intro to computer science course when I started my graduate program, a bit over two years ago. I hands-down recommend it to anyone that wants a strong starting foundation in computer science, and I think it really sets someone&rsquo;s mind up for a better understanding of programming language syntax and structure. I pretty much just watched all of the lectures and didn&rsquo;t do the homework, but I still feel like I got a lot out of the class. If a class like this had been taught in my first semester as an undergraduate, it would have changed my life completely.</p>
 
-<p><em>Codecademy</em></p>
+<p><strong><a href="http://www.codecademy.com">Codecademy</a></strong></p>
 
 <p>In conjunction with CS50 lectures, I worked through the Code Year track on Codecademy, which doesn&rsquo;t seem to be (easily) available anymore. Anyway, Codecademy is maybe the most popular &ldquo;learn to code&rdquo; resource, and for good reasons. (One of the reasons being that it&rsquo;s free, so there&rsquo;s a very low barrier to entry). If you are absolutely brand new to programming, I recommend churning through the entire HTML/CSS track (or projects, as they seem to be now). It may be familiar, it&rsquo;s easy to understand, and even if you absolutely hate programming and never want to do it again for the rest of your life, you will at least know how to link to a website without using an enriched web editor.</p>
 
-<p><em>Treehouse</em></p>
+<p><strong><a href="http://teamtreehouse.com">Treehouse</a></strong></p>
 
 <p>After hitting up a full track of resources on Codecademy, or even before, I recommend Team Treehouse. Their teaching style is through videos followed by quizzes (either questions or coding exercies), which I find to be a nice, relaxing way to learn or refresh skills when I want to still feel productive but not work too hard.</p>
 
-<p><em>Code School</em></p>
+<p><strong><a href="http://www.codeschool.com">Code School</a></strong></p>
 
 <p>Code School is great! But definitely much more challenging than Treehouse, which is why I recommend cruising through Treehouse first. Once you are feeling like a coding whiz  styling up a few websites on Treehouse, Code School is there to firmly put you back into your incredibly novice place. Code School looks easier than Treehouse, but some of the training wheels are off. Even with things I felt comfortable with, like CSS or MySQL, I would sometimes have to review the materials several times before I could solve the code exercises.</p>
 
-<p><em>Just Doing It</em></p>
+<p><strong>Just Doing It</strong></p>
 
 <p>I mentioned this earlier, but I really want to drive home this point. The above resources are great for getting your feet wet, but the only real way to really learn something is to just do it yourself, and frequently. You can do a million web exercises and read a redwood tree&rsquo;s worth of books and bootstrap up to your neck, but it&rsquo;s not gonna stick until you&rsquo;ve spent a few hours really trying to tackle a problem. The above materials are training wheels, and the sooner you take them off and try to ride/write, the better. If you get unstuckably stuck, you can always put them back on, or try a smaller/easier project. The main thing is to try, try, try. You will fail a thousand times, but keep trying.</p>
 
-<p><em>Other stuff</em></p>
+<p><strong>Other stuff</strong></p>
 
-<p>There are so many other online resources and essential guides, but I just wanted to highlight a few. Maybe I will do a follow-up post with some other resources that I consider to be super-duper-helpful or essential to my learning. In the meantime, enjoy these and don&rsquo;t hesitate to get in touch with any questions.</p>
+<p>There are so many other online resources and essential guides, <a href="http://www.openculture.com/freeonlinecourses">MOOCs</a>, but I just wanted to highlight a few. Maybe I will do a follow-up post with some other resources that I consider to be super-duper-helpful or essential to my learning. In the meantime, enjoy these and don&rsquo;t hesitate to get in touch with any questions.</p>
 ]]></content>
   </entry>
   
