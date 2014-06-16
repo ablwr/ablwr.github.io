@@ -5,12 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>IS THIS THING ON? - BLOG Progress Process</title>
+  <title>Regular Expression Options - BLOG Progress Process</title>
   <meta name="author" content="Ashley Blewer">
 
   
-  <meta name="description" content="This is the most sincere &ldquo;HELLO? WORLD???&rdquo; I have ever made.
-">
+  <meta name="description" content="When working with Regular Expressions, I mostly ignored these optional suffixes because I didn&rsquo;t want to further complicate an already &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://ablwr.github.io/blog/2014/05/09/is-this-thing-on/">
+  <link rel="canonical" href="http://ablwr.github.io/blog/2014/06/16/regular-expression-options/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -72,7 +71,7 @@
   
   <header>
     
-      <h1 class="entry-title">IS THIS THING On?</h1>
+      <h1 class="entry-title">Regular Expression Options</h1>
     
     
       <p class="meta">
@@ -88,14 +87,30 @@
   
 
 
-<time datetime="2014-05-09T12:34:01-04:00" pubdate data-updated="true">May 9<span>th</span>, 2014</time>
+<time datetime="2014-06-16T18:26:07-04:00" pubdate data-updated="true">Jun 16<span>th</span>, 2014</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>This is the most sincere &ldquo;HELLO? WORLD???&rdquo; I have ever made.</p>
+<div class="entry-content"><p>When working with Regular Expressions, I mostly ignored these optional suffixes because I didn&rsquo;t want to further complicate an already complicated aspect of programming. But since there are only four options, I decided to take a break from other complications and break down what each regex suffix can do.</p>
+
+<ul>
+<li><p><strong>i</strong></p>
+
+<p>i stands for <strong>INSENSITIVE</strong>! But not like that jerk that cut in front of you when changing trains at Union Square this morning. It means that it is case insensitive! You can save some keystrokes and be more precise by using i to eliminate or swap a word for a paragraph.</p></li>
+<li><p><strong>m</strong></p>
+
+<p>The next option is the letter m. M stands for <strong>MULTILINE MODE</strong>! Mmmm! What does that mean? Rubular sums it up succinctly as &ldquo;make dot match newlines.&rdquo; Still lost? The m option helps the dot (also known as a period or a full stop) character, which represents any character in a regex, match everything INCLUDING the invisible new line character. The new line character is represented in a regex or in programming as \n. If you are worried that your new line might mess up your regex, the m option can help mesh all lines together.</p></li>
+<li><p><strong>o</strong></p>
+
+<p>Next up is the letter o. O stands for <strong>ONCE</strong>! ONE TIME, ONE CHANCE, ONE SHOT! To substitute once. Substitute once means that any #{&hellip;} substitutions that occur in a regex can only occur one time and then they are OUT!</p></li>
+<li><p><strong>x</strong></p>
+
+<p>Finally, the letter x. X stands for&hellip; <strong>Xtended</strong> mode! Also known as Extended Mode. Regular expressions can be really complicated, so the x at the end allows for extra room in the expression such as spaces, new lines, and comments. Then, the regex is more readable and less scary. Another tip: to comment in a regex, use ?#. But if you use ?#, you also have to use x.</p></li>
+</ul>
+
 </div>
 
 
@@ -118,12 +133,12 @@
   
 
 
-<time datetime="2014-05-09T12:34:01-04:00" pubdate data-updated="true">May 9<span>th</span>, 2014</time>
+<time datetime="2014-06-16T18:26:07-04:00" pubdate data-updated="true">Jun 16<span>th</span>, 2014</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/firstpost/'>firstpost</a>
+    <a class='category' href='/blog/categories/regex/'>regex</a>
   
 </span>
 
@@ -132,7 +147,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://ablwr.github.io/blog/2014/05/09/is-this-thing-on/" data-via="ablwr" data-counturl="http://ablwr.github.io/blog/2014/05/09/is-this-thing-on/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://ablwr.github.io/blog/2014/06/16/regular-expression-options/" data-via="ablwr" data-counturl="http://ablwr.github.io/blog/2014/06/16/regular-expression-options/" >Tweet</a>
   
   
   
@@ -141,8 +156,8 @@
     
     <p class="meta">
       
+        <a class="basic-alignment left" href="/blog/2014/05/22/coding-guide-for-newbs/" title="Previous Post: Coding guide for newbs">&laquo; Coding guide for newbs</a>
       
-        <a class="basic-alignment right" href="/blog/2014/05/11/blogging-for-hackers/" title="Next Post: Blogging for hackers.">Blogging for hackers. &raquo;</a>
       
     </p>
   </footer>
