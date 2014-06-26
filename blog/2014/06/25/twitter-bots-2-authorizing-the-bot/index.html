@@ -5,12 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>IS THIS THING ON? - BLOG Progress Process</title>
+  <title>Twitter Bots 2: Authorizing the Bot - BLOG Progress Process</title>
   <meta name="author" content="Ashley Blewer">
 
   
-  <meta name="description" content="This is the most sincere &ldquo;HELLO? WORLD???&rdquo; I have ever made.
-">
+  <meta name="description" content="For me, the hardest part of getting a Twitter bot up and running was negotiating with Twitter&rsquo;s API keys and application settings. The primary &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://ablwr.github.io/blog/2014/05/09/is-this-thing-on/">
+  <link rel="canonical" href="http://ablwr.github.io/blog/2014/06/25/twitter-bots-2-authorizing-the-bot/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -72,7 +71,7 @@
   
   <header>
     
-      <h1 class="entry-title">IS THIS THING On?</h1>
+      <h1 class="entry-title">Twitter Bots 2: Authorizing the Bot</h1>
     
     
       <p class="meta">
@@ -88,14 +87,43 @@
   
 
 
-<time datetime="2014-05-09T12:34:01-04:00" pubdate data-updated="true">May 9<span>th</span>, 2014</time>
+<time datetime="2014-06-25T12:54:34-04:00" pubdate data-updated="true">Jun 25<span>th</span>, 2014</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>This is the most sincere &ldquo;HELLO? WORLD???&rdquo; I have ever made.</p>
+<div class="entry-content"><p>For me, the hardest part of getting a Twitter bot up and running was negotiating with Twitter&rsquo;s API keys and application settings. The primary reason for this was probably that I kept getting overly excited and jumping ahead, trying to finish the project too soon. I first set up an app by registering my primary twitter account. Turns out that wasn&rsquo;t necessary at all, and I could access and download my tweets just by using <a href="https://github.com/marcel/twurl">twurl</a> to collect authenticate and grab my main account&rsquo;s twitter archive. I THINK. Those authentication details went into a hidden file, .ebooksrc, in my computer&rsquo;s main user directory. I know because I had to break into it several times and switch out the keys in order to get it to work, but most users shouldn&rsquo;t need to open it again, once it&rsquo;s in there.</p>
+
+<p>To get the bot operational, I had to create an dev account and app using my bot&rsquo;s twitter account (oh yeah, I also had to register a new twitter account &mdash; but that&rsquo;s obvious, right? I&rsquo;m not talking to a bot, I&rsquo;m talking to a human&hellip; right?)</p>
+
+<p>Under My Applications (next to my user profile), I created a new app. Under the API Keys tab, I generated some access tokens. The consumer and OAuth details can then be added to the bot&rsquo;s bots.rb file, along with the bot&rsquo;s username and the bot model (in my case, my main twitter account).</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>CONSUMER_KEY = ""
+</span><span class='line'>CONSUMER_SECRET = ""</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>  Ebooks::Bot.new("") do |bot| # Ebooks account username
+</span><span class='line'>  bot.oauth_token = "" # oauth token for ebooks account
+</span><span class='line'>  bot.oauth_token_secret = "" # oauth secret for ebooks account
+</span><span class='line'>
+</span><span class='line'>  make_bot(bot, "") # This should be the name of the text model generated from the base twitter account
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Sounds easy, but I had such a hard time! Writing it all up, I am embarassed that it took me so many tries to get it right. My problem was that I first thought that the CONSUMER_KEY fields needed to come from my main twitter account instead of from the bot&rsquo;s account. Then, I changed the CONSUMER_KEY details but also changed the info in the .ebooksrc file. Then, I changed them both around again but didn&rsquo;t refresh my OAuth token.</p>
+
+<p>The final step was that my bot was running but unable to do anything because the API Keys permission access level was set to read-only. It is not super-clear in the documentation, but the account generating the access token has to have a valid phone number associated with it in order to get granted permission for read/write/execute status. After confirming with a phone number, my bot was able to talk to people and generate its own tweets based on my model.</p>
 </div>
 
 
@@ -118,12 +146,12 @@
   
 
 
-<time datetime="2014-05-09T12:34:01-04:00" pubdate data-updated="true">May 9<span>th</span>, 2014</time>
+<time datetime="2014-06-25T12:54:34-04:00" pubdate data-updated="true">Jun 25<span>th</span>, 2014</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/firstpost/'>firstpost</a>
+    <a class='category' href='/blog/categories/side-projects/'>side projects</a>, <a class='category' href='/blog/categories/twitter-bots/'>twitter bots</a>
   
 </span>
 
@@ -132,7 +160,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://ablwr.github.io/blog/2014/05/09/is-this-thing-on/" data-via="ablwr" data-counturl="http://ablwr.github.io/blog/2014/05/09/is-this-thing-on/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://ablwr.github.io/blog/2014/06/25/twitter-bots-2-authorizing-the-bot/" data-via="ablwr" data-counturl="http://ablwr.github.io/blog/2014/06/25/twitter-bots-2-authorizing-the-bot/" >Tweet</a>
   
   
   
@@ -141,8 +169,8 @@
     
     <p class="meta">
       
+        <a class="basic-alignment left" href="/blog/2014/06/24/twitter-bots/" title="Previous Post: The bots are coming! Twitter bots!">&laquo; The bots are coming! Twitter bots!</a>
       
-        <a class="basic-alignment right" href="/blog/2014/05/11/blogging-for-hackers/" title="Next Post: Blogging for hackers.">Blogging for hackers. &raquo;</a>
       
     </p>
   </footer>

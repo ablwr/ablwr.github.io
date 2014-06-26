@@ -4,7 +4,7 @@
   <title><![CDATA[Category: side projects | BLOG Progress Process]]></title>
   <link href="http://ablwr.github.io/blog/categories/side-projects/atom.xml" rel="self"/>
   <link href="http://ablwr.github.io/"/>
-  <updated>2014-06-25T12:49:44-04:00</updated>
+  <updated>2014-06-26T10:01:27-04:00</updated>
   <id>http://ablwr.github.io/</id>
   <author>
     <name><![CDATA[Ashley Blewer]]></name>
@@ -12,6 +12,37 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Twitter Bots 2: Authorizing the Bot]]></title>
+    <link href="http://ablwr.github.io/blog/2014/06/25/twitter-bots-2-authorizing-the-bot/"/>
+    <updated>2014-06-25T12:54:34-04:00</updated>
+    <id>http://ablwr.github.io/blog/2014/06/25/twitter-bots-2-authorizing-the-bot</id>
+    <content type="html"><![CDATA[<p>For me, the hardest part of getting a Twitter bot up and running was negotiating with Twitter&rsquo;s API keys and application settings. The primary reason for this was probably that I kept getting overly excited and jumping ahead, trying to finish the project too soon. I first set up an app by registering my primary twitter account. Turns out that wasn&rsquo;t necessary at all, and I could access and download my tweets just by using <a href="https://github.com/marcel/twurl">twurl</a> to collect authenticate and grab my main account&rsquo;s twitter archive. I THINK. Those authentication details went into a hidden file, .ebooksrc, in my computer&rsquo;s main user directory. I know because I had to break into it several times and switch out the keys in order to get it to work, but most users shouldn&rsquo;t need to open it again, once it&rsquo;s in there.</p>
+
+<p>To get the bot operational, I had to create an dev account and app using my bot&rsquo;s twitter account (oh yeah, I also had to register a new twitter account &mdash; but that&rsquo;s obvious, right? I&rsquo;m not talking to a bot, I&rsquo;m talking to a human&hellip; right?)</p>
+
+<p>Under My Applications (next to my user profile), I created a new app. Under the API Keys tab, I generated some access tokens. The consumer and OAuth details can then be added to the bot&rsquo;s bots.rb file, along with the bot&rsquo;s username and the bot model (in my case, my main twitter account).</p>
+
+<p><code>
+CONSUMER_KEY = ""
+CONSUMER_SECRET = ""
+</code></p>
+
+<p>```
+  Ebooks::Bot.new(&ldquo;&rdquo;) do |bot| # Ebooks account username
+  bot.oauth_token = &ldquo;&rdquo; # oauth token for ebooks account
+  bot.oauth_token_secret = &ldquo;&rdquo; # oauth secret for ebooks account</p>
+
+<p>  make_bot(bot, &ldquo;&rdquo;) # This should be the name of the text model generated from the base twitter account</p>
+
+<p>```</p>
+
+<p>Sounds easy, but I had such a hard time! Writing it all up, I am embarassed that it took me so many tries to get it right. My problem was that I first thought that the CONSUMER_KEY fields needed to come from my main twitter account instead of from the bot&rsquo;s account. Then, I changed the CONSUMER_KEY details but also changed the info in the .ebooksrc file. Then, I changed them both around again but didn&rsquo;t refresh my OAuth token.</p>
+
+<p>The final step was that my bot was running but unable to do anything because the API Keys permission access level was set to read-only. It is not super-clear in the documentation, but the account generating the access token has to have a valid phone number associated with it in order to get granted permission for read/write/execute status. After confirming with a phone number, my bot was able to talk to people and generate its own tweets based on my model.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[The bots are coming! Twitter bots!]]></title>

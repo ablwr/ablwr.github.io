@@ -9,7 +9,7 @@
   <meta name="author" content="Ashley Blewer">
 
   
-  <meta name="description" content="When I accepted a spot in the Flatiron School Ruby005 class, I knew my social life and, uh, casual internet-browsing life (?) would be cut &hellip;">
+  <meta name="description" content="For me, the hardest part of getting a Twitter bot up and running was negotiating with Twitter&rsquo;s API keys and application settings. The primary &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -68,6 +68,71 @@
       <div id="content">
 	<div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/06/25/twitter-bots-2-authorizing-the-bot/">Twitter Bots 2: Authorizing the Bot</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-06-25T12:54:34-04:00" pubdate data-updated="true">Jun 25<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>For me, the hardest part of getting a Twitter bot up and running was negotiating with Twitter&rsquo;s API keys and application settings. The primary reason for this was probably that I kept getting overly excited and jumping ahead, trying to finish the project too soon. I first set up an app by registering my primary twitter account. Turns out that wasn&rsquo;t necessary at all, and I could access and download my tweets just by using <a href="https://github.com/marcel/twurl">twurl</a> to collect authenticate and grab my main account&rsquo;s twitter archive. I THINK. Those authentication details went into a hidden file, .ebooksrc, in my computer&rsquo;s main user directory. I know because I had to break into it several times and switch out the keys in order to get it to work, but most users shouldn&rsquo;t need to open it again, once it&rsquo;s in there.</p>
+
+<p>To get the bot operational, I had to create an dev account and app using my bot&rsquo;s twitter account (oh yeah, I also had to register a new twitter account &mdash; but that&rsquo;s obvious, right? I&rsquo;m not talking to a bot, I&rsquo;m talking to a human&hellip; right?)</p>
+
+<p>Under My Applications (next to my user profile), I created a new app. Under the API Keys tab, I generated some access tokens. The consumer and OAuth details can then be added to the bot&rsquo;s bots.rb file, along with the bot&rsquo;s username and the bot model (in my case, my main twitter account).</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>CONSUMER_KEY = ""
+</span><span class='line'>CONSUMER_SECRET = ""</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>  Ebooks::Bot.new("") do |bot| # Ebooks account username
+</span><span class='line'>  bot.oauth_token = "" # oauth token for ebooks account
+</span><span class='line'>  bot.oauth_token_secret = "" # oauth secret for ebooks account
+</span><span class='line'>
+</span><span class='line'>  make_bot(bot, "") # This should be the name of the text model generated from the base twitter account
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Sounds easy, but I had such a hard time! Writing it all up, I am embarassed that it took me so many tries to get it right. My problem was that I first thought that the CONSUMER_KEY fields needed to come from my main twitter account instead of from the bot&rsquo;s account. Then, I changed the CONSUMER_KEY details but also changed the info in the .ebooksrc file. Then, I changed them both around again but didn&rsquo;t refresh my OAuth token.</p>
+
+<p>The final step was that my bot was running but unable to do anything because the API Keys permission access level was set to read-only. It is not super-clear in the documentation, but the account generating the access token has to have a valid phone number associated with it in order to get granted permission for read/write/execute status. After confirming with a phone number, my bot was able to talk to people and generate its own tweets based on my model.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -445,6 +510,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/06/25/twitter-bots-2-authorizing-the-bot/">Twitter Bots 2: Authorizing the Bot</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/06/24/twitter-bots/">The bots are coming! Twitter bots!</a>
       </li>
     
@@ -458,10 +527,6 @@
     
       <li class="post">
         <a href="/blog/2014/05/12/may-8th-and-decision-making/">May 8th and decision-making.</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/05/11/blogging-for-hackers/">Blogging for hackers.</a>
       </li>
     
   </ul>
