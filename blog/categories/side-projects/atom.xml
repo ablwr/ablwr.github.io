@@ -4,7 +4,7 @@
   <title><![CDATA[Category: side projects | BLOG Progress Process]]></title>
   <link href="http://ablwr.github.io/blog/categories/side-projects/atom.xml" rel="self"/>
   <link href="http://ablwr.github.io/"/>
-  <updated>2014-06-28T21:00:43-04:00</updated>
+  <updated>2014-06-28T21:02:53-04:00</updated>
   <id>http://ablwr.github.io/</id>
   <author>
     <name><![CDATA[Ashley Blewer]]></name>
@@ -41,7 +41,7 @@ git push heroku master
 
 <p>That&rsquo;s it! That is it. Actually, that is not it, because I had to log onto the heroku web interface and adjust the Dynos worker to 1 instead of 0.</p>
 
-<p><img class="center" src="/images/herokurunner.png" width="350" height="350" title="&lsquo;heroku page&rsquo;" ></p>
+<p><img class="center" src="/images/herokurunner.png" width="800" title="&lsquo;heroku page&rsquo;" ></p>
 
 <p> But after that, my bot was again operational and back to her normal (myself)
 self.</p>
