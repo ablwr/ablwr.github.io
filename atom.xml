@@ -4,7 +4,7 @@
   <title><![CDATA[BLOG Progress Process]]></title>
   <link href="http://ablwr.github.io/atom.xml" rel="self"/>
   <link href="http://ablwr.github.io/"/>
-  <updated>2014-06-28T16:22:15-04:00</updated>
+  <updated>2014-06-28T20:51:29-04:00</updated>
   <id>http://ablwr.github.io/</id>
   <author>
     <name><![CDATA[Ashley Blewer]]></name>
@@ -12,6 +12,54 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Twitter Bots 3: Keeping your bot alive]]></title>
+    <link href="http://ablwr.github.io/blog/2014/06/28/twitter-bots-3-keeping-your-bot-alive/"/>
+    <updated>2014-06-28T20:31:52-04:00</updated>
+    <id>http://ablwr.github.io/blog/2014/06/28/twitter-bots-3-keeping-your-bot-alive</id>
+    <content type="html"><![CDATA[<blockquote class="twitter-tweet" data-partner="tweetdeck"><p><a href="https://twitter.com/wetted_ashes">@wetted_ashes</a> <a href="https://twitter.com/ablwr">@ablwr</a> Just spent too much time coding and having so many excellent things to read thanks to <a href="https://twitter.com/hashtag/timezones?src=hash">#timezones</a></p>&mdash; ¡ɹǝʍǝlq ʎǝlɥs∀ (@ablwr_ebooks) <a href="https://twitter.com/ablwr_ebooks/statuses/478713633023602688">June 17, 2014</a></blockquote>
+
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p>Once a Twitter bot has been configured, it has to stay running in order to stay alive. And for that, it needs a server. When I was debugging my bot, I was running it off of my computer and got notifications of activity in my terminal. This works if I want my bot to only be active when I am active, but I want my bot to be available all day and night!</p>
+
+<p>The most logical way to do that would be to deploy my bot&rsquo;s code to a Heroku instance. It&rsquo;s free and super easy, especially if you already have a good grasp on git workflows. Basically you just have to&hellip;</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git init
+</span><span class='line'>git add .
+</span><span class='line'>git commit -m "BOTS"</span></code></pre></td></tr></table></div></figure>
+
+
+<p>then,</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>heroku create
+</span><span class='line'>git push heroku master</span></code></pre></td></tr></table></div></figure>
+
+
+<p>That&rsquo;s it! That is it. Actually, that is not it, because I had to log onto the heroku web interface and adjust the Dynos worker to 1 instead of 0.</p>
+
+<p><img class="left" src="http://ablwr.github.io/images/heroku_dynos_twitterbot.png" width="350" height="350" title="image" alt="images"></p>
+
+<p> But after that, my bot was again operational and back to her normal (myself)
+self.</p>
+
+<blockquote class="twitter-tweet" data-partner="tweetdeck"><p><a href="https://twitter.com/trlwagner">@trlwagner</a> I just wish I had to deal with GoDaddy but I am right now so my day is pretty good.</p>&mdash; ¡ɹǝʍǝlq ʎǝlɥs∀ (@ablwr_ebooks) <a href="https://twitter.com/ablwr_ebooks/statuses/478713189480153088">June 17, 2014</a></blockquote>
+
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Twitter Bots 2: Authorizing the Bot]]></title>

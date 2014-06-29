@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Twitter Bots 2: Authorizing the Bot - BLOG Progress Process</title>
+  <title>Twitter Bots 3: Keeping your bot alive - BLOG Progress Process</title>
   <meta name="author" content="Ashley Blewer">
 
   
-  <meta name="description" content="For me, the hardest part of getting a Twitter bot up and running was negotiating with Twitter&rsquo;s API keys and application settings. The primary &hellip;">
+  <meta name="description" content="@wetted_ashes @ablwr Just spent too much time coding and having so many excellent things to read thanks to #timezones&mdash; ¡ɹǝʍǝlq ʎǝlɥs∀ (@ &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://ablwr.github.io/blog/2014/06/25/twitter-bots-2-authorizing-the-bot/">
+  <link rel="canonical" href="http://ablwr.github.io/blog/2014/06/28/twitter-bots-3-keeping-your-bot-alive/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -71,7 +71,7 @@
   
   <header>
     
-      <h1 class="entry-title">Twitter Bots 2: Authorizing the Bot</h1>
+      <h1 class="entry-title">Twitter Bots 3: Keeping Your Bot Alive</h1>
     
     
       <p class="meta">
@@ -87,45 +87,53 @@
   
 
 
-<time datetime="2014-06-25T12:54:34-04:00" pubdate data-updated="true">Jun 25<span>th</span>, 2014</time>
+<time datetime="2014-06-28T20:31:52-04:00" pubdate data-updated="true">Jun 28<span>th</span>, 2014</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>For me, the hardest part of getting a Twitter bot up and running was negotiating with Twitter&rsquo;s API keys and application settings. The primary reason for this was probably that I kept getting overly excited and jumping ahead, trying to finish the project too soon. I first set up an app by registering my primary twitter account. Turns out that wasn&rsquo;t necessary at all, and I could access and download my tweets just by using <a href="https://github.com/marcel/twurl">twurl</a> to collect authenticate and grab my main account&rsquo;s twitter archive. I THINK. Those authentication details went into a hidden file, .ebooksrc, in my computer&rsquo;s main user directory. I know because I had to break into it several times and switch out the keys in order to get it to work, but most users shouldn&rsquo;t need to open it again, once it&rsquo;s in there.</p>
-
-<p>To get the bot operational, I had to create an dev account and app using my bot&rsquo;s twitter account (oh yeah, I also had to register a new twitter account &mdash; but that&rsquo;s obvious, right? I&rsquo;m not talking to a bot, I&rsquo;m talking to a human&hellip; right?)</p>
-
-<p>Under My Applications (next to my user profile), I created a new app. Under the API Keys tab, I generated some access tokens. The consumer and OAuth details can then be added to the bot&rsquo;s bots.rb file, along with the bot&rsquo;s username and the bot model (in my case, my main twitter account).</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>CONSUMER_KEY = ""
-</span><span class='line'>CONSUMER_SECRET = ""</span></code></pre></td></tr></table></div></figure>
+<div class="entry-content"><blockquote class="twitter-tweet" data-partner="tweetdeck"><p><a href="https://twitter.com/wetted_ashes">@wetted_ashes</a> <a href="https://twitter.com/ablwr">@ablwr</a> Just spent too much time coding and having so many excellent things to read thanks to <a href="https://twitter.com/hashtag/timezones?src=hash">#timezones</a></p>&mdash; ¡ɹǝʍǝlq ʎǝlɥs∀ (@ablwr_ebooks) <a href="https://twitter.com/ablwr_ebooks/statuses/478713633023602688">June 17, 2014</a></blockquote>
 
 
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+
+<p>Once a Twitter bot has been configured, it has to stay running in order to stay alive. And for that, it needs a server. When I was debugging my bot, I was running it off of my computer and got notifications of activity in my terminal. This works if I want my bot to only be active when I am active, but I want my bot to be available all day and night!</p>
+
+<p>The most logical way to do that would be to deploy my bot&rsquo;s code to a Heroku instance. It&rsquo;s free and super easy, especially if you already have a good grasp on git workflows. Basically you just have to&hellip;</p>
 
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>  Ebooks::Bot.new("") do |bot| # Ebooks account username
-</span><span class='line'>  bot.oauth_token = "" # oauth token for ebooks account
-</span><span class='line'>  bot.oauth_token_secret = "" # oauth secret for ebooks account
-</span><span class='line'>
-</span><span class='line'>  make_bot(bot, "") # This should be the name of the text model generated from the base twitter account
-</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git init
+</span><span class='line'>git add .
+</span><span class='line'>git commit -m "BOTS"</span></code></pre></td></tr></table></div></figure>
 
 
-<p>Sounds easy, but I had such a hard time! Writing it all up, I am embarassed that it took me so many tries to get it right. My problem was that I first thought that the CONSUMER_KEY fields needed to come from my main twitter account instead of from the bot&rsquo;s account. Then, I changed the CONSUMER_KEY details but also changed the info in the .ebooksrc file. Then, I changed them both around again but didn&rsquo;t refresh my OAuth token.</p>
+<p>then,</p>
 
-<p>The final step was that my bot was running but unable to do anything because the API Keys permission access level was set to read-only. It is not super-clear in the documentation, but the account generating the access token has to have a valid phone number associated with it in order to get granted permission for read/write/execute status. After confirming with a phone number, my bot was able to talk to people and generate its own tweets based on my model.</p>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>heroku create
+</span><span class='line'>git push heroku master</span></code></pre></td></tr></table></div></figure>
 
-<p>A final important debugging note: After changing the permission access level from read-only to read/write, you will probably have to regenerate the API keys and add the new codes to the app.</p>
+
+<p>That&rsquo;s it! That is it. Actually, that is not it, because I had to log onto the heroku web interface and adjust the Dynos worker to 1 instead of 0.</p>
+
+<p><img class="left" src="/images/heroku_dynos_twitterbot.png" width="350" height="350" title="image" alt="images"></p>
+
+<p> But after that, my bot was again operational and back to her normal (myself)
+self.</p>
+
+<blockquote class="twitter-tweet" data-partner="tweetdeck"><p><a href="https://twitter.com/trlwagner">@trlwagner</a> I just wish I had to deal with GoDaddy but I am right now so my day is pretty good.</p>&mdash; ¡ɹǝʍǝlq ʎǝlɥs∀ (@ablwr_ebooks) <a href="https://twitter.com/ablwr_ebooks/statuses/478713189480153088">June 17, 2014</a></blockquote>
+
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
 </div>
 
 
@@ -148,7 +156,7 @@
   
 
 
-<time datetime="2014-06-25T12:54:34-04:00" pubdate data-updated="true">Jun 25<span>th</span>, 2014</time>
+<time datetime="2014-06-28T20:31:52-04:00" pubdate data-updated="true">Jun 28<span>th</span>, 2014</time>
       
 
 <span class="categories">
@@ -162,7 +170,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://ablwr.github.io/blog/2014/06/25/twitter-bots-2-authorizing-the-bot/" data-via="ablwr" data-counturl="http://ablwr.github.io/blog/2014/06/25/twitter-bots-2-authorizing-the-bot/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://ablwr.github.io/blog/2014/06/28/twitter-bots-3-keeping-your-bot-alive/" data-via="ablwr" data-counturl="http://ablwr.github.io/blog/2014/06/28/twitter-bots-3-keeping-your-bot-alive/" >Tweet</a>
   
   
   
@@ -171,10 +179,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2014/06/24/twitter-bots/" title="Previous Post: The bots are coming! Twitter bots!">&laquo; The bots are coming! Twitter bots!</a>
+        <a class="basic-alignment left" href="/blog/2014/06/25/twitter-bots-2-authorizing-the-bot/" title="Previous Post: Twitter Bots 2: Authorizing the Bot">&laquo; Twitter Bots 2: Authorizing the Bot</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2014/06/28/twitter-bots-3-keeping-your-bot-alive/" title="Next Post: Twitter Bots 3: Keeping your bot alive">Twitter Bots 3: Keeping your bot alive &raquo;</a>
       
     </p>
   </footer>
