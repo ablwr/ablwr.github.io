@@ -4,7 +4,7 @@
   <title><![CDATA[Category: twitter bots | BLOG Progress Process]]></title>
   <link href="http://ablwr.github.io/blog/categories/twitter-bots/atom.xml" rel="self"/>
   <link href="http://ablwr.github.io/"/>
-  <updated>2014-06-29T22:42:14-04:00</updated>
+  <updated>2014-06-29T22:44:24-04:00</updated>
   <id>http://ablwr.github.io/</id>
   <author>
     <name><![CDATA[Ashley Blewer]]></name>
@@ -20,9 +20,24 @@
     <id>http://ablwr.github.io/blog/2014/06/29/twitter-bots-5-scheduling-tweets-with-cron</id>
     <content type="html"><![CDATA[<p>Cron is a software utility that is used to schedule actions in time. It&rsquo;s great for handling reoccuring tasks. Twitter bots use a Cron statement to generate a tweet regularly. Cron tasks are super useful, but the syntax can be a little confusing and hard to remember.</p>
 
-<p>The default bot tweets once a day, which is</p>
+<p>The default bot tweets once a day, which is represented by <code>0 0 * * *</code></p>
 
-<p>If you don&rsquo;t want to figure out all of this syntax and just want to stay a die-hard Rubyist, you can also just install the gem &ldquo;whenever&rdquo; (<a href="https://github.com/javan/whenever">available here</a>).</p>
+<p>I changed my bot to tweet once an hour, which is represented by <code>0 * * * *</code></p>
+
+<p>If I want my bot to tweet every hour from 9-5 on weekdays, it would look like <code>0 9-18 * * 1-5</code></p>
+
+<p>Are you scratching your head? How can those numbers and letters mean anything?</p>
+
+<p>In a row of five ( * * * * *), numbers break down like this:</p>
+
+<ol>
+<li>Minutes 2. Hours 3. Day (of month) 4. Months 5. Day (of week)</li>
+</ol>
+
+
+<p>That makes sense. Sort of. Except for having two different ways to represent time in a day, especially when they are not next to each other!</p>
+
+<p>If you don&rsquo;t want to figure out all of this syntax and just want to stay a die-hard Rubyist, you can also just install the gem &ldquo;whenever&rdquo; (<a href="https://github.com/javan/whenever">available here</a>). Another way to integrate Cron syntax into Ruby apps is the gem <a href="https://github.com/jmettraux/rufus-scheduler">Rufus-scheduler</a>.</p>
 
 <p>Important note: If you are updating your bot&rsquo;s Cron settings, you have to re-run the archive and modeling files to see reflected updates.</p>
 
@@ -30,8 +45,9 @@
 
 <p>More info:</p>
 
-<p><a href="http://en.wikipedia.org/wiki/Cron">Cron on Wikipedia</a>
-<a href="http://railscasts.com/episodes/164-cron-in-ruby">RailsCasts #164 Cron in Ruby</a></p>
+<p><a href="http://en.wikipedia.org/wiki/Cron">Cron on Wikipedia</a></p>
+
+<p><a href="http://railscasts.com/episodes/164-cron-in-ruby">RailsCasts #164 Cron in Ruby</a></p>
 ]]></content>
   </entry>
   
