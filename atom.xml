@@ -4,7 +4,7 @@
   <title><![CDATA[BLOG Progress Process]]></title>
   <link href="http://ablwr.github.io/atom.xml" rel="self"/>
   <link href="http://ablwr.github.io/"/>
-  <updated>2014-06-29T22:44:24-04:00</updated>
+  <updated>2014-06-30T08:44:24-04:00</updated>
   <id>http://ablwr.github.io/</id>
   <author>
     <name><![CDATA[Ashley Blewer]]></name>
@@ -31,11 +31,15 @@
 <p>In a row of five ( * * * * *), numbers break down like this:</p>
 
 <ol>
-<li>Minutes 2. Hours 3. Day (of month) 4. Months 5. Day (of week)</li>
+<li> Minutes 2. Hours 3. Day (of month) 4. Months 5. Day (of week)</li>
 </ol>
 
 
-<p>That makes sense. Sort of. Except for having two different ways to represent time in a day, especially when they are not next to each other!</p>
+<p>That makes sense. Sort of. Except for having two different ways to represent time in a day, especially when they are not next to each other! Day of the month can be any number between 1-31 and is contingent on the month field. Day of the week is any number 0-6 and represents Sunday-Saturday.</p>
+
+<p>The astericks means &ldquo;every.&rdquo; If a field has an astericks, it will trigger the event at that time interval.</p>
+
+<p>Expressions aren&rsquo;t limited to asterisks and numbers. Other special characters include the slash (<code>/</code>), the comma (<code>,</code>), and the hyphen (<code>-</code>). The slash is used for increments of ranges. If I wanted to schedule an event to occur every five hours, I would use the string <code>0 */5 * * *</code>. Commas are used to separate items in a list. If I wanted an event to occur five minutes past the hour and five minutes before the hour, I could use the expression <code>5,55 * * * *</code>. Hyphens denote ranges. If I wanted to schedule an event to occur at the top of every hour during the Monday-Friday workweek, I would write <code>0 0 * * 1-5</code>.</p>
 
 <p>If you don&rsquo;t want to figure out all of this syntax and just want to stay a die-hard Rubyist, you can also just install the gem &ldquo;whenever&rdquo; (<a href="https://github.com/javan/whenever">available here</a>). Another way to integrate Cron syntax into Ruby apps is the gem <a href="https://github.com/jmettraux/rufus-scheduler">Rufus-scheduler</a>.</p>
 
