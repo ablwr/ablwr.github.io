@@ -4,7 +4,7 @@
   <title><![CDATA[BLOG Progress Process]]></title>
   <link href="http://ablwr.github.io/atom.xml" rel="self"/>
   <link href="http://ablwr.github.io/"/>
-  <updated>2014-06-30T08:44:24-04:00</updated>
+  <updated>2014-07-01T18:32:29-04:00</updated>
   <id>http://ablwr.github.io/</id>
   <author>
     <name><![CDATA[Ashley Blewer]]></name>
@@ -12,6 +12,27 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Twitter bot roundup]]></title>
+    <link href="http://ablwr.github.io/blog/2014/07/01/twitter-bot-roundup/"/>
+    <updated>2014-07-01T18:27:46-04:00</updated>
+    <id>http://ablwr.github.io/blog/2014/07/01/twitter-bot-roundup</id>
+    <content type="html"><![CDATA[<p><code>5.times { blog }</code></p>
+
+<p>I wrote a few blog posts about the minor trials and tribulations of launching a Twitter bot that mimics a user&rsquo;s speaking patterns, based on a cool gem. Here they are, rounded up.</p>
+
+<p><a href="http://ablwr.github.io/blog/2014/06/24/twitter-bots/">The Bots Are Coming! Twitter Bots!</a></p>
+
+<p><a href="http://ablwr.github.io/blog/2014/06/25/twitter-bots-2-authorizing-the-bot/">Twitter Bots 2: Authorizing the Bot</a></p>
+
+<p><a href="http://ablwr.github.io/blog/2014/06/28/twitter-bots-3-keeping-your-bot-alive/">Twitter Bots 3: Keeping Your Bot Alive</a></p>
+
+<p><a href="http://ablwr.github.io/blog/2014/06/28/twitter-bots-4-mad-science/">Twitter Bots 4: MAD SCIENCE</a></p>
+
+<p><a href="http://ablwr.github.io/blog/2014/06/29/twitter-bots-5-scheduling-tweets-with-cron/">Twitter Bots 5: Scheduling Tweets With Cron</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Twitter Bots 5: Scheduling tweets with Cron]]></title>

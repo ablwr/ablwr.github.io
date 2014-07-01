@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Twitter Bots 3: Keeping your bot alive - BLOG Progress Process</title>
+  <title>Twitter bot roundup - BLOG Progress Process</title>
   <meta name="author" content="Ashley Blewer">
 
   
-  <meta name="description" content="@wetted_ashes @ablwr Just spent too much time coding and having so many excellent things to read thanks to #timezones&mdash; ¡ɹǝʍǝlq ʎǝlɥs∀ (@ &hellip;">
+  <meta name="description" content="5.times { blog } I wrote a few blog posts about the minor trials and tribulations of launching a Twitter bot that mimics a user&rsquo;s speaking &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://ablwr.github.io/blog/2014/06/28/twitter-bots-3-keeping-your-bot-alive/">
+  <link rel="canonical" href="http://ablwr.github.io/blog/2014/07/01/twitter-bot-roundup/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -71,7 +71,7 @@
   
   <header>
     
-      <h1 class="entry-title">Twitter Bots 3: Keeping Your Bot Alive</h1>
+      <h1 class="entry-title">Twitter Bot Roundup</h1>
     
     
       <p class="meta">
@@ -87,51 +87,26 @@
   
 
 
-<time datetime="2014-06-28T20:31:52-04:00" pubdate data-updated="true">Jun 28<span>th</span>, 2014</time>
+<time datetime="2014-07-01T18:27:46-04:00" pubdate data-updated="true">Jul 1<span>st</span>, 2014</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><blockquote class="twitter-tweet" data-partner="tweetdeck"><p><a href="https://twitter.com/wetted_ashes">@wetted_ashes</a> <a href="https://twitter.com/ablwr">@ablwr</a> Just spent too much time coding and having so many excellent things to read thanks to <a href="https://twitter.com/hashtag/timezones?src=hash">#timezones</a></p>&mdash; ¡ɹǝʍǝlq ʎǝlɥs∀ (@ablwr_ebooks) <a href="https://twitter.com/ablwr_ebooks/statuses/478713633023602688">June 17, 2014</a></blockquote>
+<div class="entry-content"><p><code>5.times { blog }</code></p>
 
+<p>I wrote a few blog posts about the minor trials and tribulations of launching a Twitter bot that mimics a user&rsquo;s speaking patterns, based on a cool gem. Here they are, rounded up.</p>
 
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<p><a href="http://ablwr.github.io/blog/2014/06/24/twitter-bots/">The Bots Are Coming! Twitter Bots!</a></p>
 
+<p><a href="http://ablwr.github.io/blog/2014/06/25/twitter-bots-2-authorizing-the-bot/">Twitter Bots 2: Authorizing the Bot</a></p>
 
-<p>Once a Twitter bot has been configured, it has to stay running in order to stay alive. And for that, it needs a server. When I was debugging my bot, I was running it off of my computer and got notifications of activity in my terminal. This works if I want my bot to only be active when I am active, but I want my bot to be available all day and night!</p>
+<p><a href="http://ablwr.github.io/blog/2014/06/28/twitter-bots-3-keeping-your-bot-alive/">Twitter Bots 3: Keeping Your Bot Alive</a></p>
 
-<p>The most logical way to do that would be to deploy my bot&rsquo;s code to a Heroku instance. It&rsquo;s free and super easy, especially if you already have a good grasp on git workflows. Basically you just have to&hellip;</p>
+<p><a href="http://ablwr.github.io/blog/2014/06/28/twitter-bots-4-mad-science/">Twitter Bots 4: MAD SCIENCE</a></p>
 
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>git init
-</span><span class='line'>git add .
-</span><span class='line'>git commit -m "BOTS"</span></code></pre></td></tr></table></div></figure>
-
-
-<p>then,</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>heroku create
-</span><span class='line'>git push heroku master</span></code></pre></td></tr></table></div></figure>
-
-
-<p>That&rsquo;s it! That is it. Actually, that is not it, because I had to log onto the heroku web interface and adjust the Dynos worker to 1 instead of 0.</p>
-
-<p><img class="center" src="/images/herokurunner.png" width="800" title="'heroku page'" ></p>
-
-<p> But after that, my bot was again operational and back to her normal (myself)
-self.</p>
-
-<blockquote class="twitter-tweet" data-partner="tweetdeck"><p><a href="https://twitter.com/ablwr">@ablwr</a> <a href="https://twitter.com/trlwagner">@trlwagner</a> The pass is lurking in the reboot, everyone get renewed at 21, and I do not like that.</p>&mdash; ¡ɹǝʍǝlq ʎǝlɥs∀ (@ablwr_ebooks) <a href="https://twitter.com/ablwr_ebooks/statuses/478715343737602049">June 17, 2014</a></blockquote>
-
-
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
+<p><a href="http://ablwr.github.io/blog/2014/06/29/twitter-bots-5-scheduling-tweets-with-cron/">Twitter Bots 5: Scheduling Tweets With Cron</a></p>
 </div>
 
 
@@ -154,7 +129,7 @@ self.</p>
   
 
 
-<time datetime="2014-06-28T20:31:52-04:00" pubdate data-updated="true">Jun 28<span>th</span>, 2014</time>
+<time datetime="2014-07-01T18:27:46-04:00" pubdate data-updated="true">Jul 1<span>st</span>, 2014</time>
       
 
 <span class="categories">
@@ -168,7 +143,7 @@ self.</p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://ablwr.github.io/blog/2014/06/28/twitter-bots-3-keeping-your-bot-alive/" data-via="ablwr" data-counturl="http://ablwr.github.io/blog/2014/06/28/twitter-bots-3-keeping-your-bot-alive/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://ablwr.github.io/blog/2014/07/01/twitter-bot-roundup/" data-via="ablwr" data-counturl="http://ablwr.github.io/blog/2014/07/01/twitter-bot-roundup/" >Tweet</a>
   
   
   
@@ -177,10 +152,8 @@ self.</p>
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2014/06/25/twitter-bots-2-authorizing-the-bot/" title="Previous Post: Twitter Bots 2: Authorizing the Bot">&laquo; Twitter Bots 2: Authorizing the Bot</a>
+        <a class="basic-alignment left" href="/blog/2014/06/29/twitter-bots-5-scheduling-tweets-with-cron/" title="Previous Post: Twitter Bots 5: Scheduling tweets with Cron">&laquo; Twitter Bots 5: Scheduling tweets with Cron</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2014/06/28/twitter-bots-4-mad-science/" title="Next Post: Twitter Bots 4: MAD SCIENCE">Twitter Bots 4: MAD SCIENCE &raquo;</a>
       
     </p>
   </footer>
