@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: forms, | BLOG Progress Process]]></title>
+  <link href="http://ablwr.github.io/blog/categories/forms/atom.xml" rel="self"/>
+  <link href="http://ablwr.github.io/"/>
+  <updated>2014-07-15T23:13:16-04:00</updated>
+  <id>http://ablwr.github.io/</id>
+  <author>
+    <name><![CDATA[Ashley Blewer]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Form Helpers]]></title>
+    <link href="http://ablwr.github.io/blog/2014/07/15/form-helpers/"/>
+    <updated>2014-07-15T22:38:07-04:00</updated>
+    <id>http://ablwr.github.io/blog/2014/07/15/form-helpers</id>
+    <content type="html"><![CDATA[<p>Forms are hard! Forms are confusing in real life as well as on (or behind) the web. One problem with building web forms in Rails for me was that there are too many options! There are three distinct ways to create forms. And it’s also hard to tell which options are optional and which ones are required. Additionally, the syntax isn&rsquo;t always the same, so it can be hard to remember three different ways to do the same thing without mixing them up, especially as a beginner.</p>
+
+<p><img class="center" src="/images/basic_form.JPG" title="" ></p>
+
+<p>Here is the first form. This is the form that I think most people in my Ruby005 class would have written last week, before we learned about Rails form helpers. This is a form at its lowest level of abstraction while still being partially in Ruby, although it lacks Rails form helpers and form options helpers. This form just iterates through each ingredient and creates a checkbox. Checkboxes gives value of 1 if checked, 0 if not. And in the controller, we have to add ingredient_ids as an empty array in the params. It has to be called that or the whole thing won&rsquo;t work and all this code will be for naught.</p>
+
+<p><img class="center" src="/images/form_tag.JPG" title="" ></p>
+
+<p>Collection_check_boxes takes in five arguments, object, method, collection, value_method, text_method. Above, the recipe is the object, the ingredients_ids are the method, Ingredient.all is the collection, the :id is the value of the checkbox, and the name is the text to display with the checkbox. Best practice would be to abstract away the collection here so you are not calling a class in your View, and make a variable for Ingredient.all. Collection_check_boxes can look cumbersome with its five arguments, but its much cleaner than the previous code.</p>
+
+<p><img class="center" src="/images/form_for.JPG" title="" ></p>
+
+<p>In form_for, it looks like collection_check_boxes only takes FOUR arguments. And when you’re in formland, that’s an easy way to remember. Form_FOR takes FOUR. It actually takes five arguments, but one has already been declared at the beginning of the form. It’s @recipe.</p>
+
+<p>There&rsquo;s plenty more to learn about forms and form helpers, but I hope this little post can clear up some of the confusion surrounding usage.</p>
+]]></content>
+  </entry>
+  
+</feed>

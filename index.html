@@ -9,7 +9,7 @@
   <meta name="author" content="Ashley Blewer">
 
   
-  <meta name="description" content="Component fails, the redundant N +1 configuration, the vulnerability of the system in the form provided. Part (s), one independent backup component &hellip;">
+  <meta name="description" content="Forms are hard! Forms are confusing in real life as well as on (or behind) the web. One problem with building web forms in Rails for me was that &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -68,6 +68,56 @@
       <div id="content">
 	<div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/07/15/form-helpers/">Form Helpers</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-07-15T22:38:07-04:00" pubdate data-updated="true">Jul 15<span>th</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Forms are hard! Forms are confusing in real life as well as on (or behind) the web. One problem with building web forms in Rails for me was that there are too many options! There are three distinct ways to create forms. And it’s also hard to tell which options are optional and which ones are required. Additionally, the syntax isn&rsquo;t always the same, so it can be hard to remember three different ways to do the same thing without mixing them up, especially as a beginner.</p>
+
+<p><img class="center" src="/images/basic_form.JPG" title="" ></p>
+
+<p>Here is the first form. This is the form that I think most people in my Ruby005 class would have written last week, before we learned about Rails form helpers. This is a form at its lowest level of abstraction while still being partially in Ruby, although it lacks Rails form helpers and form options helpers. This form just iterates through each ingredient and creates a checkbox. Checkboxes gives value of 1 if checked, 0 if not. And in the controller, we have to add ingredient_ids as an empty array in the params. It has to be called that or the whole thing won&rsquo;t work and all this code will be for naught.</p>
+
+<p><img class="center" src="/images/form_tag.JPG" title="" ></p>
+
+<p>Collection_check_boxes takes in five arguments, object, method, collection, value_method, text_method. Above, the recipe is the object, the ingredients_ids are the method, Ingredient.all is the collection, the :id is the value of the checkbox, and the name is the text to display with the checkbox. Best practice would be to abstract away the collection here so you are not calling a class in your View, and make a variable for Ingredient.all. Collection_check_boxes can look cumbersome with its five arguments, but its much cleaner than the previous code.</p>
+
+<p><img class="center" src="/images/form_for.JPG" title="" ></p>
+
+<p>In form_for, it looks like collection_check_boxes only takes FOUR arguments. And when you’re in formland, that’s an easy way to remember. Form_FOR takes FOUR. It actually takes five arguments, but one has already been declared at the beginning of the form. It’s @recipe.</p>
+
+<p>There&rsquo;s plenty more to learn about forms and form helpers, but I hope this little post can clear up some of the confusion surrounding usage.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -633,52 +683,6 @@ self.</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/05/12/may-8th-and-decision-making/">May 8th and Decision-making.</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-05-12T13:09:35-04:00" pubdate data-updated="true">May 12<span>th</span>, 2014</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>This post is gonna be super-cheesy. I wrote this on May 8th, which is an important day for me.</p>
-
-<p>I&rsquo;m getting ready to do something kinda crazy. I&rsquo;m quitting my pretty-swell job, moving across the country, packing up my stuff, leaving many of my wonderful friends, finding extended cat-sitters for my two cats, and plopping down some serious cash. For a 3-month immersive web development course in New York. Of course, there are some obvious perks: I love New York and want to live there again, I also have wonderful friends in the city, the tech field is booming with well-paying jobs, and it&rsquo;s an interesting and creative field. This final one being the most important to me and I&rsquo;ll try to address it in another &ldquo;talking about feelings&rdquo; post.</p>
-
-<p>Regardless, it&rsquo;s a big jump. And I can&rsquo;t help but think about another big jump that I made exactly one decade ago(!). It&rsquo;s so hard to believe that ten years have passed, but here it goes. When I was a teenager, I saved up all of the money I made working (side note: it&rsquo;s way easier to save money when you don&rsquo;t have to pay rent+utilities). I saved up all my money and put it towards a 3-month immersive Japanese language course in Tokyo. SO EXCITING, getting to learn a new language (which I later minored in), living in a new country (still my favorite place in the world), experiencing so many new things. On Saturday, May 8, 2004, me and two suitcases got on a plane to Tokyo and off I went and it&rsquo;s probably one of the best decisions I&rsquo;ve made in my life.</p>
-
-<p>As I was making this decision about going to a coding bootcamp, all of these memories kept coming back to me. I thought a lot about how important that time in Tokyo was, how much it meant to me, and how much I learned. My Japanese isn&rsquo;t anywhere near fluent these days, but I still have an extremely strong foundation in the language that I am confident would come back if I spent a few weeks immersed back into it. I thought about all the things I learned, the people I met, everything I saw, all the hours I spent wandering around Tokyo by myself, the museums I went to, the host family I have a life-long connection with, and an endless amount of other things, big and small. Matsuri, konbini, chikatetsu, tsuyu. When I think back on how much those 3 months affected me and made me grow as a person, it became nearly impossible for me to decline to make a similar decision ten years later.</p>
-
-<p>Because of all of this, I have been thinking a lot about the kind of person I was ten years ago and the kind of person I am now. And thinking about the kind of person that I will be in another ten years (37? Ahhhhh!). The kind of person I WANT to be in ten years, and where I want to be in ten years. I even looked back at my old LiveJournal, which was a little bit horrifying and it was hard to recognize myself, but there I am. I&rsquo;ve been thinking a lot about the potential path that I am currently on and the potential path if I take this leap of faith, and I only see an expanded potential for learning and growth as a person, which is just what I am looking for in life. I have a lot of feelings about this, but will curb them for now (for here).</p>
-
-<p>So, as I post this new blog post at the start of a new adventure, cheers to May 8, cheers to giant leaps of faith, and cheers to always growing and learning.</p>
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -694,6 +698,10 @@ self.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/07/15/form-helpers/">Form Helpers</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/07/15/n-plus-1-plus-arel-plus-me/">N+1+Arel+Me</a>
       </li>
     
@@ -707,10 +715,6 @@ self.</p>
     
       <li class="post">
         <a href="/blog/2014/06/28/twitter-bots-4-mad-science/">Twitter Bots 4: MAD SCIENCE</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/06/28/twitter-bots-3-keeping-your-bot-alive/">Twitter Bots 3: Keeping your bot alive</a>
       </li>
     
   </ul>
