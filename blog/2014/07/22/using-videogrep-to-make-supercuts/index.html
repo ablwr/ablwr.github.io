@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Form Helpers - BLOG Progress Process</title>
+  <title>Using videogrep to make supercuts - BLOG Progress Process</title>
   <meta name="author" content="Ashley Blewer">
 
   
-  <meta name="description" content="Forms are hard! Forms are confusing in real life as well as on (or behind) the web. One problem with building web forms in Rails for me was that &hellip;">
+  <meta name="description" content="Videogrep is a Python-based application that searches through a video file using its subtitles track and can cut video clips based on its search &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://ablwr.github.io/blog/2014/07/15/form-helpers/">
+  <link rel="canonical" href="http://ablwr.github.io/blog/2014/07/22/using-videogrep-to-make-supercuts/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -71,7 +71,7 @@
   
   <header>
     
-      <h1 class="entry-title">Form Helpers</h1>
+      <h1 class="entry-title">Using Videogrep to Make Supercuts</h1>
     
     
       <p class="meta">
@@ -87,28 +87,58 @@
   
 
 
-<time datetime="2014-07-15T22:38:07-04:00" pubdate data-updated="true">Jul 15<span>th</span>, 2014</time>
+<time datetime="2014-07-22T22:36:12-04:00" pubdate data-updated="true">Jul 22<span>nd</span>, 2014</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>Forms are hard! Forms are confusing in real life as well as on (or behind) the web. One problem with building web forms in Rails for me was that there are too many options! There are three distinct ways to create forms. And it’s also hard to tell which options are optional and which ones are required. Additionally, the syntax isn&rsquo;t always the same, so it can be hard to remember three different ways to do the same thing without mixing them up, especially as a beginner.</p>
+<div class="entry-content"><p><a href="https://github.com/antiboredom/videogrep">Videogrep</a> is a Python-based application that searches through a video file using its subtitles track and can cut video clips based on its search criteria.</p>
 
-<p><img class="center" src="/images/basic_form.png" title="" ></p>
+<p>Videogrep is SUPER easy to use&hellip; as long as ffmpeg is installed properly. If not, prepare for some configuring and installing.</p>
 
-<p>Here is the first form. This is the form that I think most people in my Ruby005 class would have written last week, before we learned about Rails form helpers. This is a form at its lowest level of abstraction while still being partially in Ruby, although it lacks Rails form helpers and form options helpers. This form just iterates through each ingredient and creates a checkbox. Checkboxes gives value of 1 if checked, 0 if not. And in the controller, we have to add ingredient_ids as an empty array in the params. It has to be called that or the whole thing won&rsquo;t work and all this code will be for naught.</p>
+<p>I used videogrep to search through one of my favorite movies, Terrorvision, to find every time a character refers to something as &ldquo;The Pleasure (noun).&rdquo; Hint: it happens more times than you would think.</p>
 
-<p><img class="center" src="/images/form_tag.png" title="" ></p>
+<p>To do this, I only had to type one line and videogrep did the rest of the work.</p>
 
-<p>Collection_check_boxes takes in five arguments, object, method, collection, value_method, text_method. Above, the recipe is the object, the ingredients_ids are the method, Ingredient.all is the collection, the :id is the value of the checkbox, and the name is the text to display with the checkbox. Best practice would be to abstract away the collection here so you are not calling a class in your View, and make a variable for Ingredient.all. Collection_check_boxes can look cumbersome with its five arguments, but its much cleaner than the previous code.</p>
+<p><code>python videogrep.py -i Terrorvision/Terrorvision.avi -o test_video.mp4 --search 'Pleasure'</code></p>
 
-<p><img class="center" src="/images/form_for.png" title="" ></p>
+<p>It searched through the subtitles file and found six instances, which it printed to the screen along with their timestamps.</p>
 
-<p>In form_for, it looks like collection_check_boxes only takes FOUR arguments. And when you’re in formland, that’s an easy way to remember. Form_FOR takes FOUR. It actually takes five arguments, but one has already been declared at the beginning of the form. It’s @recipe.</p>
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>524.357 to 527.86:  Pleasure Palace, here we come.
+</span><span class='line'>1660.284 to 1663.453: Otherwise known as the Pleasure Zone.
+</span><span class='line'>1734.4 to 1736.651: The Pleasure Den.
+</span><span class='line'>1776.859 to 1779.527: on to the Pleasure Dome.
+</span><span class='line'>1779.528 to 1782.905: To the Pleasure Dome.
+</span><span class='line'>1840.756 to 1842.548: The Pleasure Dome.</span></code></pre></td></tr></table></div></figure>
 
-<p>There&rsquo;s plenty more to learn about forms and form helpers, but I hope this little post can clear up some of the confusion surrounding usage.</p>
+
+<p>If there is an error, at this point it will let you know. But if all goes well, the following will print to the screen:</p>
+
+<p><code>Your video is ready ! Fingers crossed for the Oscars !</code></p>
+
+<p>Here is the video supercut. Something that might have taken a few hours for me to piece together using my memory of the movie and video editing software was done in less than a minute using the powers of Python and FFMpeg.</p>
+
+<p>Voila!</p>
+
+<p>[[vimeo-99057389]]</p>
+
+<p>This was just a simple example, but videogrep can get more specific based on the regular expression added into the search string. In the above example, I knew &ldquo;Pleasure&rdquo; was a proper noun because its the name of many rooms in the Putterman household. If I really wanted to grab every instance of the word, I would have had to search for &lsquo;pleasure|Pleasure&rsquo; to capture both uppercase and lowercase.</p>
+
+<p>Videogrep can be even more powerful because it understands <a href="http://www.clips.ua.ac.be/pages/pattern-search">pattern recognition using pattern search</a>. I was able to extract what I wanted by just typing in one word, but it also understands word patterns. For example, you can use flags like JJ for adjective or NN for noun and it will extract every instance of a particular speech pattern.</p>
+
+<p>It can also search for hypernyms, which are words that fit into a certain category and have a semantic relation to each other. For example, if you searched for automobile, you might also want to extract similar words like car, truck, or van. If you weren&rsquo;t picky about what kind of bird you were looking for, a hypernym search would result in crows, seagulls, and eagles.</p>
+
+<p>Enjoy using videogrep and watch out for the monster!</p>
+
+<p>[[vimeo-99093635]]</p>
 </div>
 
 
@@ -131,12 +161,12 @@
   
 
 
-<time datetime="2014-07-15T22:38:07-04:00" pubdate data-updated="true">Jul 15<span>th</span>, 2014</time>
+<time datetime="2014-07-22T22:36:12-04:00" pubdate data-updated="true">Jul 22<span>nd</span>, 2014</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/four/'>FOUR</a>, <a class='category' href='/blog/categories/i/'>I</a>, <a class='category' href='/blog/categories/am/'>am</a>, <a class='category' href='/blog/categories/for/'>for</a>, <a class='category' href='/blog/categories/form/'>form</a>, <a class='category' href='/blog/categories/form/'>form</a>, <a class='category' href='/blog/categories/forms/'>forms,</a>, <a class='category' href='/blog/categories/like/'>like</a>, <a class='category' href='/blog/categories/more/'>more</a>, <a class='category' href='/blog/categories/right/'>right</a>
+    <a class='category' href='/blog/categories/python/'>python</a>, <a class='category' href='/blog/categories/video/'>video</a>
   
 </span>
 
@@ -145,7 +175,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://ablwr.github.io/blog/2014/07/15/form-helpers/" data-via="ablwr" data-counturl="http://ablwr.github.io/blog/2014/07/15/form-helpers/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://ablwr.github.io/blog/2014/07/22/using-videogrep-to-make-supercuts/" data-via="ablwr" data-counturl="http://ablwr.github.io/blog/2014/07/22/using-videogrep-to-make-supercuts/" >Tweet</a>
   
   
   
@@ -154,10 +184,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2014/07/15/n-plus-1-plus-arel-plus-me/" title="Previous Post: N+1+Arel+Me">&laquo; N+1+Arel+Me</a>
+        <a class="basic-alignment left" href="/blog/2014/07/16/canyon-of-heroes/" title="Previous Post: Canyon of Heroes">&laquo; Canyon of Heroes</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2014/07/16/canyon-of-heroes/" title="Next Post: Canyon of Heroes">Canyon of Heroes &raquo;</a>
       
     </p>
   </footer>

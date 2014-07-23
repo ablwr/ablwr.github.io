@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: video | BLOG Progress Process]]></title>
+  <link href="http://ablwr.github.io/blog/categories/video/atom.xml" rel="self"/>
+  <link href="http://ablwr.github.io/"/>
+  <updated>2014-07-22T22:37:37-04:00</updated>
+  <id>http://ablwr.github.io/</id>
+  <author>
+    <name><![CDATA[Ashley Blewer]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Using videogrep to make supercuts]]></title>
+    <link href="http://ablwr.github.io/blog/2014/07/22/using-videogrep-to-make-supercuts/"/>
+    <updated>2014-07-22T22:36:12-04:00</updated>
+    <id>http://ablwr.github.io/blog/2014/07/22/using-videogrep-to-make-supercuts</id>
+    <content type="html"><![CDATA[<p><a href="https://github.com/antiboredom/videogrep">Videogrep</a> is a Python-based application that searches through a video file using its subtitles track and can cut video clips based on its search criteria.</p>
+
+<p>Videogrep is SUPER easy to use&hellip; as long as ffmpeg is installed properly. If not, prepare for some configuring and installing.</p>
+
+<p>I used videogrep to search through one of my favorite movies, Terrorvision, to find every time a character refers to something as &ldquo;The Pleasure (noun).&rdquo; Hint: it happens more times than you would think.</p>
+
+<p>To do this, I only had to type one line and videogrep did the rest of the work.</p>
+
+<p><code>python videogrep.py -i Terrorvision/Terrorvision.avi -o test_video.mp4 --search 'Pleasure'</code></p>
+
+<p>It searched through the subtitles file and found six instances, which it printed to the screen along with their timestamps.</p>
+
+<p><code>
+524.357 to 527.86:  Pleasure Palace, here we come.
+1660.284 to 1663.453: Otherwise known as the Pleasure Zone.
+1734.4 to 1736.651: The Pleasure Den.
+1776.859 to 1779.527: on to the Pleasure Dome.
+1779.528 to 1782.905: To the Pleasure Dome.
+1840.756 to 1842.548: The Pleasure Dome.
+</code>
+If there is an error, at this point it will let you know. But if all goes well, the following will print to the screen:</p>
+
+<p><code>Your video is ready ! Fingers crossed for the Oscars !</code></p>
+
+<p>Here is the video supercut. Something that might have taken a few hours for me to piece together using my memory of the movie and video editing software was done in less than a minute using the powers of Python and FFMpeg.</p>
+
+<p>Voila!</p>
+
+<p>[[vimeo-99057389]]</p>
+
+<p>This was just a simple example, but videogrep can get more specific based on the regular expression added into the search string. In the above example, I knew &ldquo;Pleasure&rdquo; was a proper noun because its the name of many rooms in the Putterman household. If I really wanted to grab every instance of the word, I would have had to search for &lsquo;pleasure|Pleasure&rsquo; to capture both uppercase and lowercase.</p>
+
+<p>Videogrep can be even more powerful because it understands <a href="http://www.clips.ua.ac.be/pages/pattern-search">pattern recognition using pattern search</a>. I was able to extract what I wanted by just typing in one word, but it also understands word patterns. For example, you can use flags like JJ for adjective or NN for noun and it will extract every instance of a particular speech pattern.</p>
+
+<p>It can also search for hypernyms, which are words that fit into a certain category and have a semantic relation to each other. For example, if you searched for automobile, you might also want to extract similar words like car, truck, or van. If you weren&rsquo;t picky about what kind of bird you were looking for, a hypernym search would result in crows, seagulls, and eagles.</p>
+
+<p>Enjoy using videogrep and watch out for the monster!</p>
+
+<p>[[vimeo-99093635]]</p>
+]]></content>
+  </entry>
+  
+</feed>

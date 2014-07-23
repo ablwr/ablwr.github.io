@@ -9,7 +9,7 @@
   <meta name="author" content="Ashley Blewer">
 
   
-  <meta name="description" content="When walking to and from class every day at the bottom of Manhattan, I&rsquo;ve noticed plates of text on the ground with a date and name of a famous &hellip;">
+  <meta name="description" content="Videogrep is a Python-based application that searches through a video file using its subtitles track and can cut video clips based on its search &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -68,6 +68,86 @@
       <div id="content">
 	<div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2014/07/22/using-videogrep-to-make-supercuts/">Using Videogrep to Make Supercuts</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-07-22T22:36:12-04:00" pubdate data-updated="true">Jul 22<span>nd</span>, 2014</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p><a href="https://github.com/antiboredom/videogrep">Videogrep</a> is a Python-based application that searches through a video file using its subtitles track and can cut video clips based on its search criteria.</p>
+
+<p>Videogrep is SUPER easy to use&hellip; as long as ffmpeg is installed properly. If not, prepare for some configuring and installing.</p>
+
+<p>I used videogrep to search through one of my favorite movies, Terrorvision, to find every time a character refers to something as &ldquo;The Pleasure (noun).&rdquo; Hint: it happens more times than you would think.</p>
+
+<p>To do this, I only had to type one line and videogrep did the rest of the work.</p>
+
+<p><code>python videogrep.py -i Terrorvision/Terrorvision.avi -o test_video.mp4 --search 'Pleasure'</code></p>
+
+<p>It searched through the subtitles file and found six instances, which it printed to the screen along with their timestamps.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>524.357 to 527.86:  Pleasure Palace, here we come.
+</span><span class='line'>1660.284 to 1663.453: Otherwise known as the Pleasure Zone.
+</span><span class='line'>1734.4 to 1736.651: The Pleasure Den.
+</span><span class='line'>1776.859 to 1779.527: on to the Pleasure Dome.
+</span><span class='line'>1779.528 to 1782.905: To the Pleasure Dome.
+</span><span class='line'>1840.756 to 1842.548: The Pleasure Dome.</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If there is an error, at this point it will let you know. But if all goes well, the following will print to the screen:</p>
+
+<p><code>Your video is ready ! Fingers crossed for the Oscars !</code></p>
+
+<p>Here is the video supercut. Something that might have taken a few hours for me to piece together using my memory of the movie and video editing software was done in less than a minute using the powers of Python and FFMpeg.</p>
+
+<p>Voila!</p>
+
+<p>[[vimeo-99057389]]</p>
+
+<p>This was just a simple example, but videogrep can get more specific based on the regular expression added into the search string. In the above example, I knew &ldquo;Pleasure&rdquo; was a proper noun because its the name of many rooms in the Putterman household. If I really wanted to grab every instance of the word, I would have had to search for &lsquo;pleasure|Pleasure&rsquo; to capture both uppercase and lowercase.</p>
+
+<p>Videogrep can be even more powerful because it understands <a href="http://www.clips.ua.ac.be/pages/pattern-search">pattern recognition using pattern search</a>. I was able to extract what I wanted by just typing in one word, but it also understands word patterns. For example, you can use flags like JJ for adjective or NN for noun and it will extract every instance of a particular speech pattern.</p>
+
+<p>It can also search for hypernyms, which are words that fit into a certain category and have a semantic relation to each other. For example, if you searched for automobile, you might also want to extract similar words like car, truck, or van. If you weren&rsquo;t picky about what kind of bird you were looking for, a hypernym search would result in crows, seagulls, and eagles.</p>
+
+<p>Enjoy using videogrep and watch out for the monster!</p>
+
+<p>[[vimeo-99093635]]</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -605,58 +685,6 @@ self.</p>
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2014/06/16/regular-expression-options/">Regular Expression Options</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-06-16T18:26:07-04:00" pubdate data-updated="true">Jun 16<span>th</span>, 2014</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>When working with Regular Expressions, I mostly ignored these optional suffixes because I didn&rsquo;t want to further complicate an already complicated aspect of programming. But since there are only four options, I decided to take a break from other complications and break down what each regex suffix can do.</p>
-
-<ul>
-<li><p><strong>i</strong></p>
-
-<p>i stands for <strong>INSENSITIVE</strong>! But not like that jerk that cut in front of you when changing trains at Union Square this morning. It means that it is case insensitive! You can save some keystrokes and be more precise by using i to eliminate or swap a word for a paragraph.</p></li>
-<li><p><strong>m</strong></p>
-
-<p>The next option is the letter m. M stands for <strong>MULTILINE MODE</strong>! Mmmm! What does that mean? Rubular sums it up succinctly as &ldquo;make dot match newlines.&rdquo; Still lost? The m option helps the dot (also known as a period or a full stop) character, which represents any character in a regex, match everything INCLUDING the invisible new line character. The new line character is represented in a regex or in programming as \n. If you are worried that your new line might mess up your regex, the m option can help mesh all lines together.</p></li>
-<li><p><strong>o</strong></p>
-
-<p>Next up is the letter o. O stands for <strong>ONCE</strong>! ONE TIME, ONE CHANCE, ONE SHOT! To substitute once. Substitute once means that any #{&hellip;} substitutions that occur in a regex can only occur one time and then they are OUT!</p></li>
-<li><p><strong>x</strong></p>
-
-<p>Finally, the letter x. X stands for&hellip; <strong>Xtended</strong> mode! Also known as Extended Mode. Regular expressions can be really complicated, so the x at the end allows for extra room in the expression such as spaces, new lines, and comments. Then, the regex is more readable and less scary. Another tip: to comment in a regex, use ?#. But if you use ?#, you also have to use x.</p></li>
-</ul>
-
-</div>
-  
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -672,6 +700,10 @@ self.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2014/07/22/using-videogrep-to-make-supercuts/">Using videogrep to make supercuts</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2014/07/16/canyon-of-heroes/">Canyon of Heroes</a>
       </li>
     
@@ -685,10 +717,6 @@ self.</p>
     
       <li class="post">
         <a href="/blog/2014/07/01/twitter-bot-roundup/">Twitter bot roundup</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2014/06/29/twitter-bots-5-scheduling-tweets-with-cron/">Twitter Bots 5: Scheduling tweets with Cron</a>
       </li>
     
   </ul>
