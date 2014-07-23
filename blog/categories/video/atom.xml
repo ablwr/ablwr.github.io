@@ -4,7 +4,7 @@
   <title><![CDATA[Category: video | BLOG Progress Process]]></title>
   <link href="http://ablwr.github.io/blog/categories/video/atom.xml" rel="self"/>
   <link href="http://ablwr.github.io/"/>
-  <updated>2014-07-22T22:37:37-04:00</updated>
+  <updated>2014-07-22T22:55:53-04:00</updated>
   <id>http://ablwr.github.io/</id>
   <author>
     <name><![CDATA[Ashley Blewer]]></name>
@@ -46,7 +46,10 @@ If there is an error, at this point it will let you know. But if all goes well, 
 
 <p>Voila!</p>
 
-<p>[[vimeo-99057389]]</p>
+<iframe src="//player.vimeo.com/video/99057389" width="500" height="282" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+
+<p> <p><a href="http://vimeo.com/99057389">Pleasure Supercut</a> from <a href="http://vimeo.com/orangelazarus">Ashley Blewer</a> on <a href="https://vimeo.com">Vimeo</a>.</p></p>
 
 <p>This was just a simple example, but videogrep can get more specific based on the regular expression added into the search string. In the above example, I knew &ldquo;Pleasure&rdquo; was a proper noun because its the name of many rooms in the Putterman household. If I really wanted to grab every instance of the word, I would have had to search for &lsquo;pleasure|Pleasure&rsquo; to capture both uppercase and lowercase.</p>
 
@@ -56,7 +59,10 @@ If there is an error, at this point it will let you know. But if all goes well, 
 
 <p>Enjoy using videogrep and watch out for the monster!</p>
 
-<p>[[vimeo-99093635]]</p>
+<iframe src="//player.vimeo.com/video/99093635" width="500" height="282" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+
+<p> <p><a href="http://vimeo.com/99093635">TerrorVision Monster</a> from <a href="http://vimeo.com/orangelazarus">Ashley Blewer</a> on <a href="https://vimeo.com">Vimeo</a>.</p></p>
 ]]></content>
   </entry>
   
