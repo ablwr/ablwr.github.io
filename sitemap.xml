@@ -63,8 +63,14 @@
         <lastmod>2014-07-22T23:06:34-04:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://ablwr.github.io/blog/2014/09/08/learning-and-trolling-with-popcorn-dot-js/
+        </loc>
+        <lastmod>2014-09-08T11:40:28-04:00</lastmod>
+    </url>
+    <url>
         <loc>http://ablwr.github.io/blog/archives/</loc>
-        <lastmod>2014-07-22T23:06:34-04:00</lastmod>
+        <lastmod>2014-09-08T11:40:28-04:00</lastmod>
     </url>
     <url>
         <loc>http://ablwr.github.io/blog/categories/</loc>
@@ -72,7 +78,7 @@
     </url>
     <url>
         <loc>http://ablwr.github.io/</loc>
-        <lastmod>2014-07-22T23:06:34-04:00</lastmod>
+        <lastmod>2014-09-08T11:40:28-04:00</lastmod>
     </url>
     <url>
         <loc>http://ablwr.github.io/robots.txt</loc>

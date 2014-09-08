@@ -9,7 +9,7 @@
 	<meta name="author" content="Ashley Blewer">
 
 	
-	<meta name="description" content="Jul 22nd, 2014 python, video Using Videogrep to Make Supercuts Videogrep is a Python-based application that searches through a video file using its &hellip;">
+	<meta name="description" content="Sep 8th, 2014 Flatiron, Popcorn.js, video Learning (and Trolling) With Popcorn.js Basically, I have a history of taking jokes too far. See also: &hellip;">
 	
 
   <!-- http://t.co/dKP3o1e -->
@@ -83,6 +83,92 @@
 			<div class="mid-col-container">
 				<div id="content" class="inner">
 <div itemscope itemtype="http://schema.org/Blog">
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-09-08T11:01:02-04:00" data-updated="true" itemprop="datePublished">Sep 8<span>th</span>, 2014</time></div>
+		<div class="tags">
+
+
+	<a class='category' href='/blog/categories/flatiron/'>Flatiron</a>, <a class='category' href='/blog/categories/popcorn-dot-js/'>Popcorn.js</a>, <a class='category' href='/blog/categories/video/'>video</a>
+
+
+</div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/blog/2014/09/08/learning-and-trolling-with-popcorn-dot-js/" itemprop="url">Learning (and Trolling) With Popcorn.js</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p>Basically, I have a history of taking jokes too far. See also: <a href="http://instagram.com/p/ruP0rHjtbO/?modal=true">Tattoos of Avi’s face</a>. So when I was exploring <a href="https://www.mozilla.org/">Mozilla</a>’s <a href="http://popcornjs.org">Popcorn.js</a> and missing my Flatiron peers, I coded up a small app that would help me learn how to use Popcorn.js aaaaaaaand also troll my friends.</p>
+
+<p>At Flatiron, we used a shared playlist system called <a href="http://sonos.com">Sonos</a>. Everyone could add tracks from online music collections like Spotify, Hype Machine, or Songza. Near the last third of the semester, as we were all on the brink of insanity and exhaustion, one song in particular kept making a rude appearance. I don’t know who started it or why, but the entire Flatiron office had to suffer through many, many, many instances of Seal’s Kiss from a Rose.</p>
+
+<p>After Flatiron graduation, I was pretty excited to dig into some new projects while on the job hunt, but really missed hanging out with all of my Flatiron buds. To alleviate my withdrawl symptoms, I decided to integrate my Popcorn.js learning into an app to basically troll everyone I know.</p>
+
+<p>To troll successfully, though, I first had to troll myself. Because music videos on youtube don&rsquo;t come with subtitles, I had to make those subtitles happen manually. I once had a job transcribing interviews, so I&rsquo;m pretty fast. But to get the timing right, I still had to submit myself to many, many listens of the same song.</p>
+
+<p>Popcorn.js makes it easy to add supplemental media to video files based on timing.</p>
+
+<p>Within a document listener, you create an instance variable with the .youtube suffix (obviously it&rsquo;s different if you are not using the YouTube API to access a video, but for this example, I used YouTube) and then declare a landing div ID and a link to the video itself.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'>   <span class="kd">var</span> <span class="nx">pop</span> <span class="o">=</span> <span class="nx">Popcorn</span><span class="p">.</span><span class="nx">youtube</span><span class="p">(</span>
+</span><span class='line'>     <span class="s1">&#39;#video&#39;</span><span class="p">,</span>
+</span><span class='line'>     <span class="s1">&#39;https://www.youtube.com/watch?v=i4tTnIimi8E&#39;</span> <span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Afterwards, it&rsquo;s time to start adding footnotes! This takes in four options &mdash; a start time (in seconds), an end time (also in seconds, big surprise), the text you want to display, and the target div. The application of subtitle footnotes is simple, but it&rsquo;s easy to see what kind of complex and interesting things can be done based on video playback times.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'>   <span class="p">.</span><span class="nx">footnote</span><span class="p">({</span>
+</span><span class='line'>      <span class="nx">start</span><span class="o">:</span> <span class="mi">94</span><span class="p">,</span>
+</span><span class='line'>      <span class="nx">end</span><span class="o">:</span> <span class="mi">97</span><span class="p">,</span>
+</span><span class='line'>      <span class="nx">text</span><span class="o">:</span> <span class="s2">&quot;Won&#39;t you tell me is that healthy, baby?&quot;</span><span class="p">,</span>
+</span><span class='line'>      <span class="nx">target</span><span class="o">:</span> <span class="s2">&quot;footnotediv&quot;</span>
+</span><span class='line'>   <span class="p">})</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p> At the end, just trigger play.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'>    <span class="nx">pop</span><span class="p">.</span><span class="nx">play</span><span class="p">();</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Try it yourself! <a href="http://ablwr.github.io/flatiron-karaoke">Sing your heart out here</a>.</p>
+
+<p>There&rsquo;s also an easter egg, but you have to patiently wait for it (or sing sing sing for it).</p>
+
+<p>User feedback: It worked! Everyone typed in a song and got Seal back and tried it again because they thought it was a bug. NOPE. The only person that didn’t get trolled had preemptively trolled by searching for “Kiss from a Rose” so she didn’t know it was the only possible song that could be returned.</p>
+
+<p>In the future, I’d like to spend more time trying to figure out how a real karaoke app could be created by automatically generating accurate subtitles. I’d also like to spend more time on the CSS styles so I could figure out how to fake the text highlighting on karaoke videos. As I mentioned earlier, there&rsquo;s an easter egg &mdash; I&rsquo;d like to work on incorporating more complex supplemental data alongside video files, such as Google maps, Wikipedia page load triggers, and images.</p>
+
+		
+		
+	</div>
+
+</article>
 
 
     <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
@@ -601,94 +687,6 @@ self.</p>
 <p>The final step was that my bot was running but unable to do anything because the API Keys permission access level was set to read-only. It is not super-clear in the documentation, but the account generating the access token has to have a valid phone number associated with it in order to get granted permission for read/write/execute status. After confirming with a phone number, my bot was able to talk to people and generate its own tweets based on my model.</p>
 
 <p>A final important debugging note: After changing the permission access level from read-only to read/write, you will probably have to regenerate the API keys and add the new codes to the app.</p>
-
-		
-		
-	</div>
-
-</article>
-
-
-    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-	<div class="meta">
-		<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2014-06-24T23:10:17-04:00" data-updated="true" itemprop="datePublished">Jun 24<span>th</span>, 2014</time></div>
-		<div class="tags">
-
-
-	<a class='category' href='/blog/categories/side-projects/'>side projects</a>, <a class='category' href='/blog/categories/twitter-bots/'>twitter bots</a>
-
-
-</div>
-		
-	</div>
-	<h1 class="title" itemprop="name"><a href="/blog/2014/06/24/twitter-bots/" itemprop="url">The Bots Are Coming! Twitter Bots!</a></h1>
-	<div class="entry-content" itemprop="articleBody">
-		<p>When I accepted a spot in the Flatiron School Ruby005 class, I knew my social life and, uh, casual internet-browsing life (?) would be cut dramatically down while I would be focusing all of my efforts on learning Ruby. I didn&rsquo;t want my friends to miss me too much (which is hard, since I also had to move from South Carolina to New York), so I decided to build a twitter bot that could tweet and talk to my friends.</p>
-
-<p>Fortunately, there&rsquo;s already a Ruby gem that does all of the work for me. So I didn&rsquo;t really have to build a bot, I could just launch one! I used the gem found <a href="https://github.com/mispy/twitter_ebooks">here</a> and pulled in the example bot&rsquo;s code. When I got stuck, I referenced <a href="https://github.com/ScaryEnderman/Twitter-Bots-Tutorial">this bot tutorial</a>. Setting up the bot and modifying the code was easy, but I hit a few snags trying to cooperate with the Twitter app API and OAuth.</p>
-
-<p>Here&rsquo;s how the twitter_ebooks gem works.</p>
-
-<ol>
-<li>The gem pulls in your twitter history in json format.</li>
-<li>Then, it parses through the json data and identifies words and phrases according to grammatical structure.</li>
-<li>It randomly generates sentences based on a user&rsquo;s tweet history. A cron job is set up to tweet randomly once a day, but I bumped that up to once an hour.</li>
-<li>It knows how to respond to other users when they tweet at the bot.</li>
-<li>It has a keyword list and will favorite or retweet tweets in its timeline that use those keywords.</li>
-</ol>
-
-
-<p>Here are a few examples of what my bot has to say:</p>
-
-<blockquote class="twitter-tweet" lang="en"><p>CSS is in this instance, or is, at minimum, I&#39;ll take 6.</p>&mdash; ¡ɹǝʍǝlq ʎǝlɥs∀ (@ablwr_ebooks) <a href="https://twitter.com/ablwr_ebooks/statuses/481632877323354112">June 25, 2014</a></blockquote>
-
-
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-
-
-<blockquote class="twitter-tweet" lang="en"><p>&#8230;Damn it, iPhone, I hate it when you get a job at a grocery store.</p>&mdash; ¡ɹǝʍǝlq ʎǝlɥs∀ (@ablwr_ebooks) <a href="https://twitter.com/ablwr_ebooks/statuses/480258821844377600">June 21, 2014</a></blockquote>
-
-
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-
-
-<blockquote class="twitter-tweet" lang="en"><p>Tumblr adding fake film grain, tulips, u-matic tape players, cleaning my ears with a q-tip, maps&#8230;</p>&mdash; ¡ɹǝʍǝlq ʎǝlɥs∀ (@ablwr_ebooks) <a href="https://twitter.com/ablwr_ebooks/statuses/479307552946421762">June 18, 2014</a></blockquote>
-
-
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-<p>But the best part of having a Twitter bot is that it can interact with other users! Classmate <a href="http://randallreedjr.com/">Randall</a> asked her for some advice:</p>
-
-<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/ablwr_ebooks">@ablwr_ebooks</a> What should I do this weekend?</p>&mdash; Randall Reed Jr. (@randallocalypse) <a href="https://twitter.com/randallocalypse/statuses/480034237391704064">June 20, 2014</a></blockquote>
-
-
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-<blockquote class="twitter-tweet" data-partner="tweetdeck"><p><a href="https://twitter.com/randallocalypse">@randallocalypse</a> I hope this suggests a return of the insane hotels.</p>&mdash; ¡ɹǝʍǝlq ʎǝlɥs∀ (@ablwr_ebooks) <a href="https://twitter.com/ablwr_ebooks/statuses/480034319030026240">June 20, 2014</a></blockquote>
-
-
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
-<p>That&rsquo;s my bot! Have your bot add my bot at <a href="http://www.twitter.com/ablwr_ebooks">@ablwr_ebooks</a>. Stay tuned for some more technical blog posts about working through the Twitter authentication steps, understanding CRON, modifying a bot, deploying to heroku, and ~mad science experiments~.</p>
 
 		
 		

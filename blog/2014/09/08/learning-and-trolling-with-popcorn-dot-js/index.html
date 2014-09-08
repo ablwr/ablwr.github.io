@@ -1,0 +1,187 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Learning (and trolling) with Popcorn.js - BLOG Progress Process</title>
+	<meta name="author" content="Ashley Blewer">
+
+	
+	<meta name="description" content="Learning (and Trolling) With Popcorn.js Basically, I have a history of taking jokes too far. See also: Tattoos of Avi’s face. So when I was &hellip;">
+	
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="BLOG Progress Process" type="application/atom+xml">
+	
+	<link rel="canonical" href="http://ablwr.github.io/blog/2014/09/08/learning-and-trolling-with-popcorn-dot-js/">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="/stylesheets/font-awesome.min.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	
+  
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><div class="profilepic">
+	
+	<img src="http://www.gravatar.com/avatar/425f1ccc494d81dcf41f2cc7ac8d0321?s=160" alt="Profile Picture" style="width: 160px;" />
+	
+</div>
+
+<nav id="main-nav"><ul class="main">
+    <li><a href="/">Blog</a></li>
+    <li><a href="/blog/archives">Archives</a></li>
+</ul>
+</nav>
+<nav id="sub-nav">
+	<div class="social">
+<!-- 		 -->
+		
+		
+		
+			<a class="twitter" href="http://twitter.com/ablwr" title="Twitter">Twitter</a>
+		
+		
+			<a class="github" href="https://github.com/ablwr" title="GitHub">GitHub</a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+    	
+    	
+			<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+</nav>
+</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			
+				
+			
+			<div class="mid-col-container">
+				<div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<h1 class="title" itemprop="name">Learning (and Trolling) With Popcorn.js</h1>
+	<div class="entry-content" itemprop="articleBody"><p>Basically, I have a history of taking jokes too far. See also: <a href="http://instagram.com/p/ruP0rHjtbO/?modal=true">Tattoos of Avi’s face</a>. So when I was exploring <a href="https://www.mozilla.org/">Mozilla</a>’s <a href="http://popcornjs.org">Popcorn.js</a> and missing my Flatiron peers, I coded up a small app that would help me learn how to use Popcorn.js aaaaaaaand also troll my friends.</p>
+
+<p>At Flatiron, we used a shared playlist system called <a href="http://sonos.com">Sonos</a>. Everyone could add tracks from online music collections like Spotify, Hype Machine, or Songza. Near the last third of the semester, as we were all on the brink of insanity and exhaustion, one song in particular kept making a rude appearance. I don’t know who started it or why, but the entire Flatiron office had to suffer through many, many, many instances of Seal’s Kiss from a Rose.</p>
+
+<p>After Flatiron graduation, I was pretty excited to dig into some new projects while on the job hunt, but really missed hanging out with all of my Flatiron buds. To alleviate my withdrawl symptoms, I decided to integrate my Popcorn.js learning into an app to basically troll everyone I know.</p>
+
+<p>To troll successfully, though, I first had to troll myself. Because music videos on youtube don&rsquo;t come with subtitles, I had to make those subtitles happen manually. I once had a job transcribing interviews, so I&rsquo;m pretty fast. But to get the timing right, I still had to submit myself to many, many listens of the same song.</p>
+
+<p>Popcorn.js makes it easy to add supplemental media to video files based on timing.</p>
+
+<p>Within a document listener, you create an instance variable with the .youtube suffix (obviously it&rsquo;s different if you are not using the YouTube API to access a video, but for this example, I used YouTube) and then declare a landing div ID and a link to the video itself.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'>   <span class="kd">var</span> <span class="nx">pop</span> <span class="o">=</span> <span class="nx">Popcorn</span><span class="p">.</span><span class="nx">youtube</span><span class="p">(</span>
+</span><span class='line'>     <span class="s1">&#39;#video&#39;</span><span class="p">,</span>
+</span><span class='line'>     <span class="s1">&#39;https://www.youtube.com/watch?v=i4tTnIimi8E&#39;</span> <span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Afterwards, it&rsquo;s time to start adding footnotes! This takes in four options &mdash; a start time (in seconds), an end time (also in seconds, big surprise), the text you want to display, and the target div. The application of subtitle footnotes is simple, but it&rsquo;s easy to see what kind of complex and interesting things can be done based on video playback times.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'>   <span class="p">.</span><span class="nx">footnote</span><span class="p">({</span>
+</span><span class='line'>      <span class="nx">start</span><span class="o">:</span> <span class="mi">94</span><span class="p">,</span>
+</span><span class='line'>      <span class="nx">end</span><span class="o">:</span> <span class="mi">97</span><span class="p">,</span>
+</span><span class='line'>      <span class="nx">text</span><span class="o">:</span> <span class="s2">&quot;Won&#39;t you tell me is that healthy, baby?&quot;</span><span class="p">,</span>
+</span><span class='line'>      <span class="nx">target</span><span class="o">:</span> <span class="s2">&quot;footnotediv&quot;</span>
+</span><span class='line'>   <span class="p">})</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p> At the end, just trigger play.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'>    <span class="nx">pop</span><span class="p">.</span><span class="nx">play</span><span class="p">();</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Try it yourself! <a href="http://ablwr.github.io/flatiron-karaoke">Sing your heart out here</a>.</p>
+
+<p>There&rsquo;s also an easter egg, but you have to patiently wait for it (or sing sing sing for it).</p>
+
+<p>User feedback: It worked! Everyone typed in a song and got Seal back and tried it again because they thought it was a bug. NOPE. The only person that didn’t get trolled had preemptively trolled by searching for “Kiss from a Rose” so she didn’t know it was the only possible song that could be returned.</p>
+
+<p>In the future, I’d like to spend more time trying to figure out how a real karaoke app could be created by automatically generating accurate subtitles. I’d also like to spend more time on the CSS styles so I could figure out how to fake the text highlighting on karaoke videos. As I mentioned earlier, there&rsquo;s an easter egg &mdash; I&rsquo;d like to work on incorporating more complex supplemental data alongside video files, such as Google maps, Wikipedia page load triggers, and images.</p>
+</div>
+
+</article>
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+
+</div>
+			</div>
+			<footer id="footer" class="inner">Copyright &copy; 2014
+
+    Ashley Blewer
+
+
+Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a></footer>
+		</div>
+	</div>
+	
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+</body>
+</html>
