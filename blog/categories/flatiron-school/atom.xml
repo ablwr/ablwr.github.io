@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Flatiron School | BLOG Progress Process]]></title>
+  <link href="http://ablwr.github.io/blog/categories/flatiron-school/atom.xml" rel="self"/>
+  <link href="http://ablwr.github.io/"/>
+  <updated>2014-09-18T10:50:34-04:00</updated>
+  <id>http://ablwr.github.io/</id>
+  <author>
+    <name><![CDATA[Ashley Blewer]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Breaking it down]]></title>
+    <link href="http://ablwr.github.io/blog/2014/09/18/breaking-it-down/"/>
+    <updated>2014-09-18T10:35:54-04:00</updated>
+    <id>http://ablwr.github.io/blog/2014/09/18/breaking-it-down</id>
+    <content type="html"><![CDATA[<p>When I started at the Flatiron School in June, I told myself I was going to blog about my feelings and what I was learning every week. EVERY week. Then, when I graduated and inevitably had not written a single blog post about how it was going, I said I was gonna write a big ol’ jumbo blog post about the whole twelve weeks and everything I learned and how amazing it was.</p>
+
+<p>Anyway, I graduated a month ago and there is still no e-novella.</p>
+
+<p>This covers two important lessons in programming:</p>
+
+<ol>
+<li><p><strong>Don’t get into code debt.</strong> If I had worked a little bit at a time towards my goal, I would have a weekly summary of what I was learning and doing while at Flatiron. But to speak to the other side of code debt: not writing about my experience was a bummer, but I was definitely spending it learning how to be a better programmer, which was the higher priority at the time, so I don’t feel too bad about it.</p></li>
+<li><p><strong>Break problems down into smaller problems.</strong> Since I wasn’t a diligent blogger, I wanted to just write one big post about Flatiron. But that’s such a large task! There’s SO much I want to cover, so where would I even begin? The most important advice I have to regularly give myself is to break problems down into smaller problems, otherwise I potentially get overwhelmed and not know where to start, which would result in just never starting.</p></li>
+</ol>
+
+
+<p>Anyway, I hope to get those blog posts out in the world soon. If you are reading this because you are doing some cyber-research on the Flatiron School and are thinking of applying, do not hesitate for one second to get in touch! I love talking about it. I just haven&rsquo;t had the time to sit down and really blog it out.</p>
+]]></content>
+  </entry>
+  
+</feed>
