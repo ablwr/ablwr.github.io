@@ -4,7 +4,7 @@
   <title><![CDATA[Category: images | BLOG Progress Process]]></title>
   <link href="http://ablwr.github.io/blog/categories/images/atom.xml" rel="self"/>
   <link href="http://ablwr.github.io/"/>
-  <updated>2014-09-25T13:09:07-04:00</updated>
+  <updated>2014-09-25T13:29:04-04:00</updated>
   <id>http://ablwr.github.io/</id>
   <author>
     <name><![CDATA[Ashley Blewer]]></name>
@@ -20,29 +20,46 @@
     <id>http://ablwr.github.io/blog/2014/09/25/why-wont-octopress-just-upload-my-images</id>
     <content type="html"><![CDATA[<p><em>Why won’t Octopress just upload my images?!?!?!?!?!?!, or how I learned to stop worrying and love the source.</em></p>
 
-<p><img src="images/glitch1.png" alt="glitch" /></p>
+<p><img class="center" src="/images/glitch1.png"></p>
 
 <p>I’ve been using Git for a while and I feel like I have a good grasp on it. I’ve also been using Octopress for a while, integrated into Github pages, and I feel like I have a good grasp on it, too. Rake tasks, right? I’ve WRITTEN rake tasks before! I got this! But for some reason, uploading images for me always seemed like it was a miracle that would work sometimes and not work at other times. Y’know… computer magic.</p>
 
-<p><img src="images/glitch2.png" alt="glitch" /></p>
+<p><img class="center" src="/images/glitch2.png"></p>
 
 <p>Sometimes it would just straight up EAT my images and I’d have to remake a screen cap and get angry and keep pounding my head against the code-wall. That’s dumb, though. That’s no way to solve a problem, especially when dealing with logical beasts that perform as instructed. But I wasn’t sure what I was doing wrong. I would just keep moving things around and committing until it seemed to give up and take my images.</p>
 
-<p><img src="images/glitch3.png" alt="glitch" /></p>
+<p><img class="center" src="/images/glitch3.png"></p>
 
 <p>It’s just not a good way to live.</p>
 
-<p><img src="images/glitch4.png" alt="glitch" /></p>
+<p><img class="center" src="/images/glitch4.png"></p>
 
 <p>Are you having this problem, too? I decided to figure it out.</p>
 
-<p><img src="images/glitch5.png" alt="glitch" /></p>
+<p><img class="center" src="/images/glitch5.png"></p>
 
 <p>I was dropping my images in the wrong file! With Octopress, there are a lot of potential places to put images. It’s tempting to put it in public/images folder. It’s also tempting to put it in the _deploy/images folder. Those are bad, though. Those are bad. You want to put it in the SOURCE folder. If you stick images in source/images, they will get picked up when running rake generate / rake deploy. If they go anywhere else, the rake task doesn’t know what to do so it just overwrites them and your images will just disappear.</p>
 
-<p><img src="images/glitch6.png" alt="glitch" /></p>
+<p><img class="center" src="/images/glitch6.png"></p>
 
 <p>Maybe this is a no-brainer, but sometimes I feel like a no-brainer, myself.</p>
+
+<h1>P.S.</h1>
+
+<p>Another note! It&rsquo;s important to use the right syntax when adding images. One method in Markdown is to use this syntax:</p>
+
+<p> <code>![netflixforbooks](images/markdown.png)</code></p>
+
+<p>But for Octopress, you want to use this:</p>
+
+<p> <img class="left" src="/images/markdown.png"></p>
+
+<p>Otherwise, images will work on the front page of your blog but they won&rsquo;t work when you visit the individual pages. The more you know&hellip;!</p>
+
+<ul>
+<li>I had to use an image tag because otherwise Markdown automatically transforms it into regular html, aka <code><img class="center" src="/images/markdown.png"></code></li>
+</ul>
+
 ]]></content>
   </entry>
   
