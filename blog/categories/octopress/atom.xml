@@ -4,7 +4,7 @@
   <title><![CDATA[Category: octopress | BLOG Progress Process]]></title>
   <link href="http://ablwr.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://ablwr.github.io/"/>
-  <updated>2014-09-25T13:29:04-04:00</updated>
+  <updated>2014-09-25T13:31:13-04:00</updated>
   <id>http://ablwr.github.io/</id>
   <author>
     <name><![CDATA[Ashley Blewer]]></name>
@@ -52,12 +52,12 @@
 
 <p>But for Octopress, you want to use this:</p>
 
-<p> <img class="left" src="/images/markdown.png"></p>
+<p> <img class="center" src="/images/markdown.png"></p>
 
 <p>Otherwise, images will work on the front page of your blog but they won&rsquo;t work when you visit the individual pages. The more you know&hellip;!</p>
 
 <ul>
-<li>I had to use an image tag because otherwise Markdown automatically transforms it into regular html, aka <code><img class="center" src="/images/markdown.png"></code></li>
+<li>I had to use an image tag because otherwise Markdown automatically transforms it into regular html, aka <code><img class="center" src="/images/markdown.png"></code> So meta!</li>
 </ul>
 
 ]]></content>
