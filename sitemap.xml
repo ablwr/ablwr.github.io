@@ -78,11 +78,17 @@
     </url>
     <url>
         <loc>http://ablwr.github.io/blog/2014/09/25/netflix-for-books/</loc>
-        <lastmod>2014-09-25T12:10:48-04:00</lastmod>
+        <lastmod>2014-09-25T12:44:11-04:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://ablwr.github.io/blog/2014/09/25/why-wont-octopress-just-upload-my-images/
+        </loc>
+        <lastmod>2014-09-25T13:07:45-04:00</lastmod>
     </url>
     <url>
         <loc>http://ablwr.github.io/blog/archives/</loc>
-        <lastmod>2014-09-25T12:10:48-04:00</lastmod>
+        <lastmod>2014-09-25T13:07:45-04:00</lastmod>
     </url>
     <url>
         <loc>http://ablwr.github.io/blog/categories/</loc>
@@ -90,7 +96,7 @@
     </url>
     <url>
         <loc>http://ablwr.github.io/</loc>
-        <lastmod>2014-09-25T12:10:48-04:00</lastmod>
+        <lastmod>2014-09-25T13:07:45-04:00</lastmod>
     </url>
     <url>
         <loc>http://ablwr.github.io/robots.txt</loc>

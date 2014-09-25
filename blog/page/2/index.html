@@ -9,7 +9,7 @@
 	<meta name="author" content="Ashley Blewer">
 
 	
-	<meta name="description" content="Jun 28th, 2014 side projects, twitter bots Twitter Bots 4: MAD SCIENCE My twitter bot was born on the same day as my BFF (bot-ferverent friend) &hellip;">
+	<meta name="description" content="Jun 29th, 2014 side projects, twitter bots Twitter Bots 5: Scheduling Tweets With Cron Cron is a software utility that is used to schedule actions &hellip;">
 	
 
   <!-- http://t.co/dKP3o1e -->
@@ -83,6 +83,74 @@
 			<div class="mid-col-container">
 				<div id="content" class="inner">
 <div itemscope itemtype="http://schema.org/Blog">
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-06-29T21:24:56-04:00" data-updated="true" itemprop="datePublished">Jun 29<span>th</span>, 2014</time></div>
+		<div class="tags">
+
+
+	<a class='category' href='/blog/categories/side-projects/'>side projects</a>, <a class='category' href='/blog/categories/twitter-bots/'>twitter bots</a>
+
+
+</div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/blog/2014/06/29/twitter-bots-5-scheduling-tweets-with-cron/" itemprop="url">Twitter Bots 5: Scheduling Tweets With Cron</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p>Cron is a software utility that is used to schedule actions in time. It&rsquo;s great for handling reoccuring tasks. Twitter bots use a Cron statement to generate a tweet regularly. Cron tasks are super useful, but the syntax can be a little confusing and hard to remember.</p>
+
+<p>The default bot tweets once a day, which is represented by <code>0 0 * * *</code></p>
+
+<p>I changed my bot to tweet once an hour, which is represented by <code>0 * * * *</code></p>
+
+<p>If I want my bot to tweet every hour from 9-5 on weekdays, it would look like <code>0 9-18 * * 1-5</code></p>
+
+<p>Are you scratching your head? How can those numbers and letters mean anything?</p>
+
+<p>In a row of five ( * * * * *), numbers break down like this:</p>
+
+<ol>
+<li> Minutes 2. Hours 3. Day (of month) 4. Months 5. Day (of week)</li>
+</ol>
+
+
+<p>That makes sense. Sort of. Except for having two different ways to represent time in a day, especially when they are not next to each other! Day of the month can be any number between 1-31 and is contingent on the month field. Day of the week is any number 0-6 and represents Sunday-Saturday.</p>
+
+<p>The astericks means &ldquo;every.&rdquo; If a field has an astericks, it will trigger the event at that time interval.</p>
+
+<p>Expressions aren&rsquo;t limited to asterisks and numbers. Other special characters include the slash (<code>/</code>), the comma (<code>,</code>), and the hyphen (<code>-</code>). The slash is used for increments of ranges. If I wanted to schedule an event to occur every five hours, I would use the string <code>0 */5 * * *</code>. Commas are used to separate items in a list. If I wanted an event to occur five minutes past the hour and five minutes before the hour, I could use the expression <code>5,55 * * * *</code>. Hyphens denote ranges. If I wanted to schedule an event to occur at the top of every hour during the Monday-Friday workweek, I would write <code>0 0 * * 1-5</code>.</p>
+
+<p>If you don&rsquo;t want to figure out all of this syntax and just want to stay a die-hard Rubyist, you can also just install the gem &ldquo;whenever&rdquo; (<a href="https://github.com/javan/whenever">available here</a>). Another way to integrate Cron syntax into Ruby apps is the gem <a href="https://github.com/jmettraux/rufus-scheduler">Rufus-scheduler</a>.</p>
+
+<p>Important note: If you are updating your bot&rsquo;s Cron settings, you have to re-run the archive and modeling files to see reflected updates.</p>
+
+<hr />
+
+<p>More info:</p>
+
+<p><a href="http://en.wikipedia.org/wiki/Cron">Cron on Wikipedia</a></p>
+
+<p><a href="http://railscasts.com/episodes/164-cron-in-ruby">RailsCasts #164 Cron in Ruby</a></p>
+
+		
+		
+	</div>
+
+</article>
 
 
     <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
