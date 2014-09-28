@@ -4,7 +4,7 @@
   <title><![CDATA[Category: libraries | BLOG Progress Process]]></title>
   <link href="http://ablwr.github.io/blog/categories/libraries/atom.xml" rel="self"/>
   <link href="http://ablwr.github.io/"/>
-  <updated>2014-09-28T18:10:23-04:00</updated>
+  <updated>2014-09-28T18:13:09-04:00</updated>
   <id>http://ablwr.github.io/</id>
   <author>
     <name><![CDATA[Ashley Blewer]]></name>
@@ -30,7 +30,7 @@
 
 <p>I really wanted to integrate the WorldCat API into this project, but unfortunately the API is not open and available to the public. This isn’t the time or place to ramble on about the benefits of open source and open access to databases and applications, but I would have been able to put a lot more time and effort into making a more beautiful and friendlier front-end for the face of public libraries. Alas, alas.</p>
 
-<p>Let’s use libraries!</p>
+<p><a href="ablwr.github.io/netflix-for-books">Let’s use libraries!</a></p>
 ]]></content>
   </entry>
   
