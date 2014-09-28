@@ -4,7 +4,7 @@
   <title><![CDATA[BLOG Progress Process]]></title>
   <link href="http://ablwr.github.io/atom.xml" rel="self"/>
   <link href="http://ablwr.github.io/"/>
-  <updated>2014-09-28T14:49:05-04:00</updated>
+  <updated>2014-09-28T18:08:57-04:00</updated>
   <id>http://ablwr.github.io/</id>
   <author>
     <name><![CDATA[Ashley Blewer]]></name>
@@ -22,10 +22,11 @@
 
 <p>With around 200 speakers, it would be great if I could just grab this data algorithmically and not have to parse it piece-by-piece using my slow human brain! Over the weekend, I went to work combining Ruby web scraping tool, <a href="http://nokogiri.org/">Nokogiri</a>, with a library that does a pretty good job at determining probable gender based on first name (<a href="https://github.com/bmuller/sexmachine">SexMachine</a>). It was fun to wrangle data around, but not without conflicts.</p>
 
-<p>Some problems:
-  a. I wrote a parser for the most recent conference’s webpage, but that parser can’t be used for previous conferences. The layout for the previous year is different from the current layout, and the year before that is available only as a .pdf. The years prior to that aren’t (immediately and openly) available at all!
-  b. The website was not marked up in a way that made it easy to pull in only the speaker names. I had to throw in a lot of remove-if exceptions because I was basically having to pull in anything that was in a p tag and removing very long strings and very short strings (and a few other things).
-  c. Obviously gender is a larger spectrum than the binary male-female and assessment via name is not an ideal method, but I&rsquo;m just playin&#8217; with data here! I think the results will still hold value, but I always feel a little bit icky when I also have to push things into a gender binary.</p>
+<p>Some problems:</p>
+
+<p>⋅⋅<em>  a. I wrote a parser for the most recent conference’s webpage, but that parser can’t be used for previous conferences. The layout for the previous year is different from the current layout, and the year before that is available only as a .pdf. The years prior to that aren’t (immediately and openly) available at all!
+⋅⋅</em>  b. The website was not marked up in a way that made it easy to pull in only the speaker names. I had to throw in a lot of remove-if exceptions because I was basically having to pull in anything that was in a p tag and removing very long strings and very short strings (and a few other things).
+⋅⋅*  c. Obviously gender is a larger spectrum than the binary male-female and assessment via name is not an ideal method, but I&rsquo;m just playin&#8217; with data here! I think the results will still hold value, but I always feel a little bit icky when I also have to push things into a gender binary.</p>
 
 <p>I can now take the rough breakdown of the data and just modify as needed. To do more complex problems, though, will involve more than just the parsed names in arrays separated by arrays (see below).</p>
 
