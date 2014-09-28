@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Ruby | BLOG Progress Process]]></title>
   <link href="http://ablwr.github.io/blog/categories/ruby/atom.xml" rel="self"/>
   <link href="http://ablwr.github.io/"/>
-  <updated>2014-09-28T18:08:57-04:00</updated>
+  <updated>2014-09-28T18:10:23-04:00</updated>
   <id>http://ablwr.github.io/</id>
   <author>
     <name><![CDATA[Ashley Blewer]]></name>
@@ -24,9 +24,12 @@
 
 <p>Some problems:</p>
 
-<p>⋅⋅<em>  a. I wrote a parser for the most recent conference’s webpage, but that parser can’t be used for previous conferences. The layout for the previous year is different from the current layout, and the year before that is available only as a .pdf. The years prior to that aren’t (immediately and openly) available at all!
-⋅⋅</em>  b. The website was not marked up in a way that made it easy to pull in only the speaker names. I had to throw in a lot of remove-if exceptions because I was basically having to pull in anything that was in a p tag and removing very long strings and very short strings (and a few other things).
-⋅⋅*  c. Obviously gender is a larger spectrum than the binary male-female and assessment via name is not an ideal method, but I&rsquo;m just playin' with data here! I think the results will still hold value, but I always feel a little bit icky when I also have to push things into a gender binary.</p>
+<ol>
+<li><p>I wrote a parser for the most recent conference’s webpage, but that parser can’t be used for previous conferences. The layout for the previous year is different from the current layout, and the year before that is available only as a .pdf. The years prior to that aren’t (immediately and openly) available at all!</p></li>
+<li><p>The website was not marked up in a way that made it easy to pull in only the speaker names. I had to throw in a lot of remove-if exceptions because I was basically having to pull in anything that was in a p tag and removing very long strings and very short strings (and a few other things).</p></li>
+<li><p>Obviously gender is a larger spectrum than the binary male-female and assessment via name is not an ideal method, but I&rsquo;m just playin' with data here! I think the results will still hold value, but I always feel a little bit icky when I also have to push things into a gender binary.</p></li>
+</ol>
+
 
 <p>I can now take the rough breakdown of the data and just modify as needed. To do more complex problems, though, will involve more than just the parsed names in arrays separated by arrays (see below).</p>
 
@@ -37,10 +40,10 @@
 <p>Plans going forward:</p>
 
 <ol>
-<li>Run quick analysis on the organization’s membership directory to get a rough idea of the overall distribution of the field.</li>
-<li>Break data down with and without consideration to one person speaking multiple times. (Which is better to consider?)</li>
-<li>Break data down with consideration to time chunks and weighing one person speaking for a full block of time differently than seven people speaking in the same block of time. (Side-consideration to assess the value of poster presentation time). This involves getting down with statistics and math.</li>
-<li>VISUALIZATIONS.</li>
+<li><p>Run quick analysis on the organization’s membership directory to get a rough idea of the overall distribution of the field.</p></li>
+<li><p>Break data down with and without consideration to one person speaking multiple times. (Which is better to consider?)</p></li>
+<li><p>Break data down with consideration to time chunks and weighing one person speaking for a full block of time differently than seven people speaking in the same block of time. (Side-consideration to assess the value of poster presentation time). This involves getting down with statistics and math.</p></li>
+<li><p>VISUALIZATIONS.</p></li>
 </ol>
 
 ]]></content>
