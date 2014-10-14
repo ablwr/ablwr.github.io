@@ -93,8 +93,14 @@
         <lastmod>2014-09-28T18:10:15-04:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://ablwr.github.io/blog/2014/10/13/open-source-software-at-the-association-of-moving-image-archivists-2014-conference/
+        </loc>
+        <lastmod>2014-10-14T09:54:42-04:00</lastmod>
+    </url>
+    <url>
         <loc>http://ablwr.github.io/blog/archives/</loc>
-        <lastmod>2014-09-28T18:12:36-04:00</lastmod>
+        <lastmod>2014-10-14T09:54:42-04:00</lastmod>
     </url>
     <url>
         <loc>http://ablwr.github.io/blog/categories/</loc>
@@ -102,7 +108,7 @@
     </url>
     <url>
         <loc>http://ablwr.github.io/</loc>
-        <lastmod>2014-09-28T18:12:36-04:00</lastmod>
+        <lastmod>2014-10-14T09:54:42-04:00</lastmod>
     </url>
     <url>
         <loc>http://ablwr.github.io/robots.txt</loc>

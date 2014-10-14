@@ -4,7 +4,7 @@
   <title><![CDATA[BLOG Progress Process]]></title>
   <link href="http://ablwr.github.io/atom.xml" rel="self"/>
   <link href="http://ablwr.github.io/"/>
-  <updated>2014-09-28T18:13:09-04:00</updated>
+  <updated>2014-10-14T09:55:09-04:00</updated>
   <id>http://ablwr.github.io/</id>
   <author>
     <name><![CDATA[Ashley Blewer]]></name>
@@ -12,6 +12,80 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Open Source Software at the Association of Moving Image Archivists 2014 Conference]]></title>
+    <link href="http://ablwr.github.io/blog/2014/10/13/open-source-software-at-the-association-of-moving-image-archivists-2014-conference/"/>
+    <updated>2014-10-13T16:02:07-04:00</updated>
+    <id>http://ablwr.github.io/blog/2014/10/13/open-source-software-at-the-association-of-moving-image-archivists-2014-conference</id>
+    <content type="html"><![CDATA[<p>Last week, I attended the Association of Moving Image Archivists annual conference, held this year in Savannah, GA. And <em>y&#8217;all</em>, I continue to be impressed with all of the open source projects and contributions happening in the field!! I am so pleased to see it grow in significance every year (along with my knowledge and capabilities of wrangling these projects).</p>
+
+<p>Here is a round-up of the technologies discussed during the conference and links to more information.</p>
+
+<h2>Git</h2>
+
+<ul>
+<li><a href="http://git-scm.com/">Git</a> as a technology</li>
+<li><a href="https://github.com/">Github</a> as a popular platform</li>
+<li><a href="https://education.github.com/pack">Github student pack</a> &mdash; A bundle of great software offered by Github to students for free</li>
+<li><a href="https://github.com/FredrikNoren/ungit">Ungit</a> &mdash; A version control visualizer</li>
+</ul>
+
+
+<h2>Technologies</h2>
+
+<ul>
+<li><a href="http://www.bittorrent.com/">BitTorrent</a> &mdash; Distributed filesharing</li>
+<li><a href="https://www.ffmpeg.org/">ffmpeg</a> &mdash; Audio/video manipulation framework</li>
+<li><a href="http://www.imagemagick.org/">ImageMagick</a> &mdash; Image manipulation framework</li>
+<li><a href="http://www.openannotation.org/">Open Annotation</a> &mdash; Open source annotation</li>
+<li><a href="https://www.websocket.org/">Web Sockets</a> &mdash; Or how Ronallo got those interactive slides</li>
+<li><a href="http://dev.w3.org/html5/webvtt/">WebVTT</a> &mdash; Open subtitles for the web</li>
+</ul>
+
+
+<h2>Projects</h2>
+
+<ul>
+<li><a href="https://github.com/avpreserve/AMS">American Archives Project</a></li>
+<li><a href="https://www.archivematica.org/wiki/Main_Page">Archivematica</a></li>
+<li><a href="https://www.accesstomemory.org/en/">AtoM</a></li>
+<li><a href="http://avaa.bavc.org/artifactatlas/index.php/A/V_Artifact_Atlas">AVAA</a></li>
+<li><a href="https://github.com/avalonmediasystem">Avalon</a></li>
+<li><a href="http://www.sno.phy.queensu.ca/~phil/exiftool/">ExifTool</a></li>
+<li><a href="https://github.com/avpreserve/fixity">Fixity</a></li>
+<li><a href="http://ffmprovisor.herokuapp.com">ffmprovisor</a></li>
+<li><a href="https://archive.org/index.php">Internet Archive</a></li>
+<li><a href="http://mediaarea.net/en/MediaInfo">MediaInfo</a></li>
+<li><a href="https://github.com/projecthydra">Project Hydra</a></li>
+<li><a href="https://github.com/bavc/qctools">QCTools</a></li>
+<li><a href="http://openvault.wgbh.org/">WGBH Open Vault</a></li>
+</ul>
+
+
+<h2>Projects with open source sentiment</h2>
+
+<ul>
+<li><a href="https://github.com/epiil/tape-cleaner">Arduino tape cleaner</a></li>
+<li><a href="http://calpreservation.org/projects/audiovisual-preservation/">California Audiovisual Preservation Project</a></li>
+<li><a href="http://dmia.drupalgardens.com/">Digital Moving Image Archives Guide</a></li>
+<li><a href="http://xfrcollective.wordpress.com/">XFR Collective</a></li>
+</ul>
+
+
+<h2>Hack Day!</h2>
+
+<ul>
+<li><a href="http://wiki.curatecamp.org/index.php?title=Association_of_Moving_Image_Archivists_%26_Digital_Library_Federation_Hack_Day_2014">Hack Day page</a></li>
+<li><a href="https://github.com/amiaopensource/avspace">AV_Space</a></li>
+<li><a href="https://github.com/amiaopensource/characterization_compare">characterization compare</a></li>
+<li><a href="https://github.com/amiaopensource/hackdaycapture">hackdaycapture</a></li>
+<li><a href="https://github.com/tessafallon/pbcorevalidator/">pbcorevalidator</a></li>
+<li><a href="https://github.com/jronallo/video-sprites">Video Sprites!</a></li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Breaking down conference speakers by gender using Nokogiri and SexMachine]]></title>
@@ -696,37 +770,6 @@ self.</p>
 <p>Because of all of this, I have been thinking a lot about the kind of person I was ten years ago and the kind of person I am now. And thinking about the kind of person that I will be in another ten years (37? Ahhhhh!). The kind of person I WANT to be in ten years, and where I want to be in ten years. I even looked back at my old LiveJournal, which was a little bit horrifying and it was hard to recognize myself, but there I am. I&rsquo;ve been thinking a lot about the potential path that I am currently on and the potential path if I take this leap of faith, and I only see an expanded potential for learning and growth as a person, which is just what I am looking for in life. I have a lot of feelings about this, but will curb them for now (for here).</p>
 
 <p>So, as I post this new blog post at the start of a new adventure, cheers to May 8, cheers to giant leaps of faith, and cheers to always growing and learning.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Blogging for hackers.]]></title>
-    <link href="http://ablwr.github.io/blog/2014/05/11/blogging-for-hackers/"/>
-    <updated>2014-05-11T15:35:15-04:00</updated>
-    <id>http://ablwr.github.io/blog/2014/05/11/blogging-for-hackers</id>
-    <content type="html"><![CDATA[<p>Hello. I am starting this blog specifically to talk about my upcoming dive into web development. I have been doing &ldquo;programmery stuff&rdquo; for a while (a few months, a few years, 15 years, depends on your definition) but I start at the Flatiron School in 3 weeks for their Ruby 005 Cohort and am seriously jumping in. From some intense googling, I am under the impression that we may have to keep a technical blog, so I figured I&rsquo;d go ahead and get one started now, even if it&rsquo;s not a requirement.</p>
-
-<p>Like a good hacker newbie, I diligently checked out Octopress, which defines itself as &ldquo;a blogging framework for hackers.&rdquo; It&rsquo;s based on Jekyll, integrates easily with Github Pages, and overall seemed like the right choice for what I will be doing since it requires a little more know-how than a one-click Wordpress install.</p>
-
-<p>And no joke! It was a workout. I&rsquo;m at novice-comfortable level with Ruby/Rails, Git, and the command line and have never used Sass/SCSS, Haml, or Markdown. But I expected to install it in twenty minutes and feel like this:</p>
-
-<p><img src="http://37.media.tumblr.com/67251c0e29d86a669149105bf1abf00b/tumblr_msxaxuidVy1shab7zo1_500.gif" alt="Hacking the planet" /></p>
-
-<p>But ended up spending over an hour and a truly embarrassing number of commits (I just checked &mdash; 52 total!) and feeling more like this:</p>
-
-<p><img src="http://i.kinja-img.com/gawker-media/image/upload/s--PZD0YHjX--/hgcxrafqyfevwmtsngsq.gif" alt="Hacking cough" /></p>
-
-<p>I got it working enough to do this and modify the theme a little bit, but barely. I haven&rsquo;t sorted out the problem of having to run &lsquo;bundle exec&rsquo; in front of every rake command or figured out why I have two different folders for this blog, but I&rsquo;m at least dedicated to figuring that out. And figuring out many more future problems publicly, here. I&rsquo;m a pretty private person when it comes to most things, but am forcing myself to be okay with being very publicly &ldquo;dumb&rdquo; when it comes to programming and web development. The tech field needs a lot of things, but something it really needs is the death of the &ldquo;elitist hacker&rdquo; mentality, and the rise of collaboration, empathy, and knowing that it&rsquo;s okay to not know something.</p>
-
-<p>Still, I&rsquo;m looking forward to going from hammering out problems like this:</p>
-
-<p><img src="http://files.gamebanana.com/img/ico/sprays/mario_hammer.gif" alt="Mario hammer" /></p>
-
-<p>To hammering them out like this:</p>
-
-<p><img src="http://fireden.net/4chan/images.4chan.org//vg/src/1362844057459.gif" alt="Hammer time" /></p>
-
-<p>Wish me luck! Either personally or below when I get a chance to figure out how to turn comments on. It&rsquo;s gonna be a long journey.</p>
 ]]></content>
   </entry>
   
