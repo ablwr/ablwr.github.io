@@ -4,7 +4,7 @@
   <title><![CDATA[BLOG Progress Process]]></title>
   <link href="http://ablwr.github.io/atom.xml" rel="self"/>
   <link href="http://ablwr.github.io/"/>
-  <updated>2014-10-14T14:39:17-04:00</updated>
+  <updated>2014-10-15T22:52:12-04:00</updated>
   <id>http://ablwr.github.io/</id>
   <author>
     <name><![CDATA[Ashley Blewer]]></name>
@@ -12,6 +12,49 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Video Sprites]]></title>
+    <link href="http://ablwr.github.io/blog/2014/10/15/video-sprites/"/>
+    <updated>2014-10-15T15:16:15-04:00</updated>
+    <id>http://ablwr.github.io/blog/2014/10/15/video-sprites</id>
+    <content type="html"><![CDATA[<p>Last week, I participated in the second <a href="http://wiki.curatecamp.org/index.php?title=Association_of_Moving_Image_Archivists_%26_Digital_Library_Federation_Hack_Day_2014">AMIA AV Hack Day</a> and paired up with NCSU libriarian/developer Jason Ronallo, CNN archivist/engineer Nicholas Zoss, and CNN archivist/engineer/manager Jay Brown. Building on Ronallo&rsquo;s <a href="http://ronallo.com/blog/a-plugin-for-mediaelement-js-for-preview-thumbnails-on-hover-over-the-time-rail/">work with WebVTT and video scrolling thumbnails</a>, we created a Ruby gem that exports thumbnail images, thumbnail sprite image, and a WebVTT metadata file with synced media fragment URLs to thumbnails within the sprite. This could allow for the integration of video thumbnail creation to happen automatically within the web access video workflow. It is also easy to install and use, making it accessible to a wider audience (always a primary goal of mine).</p>
+
+<p>One of the things I am most proud of is how seamlessly our team was able to distribute work and pair together when necessary. I was able to jump right in as the junior developer role, helping as support and Ruby syntax consultant, as well as filling out documentation and other smaller tasks. Jason Ronallo steered the ship, but welcomed many proofreading eyes to look over his code for debugging. Nick Zoss contributed plenty of engineering knowledge and helped do &ldquo;all the math parts.&rdquo; Jay Brown went to work finding and creating sample videos for testing the scripts and worked on general QA. And at the crucial end point of the day, I wrangled Dave Rice to quickly act as ffmpeg script consultant (a cool trick I learned and helped my team win one of the awards from <a href="http://wiki.curatecamp.org/index.php?title=Association_of_Moving_Image_Archivists_%26_Digital_Library_Federation_Hack_Day_2013">the first AV Hack Day</a>).</p>
+
+<p>Anyway, let&rsquo;s get down to it! This is how the app works. It&rsquo;s EASY! After you <code>gem install video-sprites</code>, you can run it in your terminal (assuming you have ffmpeg and ImageMagick installed and working)</p>
+
+<p>For example, I ran this: <code>video-sprites -i /Users/ashley/Development/kiss_from_a_rose.mpg -o /Users/ashley/Development</code></p>
+
+<p>And I got this:</p>
+
+<p><img class="center" src="http://ablwr.github.io/images/rose_export.png"></p>
+
+<p>Simple, right? And check it out&hellip;</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>00:00:00.000 --&gt; 00:00:05.000
+</span><span class='line'>http://example.com/kiss_from_a_rose-sprite-00001.jpg#xywh=0,0,200,133
+</span><span class='line'>
+</span><span class='line'>00:00:05.000 --&gt; 00:00:10.000
+</span><span class='line'>http://example.com/kiss_from_a_rose-sprite-00001.jpg#xywh=200,0,200,133
+</span><span class='line'>
+</span><span class='line'>00:00:10.000 --&gt; 00:00:15.000
+</span><span class='line'>http://example.com/kiss_from_a_rose-sprite-00001.jpg#xywh=400,0,200,133</span></code></pre></td></tr></table></div></figure>
+
+
+<p>There&rsquo;s also this WebVTT file! If I replace the example.com with the website that is hosting the image sprite (or had I specified it when I ran the gem using the -u or &mdash;url flag), I could integrate it into a scrolling video thumbnail feature!</p>
+
+<p>Play around with it yourself! The <a href="https://github.com/jronallo/video-sprites">code is up on Github</a> and we welcome feedback. Moving forward, there&rsquo;s a lot to do to keep this gem in tip-top shape and there are many features we plan to add. Like a good junior developer, I&rsquo;ve given myself the goal of writing tests to make it a healthy and happy gem. Oh, tests&hellip;</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Open Source Software at the Association of Moving Image Archivists 2014 Conference]]></title>
@@ -751,25 +794,6 @@ self.</p>
 <p><strong>Other stuff</strong></p>
 
 <p>There are so many other online resources and essential guides, <a href="http://www.openculture.com/freeonlinecourses">MOOCs</a>, but I just wanted to highlight a few. Maybe I will do a follow-up post with some other resources that I consider to be super-duper-helpful or essential to my learning. In the meantime, enjoy these and don&rsquo;t hesitate to get in touch with any questions.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[May 8th and decision-making.]]></title>
-    <link href="http://ablwr.github.io/blog/2014/05/12/may-8th-and-decision-making/"/>
-    <updated>2014-05-12T13:09:35-04:00</updated>
-    <id>http://ablwr.github.io/blog/2014/05/12/may-8th-and-decision-making</id>
-    <content type="html"><![CDATA[<p>This post is gonna be super-cheesy. I wrote this on May 8th, which is an important day for me.</p>
-
-<p>I&rsquo;m getting ready to do something kinda crazy. I&rsquo;m quitting my pretty-swell job, moving across the country, packing up my stuff, leaving many of my wonderful friends, finding extended cat-sitters for my two cats, and plopping down some serious cash. For a 3-month immersive web development course in New York. Of course, there are some obvious perks: I love New York and want to live there again, I also have wonderful friends in the city, the tech field is booming with well-paying jobs, and it&rsquo;s an interesting and creative field. This final one being the most important to me and I&rsquo;ll try to address it in another &ldquo;talking about feelings&rdquo; post.</p>
-
-<p>Regardless, it&rsquo;s a big jump. And I can&rsquo;t help but think about another big jump that I made exactly one decade ago(!). It&rsquo;s so hard to believe that ten years have passed, but here it goes. When I was a teenager, I saved up all of the money I made working (side note: it&rsquo;s way easier to save money when you don&rsquo;t have to pay rent+utilities). I saved up all my money and put it towards a 3-month immersive Japanese language course in Tokyo. SO EXCITING, getting to learn a new language (which I later minored in), living in a new country (still my favorite place in the world), experiencing so many new things. On Saturday, May 8, 2004, me and two suitcases got on a plane to Tokyo and off I went and it&rsquo;s probably one of the best decisions I&rsquo;ve made in my life.</p>
-
-<p>As I was making this decision about going to a coding bootcamp, all of these memories kept coming back to me. I thought a lot about how important that time in Tokyo was, how much it meant to me, and how much I learned. My Japanese isn&rsquo;t anywhere near fluent these days, but I still have an extremely strong foundation in the language that I am confident would come back if I spent a few weeks immersed back into it. I thought about all the things I learned, the people I met, everything I saw, all the hours I spent wandering around Tokyo by myself, the museums I went to, the host family I have a life-long connection with, and an endless amount of other things, big and small. Matsuri, konbini, chikatetsu, tsuyu. When I think back on how much those 3 months affected me and made me grow as a person, it became nearly impossible for me to decline to make a similar decision ten years later.</p>
-
-<p>Because of all of this, I have been thinking a lot about the kind of person I was ten years ago and the kind of person I am now. And thinking about the kind of person that I will be in another ten years (37? Ahhhhh!). The kind of person I WANT to be in ten years, and where I want to be in ten years. I even looked back at my old LiveJournal, which was a little bit horrifying and it was hard to recognize myself, but there I am. I&rsquo;ve been thinking a lot about the potential path that I am currently on and the potential path if I take this leap of faith, and I only see an expanded potential for learning and growth as a person, which is just what I am looking for in life. I have a lot of feelings about this, but will curb them for now (for here).</p>
-
-<p>So, as I post this new blog post at the start of a new adventure, cheers to May 8, cheers to giant leaps of faith, and cheers to always growing and learning.</p>
 ]]></content>
   </entry>
   

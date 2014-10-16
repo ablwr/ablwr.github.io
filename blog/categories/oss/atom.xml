@@ -4,7 +4,7 @@
   <title><![CDATA[Category: oss | BLOG Progress Process]]></title>
   <link href="http://ablwr.github.io/blog/categories/oss/atom.xml" rel="self"/>
   <link href="http://ablwr.github.io/"/>
-  <updated>2014-10-14T14:39:17-04:00</updated>
+  <updated>2014-10-15T22:52:12-04:00</updated>
   <id>http://ablwr.github.io/</id>
   <author>
     <name><![CDATA[Ashley Blewer]]></name>
@@ -12,6 +12,42 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Video Sprites]]></title>
+    <link href="http://ablwr.github.io/blog/2014/10/15/video-sprites/"/>
+    <updated>2014-10-15T15:16:15-04:00</updated>
+    <id>http://ablwr.github.io/blog/2014/10/15/video-sprites</id>
+    <content type="html"><![CDATA[<p>Last week, I participated in the second <a href="http://wiki.curatecamp.org/index.php?title=Association_of_Moving_Image_Archivists_%26_Digital_Library_Federation_Hack_Day_2014">AMIA AV Hack Day</a> and paired up with NCSU libriarian/developer Jason Ronallo, CNN archivist/engineer Nicholas Zoss, and CNN archivist/engineer/manager Jay Brown. Building on Ronallo&rsquo;s <a href="http://ronallo.com/blog/a-plugin-for-mediaelement-js-for-preview-thumbnails-on-hover-over-the-time-rail/">work with WebVTT and video scrolling thumbnails</a>, we created a Ruby gem that exports thumbnail images, thumbnail sprite image, and a WebVTT metadata file with synced media fragment URLs to thumbnails within the sprite. This could allow for the integration of video thumbnail creation to happen automatically within the web access video workflow. It is also easy to install and use, making it accessible to a wider audience (always a primary goal of mine).</p>
+
+<p>One of the things I am most proud of is how seamlessly our team was able to distribute work and pair together when necessary. I was able to jump right in as the junior developer role, helping as support and Ruby syntax consultant, as well as filling out documentation and other smaller tasks. Jason Ronallo steered the ship, but welcomed many proofreading eyes to look over his code for debugging. Nick Zoss contributed plenty of engineering knowledge and helped do &ldquo;all the math parts.&rdquo; Jay Brown went to work finding and creating sample videos for testing the scripts and worked on general QA. And at the crucial end point of the day, I wrangled Dave Rice to quickly act as ffmpeg script consultant (a cool trick I learned and helped my team win one of the awards from <a href="http://wiki.curatecamp.org/index.php?title=Association_of_Moving_Image_Archivists_%26_Digital_Library_Federation_Hack_Day_2013">the first AV Hack Day</a>).</p>
+
+<p>Anyway, let&rsquo;s get down to it! This is how the app works. It&rsquo;s EASY! After you <code>gem install video-sprites</code>, you can run it in your terminal (assuming you have ffmpeg and ImageMagick installed and working)</p>
+
+<p>For example, I ran this: <code>video-sprites -i /Users/ashley/Development/kiss_from_a_rose.mpg -o /Users/ashley/Development</code></p>
+
+<p>And I got this:</p>
+
+<p><img class="center" src="/images/rose_export.png"></p>
+
+<p>Simple, right? And check it out&hellip;</p>
+
+<p>```
+00:00:00.000 &mdash;> 00:00:05.000
+<a href="http://example.com/kiss_from_a_rose-sprite-00001.jpg#xywh=0,0,200,133">http://example.com/kiss_from_a_rose-sprite-00001.jpg#xywh=0,0,200,133</a></p>
+
+<p>00:00:05.000 &mdash;> 00:00:10.000
+<a href="http://example.com/kiss_from_a_rose-sprite-00001.jpg#xywh=200,0,200,133">http://example.com/kiss_from_a_rose-sprite-00001.jpg#xywh=200,0,200,133</a></p>
+
+<p>00:00:10.000 &mdash;> 00:00:15.000
+<a href="http://example.com/kiss_from_a_rose-sprite-00001.jpg#xywh=400,0,200,133">http://example.com/kiss_from_a_rose-sprite-00001.jpg#xywh=400,0,200,133</a>
+```</p>
+
+<p>There&rsquo;s also this WebVTT file! If I replace the example.com with the website that is hosting the image sprite (or had I specified it when I ran the gem using the -u or &mdash;url flag), I could integrate it into a scrolling video thumbnail feature!</p>
+
+<p>Play around with it yourself! The <a href="https://github.com/jronallo/video-sprites">code is up on Github</a> and we welcome feedback. Moving forward, there&rsquo;s a lot to do to keep this gem in tip-top shape and there are many features we plan to add. Like a good junior developer, I&rsquo;ve given myself the goal of writing tests to make it a healthy and happy gem. Oh, tests&hellip;</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Open Source Software at the Association of Moving Image Archivists 2014 Conference]]></title>
