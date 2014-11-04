@@ -4,7 +4,7 @@
   <title><![CDATA[BLOG Progress Process]]></title>
   <link href="http://ablwr.github.io/atom.xml" rel="self"/>
   <link href="http://ablwr.github.io/"/>
-  <updated>2014-11-03T23:05:49-05:00</updated>
+  <updated>2014-11-04T08:18:59-05:00</updated>
   <id>http://ablwr.github.io/</id>
   <author>
     <name><![CDATA[Ashley Blewer]]></name>
@@ -18,7 +18,7 @@
     <link href="http://ablwr.github.io/blog/2014/11/03/non-technical-persons-guide-to-becoming-an-open-source-software-contributor-via-github/"/>
     <updated>2014-11-03T21:53:42-05:00</updated>
     <id>http://ablwr.github.io/blog/2014/11/03/non-technical-persons-guide-to-becoming-an-open-source-software-contributor-via-github</id>
-    <content type="html"><![CDATA[<p>A month ago, I was (lightly, &hellip;I think) called out for bailing on speaking about <a href="www.bavc.org/qctools">QCTools</a> for the Association of Moving Image Archivists conference. Nevermind the bait-and-switch last-minute-surprise-you’re-speaking scenario I had landed myself in and that I really really did want to see my pals give a talk on BitTorrent and private tracker communities as archives, I did still feel a twinge of guilt for dropping out last minute. Sorry, guys. The BitTorrent panel was pretty baller, though.</p>
+    <content type="html"><![CDATA[<p>A month ago, I was (lightly, &hellip;I think) called out for bailing on speaking about <a href="www.bavc.org/qctools">QCTools</a> for the Association of Moving Image Archivists conference. Nevermind the bait-and-switch last-minute-surprise-you’re-speaking scenario I had landed myself in and that I really really did want to see my pals give a talk on BitTorrent and private tracker communities as archives, I did still feel a twinge of guilt for dropping out last minute. Sorry, guys. The BitTorrent panel was pretty baller, though, and Lauren Sorensen did an excellent survey of using git from the command line earlier in the day.</p>
 
 <p>To make up for it, I am here today on this blog to talk about how you, non-technical or kinda-technical or just-scared-of-git person, can dig in and support open source projects like QCTools, even if you don’t speak C++ (which is what I started planning for in the 2-day scramble before leaving New York on a jet plane).</p>
 
