@@ -103,8 +103,14 @@
         <lastmod>2014-10-15T22:51:44-04:00</lastmod>
     </url>
     <url>
+        <loc>
+            http://ablwr.github.io/blog/2014/11/03/non-technical-persons-guide-to-becoming-an-open-source-software-contributor-via-github/
+        </loc>
+        <lastmod>2014-11-03T23:05:18-05:00</lastmod>
+    </url>
+    <url>
         <loc>http://ablwr.github.io/blog/archives/</loc>
-        <lastmod>2014-10-15T22:51:44-04:00</lastmod>
+        <lastmod>2014-11-03T23:05:18-05:00</lastmod>
     </url>
     <url>
         <loc>http://ablwr.github.io/blog/categories/</loc>
@@ -112,7 +118,7 @@
     </url>
     <url>
         <loc>http://ablwr.github.io/</loc>
-        <lastmod>2014-10-15T22:51:44-04:00</lastmod>
+        <lastmod>2014-11-03T23:05:18-05:00</lastmod>
     </url>
     <url>
         <loc>http://ablwr.github.io/robots.txt</loc>

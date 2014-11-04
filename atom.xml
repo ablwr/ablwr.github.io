@@ -4,7 +4,7 @@
   <title><![CDATA[BLOG Progress Process]]></title>
   <link href="http://ablwr.github.io/atom.xml" rel="self"/>
   <link href="http://ablwr.github.io/"/>
-  <updated>2014-10-20T21:05:18-04:00</updated>
+  <updated>2014-11-03T23:05:49-05:00</updated>
   <id>http://ablwr.github.io/</id>
   <author>
     <name><![CDATA[Ashley Blewer]]></name>
@@ -12,6 +12,73 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Non-technical person's guide to becoming an open source software contributor via Github]]></title>
+    <link href="http://ablwr.github.io/blog/2014/11/03/non-technical-persons-guide-to-becoming-an-open-source-software-contributor-via-github/"/>
+    <updated>2014-11-03T21:53:42-05:00</updated>
+    <id>http://ablwr.github.io/blog/2014/11/03/non-technical-persons-guide-to-becoming-an-open-source-software-contributor-via-github</id>
+    <content type="html"><![CDATA[<p>A month ago, I was (lightly, &hellip;I think) called out for bailing on speaking about <a href="www.bavc.org/qctools">QCTools</a> for the Association of Moving Image Archivists conference. Nevermind the bait-and-switch last-minute-surprise-you’re-speaking scenario I had landed myself in and that I really really did want to see my pals give a talk on BitTorrent and private tracker communities as archives, I did still feel a twinge of guilt for dropping out last minute. Sorry, guys. The BitTorrent panel was pretty baller, though.</p>
+
+<p>To make up for it, I am here today on this blog to talk about how you, non-technical or kinda-technical or just-scared-of-git person, can dig in and support open source projects like QCTools, even if you don’t speak C++ (which is what I started planning for in the 2-day scramble before leaving New York on a jet plane).</p>
+
+<p>Here it is:</p>
+
+<p>I think a lot of people are intuitively intimidated by using git because it can be hard to understand or because they don’t know how to read code. But not being able to read code is okay because you can still make valuable contributions in English! One of the biggest sore spots for most open source software (and even proprietary software) is a lack of clear, concise documentation. But at least with OSS, if something in the documentation is confusing, instead of going on Twitter or something and being like “wah wah this free thing I downloaded totally sucks,” you can actually go in there and CHANGE it. Or at least make a request to change it.</p>
+
+<p>I’m gonna go through how you might make those changes without having to do anything “techy.”</p>
+
+<p>Uh, so I went to the Flatiron School which is an immersive web development program. This is how I did things on Day 1 as a shortcut to getting what I wanted (which was to deploy a user profile for myself)*. I can’t get away with that stuff now but you totally can. It’s not bad practice or anything (well, maybe the context in which I was doing it was, but that&rsquo;s neither here nor there). Actually, I did a quick edit like this today because I wanted to fix someone else’s documentation but I didn’t want to bother going through all the other steps to copy and download the repository to my local machine.</p>
+
+<p>* One thousand blessings to Dave Rice for being extremely patient with me when I made my first changes to the QCTools documentation by submitting weird pull requests even though he had given me permission to upload directly because I didn&rsquo;t know how to push directly to the master branch.</p>
+
+<p><img class="center" src="http://ablwr.github.io/images/readme.png"></p>
+
+<p>The main block of text on the front of a Github repository is located in the README.md file. (The .md stands for <a href="http://en.wikipedia.org/wiki/Markdown">Markdown</a>, a way to format writing on the web easily. (<a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">cheatsheet here</a>)) If you click on the link, it&rsquo;ll take you to a page that only loads the README. On the right side, above the beginning of the document, there is a little pencil button. That pencil allows you to go in and edit the file without having to load the repository on your computer, use the command line, or even use the Github desktop GUI.</p>
+
+<p><img class="center" src="http://ablwr.github.io/images/edit_pencil.png"></p>
+
+<p>That&rsquo;s right, click on that pencil! You&rsquo;ll open into an in-browser text editor. It&rsquo;s pretty much the same as editing a wiki. Which you&rsquo;ve totally done, right? Just make your changes right in there. At the bottom, fill out a brief, one-line description of the change you made and why you made it and add a longer description if necessary. By the way, you can use emoji in here. Use <a href="http://emoji-cheat-sheet.com">this cheat sheet</a>.</p>
+
+<p>When you click the &ldquo;Commit changes&rdquo; button, you&rsquo;ll get a notification from Github saying that you can&rsquo;t directly contribute to the code so it has forked the repository for you and has made your changes on your branch. Does that sound confusing? Forks, branches? It just means that you aren&rsquo;t allowed to directly change the code and there&rsquo;s a process in place to make sure that only good code goes in. Everything is copied to your account and you make the changes on YOUR account. If you want the changes to go into the main product, you have to submit a pull request (just follow the steps). It&rsquo;s a pull request because you are asking the owners of the main github page to &ldquo;pull in&rdquo; changes that you made on your copy of their main codebase.</p>
+
+<p>Got a problem? Yo, you&rsquo;ll solve it! Check out this next step while the DJ revolves it:</p>
+
+<p><img class="center" src="http://ablwr.github.io/images/diff.png"></p>
+
+<p>The red is what I took away from the code and the green is what I added in.</p>
+
+<p>After you submit a pull request, people can comment on it before it can get merged into the master branch. If the code change might cause a problem (or in the case of non-technical edits, if the documentation is wrong), conversations can happen here. This peer-review process helps keep open source projects strong and sturdy. Here is someone coming in to critique my simple edit soon after I opened the pull request on it for being too verbose:</p>
+
+<p><img class="center" src="http://ablwr.github.io/images/codereview.png"></p>
+
+<p>He was right, I could make the line even simpler and not even get into the fact that the code could run in another Terminal window, so I changed my change (the screencap above was taken after that). I even changed my change after this because it still had a lingering backtick in it, as you can see in this screencap. If you change something, you don&rsquo;t have to re-open a pull request. The pull request takes the latest version of your code on your branch and assumes it is ready to move into the master if the pull request is approved. At this point, all you can do is wait and feel good about your open source contribution.</p>
+
+<p>If you want to add to the QCTools documentation, you can follow the same steps. With QCTools, the documentation is hidden a little deeper into the codebase, but you can find it <a href="https://github.com/bavc/qctools/tree/master/Source/Resource/Help">here in the Source</a>. You have to follow the rules and the code has to validate to proper HTML, but changes are easy and possible.</p>
+
+<p>If you are afraid to make your change, go ahead and try to change anything on any of the repositories I own. I think I even have one called <a href="https://github.com/ablwr/testing">testing</a>. You can&rsquo;t test out submitting pull requests on your own github folders because you already own them (which was disappointing when I was trying to pull together screen caps for this demo).</p>
+
+<p>If there’s something bigger you want to fix but you don’t know how to do it, you can open an issue. This may or may not be fulfilled and it might take a while to fulfill. Obviously the best way to fix a problem is by doing it yourself. But this is a good way to provide feedback on how something like QCTools works and bring up problems that might be easy to fix by someone else. You can see that QCTools has plenty of <a href="https://github.com/bavc/qctools/issues">open issues</a> at the moment.</p>
+
+<p><img class="center" src="http://ablwr.github.io/images/issues.png"></p>
+
+<p>The issues page is on the right-hand side of a Github repository. You can access it to see all the current issues or make your own.</p>
+
+<p><img class="center" src="http://ablwr.github.io/images/issues2.png"></p>
+
+<p>You can see Github has a lot of issues that I added to the repository earlier today. UX needs help, people! To create a new issue, click on the New Issue tab (I didn&rsquo;t need to explain that to you, did I?)</p>
+
+<p><img class="center" src="http://ablwr.github.io/images/issues3.png"></p>
+
+<p>To create a good issue that people will actually pay attention to, try to make the problem specific but concise. If it&rsquo;s a bug in the program, explain exactly what you were doing to cause the error to occur and make sure to mention if you are able to make the bug repeat, or if it only happened once and not again. If you know someone is in charge of a certain aspect of a project, assign them to it. If you don&rsquo;t know, though, don&rsquo;t assign anybody and someone in charge of the project can always direct the issue to the right person or someone else can jump in to fix it. Also, don&rsquo;t follow my above example and only submit an issue if it&rsquo;s something important that will help contribute overall to the betterment of the project.</p>
+
+<p>A final note: One thing that guides to Github or Open Source contribution usually fail to mention is that it&rsquo;s scary. It&rsquo;s SCARY, dude. It involves being assertive, telling a total stranger that you think you have a better solution to their problem, and envoking feedback from anyone in the world that cares about the project. I don&rsquo;t have much advice for this other than BE BRAVE, close your eyes, and CLICK that button (or buttons) and don&rsquo;t worry if someone wants to try to get into a fight with you on the internet. The worst thing that can happen is that you&rsquo;re wrong, and that&rsquo;s okay too. And most people are exceptionally nice and willing to work it out with you (like Dave Rice).</p>
+
+<p>The biggest advice I can give is don&rsquo;t worry about fucking things up. It&rsquo;s git. It&rsquo;s a distributed revision control system. It&rsquo;s entire purpose for existing is to protect against things getting fucking up.</p>
+
+<p>Extra final note: I&rsquo;m leading a skillshare on git later this month so expect more git-based tutorials or resources to come!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Video Sprites]]></title>
@@ -739,61 +806,6 @@ self.</p>
 <p>Finally, the letter x. X stands for&hellip; <strong>Xtended</strong> mode! Also known as Extended Mode. Regular expressions can be really complicated, so the x at the end allows for extra room in the expression such as spaces, new lines, and comments. Then, the regex is more readable and less scary. Another tip: to comment in a regex, use ?#. But if you use ?#, you also have to use x.</p></li>
 </ul>
 
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Coding guide for newbs]]></title>
-    <link href="http://ablwr.github.io/blog/2014/05/22/coding-guide-for-newbs/"/>
-    <updated>2014-05-22T23:03:45-04:00</updated>
-    <id>http://ablwr.github.io/blog/2014/05/22/coding-guide-for-newbs</id>
-    <content type="html"><![CDATA[<p>Everyone who has been around me regularly for the past (???) amount of time knows that I&rsquo;ve been all about learning to code as much as possible, and I&rsquo;ve been roping a few of my friends into doing the same. So, a question that I get a lot is &ldquo;Where do I begin?&rdquo; There are plenty of good guides on the internet, but I wanted to write up my own guide, particularly targeted to archivists and librarians coming out of library and information science programs. I think programming basics should be a mandatory component of ALA-accredited programs, but I&rsquo;ve found that at least in my MLIS experience (and anecdotally from many others), there is a severe lack, even in basic technical knowledge of computers.</p>
-
-<p>Please note that I am a novice speaking to people that are even greener than me, but here are some of the web resources I recommend for figuring out if you <em>even like programming</em> and want to consider diving deeper, like I have. This is basically an extended form of an email I would otherwise be writing to my friend Marleigh.</p>
-
-<p>I&rsquo;m going to first talk about some more general, theoretical strategies and then go into a guide of some of the learning resources I&rsquo;ve used and recommend.</p>
-
-<p><strong>Generally</strong></p>
-
-<p>The following resources I am going to mention are great and learning how to program has never, ever been easier than now, with a nearly endless supply of videos, podcasts, blog posts, MOOCs, books, and Stack Overflow answers. But the most important thing to realize that if you want to learn how to code, you are gonna have to do a lot of coding and problem-solving all by yourself. The best way to learn things is to try to make them, fail, and try again. That being said, sometimes it&rsquo;s good to just get your feet wet before diving right in.</p>
-
-<p>The second big thing is thinking about what you want to learn. If you are an absolute newbie and have never used the less-than or greater-than sign for anything other than emoticons, I recommend working on HTML/CSS first. Some people might argue that they are not technically programming languages, but it really doesn&rsquo;t matter and that is a stupid argument. After that, I recommend a few others: JavaScript, Python, and Ruby. All-in-all though, don&rsquo;t sweat too hard over which language to pick, because you are working on just learning the fundamentals, which are similar across all programming languages.</p>
-
-<p>Ruby: I deliberated between Python and Ruby for a long time, but eventually settled on Ruby. They are both extremely popular &ldquo;first language&rdquo; choices because they are easy to use and learn, and they are very similar. If you are just trying to get a feel for what you like, it really doesn&rsquo;t matter which one you choose. My reasons for choosing Ruby are personal. 1. As a moving image archivist, I see a lot of work needing to be done with access to digital content, and a lot of that work is done in Ruby. So it is favored by my community. 2. The Ruby community strives to be very welcoming and open, and seeks to increase diversity. 3. A lot of the coding bootcamps I was looking at were Ruby-based, so that made my decision easier (as I now will be attending Flatiron School). 4. I&rsquo;m interested in web development, particularly with video on the web, and I feel like the Ruby/Rails framework suits my interests there.</p>
-
-<p>Python: I started off learning Python, because that&rsquo;s what Codecademy teaches in its Code Year track. I loved it, I still love it, and I like how elegant it looks just based on the &ldquo;meaningful white space&rdquo; component of the language. I really think Python is probably the &ldquo;best&rdquo; first language to learn because of its &ldquo;zen&rdquo;-like methodology that pushes for code to be clean, concise, well-written, but most of all, easy to read and understand by all. If you intend to work in academia or on the science side of things, Python is a definite winner here. For general automation work in your personal life, Python is great. If you are interested in hardware hacking or think you might be, Python is also great.</p>
-
-<p>JavaScript: If you are digging HTML/CSS and like web development stuff, JavaScript is a good language to pick. The web is sorta being taken over by JavaScript and JS libraries. If you are into design, knowing more about JavaScript will only help you in the future.</p>
-
-<p>When learning, it&rsquo;s good to generally stay away from Rails (Ruby), Django (Python), and JQuery (Javascript) and try to focus on learning the actual language itself, not just the frameworks. The fundamentals are important. Even if things are harder, you are learning more by doing it &ldquo;the hard way.&rdquo; At least, that&rsquo;s what I tell myself. Don&rsquo;t avoid these things like the plague, I just recommend focusing on the basics of programming.</p>
-
-<p><em>Flatiron School and Makersquare pre-work</em></p>
-
-<p>Both of these coding bootcamps require 100-150 hours of pre-work from their students before the start of their classes. Fortunately for the rest of us, their learning materials are free and available online, so they can be used as guides for people just starting out.</p>
-
-<p><strong><a href="https://www.edx.org/course/harvardx/harvardx-cs50x-introduction-computer-1022">CS50x</a></strong></p>
-
-<p>I took this at-your-own-pace online MOOC based on Harvard&rsquo;s CS50 intro to computer science course when I started my graduate program, a bit over two years ago. I hands-down recommend it to anyone that wants a strong starting foundation in computer science, and I think it really sets someone&rsquo;s mind up for a better understanding of programming language syntax and structure. I pretty much just watched all of the lectures and didn&rsquo;t do the homework, but I still feel like I got a lot out of the class. If a class like this had been taught in my first semester as an undergraduate, it would have changed my life completely.</p>
-
-<p><strong><a href="http://www.codecademy.com">Codecademy</a></strong></p>
-
-<p>In conjunction with CS50 lectures, I worked through the Code Year track on Codecademy, which doesn&rsquo;t seem to be (easily) available anymore. Anyway, Codecademy is maybe the most popular &ldquo;learn to code&rdquo; resource, and for good reasons. (One of the reasons being that it&rsquo;s free, so there&rsquo;s a very low barrier to entry). If you are absolutely brand new to programming, I recommend churning through the entire HTML/CSS track (or projects, as they seem to be now). It may be familiar, it&rsquo;s easy to understand, and even if you absolutely hate programming and never want to do it again for the rest of your life, you will at least know how to link to a website without using an enriched web editor.</p>
-
-<p><strong><a href="http://teamtreehouse.com">Treehouse</a></strong></p>
-
-<p>After hitting up a full track of resources on Codecademy, or even before, I recommend Team Treehouse. Their teaching style is through videos followed by quizzes (either questions or coding exercies), which I find to be a nice, relaxing way to learn or refresh skills when I want to still feel productive but not work too hard.</p>
-
-<p><strong><a href="http://www.codeschool.com">Code School</a></strong></p>
-
-<p>Code School is great! But definitely much more challenging than Treehouse, which is why I recommend cruising through Treehouse first. Once you are feeling like a coding whiz  styling up a few websites on Treehouse, Code School is there to firmly put you back into your incredibly novice place. Code School looks easier than Treehouse, but some of the training wheels are off. Even with things I felt comfortable with, like CSS or MySQL, I would sometimes have to review the materials several times before I could solve the code exercises.</p>
-
-<p><strong>Just Doing It</strong></p>
-
-<p>I mentioned this earlier, but I really want to drive home this point. The above resources are great for getting your feet wet, but the only real way to really learn something is to just do it yourself, and frequently. You can do a million web exercises and read a redwood tree&rsquo;s worth of books and bootstrap up to your neck, but it&rsquo;s not gonna stick until you&rsquo;ve spent a few hours really trying to tackle a problem. The above materials are training wheels, and the sooner you take them off and try to ride/write, the better. If you get unstuckably stuck, you can always put them back on, or try a smaller/easier project. The main thing is to try, try, try. You will fail a thousand times, but keep trying.</p>
-
-<p><strong>Other stuff</strong></p>
-
-<p>There are so many other online resources and essential guides, <a href="http://www.openculture.com/freeonlinecourses">MOOCs</a>, but I just wanted to highlight a few. Maybe I will do a follow-up post with some other resources that I consider to be super-duper-helpful or essential to my learning. In the meantime, enjoy these and don&rsquo;t hesitate to get in touch with any questions.</p>
 ]]></content>
   </entry>
   
