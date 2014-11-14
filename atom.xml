@@ -4,7 +4,7 @@
   <title><![CDATA[BLOG Progress Process]]></title>
   <link href="http://ablwr.github.io/atom.xml" rel="self"/>
   <link href="http://ablwr.github.io/"/>
-  <updated>2014-11-08T00:02:45-05:00</updated>
+  <updated>2014-11-13T19:13:18-05:00</updated>
   <id>http://ablwr.github.io/</id>
   <author>
     <name><![CDATA[Ashley Blewer]]></name>
@@ -12,6 +12,32 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Fog Creek Fellowship Mini-post]]></title>
+    <link href="http://ablwr.github.io/blog/2014/11/08/fog-creek-fellowship-mini-post/"/>
+    <updated>2014-11-08T09:04:18-05:00</updated>
+    <id>http://ablwr.github.io/blog/2014/11/08/fog-creek-fellowship-mini-post</id>
+    <content type="html"><![CDATA[<p>I had a great time at Fog Creek getting mentorship from the Trello team but haven&rsquo;t had time to sit down and put it all into words. Fortunately, they say a picture is worth a thousand words.</p>
+
+<!-- more -->
+
+
+<p><img class="center" src="http://ablwr.github.io/images/fogcreekfellowship_first.gif"></p>
+
+<p>Because this is a vaguely code-focused blog, I must add that one command is worth a thousand seconds screwing around with Photoshop. With ImageMagick, I just ran <code>convert -delay 20 -loop 0 image*.jpeg fellowship.gif</code> in each folder of images.</p>
+
+<p>The finest quality .gif is still gonna come out of some dedicated Photoshopping, but this works fine in a pinch.</p>
+
+<p><img class="center" src="http://ablwr.github.io/images/fogcreekfellowship_second.gif"></p>
+
+<p>These gifs are pretty jumbo (despite mediocre quality), which I don&rsquo;t care about but are cruel to slower connections or mobile platforms. ImageMagick can help with that, too, because <a href="www.imagemagick.org">ImageMagick</a> can do pretty much everything. I mean, it&rsquo;s a wizard.</p>
+
+<p><img class="center" src="http://upload.wikimedia.org/wikipedia/commons/0/0d/Imagemagick-logo.png"></p>
+
+<p><code>convert fellowship.gif -resize 50% fellowship_small.gif</code> is a quick way to make a smaller copy of an image. There&rsquo;s a zillion other things you can do that I&rsquo;m not going to go into because the primary point of this post is two simple gifs, but <a href="http://www.imagemagick.org/script/command-line-options.php">documentation</a> is always your pal, and so is <a href="http://stackoverflow.com/search?q=imagemagick">Stack Overflow</a>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Non-technical person's guide to becoming an open source software contributor via Github]]></title>
@@ -781,31 +807,6 @@ self.</p>
 
 
 <p>That&rsquo;s my bot! Have your bot add my bot at <a href="http://www.twitter.com/ablwr_ebooks">@ablwr_ebooks</a>. Stay tuned for some more technical blog posts about working through the Twitter authentication steps, understanding CRON, modifying a bot, deploying to heroku, and ~mad science experiments~.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Regular Expression Options]]></title>
-    <link href="http://ablwr.github.io/blog/2014/06/16/regular-expression-options/"/>
-    <updated>2014-06-16T18:26:07-04:00</updated>
-    <id>http://ablwr.github.io/blog/2014/06/16/regular-expression-options</id>
-    <content type="html"><![CDATA[<p>When working with Regular Expressions, I mostly ignored these optional suffixes because I didn&rsquo;t want to further complicate an already complicated aspect of programming. But since there are only four options, I decided to take a break from other complications and break down what each regex suffix can do.</p>
-
-<ul>
-<li><p><strong>i</strong></p>
-
-<p>i stands for <strong>INSENSITIVE</strong>! But not like that jerk that cut in front of you when changing trains at Union Square this morning. It means that it is case insensitive! You can save some keystrokes and be more precise by using i to eliminate or swap a word for a paragraph.</p></li>
-<li><p><strong>m</strong></p>
-
-<p>The next option is the letter m. M stands for <strong>MULTILINE MODE</strong>! Mmmm! What does that mean? Rubular sums it up succinctly as &ldquo;make dot match newlines.&rdquo; Still lost? The m option helps the dot (also known as a period or a full stop) character, which represents any character in a regex, match everything INCLUDING the invisible new line character. The new line character is represented in a regex or in programming as \n. If you are worried that your new line might mess up your regex, the m option can help mesh all lines together.</p></li>
-<li><p><strong>o</strong></p>
-
-<p>Next up is the letter o. O stands for <strong>ONCE</strong>! ONE TIME, ONE CHANCE, ONE SHOT! To substitute once. Substitute once means that any #{&hellip;} substitutions that occur in a regex can only occur one time and then they are OUT!</p></li>
-<li><p><strong>x</strong></p>
-
-<p>Finally, the letter x. X stands for&hellip; <strong>Xtended</strong> mode! Also known as Extended Mode. Regular expressions can be really complicated, so the x at the end allows for extra room in the expression such as spaces, new lines, and comments. Then, the regex is more readable and less scary. Another tip: to comment in a regex, use ?#. But if you use ?#, you also have to use x.</p></li>
-</ul>
-
 ]]></content>
   </entry>
   
