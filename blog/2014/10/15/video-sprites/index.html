@@ -1,0 +1,183 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Video Sprites - BLOG Progress Process</title>
+	<meta name="author" content="Ashley Blewer">
+
+	
+	<meta name="description" content="Video Sprites Last week, I participated in the second AMIA AV Hack Day and paired up with NCSU libriarian/developer Jason Ronallo, CNN archivist/ &hellip;">
+	
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="BLOG Progress Process" type="application/atom+xml">
+	
+	<link rel="canonical" href="http://ablwr.github.io/blog/2014/10/15/video-sprites/">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="/stylesheets/font-awesome.min.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	
+  
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-8888310-12']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><div class="profilepic">
+	
+	<img src="http://www.gravatar.com/avatar/425f1ccc494d81dcf41f2cc7ac8d0321?s=160" alt="Profile Picture" style="width: 160px;" />
+	
+</div>
+
+<nav id="main-nav"><ul class="main">
+    <li><a href="/">Blog</a></li>
+    <li><a href="/blog/archives">Blog Archives</a></li>
+    <li><a href="http://www.ashleyblewer.com">Website</a></li>
+</ul>
+</nav>
+<nav id="sub-nav">
+	<div class="social">
+<!-- 		 -->
+		
+		
+		
+			<a class="twitter" href="http://twitter.com/ablwr" title="Twitter">Twitter</a>
+		
+		
+			<a class="github" href="https://github.com/ablwr" title="GitHub">GitHub</a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+    	
+    	
+			<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+</nav>
+</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			
+				
+			
+			<div class="mid-col-container">
+				<div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<h1 class="title" itemprop="name">Video Sprites</h1>
+	<div class="entry-content" itemprop="articleBody"><p>Last week, I participated in the second <a href="http://wiki.curatecamp.org/index.php?title=Association_of_Moving_Image_Archivists_%26_Digital_Library_Federation_Hack_Day_2014">AMIA AV Hack Day</a> and paired up with NCSU libriarian/developer Jason Ronallo, CNN archivist/engineer Nicholas Zoss, and CNN archivist/engineer/manager Jay Brown. Building on Ronallo&rsquo;s <a href="http://ronallo.com/blog/a-plugin-for-mediaelement-js-for-preview-thumbnails-on-hover-over-the-time-rail/">work with WebVTT and video scrolling thumbnails</a>, we created a Ruby gem that exports thumbnail images, thumbnail sprite image, and a WebVTT metadata file with synced media fragment URLs to thumbnails within the sprite. This could allow for the integration of video thumbnail creation to happen automatically within the web access video workflow. It is also easy to install and use, making it accessible to a wider audience (always a primary goal of mine).</p>
+
+<p>One of the things I am most proud of is how seamlessly our team was able to distribute work and pair together when necessary. I was able to jump right in as the junior developer role, helping as support and Ruby syntax consultant, as well as filling out documentation and other smaller tasks. Jason Ronallo steered the ship, but welcomed many proofreading eyes to look over his code for debugging. Nick Zoss contributed plenty of engineering knowledge and helped do &ldquo;all the math parts.&rdquo; Jay Brown went to work finding and creating sample videos for testing the scripts and worked on general QA. And at the crucial end point of the day, I wrangled Dave Rice to quickly act as ffmpeg script consultant (a cool trick I learned and helped my team win one of the awards from <a href="http://wiki.curatecamp.org/index.php?title=Association_of_Moving_Image_Archivists_%26_Digital_Library_Federation_Hack_Day_2013">the first AV Hack Day</a>).</p>
+
+<p>Anyway, let&rsquo;s get down to it! This is how the app works. It&rsquo;s EASY! After you <code>gem install video-sprites</code>, you can run it in your terminal (assuming you have ffmpeg and ImageMagick installed and working)</p>
+
+<p>For example, I ran this: <code>video-sprites -i /Users/ashley/Development/kiss_from_a_rose.mpg -o /Users/ashley/Development</code></p>
+
+<p>And I got this:</p>
+
+<p><img class="center" src="/images/rose_export.png"></p>
+
+<p>Simple, right? And check it out&hellip;</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>00:00:00.000 --&gt; 00:00:05.000
+</span><span class='line'>http://example.com/kiss_from_a_rose-sprite-00001.jpg#xywh=0,0,200,133
+</span><span class='line'>
+</span><span class='line'>00:00:05.000 --&gt; 00:00:10.000
+</span><span class='line'>http://example.com/kiss_from_a_rose-sprite-00001.jpg#xywh=200,0,200,133
+</span><span class='line'>
+</span><span class='line'>00:00:10.000 --&gt; 00:00:15.000
+</span><span class='line'>http://example.com/kiss_from_a_rose-sprite-00001.jpg#xywh=400,0,200,133</span></code></pre></td></tr></table></div></figure>
+
+
+<p>There&rsquo;s also this WebVTT file! If I replace the example.com with the website that is hosting the image sprite (or had I specified it when I ran the gem using the -u or &mdash;url flag), I could integrate it into a scrolling video thumbnail feature!</p>
+
+<p>Play around with it yourself! The <a href="https://github.com/jronallo/video-sprites">code is up on Github</a> and we welcome feedback. Moving forward, there&rsquo;s a lot to do to keep this gem in tip-top shape and there are many features we plan to add. Like a good junior developer, I&rsquo;ve given myself the goal of writing tests to make it a healthy and happy gem. Oh, tests&hellip;</p>
+</div>
+
+</article>
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+
+</div>
+			</div>
+			<footer id="footer" class="inner">Copyright &copy; 2015
+
+    Ashley Blewer
+
+
+Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a></footer>
+		</div>
+	</div>
+	
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+</body>
+</html>

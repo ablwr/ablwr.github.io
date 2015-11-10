@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: goals | BLOG Progress Process]]></title>
+  <link href="http://ablwr.github.io/blog/categories/goals/atom.xml" rel="self"/>
+  <link href="http://ablwr.github.io/"/>
+  <updated>2015-11-10T00:37:19-05:00</updated>
+  <id>http://ablwr.github.io/</id>
+  <author>
+    <name><![CDATA[Ashley Blewer]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[New Year's Resolutions]]></title>
+    <link href="http://ablwr.github.io/blog/2014/12/27/new-years-resolutions/"/>
+    <updated>2014-12-27T15:40:43-05:00</updated>
+    <id>http://ablwr.github.io/blog/2014/12/27/new-years-resolutions</id>
+    <content type="html"><![CDATA[<p><img src="/images/gityear.png" alt="git year" /></p>
+
+<h2>0. Be a better developer.</h2>
+
+<p>Definitely this. This was my goal in 2014 and it&rsquo;ll continue to be my #1 goal in 2015. In 2013, I had the ambiguous resolution of &ldquo;learn to code.&rdquo; Or &ldquo;learn to code more.&rdquo; In 2014, with help, I got the fundamentals down, enough to be employed full-time as a developer. 2015 is where I can continue to improve my skills and put this knowledge to good use. Which brings me to resolution 2:</p>
+
+<h2>1. Meaningful open source contributions.</h2>
+
+<p>Now that I am capable of contributing, I&rsquo;m ready to start doing so, even if I have to start small. I&rsquo;ve wanted to contribute to open source projects ever since the time I installed VLC Media Player (and read the documentation) when I was 14 or 15. I&rsquo;m not ready to become a C++ and algorithms master in a year, but there are plenty of open source projects that could benefit from my skill set.</p>
+
+<h2>2. Double my git commits.</h2>
+
+<p>I like to put something attainable and quantifiable on my list of goals. This post would have been my 1000th commit of 2014 if I&rsquo;d posted this when I started writing it (and dated: the 27th). It&rsquo;s currently at 1082. I&rsquo;d like to at least double that number by this time next year. I don&rsquo;t think I&rsquo;ll have to make much of an effort here, as I&rsquo;ve been actively contributing to the code base where I work from Week 1, intend to follow through on resolution 2, above, and have too many side projects I want to get started on.</p>
+
+<h2>3. More technical blog posts.</h2>
+
+<p>I hate writing technical posts! I worry that they will end up dry and boring, I&rsquo;m scared of being wrong, and it&rsquo;s overall not as enjoyable as a blog post talking about my ~feelings~. But I know technical blog posts help reinforce what I know, they help other people, and they can potential help me when I inevitably forget a concept or method of server setup months down the road.</p>
+
+<h2>4. Give back.</h2>
+
+<p>I have been very lucky in my life, and this year in particular. So many other people haven&rsquo;t had the opportunities that have been handed to me, but I want everyone to be able to get the education and help they need if they want to learn web development. I want to keep tutoring, keep mentoring, and keep getting others excited about code. Whether it&rsquo;s helping 1-on-1, giving educational talks, writing tutorials, or even just explaining why my list starts with 0 instead of 1, I&rsquo;m ready to help out.</p>
+
+<h2>5. Give back (field-specific).</h2>
+
+<p>I also care a lot (too much?) about moving image archiving, digital preservation, and video on the web. Leaving my previous field was very hard and worthy of its own blog post, but I am 100% dedicated to making contributions to those fields or areas of study, even if I am not actively doing it full time.</p>
+
+<p>Oh, and learn vim. Another easy one. My keyboard shortcut game is strong but I&rsquo;m ready to step it up.</p>
+
+<p>2014 has been a really great year for me and I&rsquo;m looking forward to 2015.</p>
+]]></content>
+  </entry>
+  
+</feed>

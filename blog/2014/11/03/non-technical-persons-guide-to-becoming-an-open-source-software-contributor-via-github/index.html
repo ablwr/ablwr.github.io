@@ -1,0 +1,207 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Non-technical person's guide to becoming an open source software contributor via Github - BLOG Progress Process</title>
+	<meta name="author" content="Ashley Blewer">
+
+	
+	<meta name="description" content="Non-technical Person's Guide to Becoming an Open Source Software Contributor via Github A month ago, I was (lightly, &hellip;I think) called out for &hellip;">
+	
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="BLOG Progress Process" type="application/atom+xml">
+	
+	<link rel="canonical" href="http://ablwr.github.io/blog/2014/11/03/non-technical-persons-guide-to-becoming-an-open-source-software-contributor-via-github/">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="/stylesheets/font-awesome.min.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	
+  
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-8888310-12']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><div class="profilepic">
+	
+	<img src="http://www.gravatar.com/avatar/425f1ccc494d81dcf41f2cc7ac8d0321?s=160" alt="Profile Picture" style="width: 160px;" />
+	
+</div>
+
+<nav id="main-nav"><ul class="main">
+    <li><a href="/">Blog</a></li>
+    <li><a href="/blog/archives">Blog Archives</a></li>
+    <li><a href="http://www.ashleyblewer.com">Website</a></li>
+</ul>
+</nav>
+<nav id="sub-nav">
+	<div class="social">
+<!-- 		 -->
+		
+		
+		
+			<a class="twitter" href="http://twitter.com/ablwr" title="Twitter">Twitter</a>
+		
+		
+			<a class="github" href="https://github.com/ablwr" title="GitHub">GitHub</a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+    	
+    	
+			<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+</nav>
+</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			
+				
+			
+			<div class="mid-col-container">
+				<div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<h1 class="title" itemprop="name">Non-technical Person's Guide to Becoming an Open Source Software Contributor via Github</h1>
+	<div class="entry-content" itemprop="articleBody"><p>A month ago, I was (lightly, &hellip;I think) called out for bailing on speaking about <a href="www.bavc.org/qctools">QCTools</a> for the Association of Moving Image Archivists conference. Nevermind the bait-and-switch last-minute-surprise-you’re-speaking scenario I had landed myself in and that I really really did want to see my pals give a talk on BitTorrent and private tracker communities as archives, I did still feel a twinge of guilt for dropping out last minute. Sorry, guys. The BitTorrent panel was pretty baller, though, and Lauren Sorensen did an excellent survey of using git from the command line earlier in the day.</p>
+
+<p>To make up for it, I am here today on this blog to talk about how you, non-technical or kinda-technical or just-scared-of-git person, can dig in and support open source projects like QCTools, even if you don’t speak C++ (which is what I started planning for in the 2-day scramble before leaving New York on a jet plane).</p>
+
+<p>Here it is:</p>
+
+<p>I think a lot of people are intuitively intimidated by using git because it can be hard to understand or because they don’t know how to read code. But not being able to read code is okay because you can still make valuable contributions in English! One of the biggest sore spots for most open source software (and even proprietary software) is a lack of clear, concise documentation. But at least with OSS, if something in the documentation is confusing, instead of going on Twitter or something and being like “wah wah this free thing I downloaded totally sucks,” you can actually go in there and CHANGE it. Or at least make a request to change it.</p>
+
+<p>I’m gonna go through how you might make those changes without having to do anything “techy.”</p>
+
+<p>Uh, so I went to the Flatiron School which is an immersive web development program. This is how I did things on Day 1 as a shortcut to getting what I wanted (which was to deploy a user profile for myself)*. I can’t get away with that stuff now but you totally can. It’s not bad practice or anything (well, maybe the context in which I was doing it was, but that&rsquo;s neither here nor there). Actually, I did a quick edit like this today because I wanted to fix someone else’s documentation but I didn’t want to bother going through all the other steps to copy and download the repository to my local machine.</p>
+
+<p>* One thousand blessings to Dave Rice for being extremely patient with me when I made my first changes to the QCTools documentation by submitting weird pull requests even though he had given me permission to upload directly because I didn&rsquo;t know how to push directly to the master branch.</p>
+
+<p><img class="center" src="/images/readme.png"></p>
+
+<p>The main block of text on the front of a Github repository is located in the README.md file. (The .md stands for <a href="http://en.wikipedia.org/wiki/Markdown">Markdown</a>, a way to format writing on the web easily. (<a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">cheatsheet here</a>)) If you click on the link, it&rsquo;ll take you to a page that only loads the README. On the right side, above the beginning of the document, there is a little pencil button. That pencil allows you to go in and edit the file without having to load the repository on your computer, use the command line, or even use the Github desktop GUI.</p>
+
+<p><img class="center" src="/images/edit_pencil.png"></p>
+
+<p>That&rsquo;s right, click on that pencil! You&rsquo;ll open into an in-browser text editor. It&rsquo;s pretty much the same as editing a wiki. Which you&rsquo;ve totally done, right? Just make your changes right in there. At the bottom, fill out a brief, one-line description of the change you made and why you made it and add a longer description if necessary. By the way, you can use emoji in here. Use <a href="http://emoji-cheat-sheet.com">this cheat sheet</a>.</p>
+
+<p>When you click the &ldquo;Commit changes&rdquo; button, you&rsquo;ll get a notification from Github saying that you can&rsquo;t directly contribute to the code so it has forked the repository for you and has made your changes on your branch. Does that sound confusing? Forks, branches? It just means that you aren&rsquo;t allowed to directly change the code and there&rsquo;s a process in place to make sure that only good code goes in. Everything is copied to your account and you make the changes on YOUR account. If you want the changes to go into the main product, you have to submit a pull request (just follow the steps). It&rsquo;s a pull request because you are asking the owners of the main github page to &ldquo;pull in&rdquo; changes that you made on your copy of their main codebase.</p>
+
+<p>Got a problem? Yo, you&rsquo;ll solve it! Check out this next step while the DJ revolves it:</p>
+
+<p><img class="center" src="/images/diff.png"></p>
+
+<p>The red is what I took away from the code and the green is what I added in.</p>
+
+<p>After you submit a pull request, people can comment on it before it can get merged into the master branch. If the code change might cause a problem (or in the case of non-technical edits, if the documentation is wrong), conversations can happen here. This peer-review process helps keep open source projects strong and sturdy. Here is someone coming in to critique my simple edit soon after I opened the pull request on it for being too verbose:</p>
+
+<p><img class="center" src="/images/codereview.png"></p>
+
+<p>He was right, I could make the line even simpler and not even get into the fact that the code could run in another Terminal window, so I changed my change (the screencap above was taken after that). I even changed my change after this because it still had a lingering backtick in it, as you can see in this screencap. If you change something, you don&rsquo;t have to re-open a pull request. The pull request takes the latest version of your code on your branch and assumes it is ready to move into the master if the pull request is approved. At this point, all you can do is wait and feel good about your open source contribution.</p>
+
+<p>If you want to add to the QCTools documentation, you can follow the same steps. With QCTools, the documentation is hidden a little deeper into the codebase, but you can find it <a href="https://github.com/bavc/qctools/tree/master/Source/Resource/Help">here in the Source</a>. You have to follow the rules and the code has to validate to proper HTML, but changes are easy and possible.</p>
+
+<p>If you are afraid to make your change, go ahead and try to change anything on any of the repositories I own. I think I even have one called <a href="https://github.com/ablwr/testing">testing</a>. You can&rsquo;t test out submitting pull requests on your own github folders because you already own them (which was disappointing when I was trying to pull together screen caps for this demo).</p>
+
+<p>If there’s something bigger you want to fix but you don’t know how to do it, you can open an issue. This may or may not be fulfilled and it might take a while to fulfill. Obviously the best way to fix a problem is by doing it yourself. But this is a good way to provide feedback on how something like QCTools works and bring up problems that might be easy to fix by someone else. You can see that QCTools has plenty of <a href="https://github.com/bavc/qctools/issues">open issues</a> at the moment.</p>
+
+<p><img class="center" src="/images/issues.png"></p>
+
+<p>The issues page is on the right-hand side of a Github repository. You can access it to see all the current issues or make your own.</p>
+
+<p><img class="center" src="/images/issues2.png"></p>
+
+<p>You can see Github has a lot of issues that I added to the repository earlier today. UX needs help, people! To create a new issue, click on the New Issue tab (I didn&rsquo;t need to explain that to you, did I?)</p>
+
+<p><img class="center" src="/images/issues3.png"></p>
+
+<p>To create a good issue that people will actually pay attention to, try to make the problem specific but concise. If it&rsquo;s a bug in the program, explain exactly what you were doing to cause the error to occur and make sure to mention if you are able to make the bug repeat, or if it only happened once and not again. If you know someone is in charge of a certain aspect of a project, assign them to it. If you don&rsquo;t know, though, don&rsquo;t assign anybody and someone in charge of the project can always direct the issue to the right person or someone else can jump in to fix it. Also, don&rsquo;t follow my above example and only submit an issue if it&rsquo;s something important that will help contribute overall to the betterment of the project.</p>
+
+<p>A final note: One thing that guides to Github or Open Source contribution usually fail to mention is that it&rsquo;s scary. It&rsquo;s SCARY, dude. It involves being assertive, telling a total stranger that you think you have a better solution to their problem, and envoking feedback from anyone in the world that cares about the project. I don&rsquo;t have much advice for this other than BE BRAVE, close your eyes, and CLICK that button (or buttons) and don&rsquo;t worry if someone wants to try to get into a fight with you on the internet. The worst thing that can happen is that you&rsquo;re wrong, and that&rsquo;s okay too. And most people are exceptionally nice and willing to work it out with you (like Dave Rice).</p>
+
+<p>The biggest advice I can give is don&rsquo;t worry about fucking things up. It&rsquo;s git. It&rsquo;s a distributed revision control system. It&rsquo;s entire purpose for existing is to protect against things getting fucked up.</p>
+
+<p>Extra final note: I&rsquo;m leading a skillshare on git later this month so expect more git-based tutorials or resources to come!</p>
+</div>
+
+</article>
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+
+</div>
+			</div>
+			<footer id="footer" class="inner">Copyright &copy; 2015
+
+    Ashley Blewer
+
+
+Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a></footer>
+		</div>
+	</div>
+	
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+</body>
+</html>

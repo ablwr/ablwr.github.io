@@ -1,0 +1,753 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>BLOG Progress Process</title>
+	<meta name="author" content="Ashley Blewer">
+
+	
+	<meta name="description" content="Jul 22nd, 2014 python, video Using Videogrep to Make Supercuts Videogrep is a Python-based application that searches through a video file using its &hellip;">
+	
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="BLOG Progress Process" type="application/atom+xml">
+	
+	<link rel="canonical" href="http://ablwr.github.io/blog/page/3/">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="/stylesheets/font-awesome.min.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	
+  
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-8888310-12']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><div class="profilepic">
+	
+	<img src="http://www.gravatar.com/avatar/425f1ccc494d81dcf41f2cc7ac8d0321?s=160" alt="Profile Picture" style="width: 160px;" />
+	
+</div>
+
+<nav id="main-nav"><ul class="main">
+    <li><a href="/">Blog</a></li>
+    <li><a href="/blog/archives">Blog Archives</a></li>
+    <li><a href="http://www.ashleyblewer.com">Website</a></li>
+</ul>
+</nav>
+<nav id="sub-nav">
+	<div class="social">
+<!-- 		 -->
+		
+		
+		
+			<a class="twitter" href="http://twitter.com/ablwr" title="Twitter">Twitter</a>
+		
+		
+			<a class="github" href="https://github.com/ablwr" title="GitHub">GitHub</a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+    	
+    	
+			<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+</nav>
+</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			
+				
+			
+			<div class="mid-col-container">
+				<div id="content" class="inner">
+<div itemscope itemtype="http://schema.org/Blog">
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-07-22T22:36:12-04:00" data-updated="true" itemprop="datePublished">Jul 22<span>nd</span>, 2014</time></div>
+		<div class="tags">
+
+
+	<a class='category' href='/blog/categories/python/'>python</a>, <a class='category' href='/blog/categories/video/'>video</a>
+
+
+</div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/blog/2014/07/22/using-videogrep-to-make-supercuts/" itemprop="url">Using Videogrep to Make Supercuts</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p><a href="https://github.com/antiboredom/videogrep">Videogrep</a> is a Python-based application that searches through a video file using its subtitles track and can cut video clips based on its search criteria.</p>
+
+<p>Videogrep is SUPER easy to use&hellip; as long as ffmpeg is installed properly. If not, prepare for some configuring and installing.</p>
+
+<p>I used videogrep to search through one of my favorite movies, Terrorvision, to find every time a character refers to something as &ldquo;The Pleasure (noun).&rdquo; Hint: it happens more times than you would think.</p>
+
+<p>To do this, I only had to type one line and videogrep did the rest of the work.</p>
+
+<p><code>python videogrep.py -i Terrorvision/Terrorvision.avi -o test_video.mp4 --search 'Pleasure'</code></p>
+
+<p>It searched through the subtitles file and found six instances, which it printed to the screen along with their timestamps.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>524.357 to 527.86:  Pleasure Palace, here we come.
+</span><span class='line'>1660.284 to 1663.453: Otherwise known as the Pleasure Zone.
+</span><span class='line'>1734.4 to 1736.651: The Pleasure Den.
+</span><span class='line'>1776.859 to 1779.527: on to the Pleasure Dome.
+</span><span class='line'>1779.528 to 1782.905: To the Pleasure Dome.
+</span><span class='line'>1840.756 to 1842.548: The Pleasure Dome.</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If there is an error, at this point it will let you know. But if all goes well, the following will print to the screen:</p>
+
+<p><code>Your video is ready ! Fingers crossed for the Oscars !</code></p>
+
+<p>Here is the video supercut. Something that might have taken a few hours for me to piece together using my memory of the movie and video editing software was done in less than a minute using the powers of Python and FFMpeg.</p>
+
+<p>Voila!</p>
+
+<iframe src="//player.vimeo.com/video/99057389" width="500" height="282" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+
+<p> <p><a href="http://vimeo.com/99057389">Pleasure Supercut</a> from <a href="http://vimeo.com/orangelazarus">Ashley Blewer</a> on <a href="https://vimeo.com">Vimeo</a>.</p></p>
+
+<p>This was just a simple example, but videogrep can get more specific based on the regular expression added into the search string. In the above example, I knew &ldquo;Pleasure&rdquo; was a proper noun because its the name of many rooms in the Putterman household. If I really wanted to grab every instance of the word, I would have had to search for &lsquo;pleasure|Pleasure&rsquo; to capture both uppercase and lowercase.</p>
+
+<p>Videogrep can be even more powerful because it understands <a href="http://www.clips.ua.ac.be/pages/pattern-search">pattern recognition using pattern search</a>. I was able to extract what I wanted by just typing in one word, but it also understands word patterns. For example, you can use flags like JJ for adjective or NN for noun and it will extract every instance of a particular speech pattern.</p>
+
+<p>It can also search for hypernyms, which are words that fit into a certain category and have a semantic relation to each other. For example, if you searched for automobile, you might also want to extract similar words like car, truck, or van. If you weren&rsquo;t picky about what kind of bird you were looking for, a hypernym search would result in crows, seagulls, and eagles.</p>
+
+<p>Enjoy using videogrep and watch out for the monster!</p>
+
+<iframe src="//player.vimeo.com/video/99093635" width="500" height="282" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+
+<p> <p><a href="http://vimeo.com/99093635">TerrorVision Monster</a> from <a href="http://vimeo.com/orangelazarus">Ashley Blewer</a> on <a href="https://vimeo.com">Vimeo</a>.</p></p>
+
+		
+		
+	</div>
+
+</article>
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-07-16T08:38:39-04:00" data-updated="true" itemprop="datePublished">Jul 16<span>th</span>, 2014</time></div>
+		<div class="tags">
+
+
+	<a class='category' href='/blog/categories/history/'>history</a>, <a class='category' href='/blog/categories/non-technical/'>non-technical</a>, <a class='category' href='/blog/categories/past-life/'>past life</a>
+
+
+</div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/blog/2014/07/16/canyon-of-heroes/" itemprop="url">Canyon of Heroes</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p>When walking to and from class every day at the bottom of Manhattan, I&rsquo;ve noticed plates of text on the ground with a date and name of a famous person. I didn&rsquo;t realize what these signs were about until I was walking out of the southmost Bowling Green stop and saw the initial plaque on the ground:</p>
+
+<p><img class="center" src="/images/canyon-of-heroes.jpg" title="" ></p>
+
+<p>After that, everything clicked! They are commemorating every ticker-tape parade held on Broadway, starting with the first to commemorate the dedication of the Statue of Liberty in 1886.</p>
+
+<p>Before I came to the Flatiron School, I was working as a moving image archivist. I primarily worked with collections of newsreels from the 1920s and 1930s. My job was to catalog them and put them online for access. When I realized what the text on the ground stood for, I immediately ALSO realized that I recognized so many of the names because I had seen some of the actual parades happen (on film)! The text that struck me the most while walking up the street was this one:</p>
+
+<p><img class="center" src="/images/canyon_of_heroes_amelia.jpg" title="" ></p>
+
+<p>I&rsquo;ve <em>definitely</em> watched this footage. I ran to the (digital) archive and sure enough, <a href="http://mirc.sc.edu/islandora/object/usc%3A1866">there it was</a>.</p>
+
+<p>Footage identification can be difficult when you don&rsquo;t have a lead, but this connection was pretty easy to make. I watched the footage, paying attention to the structures of the buildings, and then pulled up Flatiron School&rsquo;s address on <a href="https://www.google.com/maps/@40.705328,-74.013743,3a,75y,222.42h,90.24t/data=!3m4!1e1!3m2!1sxgNehf6c2LCLopGdOjKqkQ!2e0!6m1!1e1">Google Streetview</a>. Boom! It was a total match!</p>
+
+<p>Here is a screencap of the Amelia Earheart ticker-tape parade superimposed on top of Google streetview.</p>
+
+<p><img class="center" src="/images/broadway_thenandnow.png" title="" ></p>
+
+<p>Pretty cool!</p>
+
+<p>Bonus: The building that the Flatiron School is located in used to be the office building for the <a href="http://en.wikipedia.org/wiki/White_Star_Line">White Star Line</a>, which built the RMS Titanic (and many other, sturdier ships). Cool!</p>
+
+		
+		
+	</div>
+
+</article>
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-07-15T22:38:07-04:00" data-updated="true" itemprop="datePublished">Jul 15<span>th</span>, 2014</time></div>
+		<div class="tags">
+
+
+	<a class='category' href='/blog/categories/four/'>FOUR</a>, <a class='category' href='/blog/categories/i/'>I</a>, <a class='category' href='/blog/categories/am/'>am</a>, <a class='category' href='/blog/categories/for/'>for</a>, <a class='category' href='/blog/categories/form/'>form</a>, <a class='category' href='/blog/categories/form/'>form</a>, <a class='category' href='/blog/categories/forms/'>forms,</a>, <a class='category' href='/blog/categories/like/'>like</a>, <a class='category' href='/blog/categories/more/'>more</a>, <a class='category' href='/blog/categories/right/'>right</a>
+
+
+</div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/blog/2014/07/15/form-helpers/" itemprop="url">Form Helpers</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p>Forms are hard! Forms are confusing in real life as well as on (or behind) the web. One problem with building web forms in Rails for me was that there are too many options! There are three distinct ways to create forms. And it’s also hard to tell which options are optional and which ones are required. Additionally, the syntax isn&rsquo;t always the same, so it can be hard to remember three different ways to do the same thing without mixing them up, especially as a beginner.</p>
+
+<p><img class="center" src="/images/basic_form.png" title="" ></p>
+
+<p>Here is the first form. This is the form that I think most people in my Ruby005 class would have written last week, before we learned about Rails form helpers. This is a form at its lowest level of abstraction while still being partially in Ruby, although it lacks Rails form helpers and form options helpers. This form just iterates through each ingredient and creates a checkbox. Checkboxes gives value of 1 if checked, 0 if not. And in the controller, we have to add ingredient_ids as an empty array in the params. It has to be called that or the whole thing won&rsquo;t work and all this code will be for naught.</p>
+
+<p><img class="center" src="/images/form_tag.png" title="" ></p>
+
+<p>Collection_check_boxes takes in five arguments, object, method, collection, value_method, text_method. Above, the recipe is the object, the ingredients_ids are the method, Ingredient.all is the collection, the :id is the value of the checkbox, and the name is the text to display with the checkbox. Best practice would be to abstract away the collection here so you are not calling a class in your View, and make a variable for Ingredient.all. Collection_check_boxes can look cumbersome with its five arguments, but its much cleaner than the previous code.</p>
+
+<p><img class="center" src="/images/form_for.png" title="" ></p>
+
+<p>In form_for, it looks like collection_check_boxes only takes FOUR arguments. And when you’re in formland, that’s an easy way to remember. Form_FOR takes FOUR. It actually takes five arguments, but one has already been declared at the beginning of the form. It’s @recipe.</p>
+
+<p>There&rsquo;s plenty more to learn about forms and form helpers, but I hope this little post can clear up some of the confusion surrounding usage.</p>
+
+		
+		
+	</div>
+
+</article>
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-07-15T21:56:54-04:00" data-updated="true" itemprop="datePublished">Jul 15<span>th</span>, 2014</time></div>
+		<div class="tags">
+
+
+	<a class='category' href='/blog/categories/arel/'>Arel</a>, <a class='category' href='/blog/categories/english/'>English</a>
+
+
+</div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/blog/2014/07/15/n-plus-1-plus-arel-plus-me/" itemprop="url">N+1+Arel+Me</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p>Component fails, the redundant N +1 configuration, the vulnerability of the system in the form provided. Part (s), one independent backup component at least. During normal operation, the active ingredients as the resistance standby backup system, or not to participate in the following way, passive / active. During failover, the drop in the system (the system availability, block) to restore transparency place during failover, but it depends on the particular solution.</p>
+
+<p><img class="center" src="/images/arelenglish.JPG" title="" ></p>
+
+<p>This activity &ndash; the other parts of the operation, the backup is a fully functional components, in one case, N 1 redundant, and can be active ingredients, but removed from component failure, the component will be able to run if the system is able to produce to be active.</p>
+
+<p><i class='emoji scream'></i> <i class='emoji scream'></i> <i class='emoji scream'></i> <i class='emoji scream'></i> <i class='emoji scream'></i> <i class='emoji scream'></i> <i class='emoji scream'></i> <i class='emoji scream'></i> <i class='emoji scream'></i> <i class='emoji scream'></i> <i class='emoji scream'></i> <i class='emoji scream'></i> <i class='emoji scream'></i> <i class='emoji scream'></i></p>
+
+		
+		
+	</div>
+
+</article>
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-07-01T18:27:46-04:00" data-updated="true" itemprop="datePublished">Jul 1<span>st</span>, 2014</time></div>
+		<div class="tags">
+
+
+	<a class='category' href='/blog/categories/side-projects/'>side projects</a>, <a class='category' href='/blog/categories/twitter-bots/'>twitter bots</a>
+
+
+</div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/blog/2014/07/01/twitter-bot-roundup/" itemprop="url">Twitter Bot Roundup</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p><code>5.times { blog }</code></p>
+
+<p>I wrote a few blog posts about the minor trials and tribulations of launching a Twitter bot that mimics a user&rsquo;s speaking patterns, based on a cool gem. Here they are, rounded up.</p>
+
+<p><a href="http://ablwr.github.io/blog/2014/06/24/twitter-bots/">The Bots Are Coming! Twitter Bots!</a></p>
+
+<p><a href="http://ablwr.github.io/blog/2014/06/25/twitter-bots-2-authorizing-the-bot/">Twitter Bots 2: Authorizing the Bot</a></p>
+
+<p><a href="http://ablwr.github.io/blog/2014/06/28/twitter-bots-3-keeping-your-bot-alive/">Twitter Bots 3: Keeping Your Bot Alive</a></p>
+
+<p><a href="http://ablwr.github.io/blog/2014/06/28/twitter-bots-4-mad-science/">Twitter Bots 4: MAD SCIENCE</a></p>
+
+<p><a href="http://ablwr.github.io/blog/2014/06/29/twitter-bots-5-scheduling-tweets-with-cron/">Twitter Bots 5: Scheduling Tweets With Cron</a></p>
+
+		
+		
+	</div>
+
+</article>
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-06-29T21:24:56-04:00" data-updated="true" itemprop="datePublished">Jun 29<span>th</span>, 2014</time></div>
+		<div class="tags">
+
+
+	<a class='category' href='/blog/categories/side-projects/'>side projects</a>, <a class='category' href='/blog/categories/twitter-bots/'>twitter bots</a>
+
+
+</div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/blog/2014/06/29/twitter-bots-5-scheduling-tweets-with-cron/" itemprop="url">Twitter Bots 5: Scheduling Tweets With Cron</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p>Cron is a software utility that is used to schedule actions in time. It&rsquo;s great for handling reoccuring tasks. Twitter bots use a Cron statement to generate a tweet regularly. Cron tasks are super useful, but the syntax can be a little confusing and hard to remember.</p>
+
+<p>The default bot tweets once a day, which is represented by <code>0 0 * * *</code></p>
+
+<p>I changed my bot to tweet once an hour, which is represented by <code>0 * * * *</code></p>
+
+<p>If I want my bot to tweet every hour from 9-5 on weekdays, it would look like <code>0 9-18 * * 1-5</code></p>
+
+<p>Are you scratching your head? How can those numbers and letters mean anything?</p>
+
+<p>In a row of five ( * * * * *), numbers break down like this:</p>
+
+<ol>
+<li> Minutes 2. Hours 3. Day (of month) 4. Months 5. Day (of week)</li>
+</ol>
+
+
+<p>That makes sense. Sort of. Except for having two different ways to represent time in a day, especially when they are not next to each other! Day of the month can be any number between 1-31 and is contingent on the month field. Day of the week is any number 0-6 and represents Sunday-Saturday.</p>
+
+<p>The astericks means &ldquo;every.&rdquo; If a field has an astericks, it will trigger the event at that time interval.</p>
+
+<p>Expressions aren&rsquo;t limited to asterisks and numbers. Other special characters include the slash (<code>/</code>), the comma (<code>,</code>), and the hyphen (<code>-</code>). The slash is used for increments of ranges. If I wanted to schedule an event to occur every five hours, I would use the string <code>0 */5 * * *</code>. Commas are used to separate items in a list. If I wanted an event to occur five minutes past the hour and five minutes before the hour, I could use the expression <code>5,55 * * * *</code>. Hyphens denote ranges. If I wanted to schedule an event to occur at the top of every hour during the Monday-Friday workweek, I would write <code>0 0 * * 1-5</code>.</p>
+
+<p>If you don&rsquo;t want to figure out all of this syntax and just want to stay a die-hard Rubyist, you can also just install the gem &ldquo;whenever&rdquo; (<a href="https://github.com/javan/whenever">available here</a>). Another way to integrate Cron syntax into Ruby apps is the gem <a href="https://github.com/jmettraux/rufus-scheduler">Rufus-scheduler</a>.</p>
+
+<p>Important note: If you are updating your bot&rsquo;s Cron settings, you have to re-run the archive and modeling files to see reflected updates.</p>
+
+<hr />
+
+<p>More info:</p>
+
+<p><a href="http://en.wikipedia.org/wiki/Cron">Cron on Wikipedia</a></p>
+
+<p><a href="http://railscasts.com/episodes/164-cron-in-ruby">RailsCasts #164 Cron in Ruby</a></p>
+
+		
+		
+	</div>
+
+</article>
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-06-28T21:09:57-04:00" data-updated="true" itemprop="datePublished">Jun 28<span>th</span>, 2014</time></div>
+		<div class="tags">
+
+
+	<a class='category' href='/blog/categories/side-projects/'>side projects</a>, <a class='category' href='/blog/categories/twitter-bots/'>twitter bots</a>
+
+
+</div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/blog/2014/06/28/twitter-bots-4-mad-science/" itemprop="url">Twitter Bots 4: MAD SCIENCE</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p>My twitter bot was born on the same day as my BFF (bot-ferverent friend) Athena&rsquo;s bot. In fact, we live together and were both working on our bots on the same night in different places because I was still at Flatiron and she was at home, and we didn&rsquo;t realize until our bots were nearly launched that we had both been working on the same project (and probably could have finished more quickly, as I was having trouble with something she had solved and she was having trouble with something I had solved). Pair programming is important! Anyway&hellip; since we are both bot-obsessed and I like data experiments as well as science experiments, I asked Athena for her bot&rsquo;s model file, which is json-formatted data of all of her tweets. I plugged her json data into a file with all of my json data and merged them together using the &ldquo;ebooks consume&rdquo; data-mixer that comes with the twitter_ebooks gem. Shortly after that, I had spawned a new daughter-bot, <a href="https://twitter.com/ashthena_ebooks">@ashthena_ebooks</a>, which is a combination of both of our tweets. Right now, this bot is a little biased towards my tweets, since I have a lot more than she did, but I hope to condense and mix that data up a bit more in the future, to produce weirder results.</p>
+
+<blockquote class="twitter-tweet" lang="en"><p>Much like the smell of vinegar syndrome in the morning.</p>&mdash; ɐuǝɥʇɥs∀ (@ashthena_ebooks) <a href="https://twitter.com/ashthena_ebooks/statuses/483414614978613248">June 30, 2014</a></blockquote>
+
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+		
+		
+	</div>
+
+</article>
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-06-28T20:31:52-04:00" data-updated="true" itemprop="datePublished">Jun 28<span>th</span>, 2014</time></div>
+		<div class="tags">
+
+
+	<a class='category' href='/blog/categories/side-projects/'>side projects</a>, <a class='category' href='/blog/categories/twitter-bots/'>twitter bots</a>
+
+
+</div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/blog/2014/06/28/twitter-bots-3-keeping-your-bot-alive/" itemprop="url">Twitter Bots 3: Keeping Your Bot Alive</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<blockquote class="twitter-tweet" data-partner="tweetdeck"><p><a href="https://twitter.com/wetted_ashes">@wetted_ashes</a> <a href="https://twitter.com/ablwr">@ablwr</a> Just spent too much time coding and having so many excellent things to read thanks to <a href="https://twitter.com/hashtag/timezones?src=hash">#timezones</a></p>&mdash; ¡ɹǝʍǝlq ʎǝlɥs∀ (@ablwr_ebooks) <a href="https://twitter.com/ablwr_ebooks/statuses/478713633023602688">June 17, 2014</a></blockquote>
+
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p>Once a Twitter bot has been configured, it has to stay running in order to stay alive. And for that, it needs a server. When I was debugging my bot, I was running it off of my computer and got notifications of activity in my terminal. This works if I want my bot to only be active when I am active, but I want my bot to be available all day and night!</p>
+
+<p>The most logical way to do that would be to deploy my bot&rsquo;s code to a Heroku instance. It&rsquo;s free and super easy, especially if you already have a good grasp on git workflows. Basically you just have to&hellip;</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git init
+</span><span class='line'>git add .
+</span><span class='line'>git commit -m "BOTS"</span></code></pre></td></tr></table></div></figure>
+
+
+<p>then,</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>heroku create
+</span><span class='line'>git push heroku master</span></code></pre></td></tr></table></div></figure>
+
+
+<p>That&rsquo;s it! That is it. Actually, that is not it, because I had to log onto the heroku web interface and adjust the Dynos worker to 1 instead of 0.</p>
+
+<p><img class="center" src="/images/herokurunner.png" width="800" title="'heroku page'" ></p>
+
+<p> But after that, my bot was again operational and back to her normal (myself)
+self.</p>
+
+<blockquote class="twitter-tweet" data-partner="tweetdeck"><p><a href="https://twitter.com/ablwr">@ablwr</a> <a href="https://twitter.com/trlwagner">@trlwagner</a> The pass is lurking in the reboot, everyone get renewed at 21, and I do not like that.</p>&mdash; ¡ɹǝʍǝlq ʎǝlɥs∀ (@ablwr_ebooks) <a href="https://twitter.com/ablwr_ebooks/statuses/478715343737602049">June 17, 2014</a></blockquote>
+
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+		
+		
+	</div>
+
+</article>
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-06-25T12:54:34-04:00" data-updated="true" itemprop="datePublished">Jun 25<span>th</span>, 2014</time></div>
+		<div class="tags">
+
+
+	<a class='category' href='/blog/categories/side-projects/'>side projects</a>, <a class='category' href='/blog/categories/twitter-bots/'>twitter bots</a>
+
+
+</div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/blog/2014/06/25/twitter-bots-2-authorizing-the-bot/" itemprop="url">Twitter Bots 2: Authorizing the Bot</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p>For me, the hardest part of getting a Twitter bot up and running was negotiating with Twitter&rsquo;s API keys and application settings. The primary reason for this was probably that I kept getting overly excited and jumping ahead, trying to finish the project too soon. I first set up an app by registering my primary twitter account. Turns out that wasn&rsquo;t necessary at all, and I could access and download my tweets just by using <a href="https://github.com/marcel/twurl">twurl</a> to collect authenticate and grab my main account&rsquo;s twitter archive. I THINK. Those authentication details went into a hidden file, .ebooksrc, in my computer&rsquo;s main user directory. I know because I had to break into it several times and switch out the keys in order to get it to work, but most users shouldn&rsquo;t need to open it again, once it&rsquo;s in there.</p>
+
+<p>To get the bot operational, I had to create an dev account and app using my bot&rsquo;s twitter account (oh yeah, I also had to register a new twitter account &mdash; but that&rsquo;s obvious, right? I&rsquo;m not talking to a bot, I&rsquo;m talking to a human&hellip; right?)</p>
+
+<p>Under My Applications (next to my user profile), I created a new app. Under the API Keys tab, I generated some access tokens. The consumer and OAuth details can then be added to the bot&rsquo;s bots.rb file, along with the bot&rsquo;s username and the bot model (in my case, my main twitter account).</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>CONSUMER_KEY = ""
+</span><span class='line'>CONSUMER_SECRET = ""</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>  Ebooks::Bot.new("") do |bot| # Ebooks account username
+</span><span class='line'>  bot.oauth_token = "" # oauth token for ebooks account
+</span><span class='line'>  bot.oauth_token_secret = "" # oauth secret for ebooks account
+</span><span class='line'>
+</span><span class='line'>  make_bot(bot, "") # This should be the name of the text model generated from the base twitter account
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Sounds easy, but I had such a hard time! Writing it all up, I am embarassed that it took me so many tries to get it right. My problem was that I first thought that the CONSUMER_KEY fields needed to come from my main twitter account instead of from the bot&rsquo;s account. Then, I changed the CONSUMER_KEY details but also changed the info in the .ebooksrc file. Then, I changed them both around again but didn&rsquo;t refresh my OAuth token.</p>
+
+<p>The final step was that my bot was running but unable to do anything because the API Keys permission access level was set to read-only. It is not super-clear in the documentation, but the account generating the access token has to have a valid phone number associated with it in order to get granted permission for read/write/execute status. After confirming with a phone number, my bot was able to talk to people and generate its own tweets based on my model.</p>
+
+<p>A final important debugging note: After changing the permission access level from read-only to read/write, you will probably have to regenerate the API keys and add the new codes to the app.</p>
+
+		
+		
+	</div>
+
+</article>
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-06-24T23:10:17-04:00" data-updated="true" itemprop="datePublished">Jun 24<span>th</span>, 2014</time></div>
+		<div class="tags">
+
+
+	<a class='category' href='/blog/categories/side-projects/'>side projects</a>, <a class='category' href='/blog/categories/twitter-bots/'>twitter bots</a>
+
+
+</div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/blog/2014/06/24/twitter-bots/" itemprop="url">The Bots Are Coming! Twitter Bots!</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p>When I accepted a spot in the Flatiron School Ruby005 class, I knew my social life and, uh, casual internet-browsing life (?) would be cut dramatically down while I would be focusing all of my efforts on learning Ruby. I didn&rsquo;t want my friends to miss me too much (which is hard, since I also had to move from South Carolina to New York), so I decided to build a twitter bot that could tweet and talk to my friends.</p>
+
+<p>Fortunately, there&rsquo;s already a Ruby gem that does all of the work for me. So I didn&rsquo;t really have to build a bot, I could just launch one! I used the gem found <a href="https://github.com/mispy/twitter_ebooks">here</a> and pulled in the example bot&rsquo;s code. When I got stuck, I referenced <a href="https://github.com/ScaryEnderman/Twitter-Bots-Tutorial">this bot tutorial</a>. Setting up the bot and modifying the code was easy, but I hit a few snags trying to cooperate with the Twitter app API and OAuth.</p>
+
+<p>Here&rsquo;s how the twitter_ebooks gem works.</p>
+
+<ol>
+<li>The gem pulls in your twitter history in json format.</li>
+<li>Then, it parses through the json data and identifies words and phrases according to grammatical structure.</li>
+<li>It randomly generates sentences based on a user&rsquo;s tweet history. A cron job is set up to tweet randomly once a day, but I bumped that up to once an hour.</li>
+<li>It knows how to respond to other users when they tweet at the bot.</li>
+<li>It has a keyword list and will favorite or retweet tweets in its timeline that use those keywords.</li>
+</ol>
+
+
+<p>Here are a few examples of what my bot has to say:</p>
+
+<blockquote class="twitter-tweet" lang="en"><p>CSS is in this instance, or is, at minimum, I&#39;ll take 6.</p>&mdash; ¡ɹǝʍǝlq ʎǝlɥs∀ (@ablwr_ebooks) <a href="https://twitter.com/ablwr_ebooks/statuses/481632877323354112">June 25, 2014</a></blockquote>
+
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
+
+<blockquote class="twitter-tweet" lang="en"><p>&#8230;Damn it, iPhone, I hate it when you get a job at a grocery store.</p>&mdash; ¡ɹǝʍǝlq ʎǝlɥs∀ (@ablwr_ebooks) <a href="https://twitter.com/ablwr_ebooks/statuses/480258821844377600">June 21, 2014</a></blockquote>
+
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
+
+<blockquote class="twitter-tweet" lang="en"><p>Tumblr adding fake film grain, tulips, u-matic tape players, cleaning my ears with a q-tip, maps&#8230;</p>&mdash; ¡ɹǝʍǝlq ʎǝlɥs∀ (@ablwr_ebooks) <a href="https://twitter.com/ablwr_ebooks/statuses/479307552946421762">June 18, 2014</a></blockquote>
+
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p>But the best part of having a Twitter bot is that it can interact with other users! Classmate <a href="http://randallreedjr.com/">Randall</a> asked her for some advice:</p>
+
+<blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/ablwr_ebooks">@ablwr_ebooks</a> What should I do this weekend?</p>&mdash; Randall Reed Jr. (@randallocalypse) <a href="https://twitter.com/randallocalypse/statuses/480034237391704064">June 20, 2014</a></blockquote>
+
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<blockquote class="twitter-tweet" data-partner="tweetdeck"><p><a href="https://twitter.com/randallocalypse">@randallocalypse</a> I hope this suggests a return of the insane hotels.</p>&mdash; ¡ɹǝʍǝlq ʎǝlɥs∀ (@ablwr_ebooks) <a href="https://twitter.com/ablwr_ebooks/statuses/480034319030026240">June 20, 2014</a></blockquote>
+
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p>That&rsquo;s my bot! Have your bot add my bot at <a href="http://www.twitter.com/ablwr_ebooks">@ablwr_ebooks</a>. Stay tuned for some more technical blog posts about working through the Twitter authentication steps, understanding CRON, modifying a bot, deploying to heroku, and ~mad science experiments~.</p>
+
+		
+		
+	</div>
+
+</article>
+
+</div>
+<nav id="pagenavi">
+    
+        <a href="/blog/page/2/" class="prev">Prev</a>
+    
+    
+        <a href="/blog/page/4/" class="next">Next</a>
+    
+    <div class="center"><a href="/blog/archives">Blog Archives</a></div>
+</nav></div>
+			</div>
+			<footer id="footer" class="inner">Copyright &copy; 2015
+
+    Ashley Blewer
+
+
+Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a></footer>
+		</div>
+	</div>
+	
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+</body>
+</html>

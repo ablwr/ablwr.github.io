@@ -1,0 +1,190 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Why wont Octopress just upload my images - BLOG Progress Process</title>
+	<meta name="author" content="Ashley Blewer">
+
+	
+	<meta name="description" content="Why Wont Octopress Just Upload My Images Why won’t Octopress just upload my images?!?!?!?!?!?!, or how I learned to stop worrying and love the &hellip;">
+	
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="BLOG Progress Process" type="application/atom+xml">
+	
+	<link rel="canonical" href="http://ablwr.github.io/blog/2014/09/25/why-wont-octopress-just-upload-my-images/">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="/stylesheets/font-awesome.min.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	
+  
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-8888310-12']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><div class="profilepic">
+	
+	<img src="http://www.gravatar.com/avatar/425f1ccc494d81dcf41f2cc7ac8d0321?s=160" alt="Profile Picture" style="width: 160px;" />
+	
+</div>
+
+<nav id="main-nav"><ul class="main">
+    <li><a href="/">Blog</a></li>
+    <li><a href="/blog/archives">Blog Archives</a></li>
+    <li><a href="http://www.ashleyblewer.com">Website</a></li>
+</ul>
+</nav>
+<nav id="sub-nav">
+	<div class="social">
+<!-- 		 -->
+		
+		
+		
+			<a class="twitter" href="http://twitter.com/ablwr" title="Twitter">Twitter</a>
+		
+		
+			<a class="github" href="https://github.com/ablwr" title="GitHub">GitHub</a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+    	
+    	
+			<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+</nav>
+</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			
+				
+			
+			<div class="mid-col-container">
+				<div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<h1 class="title" itemprop="name">Why Wont Octopress Just Upload My Images</h1>
+	<div class="entry-content" itemprop="articleBody"><p><em>Why won’t Octopress just upload my images?!?!?!?!?!?!, or how I learned to stop worrying and love the source.</em></p>
+
+<p><img class="center" src="/images/glitch1.png"></p>
+
+<p>I’ve been using Git for a while and I feel like I have a good grasp on it. I’ve also been using Octopress for a while, integrated into Github pages, and I feel like I have a good grasp on it, too. Rake tasks, right? I’ve WRITTEN rake tasks before! I got this! But for some reason, uploading images for me always seemed like it was a miracle that would work sometimes and not work at other times. Y’know… computer magic.</p>
+
+<p><img class="center" src="/images/glitch2.png"></p>
+
+<p>Sometimes it would just straight up EAT my images and I’d have to remake a screen cap and get angry and keep pounding my head against the code-wall. That’s dumb, though. That’s no way to solve a problem, especially when dealing with logical beasts that perform as instructed. But I wasn’t sure what I was doing wrong. I would just keep moving things around and committing until it seemed to give up and take my images.</p>
+
+<p><img class="center" src="/images/glitch3.png"></p>
+
+<p>It’s just not a good way to live.</p>
+
+<p><img class="center" src="/images/glitch4.png"></p>
+
+<p>Are you having this problem, too? I decided to figure it out.</p>
+
+<p><img class="center" src="/images/glitch5.png"></p>
+
+<p>I was dropping my images in the wrong file! With Octopress, there are a lot of potential places to put images. It’s tempting to put it in public/images folder. It’s also tempting to put it in the _deploy/images folder. Those are bad, though. Those are bad. You want to put it in the SOURCE folder. If you stick images in source/images, they will get picked up when running rake generate / rake deploy. If they go anywhere else, the rake task doesn’t know what to do so it just overwrites them and your images will just disappear.</p>
+
+<p><img class="center" src="/images/glitch6.png"></p>
+
+<p>Maybe this is a no-brainer, but sometimes I feel like a no-brainer, myself.</p>
+
+<h1>P.S.</h1>
+
+<p>Another note! It&rsquo;s important to use the right syntax when adding images. One method in Markdown is to use this syntax:</p>
+
+<p> <code>![netflixforbooks](images/markdown.png)</code></p>
+
+<p>But for Octopress, you want to use this:</p>
+
+<p> <img class="center" src="/images/markdown.png"></p>
+
+<p>Otherwise, images will work on the front page of your blog but they won&rsquo;t work when you visit the individual pages. The more you know&hellip;!</p>
+
+<ul>
+<li>I had to use an image tag because otherwise Markdown automatically transforms it into regular html, aka <code>&lt;img class="center" src="/images/markdown.png"&gt;</code> So meta!</li>
+</ul>
+
+</div>
+
+</article>
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+
+</div>
+			</div>
+			<footer id="footer" class="inner">Copyright &copy; 2015
+
+    Ashley Blewer
+
+
+Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a></footer>
+		</div>
+	</div>
+	
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+</body>
+</html>

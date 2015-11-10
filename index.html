@@ -1,1 +1,815 @@
-My Octopress Page is coming soon &hellip;
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>BLOG Progress Process</title>
+	<meta name="author" content="Ashley Blewer">
+
+	
+	<meta name="description" content="Nov 10th, 2015 guest,, programming Guest Post: Show Your Work: Why I Know Commenting Your Code Is Bad I&rsquo;ve been kinda bad at blogging. I have &hellip;">
+	
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="BLOG Progress Process" type="application/atom+xml">
+	
+	<link rel="canonical" href="http://ablwr.github.io/">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="/stylesheets/font-awesome.min.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	
+  
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-8888310-12']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><div class="profilepic">
+	
+	<img src="http://www.gravatar.com/avatar/425f1ccc494d81dcf41f2cc7ac8d0321?s=160" alt="Profile Picture" style="width: 160px;" />
+	
+</div>
+
+<nav id="main-nav"><ul class="main">
+    <li><a href="/">Blog</a></li>
+    <li><a href="/blog/archives">Blog Archives</a></li>
+    <li><a href="http://www.ashleyblewer.com">Website</a></li>
+</ul>
+</nav>
+<nav id="sub-nav">
+	<div class="social">
+<!-- 		 -->
+		
+		
+		
+			<a class="twitter" href="http://twitter.com/ablwr" title="Twitter">Twitter</a>
+		
+		
+			<a class="github" href="https://github.com/ablwr" title="GitHub">GitHub</a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+    	
+    	
+			<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+</nav>
+</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			
+				
+			
+			<div class="mid-col-container">
+				<div id="content" class="inner">
+<div itemscope itemtype="http://schema.org/Blog">
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-11-10T00:22:31-05:00" data-updated="true" itemprop="datePublished">Nov 10<span>th</span>, 2015</time></div>
+		<div class="tags">
+
+
+	<a class='category' href='/blog/categories/guest/'>guest,</a>, <a class='category' href='/blog/categories/programming/'>programming</a>
+
+
+</div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/blog/2015/11/10/show-your-work-why-i-know-commenting-your-code-is-bad/" itemprop="url">Guest Post: Show Your Work: Why I Know Commenting Your Code Is Bad</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p>I&rsquo;ve been kinda bad at blogging. I have a new job and some old jobs and lots of things that keep me from introspecting on code and archives. Fortunately I have great friends, and one of those friends is Kathryn Gronsbell, who reached out to me as an emerging developer (whether she thinks so or not) and wanted to write a <em>guest blog post</em>! As for me, a person who has very recently had to take on the codebase of at least five web complex and non-similar applications at my job&hellip; I can appreciate some good commenting. Commented-OUT code, on the other hand&hellip;</p>
+
+<h1>Show Your Work: Why I know commenting your code is bad, but I do it anyway.</h1>
+
+<h3>Kathryn Gronsbell</h3>
+
+<h3>2015-11-05</h3>
+
+<p>I like to ship ugly, early, and often. My challenge is I’m a Kathryn* who is in the middle of doing three very critical things:</p>
+
+<ol>
+<li>Learning enough Python and Bash to be functional (and dangerous)</li>
+<li>Building small scripts to expedite digitized asset quality control at my organization</li>
+<li>Trying to triangulate how and why certain decisions were made and performed before my arrival, and how to understand, fix/reverse, or move forward (see Steps 1 and 2)</li>
+</ol>
+
+
+<p>In 2013, Peter Vogel explained why “people” should not document or comment their code <a href="https://visualstudiomagazine.com/articles/2013/07/26/why-commenting-code-is-still-bad.aspx">1</a>. Vogel makes well-executed arguments, steeped both in conceptual logic and pragmatism.</p>
+
+<p>“Some readers suggested that comments provided insight into what previous programmers thought their code was doing. I don&rsquo;t care what those programmers thought their code was doing &mdash; I only care what their code actually does (though I do care why the previous programmers thought the code was necessary).”</p>
+
+<p>I agree with Vogel here, on all points. But, I do care what the previous person thought their code was doing because it can help explain OTHER decisions that are not documented in the code (or anywhere else). And because my code is wobbly, like a baby deer that snuck into a moonshine distillery, I feel the need to add comments and leave some less elegant code commented-out so I can understand how a certain chunk came together.</p>
+
+<p>Example:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="c">#This loops through the files and sets a variable “bambi” for the extracted string. This takes the legacy strings which are all uppercase and makes them lowercase alphanumeric strings so that they validate against the strings we create locally.</span>
+</span><span class='line'>    <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">forest_fileDict</span><span class="p">:</span>
+</span><span class='line'>        <span class="n">bambi</span> <span class="o">=</span> <span class="n">forest_fileDict</span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">key</span><span class="p">)]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+</span><span class='line'>        <span class="c"># bambi = bambi.lower()</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>It works, for me and for now. When it doesn’t work anymore I won’t do it anymore. Vogel’s argument about resource-intensity of code commenting reads true, but it also doesn’t apply to my current situation. Describing what the code does helps me learn (because I wrote it and had someone else verify it was accurate). I yearn for the day I can write something that is both self-describing and that I can read in 3 weeks and understand. Until then, I will crawl along with my #-prefaced nuggets of wisdom &ndash; and happily share my MacGyver’ed efforts for review and revision.</p>
+
+<p>If I listened to this ideal practice, I wouldn’t be creating the processes I need to do my job because it would be too big of an obstacle to take on for every little process I needed done. The code will be ugly, but it will work. And that’s what we should aim for &ndash; an agile approach to learning and making. Imperfect action is better than perfect inaction.</p>
+
+<p>I hope if you’re in a similar spot, you now know that you have a comrade. And that one day you, too, can be a “people” Vogel is talking to.</p>
+
+<p>* Being a Kathryn does not involve being a real programmer or code guru. Being a Kathryn means spending hours on StackExchange, sending over-explanatory email pleas to our very patient IT support folks, and constantly chatting friends about why my nested dictionaries aren’t printing as expected.</p>
+
+		
+		
+	</div>
+
+</article>
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-06-30T19:43:23-04:00" data-updated="true" itemprop="datePublished">Jun 30<span>th</span>, 2015</time></div>
+		<div class="tags">
+
+
+	<a class='category' href='/blog/categories/conferences/'>conferences</a>, <a class='category' href='/blog/categories/open-source/'>open source</a>, <a class='category' href='/blog/categories/volunteering/'>volunteering</a>
+
+
+</div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/blog/2015/06/30/creating-closed-captions-for-bangbangcon-conference-videos/" itemprop="url">Creating Closed Captions for !!Con Conference Videos!!!</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p>Note: I wrote this up and added it to the !!Con <a href="https://github.com/hausdorff/bangbangcon.github.io/tree/gh-pages/2014-transcripts">github README</a> but CC&#8217;ing it here for ~outreach~ purposes!</p>
+
+<p><a href="http://bangbangcon.com">!!Con</a> had a live stenographer for live closed captioning of all talks, and follow-up transcripts of all talks. AMAZING! The only conference I’ve seen rivaling this level of inclusivity was Virginia Tech’s <a href="http://www.cpe.vt.edu/gbt/">Gender, Bodies, and Technology conference</a> which offered live signing for all sessions not segmented into tracks. Also amazing.</p>
+
+<p>2014 !!Con’s talks are all <a href="https://www.youtube.com/channel/UC2kxl-dcUYQQvTCuQtfuChQ">up on YouTube</a>, which is great. But all of us, together, can collaborate to take these talks to the next level by syncing up those <em>great</em> transcripts with these <em>great</em> videos!</p>
+
+<p>I know what you might be thinking: Doesn&rsquo;t YouTube offer <a href="https://support.google.com/youtube/answer/3038280?hl=en">auto-captioning</a>? The answer is YES, it does. And it’s pretty great for some things, but not so great for live talks in terms of reliability.</p>
+
+<p><img class="center" src="/images/bad_captions.png" title="" ></p>
+
+<p>Introducing <a href="https://amara.org">Amara</a>. I’ve read about Amara but had never used it before today, and it is RAD. It makes subtitling SO easy, utilizing hotkeys and hitting all of the pain points that come with transcription (which I’ve done a lot of — not super easy).</p>
+
+<p><img class="center" src="/images/amara.png" title="" ></p>
+
+<p>So here is how to link the !!Con transcript to the shared video.</p>
+
+<p>I’m sure there is a better way to do this, but I prepped the available transcription text file in SublimeText by adding a line break in between each existing line by holding down Control-Shift-DownArrow until it got the bottom, and then I pressed enter. You can do whatever works for you, but the text won&rsquo;t import correctly as-is so this minor data-wrangling is necessary.</p>
+
+<p><img class="center" src="/images/transcript.png" title="" ></p>
+
+<p>This way, when I went to upload the subtitles, they were already broken down into bite-size pieces. Some cleanup might be necessary after this point, like getting rid of blank subtitles.</p>
+
+<p><img class="center" src="/images/delete_subtitle.png" title="" ></p>
+
+<p>You may be tempted to move ahead and tell Amara are finished so you can check to see if your work is working right. Just know that Amara doesn’t like it when you do this. It will assume you are done ingesting subtitles and will think you are ready for the timing zone. I spent a while fussing around in this area. The subtitles will save, though, so you can leave and come back as long as you save a draft.</p>
+
+<p>Next is the fun part — Watching the video and getting the subtitles in sync. First, it’s fun because you get to watch the talk! Second, it’s fun because you press the “down” button to move to a new subtitle and you get in a rhythm that is both videogame-esque and meditation-esque. I like it. If you lose your groove, you can tab to pause the video or you can go back and use the slider to adjust the timing on subtitles on an individual basis.</p>
+
+<p>After that, you can save/publish and you are done. The !!Con organizers are able to take it from there because the !!Con YouTube account is already ready to receive the Amara subtitles, which get synced on a regular basis. That&rsquo;s it!</p>
+
+<p>This is a GREAT way to feel super-productive even if you are feeling too under-the-weather to do other work. (Now that I’m all-freelance all-the-time, I’m super obsessed about whether I am at an optimal state to be billing hourly for my brain.)</p>
+
+<p>Hmmmm&hellip; But wait &mdash; I did the video you see in examples above. But how do you know if the video you are gonna transcribe has already been done or not? What a great question. You can comment on <a href="https://docs.google.com/spreadsheets/d/1MNZH-58vBXpVjzYHObV6vs1NSAK5QQ8v-g4wBEVdZqY/edit?usp=sharing">this Google Spreadsheet</a> and then everyone will know what is going on!</p>
+
+<p>In closing&hellip; Don’t stop there! Plenty of conferences and other things could use help with reliable closed captioning!</p>
+
+		
+		
+	</div>
+
+</article>
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-05-30T12:16:10-04:00" data-updated="true" itemprop="datePublished">May 30<span>th</span>, 2015</time></div>
+		<div class="tags">
+
+
+	<a class='category' href='/blog/categories/life/'>life</a>, <a class='category' href='/blog/categories/marleigh/'>marleigh</a>, <a class='category' href='/blog/categories/me/'>me</a>
+
+
+</div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/blog/2015/05/30/where-have-you-been/" itemprop="url">Where Have You Been?</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p>Hi! I haven&rsquo;t updated this blog since February. What gives?!</p>
+
+<p>I don&rsquo;t want you to think I&rsquo;ve given up on my dear friend <a href="http://marleighchiles.com/">Marleigh</a>. She applied to <a href="http://adadevelopersacademy.org/">Ada Developers Academy</a> and was accepted, so naturally I let them take the reigns in her tech education, and we now send each other Star Trek gifs using more direct channels.</p>
+
+<p>What else?</p>
+
+<p>I&hellip;</p>
+
+<ul>
+<li><p>continued involvement with <a href="https://mediaarea.net/MediaConch">MediaConch</a>.</p></li>
+<li><p>got involved with <a href="https://xfrcollective.wordpress.com">XFR Collective</a>.</p></li>
+<li><p>gave two talks at <a href="http://personaldigitalarchiving.com/">Personal Digital Archiving 2015</a>.</p></li>
+<li><p>wrote about <a href="http://www.bustle.com/articles/78360-i-found-my-way-back-to-tech-with-the-help-of-people-who-understood-why-id">my experience with technology</a> for Bustle.</p></li>
+<li><p>gave a talk at <a href="http://bangbangcon.com/">!!Con</a>.</p></li>
+<li><p>other things that will remain a secret for now!</p></li>
+</ul>
+
+
+		
+		
+	</div>
+
+</article>
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-02-02T21:14:34-05:00" data-updated="true" itemprop="datePublished">Feb 2<span>nd</span>, 2015</time></div>
+		<div class="tags">
+
+
+	<a class='category' href='/blog/categories/marleigh/'>marleigh</a>, <a class='category' href='/blog/categories/mvc/'>mvc</a>, <a class='category' href='/blog/categories/rails-engage/'>rails engage</a>
+
+
+</div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/blog/2015/02/02/rails-engage-cooking-up-an-mvc/" itemprop="url">Rails Engage: Cooking Up an MVC</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p><img class="center" src="http://i183.photobucket.com/albums/x54/TrueX-Ray/TNG%20Caption%20This/TNGCaption158e.jpg"></p>
+
+<p>Okay! Last time we talked about the magic of <code>rails generate</code> and the structure that gets created when you make a new Rails project. I gave you a soft warning to pay close attention to the app/ folder with the foreboding &ldquo;Just remember the MVC&rdquo;&hellip; Now let&rsquo;s talk about the MVC.</p>
+
+<p>I&rsquo;m not the only person to use this analogy, but here it goes and I know you&rsquo;ll be able to relate to it. The best way I&rsquo;ve found to understand MVC is to treat the framework like a restaurant.</p>
+
+<p>The restaurant is broken up into three parts: Chefs working behind the scenes to make a great meal, servers that deliver the meal to the customers so they can eat it, and plates/tables/utensils so the meal can be enjoyed. Your app is THE MEAL!</p>
+
+<p><strong>Models</strong> &mdash; <strong>Chefs</strong></p>
+
+<p>Models hold the code. They hold the logic. They are the brains of the operation. A master chef has to take all of the individual pieces of something and put them together just right to make something delicious.</p>
+
+<p><strong>Controllers</strong> &mdash; <strong>Servers</strong></p>
+
+<p>The chef is too busy making a masterpiece to give her customers the meal herself! She&rsquo;s got work to do! The controllers help keep all the beautiful, well-crafted meals going out to the right customers. Being a server (the restaurant kind) is hard work, keeping track of what everyone ordered and where they are seated. The controller takes data from the model and delivers it to the plate.</p>
+
+<p><strong>Views</strong> &mdash; <strong>Plates</strong></p>
+
+<p>Yum yum, time to eat these snacks up, right? The view is where all the front-end work comes into play. It&rsquo;s a very important component because just because you have a delicious meal, no one is gonna come to your restaurant if its lookin&#8217; like the Wing Basket. Or maybe they will and it&rsquo;ll be the best kept secret in town. Anyway, the view is dedicated to make all your hard work and code look great so people will actually want to consume it.</p>
+
+<p>MVC is a good framework to know, but what&rsquo;s the point? The point is to keep your code clean. Coding means juggling a lot of different things at once, so this framework helps you figure out where you need to go to find your problem and fix it. Is your math not working? Check your models. Is the math being delivered to the wrong page? Check your controllers. Is the math problem just super ugly? Take a look at your views.</p>
+
+<p>There a lot of nuances here, but this is a good overview to have in the back of your mind as you write code. And remember, the first goal is to get things working so if you accidentally put some logic in your view, don&rsquo;t sweat it.</p>
+
+		
+		
+	</div>
+
+</article>
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-01-24T12:24:23-05:00" data-updated="true" itemprop="datePublished">Jan 24<span>th</span>, 2015</time></div>
+		<div class="tags">
+
+
+	<a class='category' href='/blog/categories/generate/'>generate</a>, <a class='category' href='/blog/categories/marleigh/'>marleigh</a>, <a class='category' href='/blog/categories/rails-engage/'>rails engage</a>
+
+
+</div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/blog/2015/01/24/rails-engage-rails-generate/" itemprop="url">Rails Engage: Rails Generate</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p><img class="center" src="http://31.media.tumblr.com/d619155808e29c0d5005f4f663d11114/tumblr_mjfgq0AcrB1qd5tdto1_250.gif"></p>
+
+<p>Rails comes with a lot of magic. When I was learning Ruby and Ruby on Rails, I was taught Ruby first, moved up slowly, and then was shown that all the things I did the hard way could be done by typing “rails generate” (or even just “rails g”!). I think the way I learned was good, but listen — we don’t have time for that right now, so we are just going to throw out this command and I will explain to you what it does. The deeper concepts can come later, but right now the most important thing is to get our hands dirty right away and generate a lot of code.</p>
+
+<p>“rails generate” makes a lot of assumptions about what you might want in a robust web application and it generates things accordingly. There are more one-liners that can be used later to continue to expand your application as you need them.</p>
+
+<p>The first command is <code>rails new</code>. <code>rails</code> tells your computer to use that code base and <code>new</code> is the command to generate a whole bunch of pre-written template code. You&rsquo;ll need one more thing after that, and it&rsquo;s your app name. So <code>rails new marleigh</code> will make all of those files generate in a folder called marleigh <em>in whatever directory you are currently in</em>. Make sure you know where you are in your terminal when you make this folder so you can find it again! If you aren&rsquo;t sure where you are, you can type <code>pwd</code>. That stands for &ldquo;print working directory.&rdquo;</p>
+
+<p>So <code>rails new</code> makes a lot of stuff. Do you need all of it? No. Shouldn&rsquo;t you be writing beautiful, minimalist, clean code from the very beginning? No. You will have plenty of time to craft elegant code in the future, but right now let&rsquo;s just get something running. It&rsquo;s easy to get caught up the former and never get to the latter.</p>
+
+<p><img class="left" src="/images/base_rails.png"></p>
+
+<p>But what do we get?</p>
+
+<p>On the left is an image of what gets generated when you run that one line. That&rsquo;s a lot of stuff! When I was cruising around on Github before learning anything about Rails, all of these files and folders scared the hell out of me. I also assumed they were all generated manually and that everyone knew everything about what all of these files and folders did and I had no idea where to look and I&rsquo;d never get anything right and was just a big dum-dum. That&rsquo;s wrong.</p>
+
+<p>Here&rsquo;s what&rsquo;s right.</p>
+
+<p><img class="center" src="http://33.media.tumblr.com/4256f4276b3aa11c3caf98a574a58296/tumblr_mjfgq0AcrB1qd5tdto5_250.gif"></p>
+
+<p><strong>app</strong> &mdash; Most of your code will be written in this folder. It contains the models, controllers, and views, which are at the heart of the Rails framework. Another important folder within this one is the assets folder. There are other folders, too, but they are not required and you can ignore them for now. Just remember the MVC &mdash; we&rsquo;ll go into that later when we start writing. The assets folder is for putting your custom CSS, JavaScript, and images.</p>
+
+<p><strong>bin</strong> &mdash; The code in this folder helps start up your app. If you have other things helping you out, they may needed to be booted up in here along with Rails. From the start, it&rsquo;ll have what you need to get things running.</p>
+
+<p><strong>config</strong> &mdash; The config folder also gives you what you need to get off the ground, but very useful if you need to make modifications in the future, like because you are using a different server and need to change the database.yml file. There is one very important file in here, though, and it&rsquo;s routes.rb. You will be using it even for a basic application.</p>
+
+<p><strong>db</strong> &mdash; Your database lives in this folder! seeds.rb is for populating seed data when you are testing.</p>
+
+<p><strong>lib</strong> &mdash; Other libraries go here.</p>
+
+<p><strong>log</strong> &mdash; Log files! You probably won&rsquo;t need to look at these very much initially, but be glad they are there.</p>
+
+<p><strong>public</strong> &mdash; This is the only public part of your site. The rest of it is all hidden. Error pages, rules for robots like web scrapers, and your favicon (the tiny icon in the tab- section of your browser) live here by default.</p>
+
+<p><strong>test</strong> &mdash; An important component to writing code is writing tests to make sure that code works. I&rsquo;m not gonna help you learn how to write tests, though.</p>
+
+<p><strong>tmp</strong> &mdash; Don&rsquo;t worry about it. Just a spot for temporary files.</p>
+
+<p><strong>vendor</strong> &mdash; This is where you put code libraries from other places, like if you use Bootstrap or a JavaScript library. It&rsquo;s the same as putting it in the Assets folder in /app but it&rsquo;s polite to put code you didn&rsquo;t write or generate into this folder. It also helps keep you organized.</p>
+
+<p><strong>config.ru</strong> &mdash; The ru stands for rackup. This configures the application for use with Rack-based servers. It&rsquo;s set up as default.</p>
+
+<p><strong>Gemfile</strong> &mdash; If your app uses other gems (Ruby libraries) to accomplish tasks, the names of those gems should go here so that it can be easily loaded by anyone wanting to use the application. The Gemfile.lock file is created after it is &ldquo;bundled.&rdquo;</p>
+
+<p><strong>Rakefile</strong> &mdash; If you find yourself doing a task frequently and want to automate it, you can turn it into a rake task. If you have one of those, you can put it here so that it loads along with your application.</p>
+
+<p><strong>.gitignore</strong> &mdash; This is where you put files that you don&rsquo;t want to upload to git. This is in all git repositories, but Rails auto-populates it with stuff you never need to load to a public git directory.</p>
+
+<p><strong>README</strong> &mdash; Documentation is important. This is a good place to put information about your app and how to use it.</p>
+
+<p><img class="center" src="http://33.media.tumblr.com/7a224527d4b66b9987bb912262058de1/tumblr_mjfgq0AcrB1qd5tdto4_250.gif"></p>
+
+<p>It&rsquo;s still a lot all at once, right? And how do those pieces even work together?! That&rsquo;ll be what we go into next when we start writing code. A lot of this stuff <em>is</em> excessive for what you want to do, but it helps us get to the fun stuff right away.</p>
+
+<p>The first link in the resources is great at explaining all of this in detail, so I recommend going over it (and over it and over it) to have a good understanding of how these parts work together.</p>
+
+<p><img class="center" src="http://38.media.tumblr.com/8892c95636fd67bb843da6aa79c1ded4/tumblr_mjfgq0AcrB1qd5tdto2_250.gif"></p>
+
+<h3>Resources</h3>
+
+<p><a href="http://guides.rubyonrails.org/getting_started.html">Getting Started with Rails</a></p>
+
+<p><a href="https://upcase.com/trails">Thoughtbot&rsquo;s Learn Rails</a></p>
+
+<p><a href="https://github.com/petrjasek/rails-portfolio">Rails Portfolio</a></p>
+
+<p><a href="http://rails-3-2.railstutorial.org/book">Ruby on Rails Tutorial</a></p>
+
+		
+		
+	</div>
+
+</article>
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-01-18T15:41:11-05:00" data-updated="true" itemprop="datePublished">Jan 18<span>th</span>, 2015</time></div>
+		<div class="tags">
+
+
+	<a class='category' href='/blog/categories/marleigh/'>marleigh</a>, <a class='category' href='/blog/categories/project-scoping/'>project scoping</a>, <a class='category' href='/blog/categories/rails-engage/'>rails engage</a>
+
+
+</div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/blog/2015/01/18/rails-engage-scoping/" itemprop="url">Rails Engage: Scoping</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p><img class="center" src="/images/guinan_gun.gif" title="" > <img class="center" src="/images/guinan_gun2.gif" title="" ></p>
+
+<p>When you’re making your first app, it’s hard to think about scope because it’s hard to know what is and isn’t possible. Some things that seem easy are hard, and vice versa. Marleigh mentioned an idea to me and fortunately it happened to be exactly the right size for a first-app: complex enough to cover all the concepts you need to be a great junior developer but simple enough to be able to tackle as a junior developer.</p>
+
+<p>I don’t want to give away her project idea, but when she told me what she wanted to build, I was able to break it down like this: Possible to execute in one or two pages, involves at least one API, logic is relatively simple but requires insight that she already has, database is not complex, is something she is personally interested in.</p>
+
+<p>Here are a few things to try to keep in mind when planning out your first project:</p>
+
+<ol>
+<li>Keep it simple. Absolutely simple. There is a chance it’ll be too simple, but it’s more likely that you will think of something that has a lot more moving parts than you’d expect.</li>
+<li>Can this be done in one or two pages?</li>
+<li>Logic. Can you figure out how to figure something out in advance? If you don’t know the answer, how are you going to be able to code it? One of the first apps I made involved a weather API and logic that would determine whether or not the average threshold for rainfall would exceed a certain limit, so you’d know whether or not you’d need an umbrella in the morning (and the application would fire a text only if that was the case). That was something my team could easily figure out. You’ll be worried about figuring out a lot of stuff, so don’t make a complex problem part of it. There’s nothing wrong with ripping off something that already exists because the important part is your learning.</li>
+<li>Be interested. Be something you actually want to use and be proud of. This is kind of a no-brainer because you’re obviously making this app for you in your spare time while learning how to code, but it’s worth emphasizing. Do something related to what you love.</li>
+</ol>
+
+
+<p>Scoping is hard whether you are a junior or a senior developer: there&rsquo;s always going to be hiccups that you didn&rsquo;t expect or things that were much easier than anticipated. It gets easier, but it will never be easy (kinda like programming, if you&rsquo;re doing it right).</p>
+
+<p>Bonus points: APIs. This is also good for thinking up an idea: find an API that is well-made and build something based on it. You certainly don’t need to use an API for your app but I can tell you that when I was interviewing for my first developer job out of school, APIs were a hot topic. (A lot of questions about whether I’d made my own before.)</p>
+
+		
+		
+	</div>
+
+</article>
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-01-11T09:11:48-05:00" data-updated="true" itemprop="datePublished">Jan 11<span>th</span>, 2015</time></div>
+		<div class="tags">
+
+
+	<a class='category' href='/blog/categories/bash/'>bash</a>, <a class='category' href='/blog/categories/command-line/'>command line</a>, <a class='category' href='/blog/categories/marleigh/'>marleigh</a>, <a class='category' href='/blog/categories/rails-engage/'>rails engage</a>, <a class='category' href='/blog/categories/shell/'>shell</a>, <a class='category' href='/blog/categories/terminal/'>terminal</a>
+
+
+</div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/blog/2015/01/11/rails-engage-setting-up-your-environment/" itemprop="url">Rails Engage: Setting Up Your Environment</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p><img src="http://38.media.tumblr.com/f360873af12a76bc4b00a549c799a2d1/tumblr_mtayo9M8JJ1rik14zo1_400.gif" alt="Data using a computer" /></p>
+
+<p><img src="http://38.media.tumblr.com/bb28f80f960d040e9d2842fed6d20ab9/tumblr_mtayo9M8JJ1rik14zo3_400.gif" alt="Data using a computer fast" /></p>
+
+<p> Disclaimer: I love this part. I love setting up environments, I love debugging problems on the command line*, and I love working on server-side problems. Ever since I was a kid. Weird, right? Most people don’t feel that way (or lacked the opportunity). And it’s hella intimidating to start your coding journey by having to stare at a huge black screen* that you don’t understand. I also used DOS when I started using computers, so it was comforting to me, a familiar screen, and even working in the terminal* now gives me this strong sense of nostalgia for childhood. SO NERDY. Most people have only used graphical user interfaces to interact with their computer, so typing things into the shell* is definitely weird.</p>
+
+<p>Weird and scary. Because you&rsquo;re looking at an empty black box, typing into the darkness, it can be intimidating because of a slight fear that you&rsquo;ll do something wrong and ruin your entire computer. This is highly, highly, highly unlikely. Everyone starting out gets the disclaimer of being wary of commands that start with <code>rm</code> (remove), and you could end up in black holes that takes a few hours to get out of because of debugging, but be brave and go forth! Environment problems don&rsquo;t take a long time because you are stupid. They take a long time because the computer is stupid and needs explicit instructions.</p>
+
+<p>It seems like programming is a lot like the opening gif, up above. You don&rsquo;t have to be Commander Data to use the command line, though. And a lot of environment setup involves pressing a button and waiting a while. We&rsquo;re gonna have you up and running like this&hellip; in theory.</p>
+
+<p><img src="http://38.media.tumblr.com/ed6df7c82c24e812dfe3c5892a65bcb8/tumblr_mohoyw4X0l1s67vyfo4_250.gif" alt="Data pressing a button" /></p>
+
+<p>The final and most difficult part about setup is that in theory it’s easy. In theory, you just run a few lines and everything is totally fine and your computer is like :) complete! :) installed! :) good! :). But most of the time, you get some crazy  jargon.</p>
+
+<p>First rule: Read what the computer gives back to you! This is the best thing you can learn from setting up your environment (assuming you run into problems). Your computer will tell you what’s wrong. Sometimes it’s good at articulating its feelings. Sometimes its not so good. It just a computer, after all. It doesn’t really have feelings. But when you get an error message, don’t panic!</p>
+
+<p>Second step: If you have no idea what the computer is trying to tell you, google it. Google the shit out of it. Copy-paste that shit right into google and you’re most likely to get a link to StackOverflow with someone else that had your same problem. Especially when you’re learning early on — at least one person, usually many people, have had the same problems you are having right now. And some kind person out there, again usually on StackOverflow, has already gently explained the right thing to do in order to fix it. If you don’t understand what they are saying, keep scrolling or start googling what they are saying. Just google forever. Or use your preferred search engine.</p>
+
+<p>Enough of these steps, let&rsquo;s get practical. Pop open that terminal open! (Use Spotlight to search for Terminal, or you can find Terminal.app in your applications folder <strong>in the Utilities folder</strong>). Windows users, sorry I am leaving you in the dust here.</p>
+
+<p>First, let&rsquo;s install <a href="http://brew.sh/">Homebrew</a>. Follow the commands on the page and listen to anything the command line gives back to you. Homebrew is great. It&rsquo;s a package manager. What does that mean? It means you can add things to your computer that you need without having to do all the work yourself, or running into problems. So when you want to install a new programming lanuage or component, you can do it with one line. Overall, from a new-user perspective, it helps protect your machine from you. It makes command-lining like a wild beast (as a new user) much safer.</p>
+
+<p><img src="http://emojipedia.org/wp-content/uploads/2013/07/160x160xbeer-mug.png.pagespeed.ic.kOjM-Un-7l.jpg" alt="beer" /></p>
+
+<p>I think you might need to install X-Code. This will vary based on your operating system. See the resources below if you have trouble doing this.</p>
+
+<p>When Homebrew is up and running, you can use it to install Ruby, RVM (this manages), and Rails by running <code>brew install</code> and the thing you want to install. Rather than repeating how to do this from memory, I recommend following the guides I link to at the bottom of this post.</p>
+
+<p>* I realize that people commonly use several words to refer to the same thing: that black (by default) screen you use to manipulate your computer, with only text on it. On OS X (Mac) operating systems, the application is called <strong>Terminal</strong>. Inside, it uses the <strong>shell</strong> (Unix term for a user interface for accessing your computer). There are a few language structures used in shell, but the most common (and default) is called <strong>bash</strong> (which is a free, open-source alternative of the Bourne shell, which is why bash stands for Bourne-again-shell). All of this brings together the ability to manipulate your computer via the <strong>command-line</strong> (as opposed to using your mouse to click where you want to go — that uses the graphical user interface).</p>
+
+<p>Windows is a different beast, of course, but it might be the beast you are stuck with. On Windows, you are looking for the Command Prompt (found via this path: Start > All Programs > Accessories > Command Prompt, if I recall correctly).</p>
+
+<p><img src="http://emojipedia.org/wp-content/uploads/2013/07/160x160xclinking-beer-mugs.png.pagespeed.ic.Gv-8d6e0qe.jpg" alt="clinking beer" /></p>
+
+<p>Although most learning can be done alone, it&rsquo;s a bit of a bummer that setting up the environment is like being forced to dive head-first into the deep end without even ever having been in the water before, much less know how to swim. If you are a non-Marleigh following along with these posts, it&rsquo;s best to try to find a friend or resource that can sit next to you and explain things. If you have no friends (that know about this stuff), you can ask me! But remember firstly that search engines are also your friend.</p>
+
+<h3>Resources:</h3>
+
+<p><a href="http://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/">How to Install Xcode, Homebrew, Git, RVM, Ruby &amp; Rails</a></p>
+
+<p><a href="http://braumeister.org/">Braumeister &mdash; list of different brew packages</a></p>
+
+<p><a href="https://developer.apple.com/xcode/">X-Code</a></p>
+
+<p><a href="http://guides.rubyonrails.org/getting_started.html">Rails Guide: Getting Started with Rails</a></p>
+
+		
+		
+	</div>
+
+</article>
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2015-01-10T20:36:19-05:00" data-updated="true" itemprop="datePublished">Jan 10<span>th</span>, 2015</time></div>
+		<div class="tags">
+
+
+	<a class='category' href='/blog/categories/marleigh/'>marleigh</a>, <a class='category' href='/blog/categories/rails-engage/'>rails engage</a>
+
+
+</div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/blog/2015/01/10/rails-engage/" itemprop="url">Rails Engage!</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p><img src="/images/tng-engage.gif" alt="engage picard" /></p>
+
+<p>Happy new year.</p>
+
+<ol>
+<li>I have a friend who wants to learn how to code.</li>
+<li>She has an app in mind that she wants to create.</li>
+<li>One of my goals for the new year is to write more technical blog posts.</li>
+</ol>
+
+
+<p>We also live pretty far apart — I live in New York and she lives in my home state of South Carolina (at least, for now). I think one of the best ways to help her make her app is to write blog posts explaining some of the concepts that were new to me when I was learning how to code. Ruby on Rails is one of the easiest frameworks to learn for a couple of reasons: it teaches you the core concepts of programming for the web, Ruby is one of the easiest languages to learn as a beginner (if not the easiest), and Rails is robust enough to get a fully functioning application off the ground in the matter of a few weeks, even for people new to coding. And it’s just easier for me to write if I can pretend like I’m speaking to one person directly.</p>
+
+<p>Another important note: my friend is a real Star Trek: The Next Generation nerd, so if you see an obtuse amount of TNG references and gifs on this blog in the near future&hellip; that is why.</p>
+
+<p>Here’s the rough framework I will use to explain how to make an app while keeping it general enough for anyone (and obviously subject to change).</p>
+
+<ol>
+<li><a href="http://ablwr.github.io/blog/2015/01/11/rails-engage-setting-up-your-environment/">Environment setup</a>
+1.5 <a href="http://ablwr.github.io/blog/2015/01/18/rails-engage-scoping/">Scoping</a></li>
+<li><a href="http://ablwr.github.io/blog/2015/01/24/rails-engage-rails-generate/">rails generate (What are these files?)</a></li>
+<li>Eaten by 2</li>
+<li>MVC</li>
+<li>Working with an API</li>
+<li>Logic</li>
+<li>Front-end</li>
+<li>How to deploy</li>
+</ol>
+
+
+<p>Engage!</p>
+
+		
+		
+	</div>
+
+</article>
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-12-27T15:40:43-05:00" data-updated="true" itemprop="datePublished">Dec 27<span>th</span>, 2014</time></div>
+		<div class="tags">
+
+
+	<a class='category' href='/blog/categories/goals/'>goals</a>, <a class='category' href='/blog/categories/new-year/'>new year</a>
+
+
+</div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/blog/2014/12/27/new-years-resolutions/" itemprop="url">New Year&#8217;s Resolutions</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p><img src="/images/gityear.png" alt="git year" /></p>
+
+<h2>0. Be a better developer.</h2>
+
+<p>Definitely this. This was my goal in 2014 and it&rsquo;ll continue to be my #1 goal in 2015. In 2013, I had the ambiguous resolution of &ldquo;learn to code.&rdquo; Or &ldquo;learn to code more.&rdquo; In 2014, with help, I got the fundamentals down, enough to be employed full-time as a developer. 2015 is where I can continue to improve my skills and put this knowledge to good use. Which brings me to resolution 2:</p>
+
+<h2>1. Meaningful open source contributions.</h2>
+
+<p>Now that I am capable of contributing, I&rsquo;m ready to start doing so, even if I have to start small. I&rsquo;ve wanted to contribute to open source projects ever since the time I installed VLC Media Player (and read the documentation) when I was 14 or 15. I&rsquo;m not ready to become a C++ and algorithms master in a year, but there are plenty of open source projects that could benefit from my skill set.</p>
+
+<h2>2. Double my git commits.</h2>
+
+<p>I like to put something attainable and quantifiable on my list of goals. This post would have been my 1000th commit of 2014 if I&rsquo;d posted this when I started writing it (and dated: the 27th). It&rsquo;s currently at 1082. I&rsquo;d like to at least double that number by this time next year. I don&rsquo;t think I&rsquo;ll have to make much of an effort here, as I&rsquo;ve been actively contributing to the code base where I work from Week 1, intend to follow through on resolution 2, above, and have too many side projects I want to get started on.</p>
+
+<h2>3. More technical blog posts.</h2>
+
+<p>I hate writing technical posts! I worry that they will end up dry and boring, I&rsquo;m scared of being wrong, and it&rsquo;s overall not as enjoyable as a blog post talking about my ~feelings~. But I know technical blog posts help reinforce what I know, they help other people, and they can potential help me when I inevitably forget a concept or method of server setup months down the road.</p>
+
+<h2>4. Give back.</h2>
+
+<p>I have been very lucky in my life, and this year in particular. So many other people haven&rsquo;t had the opportunities that have been handed to me, but I want everyone to be able to get the education and help they need if they want to learn web development. I want to keep tutoring, keep mentoring, and keep getting others excited about code. Whether it&rsquo;s helping 1-on-1, giving educational talks, writing tutorials, or even just explaining why my list starts with 0 instead of 1, I&rsquo;m ready to help out.</p>
+
+<h2>5. Give back (field-specific).</h2>
+
+<p>I also care a lot (too much?) about moving image archiving, digital preservation, and video on the web. Leaving my previous field was very hard and worthy of its own blog post, but I am 100% dedicated to making contributions to those fields or areas of study, even if I am not actively doing it full time.</p>
+
+<p>Oh, and learn vim. Another easy one. My keyboard shortcut game is strong but I&rsquo;m ready to step it up.</p>
+
+<p>2014 has been a really great year for me and I&rsquo;m looking forward to 2015.</p>
+
+		
+		
+	</div>
+
+</article>
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-12-18T19:45:10-05:00" data-updated="true" itemprop="datePublished">Dec 18<span>th</span>, 2014</time></div>
+		<div class="tags">
+
+
+	<a class='category' href='/blog/categories/cash/'>cash</a>, <a class='category' href='/blog/categories/comrades/'>comrades</a>, <a class='category' href='/blog/categories/confidence/'>confidence</a>, <a class='category' href='/blog/categories/feelings/'>feelings</a>, <a class='category' href='/blog/categories/flatiron/'>flatiron</a>
+
+
+</div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/blog/2014/12/18/flatiron-school-roi-and-life-as-a-number-flatironalum/" itemprop="url">Flatiron School ROI and Life as a #FlatironAlum</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p>I’m going to break this blog post up into three Cs.</p>
+
+<h1>Cash, Confidence, Comrades.</h1>
+
+<p>Not in that order. I’m going to rank them in order of importance/significance.</p>
+
+<h1>Confidence</h1>
+
+<p>I&rsquo;ve been thinking about confidence a lot over the past several months. When I look back on my time spent at Flatiron, I felt like the program overall was an immensely valuable experience in being able to learn so much in such a short period of time, to be able to push myself to and beyond the limit, and to work with so many great people. But the biggest impact on my life is less about the knowledge I gained and more about the increase of confidence in my abilities.</p>
+
+<p>I want to emphasize here the difference between having confidence and being overly confident. I feel like I know exactly where I am at, what I know and don&rsquo;t know, that there&rsquo;s an infinite amount of things I don&rsquo;t even know I don&rsquo;t know about yet, and what I need to improve on (which is a lot!). But beyond that, I don&rsquo;t doubt my abilities. I feel confident in my ability to tackle most things, even if I know it will probably take me longer than someone who has already done a particular task before.</p>
+
+<p>Anyway: I don&rsquo;t think I ever would have reached that point if I had taken on learning web development on my own. I am sure that I would have been riddled with assuming I was always wrong, that I always knew nothing, and I&rsquo;d be afraid to speak up about anything related to coding because I wouldn&rsquo;t be able to trust myself when I felt right.</p>
+
+<p>Doubting one&rsquo;s self is a massive problem in the tech field. When there are so many asshole developers out there talking down to every non-technical person, it&rsquo;s easy to start a career off with a major inferiority complex. But just like anything else, people that act like they know the most tend to not, and people that are humble are a wealth of knowledge waiting to be uncovered.</p>
+
+<p>In this way, I&rsquo;ve overcome the &ldquo;imposter syndrome.&rdquo; Not completely, but enough.</p>
+
+<h1>Comrades</h1>
+
+<p>Culture fit was really important to me when I was applying to different web development programs and interviewing at Flatiron. I really wanted to work with people that were like me — Friendly people, not 100% grumpy dudes, etc. etc., not like the “standard tech field demographic.” I wasn’t going in thinking “Oh jeez I hope I am working with people that are 40 new BFFs 4 life!” Like, who goes into anything thinking that? Maybe really amazing people. Anyway, I feel like that’s what I got. Not only was the culture fit exactly what I was looking for, I also have so many great friends after the program and into the future. This is especially great for me as someone who moved to New York for the program. I had a bunch of friends living here in New York but it’s always a little scary to move somewhere and not know anyone. I did that when I lived in New York before and it kinda sucked. Now I know a bunch of great people and have a great network of people I can rely on. I’ve also met a bunch of Flatiron alumni and they are also super nice, super rad, and super amazing. Flatiron is excellent at selecting good people and turning them into developers (which is exactly what they advertise).</p>
+
+<h1>Cash</h1>
+
+<p>Okay, yeah. The first two are not as easily predicted as they are qualitative data, but the quantifiable data was a big concern for me. Flatiron School was not cheap, nor is living in New York, so I had to feel confident about quitting my day job and night job to go all-in on programming, something I hadn’t done for a living but had done a little bit here-and-there. At the time, the website was boasting an average of $75k annual salary for grads. I won’t go into the personal deets of others, but a recent unofficial survey of my classmates show that this data is accurate. Happy to get specific in person, but in a blog post I want to emphasize that the statistics AIN’T NO LIE. I got a Master&rsquo;s degree and took a job making less money than what I was making before. After Flatiron, my salary more than doubled AND I get crazy perks AND treated like a real person AND work with wonderful people all day AND I love writing code and figuring out problems. I have a lot of feelings about this that deserve an entire blog post. If this kind of educational track had been available to me instead of college as a 17-year-old, I would have done everything in my power to make it happen. Instead of being pushed out of computer science by stereotypes and Calculus, I could have embraced what I’ve always been good at and always have loved doing.</p>
+
+<p>So thanks, Flatiron. I&rsquo;m proud to be a #FlatironAlum.</p>
+
+		
+		
+	</div>
+
+</article>
+
+</div>
+<nav id="pagenavi">
+    
+    
+        <a href="/blog/page/2/" class="next">Next</a>
+    
+    <div class="center"><a href="/blog/archives">Blog Archives</a></div>
+</nav></div>
+			</div>
+			<footer id="footer" class="inner">Copyright &copy; 2015
+
+    Ashley Blewer
+
+
+Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a></footer>
+		</div>
+	</div>
+	
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+</body>
+</html>

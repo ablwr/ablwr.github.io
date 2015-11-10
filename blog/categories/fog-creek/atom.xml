@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: fog creek | BLOG Progress Process]]></title>
+  <link href="http://ablwr.github.io/blog/categories/fog-creek/atom.xml" rel="self"/>
+  <link href="http://ablwr.github.io/"/>
+  <updated>2015-11-10T00:37:19-05:00</updated>
+  <id>http://ablwr.github.io/</id>
+  <author>
+    <name><![CDATA[Ashley Blewer]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Fog Creek Fellowship Mini-post]]></title>
+    <link href="http://ablwr.github.io/blog/2014/11/08/fog-creek-fellowship-mini-post/"/>
+    <updated>2014-11-08T09:04:18-05:00</updated>
+    <id>http://ablwr.github.io/blog/2014/11/08/fog-creek-fellowship-mini-post</id>
+    <content type="html"><![CDATA[<p>I had a great time at Fog Creek getting mentorship from the Trello team but haven&rsquo;t had time to sit down and put it all into words. Fortunately, they say a picture is worth a thousand words.</p>
+
+<!-- more -->
+
+
+<p><img class="center" src="/images/fogcreekfellowship_first.gif"></p>
+
+<p>Because this is a vaguely code-focused blog, I must add that one command is worth a thousand seconds screwing around with Photoshop. With ImageMagick, I just ran <code>convert -delay 20 -loop 0 image*.jpeg fellowship.gif</code> in each folder of images.</p>
+
+<p>The finest quality .gif is still gonna come out of some dedicated Photoshopping, but this works fine in a pinch.</p>
+
+<p><img class="center" src="/images/fogcreekfellowship_second.gif"></p>
+
+<p>These gifs are pretty jumbo (despite mediocre quality), which I don&rsquo;t care about but are cruel to slower connections or mobile platforms. ImageMagick can help with that, too, because <a href="www.imagemagick.org">ImageMagick</a> can do pretty much everything. I mean, it&rsquo;s a wizard.</p>
+
+<p><img class="center <a" src="href="http://upload.wikimedia.org/wikipedia/commons/0/0d/Imagemagick-logo.png">http://upload.wikimedia.org/wikipedia/commons/0/0d/Imagemagick-logo.png</a>"></p>
+
+<p><code>convert fellowship.gif -resize 50% fellowship_small.gif</code> is a quick way to make a smaller copy of an image. There&rsquo;s a zillion other things you can do that I&rsquo;m not going to go into because the primary point of this post is two simple gifs, but <a href="http://www.imagemagick.org/script/command-line-options.php">documentation</a> is always your pal, and so is <a href="http://stackoverflow.com/search?q=imagemagick">Stack Overflow</a>.</p>
+]]></content>
+  </entry>
+  
+</feed>

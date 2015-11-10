@@ -1,0 +1,492 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>BLOG Progress Process</title>
+	<meta name="author" content="Ashley Blewer">
+
+	
+	<meta name="description" content="Jun 16th, 2014 regex Regular Expression Options When working with Regular Expressions, I mostly ignored these optional suffixes because I didn&rsquo &hellip;">
+	
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="BLOG Progress Process" type="application/atom+xml">
+	
+	<link rel="canonical" href="http://ablwr.github.io/blog/page/4/">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="/stylesheets/font-awesome.min.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	
+  
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-8888310-12']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><div class="profilepic">
+	
+	<img src="http://www.gravatar.com/avatar/425f1ccc494d81dcf41f2cc7ac8d0321?s=160" alt="Profile Picture" style="width: 160px;" />
+	
+</div>
+
+<nav id="main-nav"><ul class="main">
+    <li><a href="/">Blog</a></li>
+    <li><a href="/blog/archives">Blog Archives</a></li>
+    <li><a href="http://www.ashleyblewer.com">Website</a></li>
+</ul>
+</nav>
+<nav id="sub-nav">
+	<div class="social">
+<!-- 		 -->
+		
+		
+		
+			<a class="twitter" href="http://twitter.com/ablwr" title="Twitter">Twitter</a>
+		
+		
+			<a class="github" href="https://github.com/ablwr" title="GitHub">GitHub</a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+    	
+    	
+			<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+</nav>
+</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			
+				
+			
+			<div class="mid-col-container">
+				<div id="content" class="inner">
+<div itemscope itemtype="http://schema.org/Blog">
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-06-16T18:26:07-04:00" data-updated="true" itemprop="datePublished">Jun 16<span>th</span>, 2014</time></div>
+		<div class="tags">
+
+
+	<a class='category' href='/blog/categories/regex/'>regex</a>
+
+
+</div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/blog/2014/06/16/regular-expression-options/" itemprop="url">Regular Expression Options</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p>When working with Regular Expressions, I mostly ignored these optional suffixes because I didn&rsquo;t want to further complicate an already complicated aspect of programming. But since there are only four options, I decided to take a break from other complications and break down what each regex suffix can do.</p>
+
+<ul>
+<li><p><strong>i</strong></p>
+
+<p>i stands for <strong>INSENSITIVE</strong>! But not like that jerk that cut in front of you when changing trains at Union Square this morning. It means that it is case insensitive! You can save some keystrokes and be more precise by using i to eliminate or swap a word for a paragraph.</p></li>
+<li><p><strong>m</strong></p>
+
+<p>The next option is the letter m. M stands for <strong>MULTILINE MODE</strong>! Mmmm! What does that mean? Rubular sums it up succinctly as &ldquo;make dot match newlines.&rdquo; Still lost? The m option helps the dot (also known as a period or a full stop) character, which represents any character in a regex, match everything INCLUDING the invisible new line character. The new line character is represented in a regex or in programming as \n. If you are worried that your new line might mess up your regex, the m option can help mesh all lines together.</p></li>
+<li><p><strong>o</strong></p>
+
+<p>Next up is the letter o. O stands for <strong>ONCE</strong>! ONE TIME, ONE CHANCE, ONE SHOT! To substitute once. Substitute once means that any #{&hellip;} substitutions that occur in a regex can only occur one time and then they are OUT!</p></li>
+<li><p><strong>x</strong></p>
+
+<p>Finally, the letter x. X stands for&hellip; <strong>Xtended</strong> mode! Also known as Extended Mode. Regular expressions can be really complicated, so the x at the end allows for extra room in the expression such as spaces, new lines, and comments. Then, the regex is more readable and less scary. Another tip: to comment in a regex, use ?#. But if you use ?#, you also have to use x.</p></li>
+</ul>
+
+
+		
+		
+	</div>
+
+</article>
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-05-22T23:03:45-04:00" data-updated="true" itemprop="datePublished">May 22<span>nd</span>, 2014</time></div>
+		<div class="tags">
+
+
+	<a class='category' href='/blog/categories/coding/'>coding</a>
+
+
+</div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/blog/2014/05/22/coding-guide-for-newbs/" itemprop="url">Coding Guide for Newbs</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p>Everyone who has been around me regularly for the past (???) amount of time knows that I&rsquo;ve been all about learning to code as much as possible, and I&rsquo;ve been roping a few of my friends into doing the same. So, a question that I get a lot is &ldquo;Where do I begin?&rdquo; There are plenty of good guides on the internet, but I wanted to write up my own guide, particularly targeted to archivists and librarians coming out of library and information science programs. I think programming basics should be a mandatory component of ALA-accredited programs, but I&rsquo;ve found that at least in my MLIS experience (and anecdotally from many others), there is a severe lack, even in basic technical knowledge of computers.</p>
+
+<p>Please note that I am a novice speaking to people that are even greener than me, but here are some of the web resources I recommend for figuring out if you <em>even like programming</em> and want to consider diving deeper, like I have. This is basically an extended form of an email I would otherwise be writing to my friend Marleigh.</p>
+
+<p>I&rsquo;m going to first talk about some more general, theoretical strategies and then go into a guide of some of the learning resources I&rsquo;ve used and recommend.</p>
+
+<p><strong>Generally</strong></p>
+
+<p>The following resources I am going to mention are great and learning how to program has never, ever been easier than now, with a nearly endless supply of videos, podcasts, blog posts, MOOCs, books, and Stack Overflow answers. But the most important thing to realize that if you want to learn how to code, you are gonna have to do a lot of coding and problem-solving all by yourself. The best way to learn things is to try to make them, fail, and try again. That being said, sometimes it&rsquo;s good to just get your feet wet before diving right in.</p>
+
+<p>The second big thing is thinking about what you want to learn. If you are an absolute newbie and have never used the less-than or greater-than sign for anything other than emoticons, I recommend working on HTML/CSS first. Some people might argue that they are not technically programming languages, but it really doesn&rsquo;t matter and that is a stupid argument. After that, I recommend a few others: JavaScript, Python, and Ruby. All-in-all though, don&rsquo;t sweat too hard over which language to pick, because you are working on just learning the fundamentals, which are similar across all programming languages.</p>
+
+<p>Ruby: I deliberated between Python and Ruby for a long time, but eventually settled on Ruby. They are both extremely popular &ldquo;first language&rdquo; choices because they are easy to use and learn, and they are very similar. If you are just trying to get a feel for what you like, it really doesn&rsquo;t matter which one you choose. My reasons for choosing Ruby are personal. 1. As a moving image archivist, I see a lot of work needing to be done with access to digital content, and a lot of that work is done in Ruby. So it is favored by my community. 2. The Ruby community strives to be very welcoming and open, and seeks to increase diversity. 3. A lot of the coding bootcamps I was looking at were Ruby-based, so that made my decision easier (as I now will be attending Flatiron School). 4. I&rsquo;m interested in web development, particularly with video on the web, and I feel like the Ruby/Rails framework suits my interests there.</p>
+
+<p>Python: I started off learning Python, because that&rsquo;s what Codecademy teaches in its Code Year track. I loved it, I still love it, and I like how elegant it looks just based on the &ldquo;meaningful white space&rdquo; component of the language. I really think Python is probably the &ldquo;best&rdquo; first language to learn because of its &ldquo;zen&rdquo;-like methodology that pushes for code to be clean, concise, well-written, but most of all, easy to read and understand by all. If you intend to work in academia or on the science side of things, Python is a definite winner here. For general automation work in your personal life, Python is great. If you are interested in hardware hacking or think you might be, Python is also great.</p>
+
+<p>JavaScript: If you are digging HTML/CSS and like web development stuff, JavaScript is a good language to pick. The web is sorta being taken over by JavaScript and JS libraries. If you are into design, knowing more about JavaScript will only help you in the future.</p>
+
+<p>When learning, it&rsquo;s good to generally stay away from Rails (Ruby), Django (Python), and JQuery (Javascript) and try to focus on learning the actual language itself, not just the frameworks. The fundamentals are important. Even if things are harder, you are learning more by doing it &ldquo;the hard way.&rdquo; At least, that&rsquo;s what I tell myself. Don&rsquo;t avoid these things like the plague, I just recommend focusing on the basics of programming.</p>
+
+<p><em>Flatiron School and Makersquare pre-work</em></p>
+
+<p>Both of these coding bootcamps require 100-150 hours of pre-work from their students before the start of their classes. Fortunately for the rest of us, their learning materials are free and available online, so they can be used as guides for people just starting out.</p>
+
+<p><strong><a href="https://www.edx.org/course/harvardx/harvardx-cs50x-introduction-computer-1022">CS50x</a></strong></p>
+
+<p>I took this at-your-own-pace online MOOC based on Harvard&rsquo;s CS50 intro to computer science course when I started my graduate program, a bit over two years ago. I hands-down recommend it to anyone that wants a strong starting foundation in computer science, and I think it really sets someone&rsquo;s mind up for a better understanding of programming language syntax and structure. I pretty much just watched all of the lectures and didn&rsquo;t do the homework, but I still feel like I got a lot out of the class. If a class like this had been taught in my first semester as an undergraduate, it would have changed my life completely.</p>
+
+<p><strong><a href="http://www.codecademy.com">Codecademy</a></strong></p>
+
+<p>In conjunction with CS50 lectures, I worked through the Code Year track on Codecademy, which doesn&rsquo;t seem to be (easily) available anymore. Anyway, Codecademy is maybe the most popular &ldquo;learn to code&rdquo; resource, and for good reasons. (One of the reasons being that it&rsquo;s free, so there&rsquo;s a very low barrier to entry). If you are absolutely brand new to programming, I recommend churning through the entire HTML/CSS track (or projects, as they seem to be now). It may be familiar, it&rsquo;s easy to understand, and even if you absolutely hate programming and never want to do it again for the rest of your life, you will at least know how to link to a website without using an enriched web editor.</p>
+
+<p><strong><a href="http://teamtreehouse.com">Treehouse</a></strong></p>
+
+<p>After hitting up a full track of resources on Codecademy, or even before, I recommend Team Treehouse. Their teaching style is through videos followed by quizzes (either questions or coding exercies), which I find to be a nice, relaxing way to learn or refresh skills when I want to still feel productive but not work too hard.</p>
+
+<p><strong><a href="http://www.codeschool.com">Code School</a></strong></p>
+
+<p>Code School is great! But definitely much more challenging than Treehouse, which is why I recommend cruising through Treehouse first. Once you are feeling like a coding whiz  styling up a few websites on Treehouse, Code School is there to firmly put you back into your incredibly novice place. Code School looks easier than Treehouse, but some of the training wheels are off. Even with things I felt comfortable with, like CSS or MySQL, I would sometimes have to review the materials several times before I could solve the code exercises.</p>
+
+<p><strong>Just Doing It</strong></p>
+
+<p>I mentioned this earlier, but I really want to drive home this point. The above resources are great for getting your feet wet, but the only real way to really learn something is to just do it yourself, and frequently. You can do a million web exercises and read a redwood tree&rsquo;s worth of books and bootstrap up to your neck, but it&rsquo;s not gonna stick until you&rsquo;ve spent a few hours really trying to tackle a problem. The above materials are training wheels, and the sooner you take them off and try to ride/write, the better. If you get unstuckably stuck, you can always put them back on, or try a smaller/easier project. The main thing is to try, try, try. You will fail a thousand times, but keep trying.</p>
+
+<p><strong>Other stuff</strong></p>
+
+<p>There are so many other online resources and essential guides, <a href="http://www.openculture.com/freeonlinecourses">MOOCs</a>, but I just wanted to highlight a few. Maybe I will do a follow-up post with some other resources that I consider to be super-duper-helpful or essential to my learning. In the meantime, enjoy these and don&rsquo;t hesitate to get in touch with any questions.</p>
+
+		
+		
+	</div>
+
+</article>
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-05-12T13:09:35-04:00" data-updated="true" itemprop="datePublished">May 12<span>th</span>, 2014</time></div>
+		<div class="tags">
+
+</div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/blog/2014/05/12/may-8th-and-decision-making/" itemprop="url">May 8th and Decision-making.</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p>This post is gonna be super-cheesy. I wrote this on May 8th, which is an important day for me.</p>
+
+<p>I&rsquo;m getting ready to do something kinda crazy. I&rsquo;m quitting my pretty-swell job, moving across the country, packing up my stuff, leaving many of my wonderful friends, finding extended cat-sitters for my two cats, and plopping down some serious cash. For a 3-month immersive web development course in New York. Of course, there are some obvious perks: I love New York and want to live there again, I also have wonderful friends in the city, the tech field is booming with well-paying jobs, and it&rsquo;s an interesting and creative field. This final one being the most important to me and I&rsquo;ll try to address it in another &ldquo;talking about feelings&rdquo; post.</p>
+
+<p>Regardless, it&rsquo;s a big jump. And I can&rsquo;t help but think about another big jump that I made exactly one decade ago(!). It&rsquo;s so hard to believe that ten years have passed, but here it goes. When I was a teenager, I saved up all of the money I made working (side note: it&rsquo;s way easier to save money when you don&rsquo;t have to pay rent+utilities). I saved up all my money and put it towards a 3-month immersive Japanese language course in Tokyo. SO EXCITING, getting to learn a new language (which I later minored in), living in a new country (still my favorite place in the world), experiencing so many new things. On Saturday, May 8, 2004, me and two suitcases got on a plane to Tokyo and off I went and it&rsquo;s probably one of the best decisions I&rsquo;ve made in my life.</p>
+
+<p>As I was making this decision about going to a coding bootcamp, all of these memories kept coming back to me. I thought a lot about how important that time in Tokyo was, how much it meant to me, and how much I learned. My Japanese isn&rsquo;t anywhere near fluent these days, but I still have an extremely strong foundation in the language that I am confident would come back if I spent a few weeks immersed back into it. I thought about all the things I learned, the people I met, everything I saw, all the hours I spent wandering around Tokyo by myself, the museums I went to, the host family I have a life-long connection with, and an endless amount of other things, big and small. Matsuri, konbini, chikatetsu, tsuyu. When I think back on how much those 3 months affected me and made me grow as a person, it became nearly impossible for me to decline to make a similar decision ten years later.</p>
+
+<p>Because of all of this, I have been thinking a lot about the kind of person I was ten years ago and the kind of person I am now. And thinking about the kind of person that I will be in another ten years (37? Ahhhhh!). The kind of person I WANT to be in ten years, and where I want to be in ten years. I even looked back at my old LiveJournal, which was a little bit horrifying and it was hard to recognize myself, but there I am. I&rsquo;ve been thinking a lot about the potential path that I am currently on and the potential path if I take this leap of faith, and I only see an expanded potential for learning and growth as a person, which is just what I am looking for in life. I have a lot of feelings about this, but will curb them for now (for here).</p>
+
+<p>So, as I post this new blog post at the start of a new adventure, cheers to May 8, cheers to giant leaps of faith, and cheers to always growing and learning.</p>
+
+		
+		
+	</div>
+
+</article>
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-05-11T15:35:15-04:00" data-updated="true" itemprop="datePublished">May 11<span>th</span>, 2014</time></div>
+		<div class="tags">
+
+</div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/blog/2014/05/11/blogging-for-hackers/" itemprop="url">Blogging for Hackers.</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p>Hello. I am starting this blog specifically to talk about my upcoming dive into web development. I have been doing &ldquo;programmery stuff&rdquo; for a while (a few months, a few years, 15 years, depends on your definition) but I start at the Flatiron School in 3 weeks for their Ruby 005 Cohort and am seriously jumping in. From some intense googling, I am under the impression that we may have to keep a technical blog, so I figured I&rsquo;d go ahead and get one started now, even if it&rsquo;s not a requirement.</p>
+
+<p>Like a good hacker newbie, I diligently checked out Octopress, which defines itself as &ldquo;a blogging framework for hackers.&rdquo; It&rsquo;s based on Jekyll, integrates easily with Github Pages, and overall seemed like the right choice for what I will be doing since it requires a little more know-how than a one-click Wordpress install.</p>
+
+<p>And no joke! It was a workout. I&rsquo;m at novice-comfortable level with Ruby/Rails, Git, and the command line and have never used Sass/SCSS, Haml, or Markdown. But I expected to install it in twenty minutes and feel like this:</p>
+
+<p><img src="http://37.media.tumblr.com/67251c0e29d86a669149105bf1abf00b/tumblr_msxaxuidVy1shab7zo1_500.gif" alt="Hacking the planet" /></p>
+
+<p>But ended up spending over an hour and a truly embarrassing number of commits (I just checked &mdash; 52 total!) and feeling more like this:</p>
+
+<p><img src="http://i.kinja-img.com/gawker-media/image/upload/s--PZD0YHjX--/hgcxrafqyfevwmtsngsq.gif" alt="Hacking cough" /></p>
+
+<p>I got it working enough to do this and modify the theme a little bit, but barely. I haven&rsquo;t sorted out the problem of having to run &lsquo;bundle exec&rsquo; in front of every rake command or figured out why I have two different folders for this blog, but I&rsquo;m at least dedicated to figuring that out. And figuring out many more future problems publicly, here. I&rsquo;m a pretty private person when it comes to most things, but am forcing myself to be okay with being very publicly &ldquo;dumb&rdquo; when it comes to programming and web development. The tech field needs a lot of things, but something it really needs is the death of the &ldquo;elitist hacker&rdquo; mentality, and the rise of collaboration, empathy, and knowing that it&rsquo;s okay to not know something.</p>
+
+<p>Still, I&rsquo;m looking forward to going from hammering out problems like this:</p>
+
+<p><img src="http://files.gamebanana.com/img/ico/sprays/mario_hammer.gif" alt="Mario hammer" /></p>
+
+<p>To hammering them out like this:</p>
+
+<p><img src="http://fireden.net/4chan/images.4chan.org//vg/src/1362844057459.gif" alt="Hammer time" /></p>
+
+<p>Wish me luck! Either personally or below when I get a chance to figure out how to turn comments on. It&rsquo;s gonna be a long journey.</p>
+
+		
+		
+	</div>
+
+</article>
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-05-09T12:34:01-04:00" data-updated="true" itemprop="datePublished">May 9<span>th</span>, 2014</time></div>
+		<div class="tags">
+
+
+	<a class='category' href='/blog/categories/firstpost/'>firstpost</a>
+
+
+</div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/blog/2014/05/09/is-this-thing-on/" itemprop="url">IS THIS THING On?</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p>This is the most sincere &ldquo;HELLO? WORLD???&rdquo; I have ever made.</p>
+
+		
+		
+	</div>
+
+</article>
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-05-08T22:44:33-04:00" data-updated="true" itemprop="datePublished">May 8<span>th</span>, 2014</time></div>
+		<div class="tags">
+
+
+	<a class='category' href='/blog/categories/moving-image-archiving/'>moving image archiving</a>, <a class='category' href='/blog/categories/quitting-your-job/'>quitting your job</a>
+
+
+</div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/blog/2014/05/08/historical-post-leaving-my-job/" itemprop="url">Historical Post: Leaving My Job</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p>Leaving any job is hard. Leaving a job you really love is even harder. Someone asked me when I was turning in my notice if quitting was as cathartic as it should feel, and I said I felt like I was getting a divorce. Y&#8217;know. &ldquo;I love you, but this just isn&rsquo;t working.&rdquo;</p>
+
+<p>My job is great. However, it is also stagnant. I found myself frequently on auto-pilot, even though a lot of my work is compelling, complex, and ever-changing. I love working with newsreel outtakes from the 1910s-1940s and there&rsquo;s a constant change in material. I love working with students because there&rsquo;s always a new question about cataloging that I hadn&rsquo;t thought about. All in all, it&rsquo;s pretty good. However, it also isn&rsquo;t going anywhere and isn&rsquo;t going to lead to a more permanent position. Resources are slim, and I had to configure an eclectic, cumbersome workflow because I was not allowed to have a computer fast enough to view video files (a key component to the job).</p>
+
+<p>In addition to feeling stagnant, there are some severe ethical concerns in any mid-tier state University&rsquo;s hiring practices, but particularly the one I have been working for, that affects my department very directly. I could complain for days about this and related issues, but it doesn&rsquo;t make for polite blogging, so I will digress.</p>
+
+<p>I mention it because I am concerned about my field. I&rsquo;m less concerned about my specific field (moving image archiving) but very much concerned about the larger field of archives. While obsessively researching my decision to leave, I emailed a former archivist that also did a coding bootcamp, asking basically if I was unhappy in my situation because it was specific to my location, or if it was representative of the field as a whole. I tweeted something to the tune of &ldquo;I need to know that the place I work at is not representative of the field I work in.&rdquo; Unfortunately, her response as someone in the field longer than I have been is that my experience and fears of joblessness, jumping from grant-funded position to the next, and intense bureaucratic issues seemed very much in line with those of most others in the archival field, and that scares me.</p>
+
+<p>Moving image archiving, preservation, and access to these materials are things I care about SO MUCH. However, I am faced with the reality that in order for me to have other things that I want in life (living wage, job security, job flexibility, retirement fund, adequate health care, vacations), I have to come to terms with the fact that I might have to consider doing something else, at least for a little while. At the very least, I am also very passionate about &ldquo;computery stuff&rdquo; and programming skills and the &ldquo;world wide web,&rdquo; (oh boy don&rsquo;t get me started on the free and open web), and feel that I can really make a more tangible difference in general (world) and in specific (archive&rsquo;s wacky website) if I work up some deeper programming knowledge and skills. (I could mope forever about how I wish I had done that ten years ago, but I&rsquo;ll save that rant-o-thon and put my efforts into educating young women in computer science instead).</p>
+
+		
+		
+	</div>
+
+</article>
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-05-08T22:43:15-04:00" data-updated="true" itemprop="datePublished">May 8<span>th</span>, 2014</time></div>
+		<div class="tags">
+
+
+	<a class='category' href='/blog/categories/big-decisions/'>big decisions</a>, <a class='category' href='/blog/categories/bootcamps/'>bootcamps</a>, <a class='category' href='/blog/categories/flatiron/'>flatiron</a>, <a class='category' href='/blog/categories/iron-yard/'>iron yard</a>, <a class='category' href='/blog/categories/makersquare/'>makersquare</a>
+
+
+</div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/blog/2014/05/08/historical-post-choosing-a-program/" itemprop="url">Historical Post: Choosing a Program</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p>I want to talk a little bit about how I decided to go with Flatiron School, the other schools I looked at, and the reasoning behind my decision.</p>
+
+<p>I don&rsquo;t even remember how I first heard about these programs, but I was immediately super psyched on them. This is the kind of educational experience I was looking for instead of my other option: going for an LIS Ph.D or a Comp Sci undergraduate degree, with much more invested for many less gains. I started reading reading reading and researching. I was a researching maniac.</p>
+
+<p>I looked at a lot of different programs and eventually began to suss out what I wanted out of one. I had originally intended to do a program after the end of my temporary position, but due to [redacted complaining] and good fortune, I decided to apply for the Summer 2014 sessions. I also knew that I was ready to jump in, and that the sooner I took the jump, the better. I have a lot of faith in the program that I went with, but I do feel like the bootcamp sheen has already begun to wear off in tech community, due to them growing fast and popping up everywhere, and although I think they are all a great educational experience for all the right reasons, I also want to get in while its still hot, if that makes sense?</p>
+
+<p>I narrowed it down to a handful and ended up applying to three. Flatiron, Makersquare, and the Iron Yard.</p>
+
+<p>I got really excited about the Iron Yard and sent them a bunch of questions, and received a whole lot of very thorough answers. Very friendly. They had camps in many different cities, including the one where my parents live. Since I wanted to get the most out of my 12-week program, I was a little concerned at their near complete lack of pre-work for their courses, but they assured me that everyone is pretty much on equal level after week one because it is so intense. I also like that they split up their bootcamps into JS-based and Ruby-based, which makes a lot of sense for them, I think. Both programs cover a bit of the other, but a student can really focus on being a back-end or front-end developer instead of trying to cover the entire stack in 12 weeks. However, I am greedy, and want the whole stack (of non-pancakes). I eventually settled on a course in Durham, NC because I researched the person teaching the Ruby track and he seemed like a great teacher. Unfortunately, when I applied and an interview was scheduled, I was stood up for the interview! A week later, I was contacted with an apology, but I had decided that that was unacceptable and I declined to continue the interview process. I still have a lot of good, strong feelings towards the Iron Yard and am excited to see them bringing the tech skills to the much-needed Southern American states, but I passed. I worry a lot that they are trying to grow too fast, but I wish them the best.</p>
+
+<p>Next up, Makersquare. I had already done a good bit of their pre-work and was super interested in their program. It seems like they have a close relationship with the Austin community and I love-lovelove Austin and would love to live there. I had a long and very thoughtful Skype interview with one of the admissions coordinators and I was really happy with everything Makersquare is about. I ended up accepting with Flatiron shortly after the MS interview though. I really was into the kind of things they were looking for, their teaching methods, their interview process, etc. It could have very easily gone either way between them and Flatiron.</p>
+
+<p>Finally, Flatiron. I sent in my application and got an email back very promptly wanting to set up an interview with one of the co-founders. We had a half-hour too-brief chat, because I was still full of questions after, which I felt was a good sign. At the end of the chat, the next steps were mentioned and I immediately went to work on the programming problem I was given, because my interview was at noon on a Saturday and I work full time. I got the official problem via email the next day, but I had already dedicated my Saturday towards it, and continued to work on it nonstop for the next two days (I had googled around to confirm what the problem was and found a blog post about it from another person talking about her interview experience, so I just dug in &mdash; plus it was fun). After these three days, I turned in my work. I knew it wasn&rsquo;t perfect, but it was at least functional, and there was a lot of room for improvement. I was asked to schedule a code review interview with Avi. I was super happy about this, since he is the person actually doing the teaching. We went through my code, I explained my process, and he gave me some help on how I might make the code better, in a very good way that made me feel good about potentially having him as a teacher for 3 months. A few days later, I had been accepted. I immediately emailed someone, texted a few people, and quickly said yes.</p>
+
+<p>It&rsquo;s funny, because at first, I had decided I wasn&rsquo;t even going to apply for Flatiron. I don&rsquo;t know why, but I was slightly put off by it (in retrospect, I don&rsquo;t know why). But the more I looked into the program, the more good things I heard about it, the more I really thought about their learning methods and methodology and etc etc, the more they became my number one pick. In contrast with the Iron Yard, they recently received a lot of funding but were not interesting in growing out right away, which I appreciate. They also offer a program for free to people local to New York that made under $50k, which is worth supporting. Also, I would like to end up in NYC after the program and their NYC connections seem very strong. Their guest speakers are always top quality. Overall, I&rsquo;m very happy to have been accepted and look forward to meeting my classmates and having an extremely rigorous and exciting summer.</p>
+
+		
+		
+	</div>
+
+</article>
+
+</div>
+<nav id="pagenavi">
+    
+        <a href="/blog/page/3/" class="prev">Prev</a>
+    
+    
+    <div class="center"><a href="/blog/archives">Blog Archives</a></div>
+</nav></div>
+			</div>
+			<footer id="footer" class="inner">Copyright &copy; 2015
+
+    Ashley Blewer
+
+
+Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a></footer>
+		</div>
+	</div>
+	
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: life | BLOG Progress Process]]></title>
+  <link href="http://ablwr.github.io/blog/categories/life/atom.xml" rel="self"/>
+  <link href="http://ablwr.github.io/"/>
+  <updated>2015-11-10T00:37:19-05:00</updated>
+  <id>http://ablwr.github.io/</id>
+  <author>
+    <name><![CDATA[Ashley Blewer]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Where have you been?]]></title>
+    <link href="http://ablwr.github.io/blog/2015/05/30/where-have-you-been/"/>
+    <updated>2015-05-30T12:16:10-04:00</updated>
+    <id>http://ablwr.github.io/blog/2015/05/30/where-have-you-been</id>
+    <content type="html"><![CDATA[<p>Hi! I haven&rsquo;t updated this blog since February. What gives?!</p>
+
+<p>I don&rsquo;t want you to think I&rsquo;ve given up on my dear friend <a href="http://marleighchiles.com/">Marleigh</a>. She applied to <a href="http://adadevelopersacademy.org/">Ada Developers Academy</a> and was accepted, so naturally I let them take the reigns in her tech education, and we now send each other Star Trek gifs using more direct channels.</p>
+
+<p>What else?</p>
+
+<p>I&hellip;</p>
+
+<ul>
+<li><p>continued involvement with <a href="https://mediaarea.net/MediaConch">MediaConch</a>.</p></li>
+<li><p>got involved with <a href="https://xfrcollective.wordpress.com">XFR Collective</a>.</p></li>
+<li><p>gave two talks at <a href="http://personaldigitalarchiving.com/">Personal Digital Archiving 2015</a>.</p></li>
+<li><p>wrote about <a href="http://www.bustle.com/articles/78360-i-found-my-way-back-to-tech-with-the-help-of-people-who-understood-why-id">my experience with technology</a> for Bustle.</p></li>
+<li><p>gave a talk at <a href="http://bangbangcon.com/">!!Con</a>.</p></li>
+<li><p>other things that will remain a secret for now!</p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+</feed>

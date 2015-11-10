@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: weekend projects | BLOG Progress Process]]></title>
+  <link href="http://ablwr.github.io/blog/categories/weekend-projects/atom.xml" rel="self"/>
+  <link href="http://ablwr.github.io/"/>
+  <updated>2015-11-10T00:37:19-05:00</updated>
+  <id>http://ablwr.github.io/</id>
+  <author>
+    <name><![CDATA[Ashley Blewer]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Breaking down conference speakers by gender using Nokogiri and SexMachine]]></title>
+    <link href="http://ablwr.github.io/blog/2014/09/28/breaking-down-conference-speakers-by-gender-using-nokogiri-and-sexmachine/"/>
+    <updated>2014-09-28T14:32:49-04:00</updated>
+    <id>http://ablwr.github.io/blog/2014/09/28/breaking-down-conference-speakers-by-gender-using-nokogiri-and-sexmachine</id>
+    <content type="html"><![CDATA[<p>Last week, I was in converesation with some peers in the moving image archiving, preservation, conservation, (et al&hellip;) field and we were discussing ways to improve and empower the roles that women in the field have. One of the things that came up was it&rsquo;d be interesting to see the breakdown over time of the people presenting at the annual <a href="http://amianet.org">Association of Moving Image Archivists</a> <a href="http://www.amiaconference.com">conference</a> and whether it was appropriately stacked in terms of gender.</p>
+
+<p>With around 200 speakers, it would be great if I could just grab this data algorithmically and not have to parse it piece-by-piece using my slow human brain! Over the weekend, I went to work combining Ruby web scraping tool, <a href="http://nokogiri.org/">Nokogiri</a>, with a library that does a pretty good job at determining probable gender based on first name (<a href="https://github.com/bmuller/sexmachine">SexMachine</a>). It was fun to wrangle data around, but not without conflicts.</p>
+
+<p>Some problems:</p>
+
+<ol>
+<li><p>I wrote a parser for the most recent conference’s webpage, but that parser can’t be used for previous conferences. The layout for the previous year is different from the current layout, and the year before that is available only as a .pdf. The years prior to that aren’t (immediately and openly) available at all!</p></li>
+<li><p>The website was not marked up in a way that made it easy to pull in only the speaker names. I had to throw in a lot of remove-if exceptions because I was basically having to pull in anything that was in a p tag and removing very long strings and very short strings (and a few other things).</p></li>
+<li><p>Obviously gender is a larger spectrum than the binary male-female and assessment via name is not an ideal method, but I&rsquo;m just playin' with data here! I think the results will still hold value, but I always feel a little bit icky when I also have to push things into a gender binary.</p></li>
+</ol>
+
+
+<p>I can now take the rough breakdown of the data and just modify as needed. To do more complex problems, though, will involve more than just the parsed names in arrays separated by arrays (see below).</p>
+
+<p>I’m not going to be able to pull out the precise data I want, but it was fun project and I was excited to spend a few hours writing (and thinking) in Ruby again, which I hadn’t really had the opportunity to do in the past month or so (it’s been all Javascript and front-end work around these parts).</p>
+
+<p>Side note: Didn’t someone recently run a quick check on the gender breakdown of published authors in The Moving Image? That data is easier to grab because there’s less of it.</p>
+
+<p>Plans going forward:</p>
+
+<ol>
+<li><p>Run quick analysis on the organization’s membership directory to get a rough idea of the overall distribution of the field.</p></li>
+<li><p>Break data down with and without consideration to one person speaking multiple times. (Which is better to consider?)</p></li>
+<li><p>Break data down with consideration to time chunks and weighing one person speaking for a full block of time differently than seven people speaking in the same block of time. (Side-consideration to assess the value of poster presentation time). This involves getting down with statistics and math.</p></li>
+<li><p>VISUALIZATIONS.</p></li>
+</ol>
+
+]]></content>
+  </entry>
+  
+</feed>

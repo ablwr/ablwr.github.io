@@ -1,0 +1,171 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Rails Engage: Cooking up an MVC - BLOG Progress Process</title>
+	<meta name="author" content="Ashley Blewer">
+
+	
+	<meta name="description" content="Rails Engage: Cooking Up an MVC Okay! Last time we talked about the magic of rails generate and the structure that gets created when you make a new &hellip;">
+	
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="BLOG Progress Process" type="application/atom+xml">
+	
+	<link rel="canonical" href="http://ablwr.github.io/blog/2015/02/02/rails-engage-cooking-up-an-mvc/">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="/stylesheets/font-awesome.min.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	
+  
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-8888310-12']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><div class="profilepic">
+	
+	<img src="http://www.gravatar.com/avatar/425f1ccc494d81dcf41f2cc7ac8d0321?s=160" alt="Profile Picture" style="width: 160px;" />
+	
+</div>
+
+<nav id="main-nav"><ul class="main">
+    <li><a href="/">Blog</a></li>
+    <li><a href="/blog/archives">Blog Archives</a></li>
+    <li><a href="http://www.ashleyblewer.com">Website</a></li>
+</ul>
+</nav>
+<nav id="sub-nav">
+	<div class="social">
+<!-- 		 -->
+		
+		
+		
+			<a class="twitter" href="http://twitter.com/ablwr" title="Twitter">Twitter</a>
+		
+		
+			<a class="github" href="https://github.com/ablwr" title="GitHub">GitHub</a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+    	
+    	
+			<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+</nav>
+</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			
+				
+			
+			<div class="mid-col-container">
+				<div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<h1 class="title" itemprop="name">Rails Engage: Cooking Up an MVC</h1>
+	<div class="entry-content" itemprop="articleBody"><p><img class="center" src="http://i183.photobucket.com/albums/x54/TrueX-Ray/TNG%20Caption%20This/TNGCaption158e.jpg"></p>
+
+<p>Okay! Last time we talked about the magic of <code>rails generate</code> and the structure that gets created when you make a new Rails project. I gave you a soft warning to pay close attention to the app/ folder with the foreboding &ldquo;Just remember the MVC&rdquo;&hellip; Now let&rsquo;s talk about the MVC.</p>
+
+<p>I&rsquo;m not the only person to use this analogy, but here it goes and I know you&rsquo;ll be able to relate to it. The best way I&rsquo;ve found to understand MVC is to treat the framework like a restaurant.</p>
+
+<p>The restaurant is broken up into three parts: Chefs working behind the scenes to make a great meal, servers that deliver the meal to the customers so they can eat it, and plates/tables/utensils so the meal can be enjoyed. Your app is THE MEAL!</p>
+
+<p><strong>Models</strong> &mdash; <strong>Chefs</strong></p>
+
+<p>Models hold the code. They hold the logic. They are the brains of the operation. A master chef has to take all of the individual pieces of something and put them together just right to make something delicious.</p>
+
+<p><strong>Controllers</strong> &mdash; <strong>Servers</strong></p>
+
+<p>The chef is too busy making a masterpiece to give her customers the meal herself! She&rsquo;s got work to do! The controllers help keep all the beautiful, well-crafted meals going out to the right customers. Being a server (the restaurant kind) is hard work, keeping track of what everyone ordered and where they are seated. The controller takes data from the model and delivers it to the plate.</p>
+
+<p><strong>Views</strong> &mdash; <strong>Plates</strong></p>
+
+<p>Yum yum, time to eat these snacks up, right? The view is where all the front-end work comes into play. It&rsquo;s a very important component because just because you have a delicious meal, no one is gonna come to your restaurant if its lookin&#8217; like the Wing Basket. Or maybe they will and it&rsquo;ll be the best kept secret in town. Anyway, the view is dedicated to make all your hard work and code look great so people will actually want to consume it.</p>
+
+<p>MVC is a good framework to know, but what&rsquo;s the point? The point is to keep your code clean. Coding means juggling a lot of different things at once, so this framework helps you figure out where you need to go to find your problem and fix it. Is your math not working? Check your models. Is the math being delivered to the wrong page? Check your controllers. Is the math problem just super ugly? Take a look at your views.</p>
+
+<p>There a lot of nuances here, but this is a good overview to have in the back of your mind as you write code. And remember, the first goal is to get things working so if you accidentally put some logic in your view, don&rsquo;t sweat it.</p>
+</div>
+
+</article>
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+
+</div>
+			</div>
+			<footer id="footer" class="inner">Copyright &copy; 2015
+
+    Ashley Blewer
+
+
+Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a></footer>
+		</div>
+	</div>
+	
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+</body>
+</html>

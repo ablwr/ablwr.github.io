@@ -1,0 +1,182 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Twitter Bots 5: Scheduling tweets with Cron - BLOG Progress Process</title>
+	<meta name="author" content="Ashley Blewer">
+
+	
+	<meta name="description" content="Twitter Bots 5: Scheduling Tweets With Cron Cron is a software utility that is used to schedule actions in time. It&rsquo;s great for handling &hellip;">
+	
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="BLOG Progress Process" type="application/atom+xml">
+	
+	<link rel="canonical" href="http://ablwr.github.io/blog/2014/06/29/twitter-bots-5-scheduling-tweets-with-cron/">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="/stylesheets/font-awesome.min.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	
+  
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-8888310-12']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><div class="profilepic">
+	
+	<img src="http://www.gravatar.com/avatar/425f1ccc494d81dcf41f2cc7ac8d0321?s=160" alt="Profile Picture" style="width: 160px;" />
+	
+</div>
+
+<nav id="main-nav"><ul class="main">
+    <li><a href="/">Blog</a></li>
+    <li><a href="/blog/archives">Blog Archives</a></li>
+    <li><a href="http://www.ashleyblewer.com">Website</a></li>
+</ul>
+</nav>
+<nav id="sub-nav">
+	<div class="social">
+<!-- 		 -->
+		
+		
+		
+			<a class="twitter" href="http://twitter.com/ablwr" title="Twitter">Twitter</a>
+		
+		
+			<a class="github" href="https://github.com/ablwr" title="GitHub">GitHub</a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+    	
+    	
+			<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+</nav>
+</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			
+				
+			
+			<div class="mid-col-container">
+				<div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<h1 class="title" itemprop="name">Twitter Bots 5: Scheduling Tweets With Cron</h1>
+	<div class="entry-content" itemprop="articleBody"><p>Cron is a software utility that is used to schedule actions in time. It&rsquo;s great for handling reoccuring tasks. Twitter bots use a Cron statement to generate a tweet regularly. Cron tasks are super useful, but the syntax can be a little confusing and hard to remember.</p>
+
+<p>The default bot tweets once a day, which is represented by <code>0 0 * * *</code></p>
+
+<p>I changed my bot to tweet once an hour, which is represented by <code>0 * * * *</code></p>
+
+<p>If I want my bot to tweet every hour from 9-5 on weekdays, it would look like <code>0 9-18 * * 1-5</code></p>
+
+<p>Are you scratching your head? How can those numbers and letters mean anything?</p>
+
+<p>In a row of five ( * * * * *), numbers break down like this:</p>
+
+<ol>
+<li> Minutes 2. Hours 3. Day (of month) 4. Months 5. Day (of week)</li>
+</ol>
+
+
+<p>That makes sense. Sort of. Except for having two different ways to represent time in a day, especially when they are not next to each other! Day of the month can be any number between 1-31 and is contingent on the month field. Day of the week is any number 0-6 and represents Sunday-Saturday.</p>
+
+<p>The astericks means &ldquo;every.&rdquo; If a field has an astericks, it will trigger the event at that time interval.</p>
+
+<p>Expressions aren&rsquo;t limited to asterisks and numbers. Other special characters include the slash (<code>/</code>), the comma (<code>,</code>), and the hyphen (<code>-</code>). The slash is used for increments of ranges. If I wanted to schedule an event to occur every five hours, I would use the string <code>0 */5 * * *</code>. Commas are used to separate items in a list. If I wanted an event to occur five minutes past the hour and five minutes before the hour, I could use the expression <code>5,55 * * * *</code>. Hyphens denote ranges. If I wanted to schedule an event to occur at the top of every hour during the Monday-Friday workweek, I would write <code>0 0 * * 1-5</code>.</p>
+
+<p>If you don&rsquo;t want to figure out all of this syntax and just want to stay a die-hard Rubyist, you can also just install the gem &ldquo;whenever&rdquo; (<a href="https://github.com/javan/whenever">available here</a>). Another way to integrate Cron syntax into Ruby apps is the gem <a href="https://github.com/jmettraux/rufus-scheduler">Rufus-scheduler</a>.</p>
+
+<p>Important note: If you are updating your bot&rsquo;s Cron settings, you have to re-run the archive and modeling files to see reflected updates.</p>
+
+<hr />
+
+<p>More info:</p>
+
+<p><a href="http://en.wikipedia.org/wiki/Cron">Cron on Wikipedia</a></p>
+
+<p><a href="http://railscasts.com/episodes/164-cron-in-ruby">RailsCasts #164 Cron in Ruby</a></p>
+</div>
+
+</article>
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+
+</div>
+			</div>
+			<footer id="footer" class="inner">Copyright &copy; 2015
+
+    Ashley Blewer
+
+
+Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a></footer>
+		</div>
+	</div>
+	
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: side projects | BLOG Progress Process]]></title>
+  <link href="http://ablwr.github.io/blog/categories/side-projects/atom.xml" rel="self"/>
+  <link href="http://ablwr.github.io/"/>
+  <updated>2015-11-10T00:37:19-05:00</updated>
+  <id>http://ablwr.github.io/</id>
+  <author>
+    <name><![CDATA[Ashley Blewer]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Twitter bot roundup]]></title>
+    <link href="http://ablwr.github.io/blog/2014/07/01/twitter-bot-roundup/"/>
+    <updated>2014-07-01T18:27:46-04:00</updated>
+    <id>http://ablwr.github.io/blog/2014/07/01/twitter-bot-roundup</id>
+    <content type="html"><![CDATA[<p><code>5.times { blog }</code></p>
+
+<p>I wrote a few blog posts about the minor trials and tribulations of launching a Twitter bot that mimics a user&rsquo;s speaking patterns, based on a cool gem. Here they are, rounded up.</p>
+
+<p><a href="http://ablwr.github.io/blog/2014/06/24/twitter-bots/">The Bots Are Coming! Twitter Bots!</a></p>
+
+<p><a href="http://ablwr.github.io/blog/2014/06/25/twitter-bots-2-authorizing-the-bot/">Twitter Bots 2: Authorizing the Bot</a></p>
+
+<p><a href="http://ablwr.github.io/blog/2014/06/28/twitter-bots-3-keeping-your-bot-alive/">Twitter Bots 3: Keeping Your Bot Alive</a></p>
+
+<p><a href="http://ablwr.github.io/blog/2014/06/28/twitter-bots-4-mad-science/">Twitter Bots 4: MAD SCIENCE</a></p>
+
+<p><a href="http://ablwr.github.io/blog/2014/06/29/twitter-bots-5-scheduling-tweets-with-cron/">Twitter Bots 5: Scheduling Tweets With Cron</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Twitter Bots 5: Scheduling tweets with Cron]]></title>
+    <link href="http://ablwr.github.io/blog/2014/06/29/twitter-bots-5-scheduling-tweets-with-cron/"/>
+    <updated>2014-06-29T21:24:56-04:00</updated>
+    <id>http://ablwr.github.io/blog/2014/06/29/twitter-bots-5-scheduling-tweets-with-cron</id>
+    <content type="html"><![CDATA[<p>Cron is a software utility that is used to schedule actions in time. It&rsquo;s great for handling reoccuring tasks. Twitter bots use a Cron statement to generate a tweet regularly. Cron tasks are super useful, but the syntax can be a little confusing and hard to remember.</p>
+
+<p>The default bot tweets once a day, which is represented by <code>0 0 * * *</code></p>
+
+<p>I changed my bot to tweet once an hour, which is represented by <code>0 * * * *</code></p>
+
+<p>If I want my bot to tweet every hour from 9-5 on weekdays, it would look like <code>0 9-18 * * 1-5</code></p>
+
+<p>Are you scratching your head? How can those numbers and letters mean anything?</p>
+
+<p>In a row of five ( * * * * *), numbers break down like this:</p>
+
+<ol>
+<li> Minutes 2. Hours 3. Day (of month) 4. Months 5. Day (of week)</li>
+</ol>
+
+
+<p>That makes sense. Sort of. Except for having two different ways to represent time in a day, especially when they are not next to each other! Day of the month can be any number between 1-31 and is contingent on the month field. Day of the week is any number 0-6 and represents Sunday-Saturday.</p>
+
+<p>The astericks means &ldquo;every.&rdquo; If a field has an astericks, it will trigger the event at that time interval.</p>
+
+<p>Expressions aren&rsquo;t limited to asterisks and numbers. Other special characters include the slash (<code>/</code>), the comma (<code>,</code>), and the hyphen (<code>-</code>). The slash is used for increments of ranges. If I wanted to schedule an event to occur every five hours, I would use the string <code>0 */5 * * *</code>. Commas are used to separate items in a list. If I wanted an event to occur five minutes past the hour and five minutes before the hour, I could use the expression <code>5,55 * * * *</code>. Hyphens denote ranges. If I wanted to schedule an event to occur at the top of every hour during the Monday-Friday workweek, I would write <code>0 0 * * 1-5</code>.</p>
+
+<p>If you don&rsquo;t want to figure out all of this syntax and just want to stay a die-hard Rubyist, you can also just install the gem &ldquo;whenever&rdquo; (<a href="https://github.com/javan/whenever">available here</a>). Another way to integrate Cron syntax into Ruby apps is the gem <a href="https://github.com/jmettraux/rufus-scheduler">Rufus-scheduler</a>.</p>
+
+<p>Important note: If you are updating your bot&rsquo;s Cron settings, you have to re-run the archive and modeling files to see reflected updates.</p>
+
+<hr />
+
+<p>More info:</p>
+
+<p><a href="http://en.wikipedia.org/wiki/Cron">Cron on Wikipedia</a></p>
+
+<p><a href="http://railscasts.com/episodes/164-cron-in-ruby">RailsCasts #164 Cron in Ruby</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Twitter Bots 4: MAD SCIENCE]]></title>
+    <link href="http://ablwr.github.io/blog/2014/06/28/twitter-bots-4-mad-science/"/>
+    <updated>2014-06-28T21:09:57-04:00</updated>
+    <id>http://ablwr.github.io/blog/2014/06/28/twitter-bots-4-mad-science</id>
+    <content type="html"><![CDATA[<p>My twitter bot was born on the same day as my BFF (bot-ferverent friend) Athena&rsquo;s bot. In fact, we live together and were both working on our bots on the same night in different places because I was still at Flatiron and she was at home, and we didn&rsquo;t realize until our bots were nearly launched that we had both been working on the same project (and probably could have finished more quickly, as I was having trouble with something she had solved and she was having trouble with something I had solved). Pair programming is important! Anyway&hellip; since we are both bot-obsessed and I like data experiments as well as science experiments, I asked Athena for her bot&rsquo;s model file, which is json-formatted data of all of her tweets. I plugged her json data into a file with all of my json data and merged them together using the &ldquo;ebooks consume&rdquo; data-mixer that comes with the twitter_ebooks gem. Shortly after that, I had spawned a new daughter-bot, <a href="https://twitter.com/ashthena_ebooks">@ashthena_ebooks</a>, which is a combination of both of our tweets. Right now, this bot is a little biased towards my tweets, since I have a lot more than she did, but I hope to condense and mix that data up a bit more in the future, to produce weirder results.</p>
+
+<blockquote class="twitter-tweet" lang="en"><p>Much like the smell of vinegar syndrome in the morning.</p>&mdash; ɐuǝɥʇɥs∀ (@ashthena_ebooks) <a href="https://twitter.com/ashthena_ebooks/statuses/483414614978613248">June 30, 2014</a></blockquote>
+
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Twitter Bots 3: Keeping your bot alive]]></title>
+    <link href="http://ablwr.github.io/blog/2014/06/28/twitter-bots-3-keeping-your-bot-alive/"/>
+    <updated>2014-06-28T20:31:52-04:00</updated>
+    <id>http://ablwr.github.io/blog/2014/06/28/twitter-bots-3-keeping-your-bot-alive</id>
+    <content type="html"><![CDATA[<blockquote class="twitter-tweet" data-partner="tweetdeck"><p><a href="https://twitter.com/wetted_ashes">@wetted_ashes</a> <a href="https://twitter.com/ablwr">@ablwr</a> Just spent too much time coding and having so many excellent things to read thanks to <a href="https://twitter.com/hashtag/timezones?src=hash">#timezones</a></p>&mdash; ¡ɹǝʍǝlq ʎǝlɥs∀ (@ablwr_ebooks) <a href="https://twitter.com/ablwr_ebooks/statuses/478713633023602688">June 17, 2014</a></blockquote>
+
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p>Once a Twitter bot has been configured, it has to stay running in order to stay alive. And for that, it needs a server. When I was debugging my bot, I was running it off of my computer and got notifications of activity in my terminal. This works if I want my bot to only be active when I am active, but I want my bot to be available all day and night!</p>
+
+<p>The most logical way to do that would be to deploy my bot&rsquo;s code to a Heroku instance. It&rsquo;s free and super easy, especially if you already have a good grasp on git workflows. Basically you just have to&hellip;</p>
+
+<p><code>
+git init
+git add .
+git commit -m "BOTS"
+</code>
+then,
+<code>
+heroku create
+git push heroku master
+</code></p>
+
+<p>That&rsquo;s it! That is it. Actually, that is not it, because I had to log onto the heroku web interface and adjust the Dynos worker to 1 instead of 0.</p>
+
+<p><img class="center" src="/images/herokurunner.png" width="800" title="&lsquo;heroku page&rsquo;" ></p>
+
+<p> But after that, my bot was again operational and back to her normal (myself)
+self.</p>
+
+<blockquote class="twitter-tweet" data-partner="tweetdeck"><p><a href="https://twitter.com/ablwr">@ablwr</a> <a href="https://twitter.com/trlwagner">@trlwagner</a> The pass is lurking in the reboot, everyone get renewed at 21, and I do not like that.</p>&mdash; ¡ɹǝʍǝlq ʎǝlɥs∀ (@ablwr_ebooks) <a href="https://twitter.com/ablwr_ebooks/statuses/478715343737602049">June 17, 2014</a></blockquote>
+
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Twitter Bots 2: Authorizing the Bot]]></title>
+    <link href="http://ablwr.github.io/blog/2014/06/25/twitter-bots-2-authorizing-the-bot/"/>
+    <updated>2014-06-25T12:54:34-04:00</updated>
+    <id>http://ablwr.github.io/blog/2014/06/25/twitter-bots-2-authorizing-the-bot</id>
+    <content type="html"><![CDATA[<p>For me, the hardest part of getting a Twitter bot up and running was negotiating with Twitter&rsquo;s API keys and application settings. The primary reason for this was probably that I kept getting overly excited and jumping ahead, trying to finish the project too soon. I first set up an app by registering my primary twitter account. Turns out that wasn&rsquo;t necessary at all, and I could access and download my tweets just by using <a href="https://github.com/marcel/twurl">twurl</a> to collect authenticate and grab my main account&rsquo;s twitter archive. I THINK. Those authentication details went into a hidden file, .ebooksrc, in my computer&rsquo;s main user directory. I know because I had to break into it several times and switch out the keys in order to get it to work, but most users shouldn&rsquo;t need to open it again, once it&rsquo;s in there.</p>
+
+<p>To get the bot operational, I had to create an dev account and app using my bot&rsquo;s twitter account (oh yeah, I also had to register a new twitter account &mdash; but that&rsquo;s obvious, right? I&rsquo;m not talking to a bot, I&rsquo;m talking to a human&hellip; right?)</p>
+
+<p>Under My Applications (next to my user profile), I created a new app. Under the API Keys tab, I generated some access tokens. The consumer and OAuth details can then be added to the bot&rsquo;s bots.rb file, along with the bot&rsquo;s username and the bot model (in my case, my main twitter account).</p>
+
+<p><code>
+CONSUMER_KEY = ""
+CONSUMER_SECRET = ""
+</code></p>
+
+<p>```
+  Ebooks::Bot.new(&ldquo;&rdquo;) do |bot| # Ebooks account username
+  bot.oauth_token = &ldquo;&rdquo; # oauth token for ebooks account
+  bot.oauth_token_secret = &ldquo;&rdquo; # oauth secret for ebooks account</p>
+
+<p>  make_bot(bot, &ldquo;&rdquo;) # This should be the name of the text model generated from the base twitter account</p>
+
+<p>```</p>
+
+<p>Sounds easy, but I had such a hard time! Writing it all up, I am embarassed that it took me so many tries to get it right. My problem was that I first thought that the CONSUMER_KEY fields needed to come from my main twitter account instead of from the bot&rsquo;s account. Then, I changed the CONSUMER_KEY details but also changed the info in the .ebooksrc file. Then, I changed them both around again but didn&rsquo;t refresh my OAuth token.</p>
+
+<p>The final step was that my bot was running but unable to do anything because the API Keys permission access level was set to read-only. It is not super-clear in the documentation, but the account generating the access token has to have a valid phone number associated with it in order to get granted permission for read/write/execute status. After confirming with a phone number, my bot was able to talk to people and generate its own tweets based on my model.</p>
+
+<p>A final important debugging note: After changing the permission access level from read-only to read/write, you will probably have to regenerate the API keys and add the new codes to the app.</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: firstpost | BLOG Progress Process]]></title>
+  <link href="http://ablwr.github.io/blog/categories/firstpost/atom.xml" rel="self"/>
+  <link href="http://ablwr.github.io/"/>
+  <updated>2015-11-10T00:37:19-05:00</updated>
+  <id>http://ablwr.github.io/</id>
+  <author>
+    <name><![CDATA[Ashley Blewer]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[IS THIS THING ON?]]></title>
+    <link href="http://ablwr.github.io/blog/2014/05/09/is-this-thing-on/"/>
+    <updated>2014-05-09T12:34:01-04:00</updated>
+    <id>http://ablwr.github.io/blog/2014/05/09/is-this-thing-on</id>
+    <content type="html"><![CDATA[<p>This is the most sincere &ldquo;HELLO? WORLD???&rdquo; I have ever made.</p>
+]]></content>
+  </entry>
+  
+</feed>

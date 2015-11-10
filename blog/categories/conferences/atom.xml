@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: conferences | BLOG Progress Process]]></title>
+  <link href="http://ablwr.github.io/blog/categories/conferences/atom.xml" rel="self"/>
+  <link href="http://ablwr.github.io/"/>
+  <updated>2015-11-10T00:37:19-05:00</updated>
+  <id>http://ablwr.github.io/</id>
+  <author>
+    <name><![CDATA[Ashley Blewer]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Creating closed captions for !!Con conference videos!!!]]></title>
+    <link href="http://ablwr.github.io/blog/2015/06/30/creating-closed-captions-for-bangbangcon-conference-videos/"/>
+    <updated>2015-06-30T19:43:23-04:00</updated>
+    <id>http://ablwr.github.io/blog/2015/06/30/creating-closed-captions-for-bangbangcon-conference-videos</id>
+    <content type="html"><![CDATA[<p>Note: I wrote this up and added it to the !!Con <a href="https://github.com/hausdorff/bangbangcon.github.io/tree/gh-pages/2014-transcripts">github README</a> but CC'ing it here for ~outreach~ purposes!</p>
+
+<p><a href="http://bangbangcon.com">!!Con</a> had a live stenographer for live closed captioning of all talks, and follow-up transcripts of all talks. AMAZING! The only conference I’ve seen rivaling this level of inclusivity was Virginia Tech’s <a href="http://www.cpe.vt.edu/gbt/">Gender, Bodies, and Technology conference</a> which offered live signing for all sessions not segmented into tracks. Also amazing.</p>
+
+<p>2014 !!Con’s talks are all <a href="https://www.youtube.com/channel/UC2kxl-dcUYQQvTCuQtfuChQ">up on YouTube</a>, which is great. But all of us, together, can collaborate to take these talks to the next level by syncing up those <em>great</em> transcripts with these <em>great</em> videos!</p>
+
+<p>I know what you might be thinking: Doesn&rsquo;t YouTube offer <a href="https://support.google.com/youtube/answer/3038280?hl=en">auto-captioning</a>? The answer is YES, it does. And it’s pretty great for some things, but not so great for live talks in terms of reliability.</p>
+
+<p><img class="center" src="/images/bad_captions.png" title="" ></p>
+
+<p>Introducing <a href="https://amara.org">Amara</a>. I’ve read about Amara but had never used it before today, and it is RAD. It makes subtitling SO easy, utilizing hotkeys and hitting all of the pain points that come with transcription (which I’ve done a lot of — not super easy).</p>
+
+<p><img class="center" src="/images/amara.png" title="" ></p>
+
+<p>So here is how to link the !!Con transcript to the shared video.</p>
+
+<p>I’m sure there is a better way to do this, but I prepped the available transcription text file in SublimeText by adding a line break in between each existing line by holding down Control-Shift-DownArrow until it got the bottom, and then I pressed enter. You can do whatever works for you, but the text won&rsquo;t import correctly as-is so this minor data-wrangling is necessary.</p>
+
+<p><img class="center" src="/images/transcript.png" title="" ></p>
+
+<p>This way, when I went to upload the subtitles, they were already broken down into bite-size pieces. Some cleanup might be necessary after this point, like getting rid of blank subtitles.</p>
+
+<p><img class="center" src="/images/delete_subtitle.png" title="" ></p>
+
+<p>You may be tempted to move ahead and tell Amara are finished so you can check to see if your work is working right. Just know that Amara doesn’t like it when you do this. It will assume you are done ingesting subtitles and will think you are ready for the timing zone. I spent a while fussing around in this area. The subtitles will save, though, so you can leave and come back as long as you save a draft.</p>
+
+<p>Next is the fun part — Watching the video and getting the subtitles in sync. First, it’s fun because you get to watch the talk! Second, it’s fun because you press the “down” button to move to a new subtitle and you get in a rhythm that is both videogame-esque and meditation-esque. I like it. If you lose your groove, you can tab to pause the video or you can go back and use the slider to adjust the timing on subtitles on an individual basis.</p>
+
+<p>After that, you can save/publish and you are done. The !!Con organizers are able to take it from there because the !!Con YouTube account is already ready to receive the Amara subtitles, which get synced on a regular basis. That&rsquo;s it!</p>
+
+<p>This is a GREAT way to feel super-productive even if you are feeling too under-the-weather to do other work. (Now that I’m all-freelance all-the-time, I’m super obsessed about whether I am at an optimal state to be billing hourly for my brain.)</p>
+
+<p>Hmmmm&hellip; But wait &mdash; I did the video you see in examples above. But how do you know if the video you are gonna transcribe has already been done or not? What a great question. You can comment on <a href="https://docs.google.com/spreadsheets/d/1MNZH-58vBXpVjzYHObV6vs1NSAK5QQ8v-g4wBEVdZqY/edit?usp=sharing">this Google Spreadsheet</a> and then everyone will know what is going on!</p>
+
+<p>In closing&hellip; Don’t stop there! Plenty of conferences and other things could use help with reliable closed captioning!</p>
+]]></content>
+  </entry>
+  
+</feed>

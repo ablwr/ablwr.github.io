@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: generate | BLOG Progress Process]]></title>
+  <link href="http://ablwr.github.io/blog/categories/generate/atom.xml" rel="self"/>
+  <link href="http://ablwr.github.io/"/>
+  <updated>2015-11-10T00:37:19-05:00</updated>
+  <id>http://ablwr.github.io/</id>
+  <author>
+    <name><![CDATA[Ashley Blewer]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Rails Engage: rails generate]]></title>
+    <link href="http://ablwr.github.io/blog/2015/01/24/rails-engage-rails-generate/"/>
+    <updated>2015-01-24T12:24:23-05:00</updated>
+    <id>http://ablwr.github.io/blog/2015/01/24/rails-engage-rails-generate</id>
+    <content type="html"><![CDATA[<p><img class="center <a" src="href="http://31.media.tumblr.com/d619155808e29c0d5005f4f663d11114/tumblr_mjfgq0AcrB1qd5tdto1_250.gif">http://31.media.tumblr.com/d619155808e29c0d5005f4f663d11114/tumblr_mjfgq0AcrB1qd5tdto1_250.gif</a>"></p>
+
+<p>Rails comes with a lot of magic. When I was learning Ruby and Ruby on Rails, I was taught Ruby first, moved up slowly, and then was shown that all the things I did the hard way could be done by typing “rails generate” (or even just “rails g”!). I think the way I learned was good, but listen — we don’t have time for that right now, so we are just going to throw out this command and I will explain to you what it does. The deeper concepts can come later, but right now the most important thing is to get our hands dirty right away and generate a lot of code.</p>
+
+<p>“rails generate” makes a lot of assumptions about what you might want in a robust web application and it generates things accordingly. There are more one-liners that can be used later to continue to expand your application as you need them.</p>
+
+<p>The first command is <code>rails new</code>. <code>rails</code> tells your computer to use that code base and <code>new</code> is the command to generate a whole bunch of pre-written template code. You&rsquo;ll need one more thing after that, and it&rsquo;s your app name. So <code>rails new marleigh</code> will make all of those files generate in a folder called marleigh <em>in whatever directory you are currently in</em>. Make sure you know where you are in your terminal when you make this folder so you can find it again! If you aren&rsquo;t sure where you are, you can type <code>pwd</code>. That stands for &ldquo;print working directory.&rdquo;</p>
+
+<p>So <code>rails new</code> makes a lot of stuff. Do you need all of it? No. Shouldn&rsquo;t you be writing beautiful, minimalist, clean code from the very beginning? No. You will have plenty of time to craft elegant code in the future, but right now let&rsquo;s just get something running. It&rsquo;s easy to get caught up the former and never get to the latter.</p>
+
+<p><img class="left" src="/images/base_rails.png"></p>
+
+<p>But what do we get?</p>
+
+<p>On the left is an image of what gets generated when you run that one line. That&rsquo;s a lot of stuff! When I was cruising around on Github before learning anything about Rails, all of these files and folders scared the hell out of me. I also assumed they were all generated manually and that everyone knew everything about what all of these files and folders did and I had no idea where to look and I&rsquo;d never get anything right and was just a big dum-dum. That&rsquo;s wrong.</p>
+
+<p>Here&rsquo;s what&rsquo;s right.</p>
+
+<p><img class="center <a" src="href="http://33.media.tumblr.com/4256f4276b3aa11c3caf98a574a58296/tumblr_mjfgq0AcrB1qd5tdto5_250.gif">http://33.media.tumblr.com/4256f4276b3aa11c3caf98a574a58296/tumblr_mjfgq0AcrB1qd5tdto5_250.gif</a>"></p>
+
+<p><strong>app</strong> &mdash; Most of your code will be written in this folder. It contains the models, controllers, and views, which are at the heart of the Rails framework. Another important folder within this one is the assets folder. There are other folders, too, but they are not required and you can ignore them for now. Just remember the MVC &mdash; we&rsquo;ll go into that later when we start writing. The assets folder is for putting your custom CSS, JavaScript, and images.</p>
+
+<p><strong>bin</strong> &mdash; The code in this folder helps start up your app. If you have other things helping you out, they may needed to be booted up in here along with Rails. From the start, it&rsquo;ll have what you need to get things running.</p>
+
+<p><strong>config</strong> &mdash; The config folder also gives you what you need to get off the ground, but very useful if you need to make modifications in the future, like because you are using a different server and need to change the database.yml file. There is one very important file in here, though, and it&rsquo;s routes.rb. You will be using it even for a basic application.</p>
+
+<p><strong>db</strong> &mdash; Your database lives in this folder! seeds.rb is for populating seed data when you are testing.</p>
+
+<p><strong>lib</strong> &mdash; Other libraries go here.</p>
+
+<p><strong>log</strong> &mdash; Log files! You probably won&rsquo;t need to look at these very much initially, but be glad they are there.</p>
+
+<p><strong>public</strong> &mdash; This is the only public part of your site. The rest of it is all hidden. Error pages, rules for robots like web scrapers, and your favicon (the tiny icon in the tab- section of your browser) live here by default.</p>
+
+<p><strong>test</strong> &mdash; An important component to writing code is writing tests to make sure that code works. I&rsquo;m not gonna help you learn how to write tests, though.</p>
+
+<p><strong>tmp</strong> &mdash; Don&rsquo;t worry about it. Just a spot for temporary files.</p>
+
+<p><strong>vendor</strong> &mdash; This is where you put code libraries from other places, like if you use Bootstrap or a JavaScript library. It&rsquo;s the same as putting it in the Assets folder in /app but it&rsquo;s polite to put code you didn&rsquo;t write or generate into this folder. It also helps keep you organized.</p>
+
+<p><strong>config.ru</strong> &mdash; The ru stands for rackup. This configures the application for use with Rack-based servers. It&rsquo;s set up as default.</p>
+
+<p><strong>Gemfile</strong> &mdash; If your app uses other gems (Ruby libraries) to accomplish tasks, the names of those gems should go here so that it can be easily loaded by anyone wanting to use the application. The Gemfile.lock file is created after it is &ldquo;bundled.&rdquo;</p>
+
+<p><strong>Rakefile</strong> &mdash; If you find yourself doing a task frequently and want to automate it, you can turn it into a rake task. If you have one of those, you can put it here so that it loads along with your application.</p>
+
+<p><strong>.gitignore</strong> &mdash; This is where you put files that you don&rsquo;t want to upload to git. This is in all git repositories, but Rails auto-populates it with stuff you never need to load to a public git directory.</p>
+
+<p><strong>README</strong> &mdash; Documentation is important. This is a good place to put information about your app and how to use it.</p>
+
+<p><img class="center <a" src="href="http://33.media.tumblr.com/7a224527d4b66b9987bb912262058de1/tumblr_mjfgq0AcrB1qd5tdto4_250.gif">http://33.media.tumblr.com/7a224527d4b66b9987bb912262058de1/tumblr_mjfgq0AcrB1qd5tdto4_250.gif</a>"></p>
+
+<p>It&rsquo;s still a lot all at once, right? And how do those pieces even work together?! That&rsquo;ll be what we go into next when we start writing code. A lot of this stuff <em>is</em> excessive for what you want to do, but it helps us get to the fun stuff right away.</p>
+
+<p>The first link in the resources is great at explaining all of this in detail, so I recommend going over it (and over it and over it) to have a good understanding of how these parts work together.</p>
+
+<p><img class="center <a" src="href="http://38.media.tumblr.com/8892c95636fd67bb843da6aa79c1ded4/tumblr_mjfgq0AcrB1qd5tdto2_250.gif">http://38.media.tumblr.com/8892c95636fd67bb843da6aa79c1ded4/tumblr_mjfgq0AcrB1qd5tdto2_250.gif</a>"></p>
+
+<h3>Resources</h3>
+
+<p><a href="http://guides.rubyonrails.org/getting_started.html">Getting Started with Rails</a></p>
+
+<p><a href="https://upcase.com/trails">Thoughtbot&rsquo;s Learn Rails</a></p>
+
+<p><a href="https://github.com/petrjasek/rails-portfolio">Rails Portfolio</a></p>
+
+<p><a href="http://rails-3-2.railstutorial.org/book">Ruby on Rails Tutorial</a></p>
+]]></content>
+  </entry>
+  
+</feed>

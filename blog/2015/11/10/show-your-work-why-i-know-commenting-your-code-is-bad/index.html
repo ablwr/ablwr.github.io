@@ -1,0 +1,191 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Guest post: Show Your Work: Why I know commenting your code is bad - BLOG Progress Process</title>
+	<meta name="author" content="Ashley Blewer">
+
+	
+	<meta name="description" content="Guest Post: Show Your Work: Why I Know Commenting Your Code Is Bad I&rsquo;ve been kinda bad at blogging. I have a new job and some old jobs and &hellip;">
+	
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="BLOG Progress Process" type="application/atom+xml">
+	
+	<link rel="canonical" href="http://ablwr.github.io/blog/2015/11/10/show-your-work-why-i-know-commenting-your-code-is-bad/">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="/stylesheets/font-awesome.min.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	
+  
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-8888310-12']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><div class="profilepic">
+	
+	<img src="http://www.gravatar.com/avatar/425f1ccc494d81dcf41f2cc7ac8d0321?s=160" alt="Profile Picture" style="width: 160px;" />
+	
+</div>
+
+<nav id="main-nav"><ul class="main">
+    <li><a href="/">Blog</a></li>
+    <li><a href="/blog/archives">Blog Archives</a></li>
+    <li><a href="http://www.ashleyblewer.com">Website</a></li>
+</ul>
+</nav>
+<nav id="sub-nav">
+	<div class="social">
+<!-- 		 -->
+		
+		
+		
+			<a class="twitter" href="http://twitter.com/ablwr" title="Twitter">Twitter</a>
+		
+		
+			<a class="github" href="https://github.com/ablwr" title="GitHub">GitHub</a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+    	
+    	
+			<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+</nav>
+</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			
+				
+			
+			<div class="mid-col-container">
+				<div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<h1 class="title" itemprop="name">Guest Post: Show Your Work: Why I Know Commenting Your Code Is Bad</h1>
+	<div class="entry-content" itemprop="articleBody"><p>I&rsquo;ve been kinda bad at blogging. I have a new job and some old jobs and lots of things that keep me from introspecting on code and archives. Fortunately I have great friends, and one of those friends is Kathryn Gronsbell, who reached out to me as an emerging developer (whether she thinks so or not) and wanted to write a <em>guest blog post</em>! As for me, a person who has very recently had to take on the codebase of at least five web complex and non-similar applications at my job&hellip; I can appreciate some good commenting. Commented-OUT code, on the other hand&hellip;</p>
+
+<h1>Show Your Work: Why I know commenting your code is bad, but I do it anyway.</h1>
+
+<h3>Kathryn Gronsbell</h3>
+
+<h3>2015-11-05</h3>
+
+<p>I like to ship ugly, early, and often. My challenge is I’m a Kathryn* who is in the middle of doing three very critical things:</p>
+
+<ol>
+<li>Learning enough Python and Bash to be functional (and dangerous)</li>
+<li>Building small scripts to expedite digitized asset quality control at my organization</li>
+<li>Trying to triangulate how and why certain decisions were made and performed before my arrival, and how to understand, fix/reverse, or move forward (see Steps 1 and 2)</li>
+</ol>
+
+
+<p>In 2013, Peter Vogel explained why “people” should not document or comment their code <a href="https://visualstudiomagazine.com/articles/2013/07/26/why-commenting-code-is-still-bad.aspx">1</a>. Vogel makes well-executed arguments, steeped both in conceptual logic and pragmatism.</p>
+
+<p>“Some readers suggested that comments provided insight into what previous programmers thought their code was doing. I don&rsquo;t care what those programmers thought their code was doing &mdash; I only care what their code actually does (though I do care why the previous programmers thought the code was necessary).”</p>
+
+<p>I agree with Vogel here, on all points. But, I do care what the previous person thought their code was doing because it can help explain OTHER decisions that are not documented in the code (or anywhere else). And because my code is wobbly, like a baby deer that snuck into a moonshine distillery, I feel the need to add comments and leave some less elegant code commented-out so I can understand how a certain chunk came together.</p>
+
+<p>Example:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="c">#This loops through the files and sets a variable “bambi” for the extracted string. This takes the legacy strings which are all uppercase and makes them lowercase alphanumeric strings so that they validate against the strings we create locally.</span>
+</span><span class='line'>    <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">forest_fileDict</span><span class="p">:</span>
+</span><span class='line'>        <span class="n">bambi</span> <span class="o">=</span> <span class="n">forest_fileDict</span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">key</span><span class="p">)]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+</span><span class='line'>        <span class="c"># bambi = bambi.lower()</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>It works, for me and for now. When it doesn’t work anymore I won’t do it anymore. Vogel’s argument about resource-intensity of code commenting reads true, but it also doesn’t apply to my current situation. Describing what the code does helps me learn (because I wrote it and had someone else verify it was accurate). I yearn for the day I can write something that is both self-describing and that I can read in 3 weeks and understand. Until then, I will crawl along with my #-prefaced nuggets of wisdom &ndash; and happily share my MacGyver’ed efforts for review and revision.</p>
+
+<p>If I listened to this ideal practice, I wouldn’t be creating the processes I need to do my job because it would be too big of an obstacle to take on for every little process I needed done. The code will be ugly, but it will work. And that’s what we should aim for &ndash; an agile approach to learning and making. Imperfect action is better than perfect inaction.</p>
+
+<p>I hope if you’re in a similar spot, you now know that you have a comrade. And that one day you, too, can be a “people” Vogel is talking to.</p>
+
+<p>* Being a Kathryn does not involve being a real programmer or code guru. Being a Kathryn means spending hours on StackExchange, sending over-explanatory email pleas to our very patient IT support folks, and constantly chatting friends about why my nested dictionaries aren’t printing as expected.</p>
+</div>
+
+</article>
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+
+</div>
+			</div>
+			<footer id="footer" class="inner">Copyright &copy; 2015
+
+    Ashley Blewer
+
+
+Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a></footer>
+		</div>
+	</div>
+	
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+</body>
+</html>

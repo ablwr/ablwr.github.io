@@ -1,0 +1,877 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[BLOG Progress Process]]></title>
+  <link href="http://ablwr.github.io/atom.xml" rel="self"/>
+  <link href="http://ablwr.github.io/"/>
+  <updated>2015-11-10T00:37:19-05:00</updated>
+  <id>http://ablwr.github.io/</id>
+  <author>
+    <name><![CDATA[Ashley Blewer]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Guest post: Show Your Work: Why I know commenting your code is bad]]></title>
+    <link href="http://ablwr.github.io/blog/2015/11/10/show-your-work-why-i-know-commenting-your-code-is-bad/"/>
+    <updated>2015-11-10T00:22:31-05:00</updated>
+    <id>http://ablwr.github.io/blog/2015/11/10/show-your-work-why-i-know-commenting-your-code-is-bad</id>
+    <content type="html"><![CDATA[<p>I&rsquo;ve been kinda bad at blogging. I have a new job and some old jobs and lots of things that keep me from introspecting on code and archives. Fortunately I have great friends, and one of those friends is Kathryn Gronsbell, who reached out to me as an emerging developer (whether she thinks so or not) and wanted to write a <em>guest blog post</em>! As for me, a person who has very recently had to take on the codebase of at least five web complex and non-similar applications at my job&hellip; I can appreciate some good commenting. Commented-OUT code, on the other hand&hellip;</p>
+
+<h1>Show Your Work: Why I know commenting your code is bad, but I do it anyway.</h1>
+
+<h3>Kathryn Gronsbell</h3>
+
+<h3>2015-11-05</h3>
+
+<p>I like to ship ugly, early, and often. My challenge is I’m a Kathryn* who is in the middle of doing three very critical things:</p>
+
+<ol>
+<li>Learning enough Python and Bash to be functional (and dangerous)</li>
+<li>Building small scripts to expedite digitized asset quality control at my organization</li>
+<li>Trying to triangulate how and why certain decisions were made and performed before my arrival, and how to understand, fix/reverse, or move forward (see Steps 1 and 2)</li>
+</ol>
+
+
+<p>In 2013, Peter Vogel explained why “people” should not document or comment their code <a href="https://visualstudiomagazine.com/articles/2013/07/26/why-commenting-code-is-still-bad.aspx">1</a>. Vogel makes well-executed arguments, steeped both in conceptual logic and pragmatism.</p>
+
+<p>“Some readers suggested that comments provided insight into what previous programmers thought their code was doing. I don&rsquo;t care what those programmers thought their code was doing &mdash; I only care what their code actually does (though I do care why the previous programmers thought the code was necessary).”</p>
+
+<p>I agree with Vogel here, on all points. But, I do care what the previous person thought their code was doing because it can help explain OTHER decisions that are not documented in the code (or anywhere else). And because my code is wobbly, like a baby deer that snuck into a moonshine distillery, I feel the need to add comments and leave some less elegant code commented-out so I can understand how a certain chunk came together.</p>
+
+<p>Example:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="c">#This loops through the files and sets a variable “bambi” for the extracted string. This takes the legacy strings which are all uppercase and makes them lowercase alphanumeric strings so that they validate against the strings we create locally.</span>
+</span><span class='line'>    <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="n">forest_fileDict</span><span class="p">:</span>
+</span><span class='line'>        <span class="n">bambi</span> <span class="o">=</span> <span class="n">forest_fileDict</span><span class="p">[</span><span class="nb">str</span><span class="p">(</span><span class="n">key</span><span class="p">)]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+</span><span class='line'>        <span class="c"># bambi = bambi.lower()</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>It works, for me and for now. When it doesn’t work anymore I won’t do it anymore. Vogel’s argument about resource-intensity of code commenting reads true, but it also doesn’t apply to my current situation. Describing what the code does helps me learn (because I wrote it and had someone else verify it was accurate). I yearn for the day I can write something that is both self-describing and that I can read in 3 weeks and understand. Until then, I will crawl along with my #-prefaced nuggets of wisdom &ndash; and happily share my MacGyver’ed efforts for review and revision.</p>
+
+<p>If I listened to this ideal practice, I wouldn’t be creating the processes I need to do my job because it would be too big of an obstacle to take on for every little process I needed done. The code will be ugly, but it will work. And that’s what we should aim for &ndash; an agile approach to learning and making. Imperfect action is better than perfect inaction.</p>
+
+<p>I hope if you’re in a similar spot, you now know that you have a comrade. And that one day you, too, can be a “people” Vogel is talking to.</p>
+
+<p>* Being a Kathryn does not involve being a real programmer or code guru. Being a Kathryn means spending hours on StackExchange, sending over-explanatory email pleas to our very patient IT support folks, and constantly chatting friends about why my nested dictionaries aren’t printing as expected.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Creating closed captions for !!Con conference videos!!!]]></title>
+    <link href="http://ablwr.github.io/blog/2015/06/30/creating-closed-captions-for-bangbangcon-conference-videos/"/>
+    <updated>2015-06-30T19:43:23-04:00</updated>
+    <id>http://ablwr.github.io/blog/2015/06/30/creating-closed-captions-for-bangbangcon-conference-videos</id>
+    <content type="html"><![CDATA[<p>Note: I wrote this up and added it to the !!Con <a href="https://github.com/hausdorff/bangbangcon.github.io/tree/gh-pages/2014-transcripts">github README</a> but CC&#8217;ing it here for ~outreach~ purposes!</p>
+
+<p><a href="http://bangbangcon.com">!!Con</a> had a live stenographer for live closed captioning of all talks, and follow-up transcripts of all talks. AMAZING! The only conference I’ve seen rivaling this level of inclusivity was Virginia Tech’s <a href="http://www.cpe.vt.edu/gbt/">Gender, Bodies, and Technology conference</a> which offered live signing for all sessions not segmented into tracks. Also amazing.</p>
+
+<p>2014 !!Con’s talks are all <a href="https://www.youtube.com/channel/UC2kxl-dcUYQQvTCuQtfuChQ">up on YouTube</a>, which is great. But all of us, together, can collaborate to take these talks to the next level by syncing up those <em>great</em> transcripts with these <em>great</em> videos!</p>
+
+<p>I know what you might be thinking: Doesn&rsquo;t YouTube offer <a href="https://support.google.com/youtube/answer/3038280?hl=en">auto-captioning</a>? The answer is YES, it does. And it’s pretty great for some things, but not so great for live talks in terms of reliability.</p>
+
+<p><img class="center" src="http://ablwr.github.io/images/bad_captions.png" title="" ></p>
+
+<p>Introducing <a href="https://amara.org">Amara</a>. I’ve read about Amara but had never used it before today, and it is RAD. It makes subtitling SO easy, utilizing hotkeys and hitting all of the pain points that come with transcription (which I’ve done a lot of — not super easy).</p>
+
+<p><img class="center" src="http://ablwr.github.io/images/amara.png" title="" ></p>
+
+<p>So here is how to link the !!Con transcript to the shared video.</p>
+
+<p>I’m sure there is a better way to do this, but I prepped the available transcription text file in SublimeText by adding a line break in between each existing line by holding down Control-Shift-DownArrow until it got the bottom, and then I pressed enter. You can do whatever works for you, but the text won&rsquo;t import correctly as-is so this minor data-wrangling is necessary.</p>
+
+<p><img class="center" src="http://ablwr.github.io/images/transcript.png" title="" ></p>
+
+<p>This way, when I went to upload the subtitles, they were already broken down into bite-size pieces. Some cleanup might be necessary after this point, like getting rid of blank subtitles.</p>
+
+<p><img class="center" src="http://ablwr.github.io/images/delete_subtitle.png" title="" ></p>
+
+<p>You may be tempted to move ahead and tell Amara are finished so you can check to see if your work is working right. Just know that Amara doesn’t like it when you do this. It will assume you are done ingesting subtitles and will think you are ready for the timing zone. I spent a while fussing around in this area. The subtitles will save, though, so you can leave and come back as long as you save a draft.</p>
+
+<p>Next is the fun part — Watching the video and getting the subtitles in sync. First, it’s fun because you get to watch the talk! Second, it’s fun because you press the “down” button to move to a new subtitle and you get in a rhythm that is both videogame-esque and meditation-esque. I like it. If you lose your groove, you can tab to pause the video or you can go back and use the slider to adjust the timing on subtitles on an individual basis.</p>
+
+<p>After that, you can save/publish and you are done. The !!Con organizers are able to take it from there because the !!Con YouTube account is already ready to receive the Amara subtitles, which get synced on a regular basis. That&rsquo;s it!</p>
+
+<p>This is a GREAT way to feel super-productive even if you are feeling too under-the-weather to do other work. (Now that I’m all-freelance all-the-time, I’m super obsessed about whether I am at an optimal state to be billing hourly for my brain.)</p>
+
+<p>Hmmmm&hellip; But wait &mdash; I did the video you see in examples above. But how do you know if the video you are gonna transcribe has already been done or not? What a great question. You can comment on <a href="https://docs.google.com/spreadsheets/d/1MNZH-58vBXpVjzYHObV6vs1NSAK5QQ8v-g4wBEVdZqY/edit?usp=sharing">this Google Spreadsheet</a> and then everyone will know what is going on!</p>
+
+<p>In closing&hellip; Don’t stop there! Plenty of conferences and other things could use help with reliable closed captioning!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Where have you been?]]></title>
+    <link href="http://ablwr.github.io/blog/2015/05/30/where-have-you-been/"/>
+    <updated>2015-05-30T12:16:10-04:00</updated>
+    <id>http://ablwr.github.io/blog/2015/05/30/where-have-you-been</id>
+    <content type="html"><![CDATA[<p>Hi! I haven&rsquo;t updated this blog since February. What gives?!</p>
+
+<p>I don&rsquo;t want you to think I&rsquo;ve given up on my dear friend <a href="http://marleighchiles.com/">Marleigh</a>. She applied to <a href="http://adadevelopersacademy.org/">Ada Developers Academy</a> and was accepted, so naturally I let them take the reigns in her tech education, and we now send each other Star Trek gifs using more direct channels.</p>
+
+<p>What else?</p>
+
+<p>I&hellip;</p>
+
+<ul>
+<li><p>continued involvement with <a href="https://mediaarea.net/MediaConch">MediaConch</a>.</p></li>
+<li><p>got involved with <a href="https://xfrcollective.wordpress.com">XFR Collective</a>.</p></li>
+<li><p>gave two talks at <a href="http://personaldigitalarchiving.com/">Personal Digital Archiving 2015</a>.</p></li>
+<li><p>wrote about <a href="http://www.bustle.com/articles/78360-i-found-my-way-back-to-tech-with-the-help-of-people-who-understood-why-id">my experience with technology</a> for Bustle.</p></li>
+<li><p>gave a talk at <a href="http://bangbangcon.com/">!!Con</a>.</p></li>
+<li><p>other things that will remain a secret for now!</p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Rails Engage: Cooking up an MVC]]></title>
+    <link href="http://ablwr.github.io/blog/2015/02/02/rails-engage-cooking-up-an-mvc/"/>
+    <updated>2015-02-02T21:14:34-05:00</updated>
+    <id>http://ablwr.github.io/blog/2015/02/02/rails-engage-cooking-up-an-mvc</id>
+    <content type="html"><![CDATA[<p><img class="center" src="http://i183.photobucket.com/albums/x54/TrueX-Ray/TNG%20Caption%20This/TNGCaption158e.jpg"></p>
+
+<p>Okay! Last time we talked about the magic of <code>rails generate</code> and the structure that gets created when you make a new Rails project. I gave you a soft warning to pay close attention to the app/ folder with the foreboding &ldquo;Just remember the MVC&rdquo;&hellip; Now let&rsquo;s talk about the MVC.</p>
+
+<p>I&rsquo;m not the only person to use this analogy, but here it goes and I know you&rsquo;ll be able to relate to it. The best way I&rsquo;ve found to understand MVC is to treat the framework like a restaurant.</p>
+
+<p>The restaurant is broken up into three parts: Chefs working behind the scenes to make a great meal, servers that deliver the meal to the customers so they can eat it, and plates/tables/utensils so the meal can be enjoyed. Your app is THE MEAL!</p>
+
+<p><strong>Models</strong> &mdash; <strong>Chefs</strong></p>
+
+<p>Models hold the code. They hold the logic. They are the brains of the operation. A master chef has to take all of the individual pieces of something and put them together just right to make something delicious.</p>
+
+<p><strong>Controllers</strong> &mdash; <strong>Servers</strong></p>
+
+<p>The chef is too busy making a masterpiece to give her customers the meal herself! She&rsquo;s got work to do! The controllers help keep all the beautiful, well-crafted meals going out to the right customers. Being a server (the restaurant kind) is hard work, keeping track of what everyone ordered and where they are seated. The controller takes data from the model and delivers it to the plate.</p>
+
+<p><strong>Views</strong> &mdash; <strong>Plates</strong></p>
+
+<p>Yum yum, time to eat these snacks up, right? The view is where all the front-end work comes into play. It&rsquo;s a very important component because just because you have a delicious meal, no one is gonna come to your restaurant if its lookin&#8217; like the Wing Basket. Or maybe they will and it&rsquo;ll be the best kept secret in town. Anyway, the view is dedicated to make all your hard work and code look great so people will actually want to consume it.</p>
+
+<p>MVC is a good framework to know, but what&rsquo;s the point? The point is to keep your code clean. Coding means juggling a lot of different things at once, so this framework helps you figure out where you need to go to find your problem and fix it. Is your math not working? Check your models. Is the math being delivered to the wrong page? Check your controllers. Is the math problem just super ugly? Take a look at your views.</p>
+
+<p>There a lot of nuances here, but this is a good overview to have in the back of your mind as you write code. And remember, the first goal is to get things working so if you accidentally put some logic in your view, don&rsquo;t sweat it.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Rails Engage: rails generate]]></title>
+    <link href="http://ablwr.github.io/blog/2015/01/24/rails-engage-rails-generate/"/>
+    <updated>2015-01-24T12:24:23-05:00</updated>
+    <id>http://ablwr.github.io/blog/2015/01/24/rails-engage-rails-generate</id>
+    <content type="html"><![CDATA[<p><img class="center" src="http://31.media.tumblr.com/d619155808e29c0d5005f4f663d11114/tumblr_mjfgq0AcrB1qd5tdto1_250.gif"></p>
+
+<p>Rails comes with a lot of magic. When I was learning Ruby and Ruby on Rails, I was taught Ruby first, moved up slowly, and then was shown that all the things I did the hard way could be done by typing “rails generate” (or even just “rails g”!). I think the way I learned was good, but listen — we don’t have time for that right now, so we are just going to throw out this command and I will explain to you what it does. The deeper concepts can come later, but right now the most important thing is to get our hands dirty right away and generate a lot of code.</p>
+
+<p>“rails generate” makes a lot of assumptions about what you might want in a robust web application and it generates things accordingly. There are more one-liners that can be used later to continue to expand your application as you need them.</p>
+
+<p>The first command is <code>rails new</code>. <code>rails</code> tells your computer to use that code base and <code>new</code> is the command to generate a whole bunch of pre-written template code. You&rsquo;ll need one more thing after that, and it&rsquo;s your app name. So <code>rails new marleigh</code> will make all of those files generate in a folder called marleigh <em>in whatever directory you are currently in</em>. Make sure you know where you are in your terminal when you make this folder so you can find it again! If you aren&rsquo;t sure where you are, you can type <code>pwd</code>. That stands for &ldquo;print working directory.&rdquo;</p>
+
+<p>So <code>rails new</code> makes a lot of stuff. Do you need all of it? No. Shouldn&rsquo;t you be writing beautiful, minimalist, clean code from the very beginning? No. You will have plenty of time to craft elegant code in the future, but right now let&rsquo;s just get something running. It&rsquo;s easy to get caught up the former and never get to the latter.</p>
+
+<p><img class="left" src="http://ablwr.github.io/images/base_rails.png"></p>
+
+<p>But what do we get?</p>
+
+<p>On the left is an image of what gets generated when you run that one line. That&rsquo;s a lot of stuff! When I was cruising around on Github before learning anything about Rails, all of these files and folders scared the hell out of me. I also assumed they were all generated manually and that everyone knew everything about what all of these files and folders did and I had no idea where to look and I&rsquo;d never get anything right and was just a big dum-dum. That&rsquo;s wrong.</p>
+
+<p>Here&rsquo;s what&rsquo;s right.</p>
+
+<p><img class="center" src="http://33.media.tumblr.com/4256f4276b3aa11c3caf98a574a58296/tumblr_mjfgq0AcrB1qd5tdto5_250.gif"></p>
+
+<p><strong>app</strong> &mdash; Most of your code will be written in this folder. It contains the models, controllers, and views, which are at the heart of the Rails framework. Another important folder within this one is the assets folder. There are other folders, too, but they are not required and you can ignore them for now. Just remember the MVC &mdash; we&rsquo;ll go into that later when we start writing. The assets folder is for putting your custom CSS, JavaScript, and images.</p>
+
+<p><strong>bin</strong> &mdash; The code in this folder helps start up your app. If you have other things helping you out, they may needed to be booted up in here along with Rails. From the start, it&rsquo;ll have what you need to get things running.</p>
+
+<p><strong>config</strong> &mdash; The config folder also gives you what you need to get off the ground, but very useful if you need to make modifications in the future, like because you are using a different server and need to change the database.yml file. There is one very important file in here, though, and it&rsquo;s routes.rb. You will be using it even for a basic application.</p>
+
+<p><strong>db</strong> &mdash; Your database lives in this folder! seeds.rb is for populating seed data when you are testing.</p>
+
+<p><strong>lib</strong> &mdash; Other libraries go here.</p>
+
+<p><strong>log</strong> &mdash; Log files! You probably won&rsquo;t need to look at these very much initially, but be glad they are there.</p>
+
+<p><strong>public</strong> &mdash; This is the only public part of your site. The rest of it is all hidden. Error pages, rules for robots like web scrapers, and your favicon (the tiny icon in the tab- section of your browser) live here by default.</p>
+
+<p><strong>test</strong> &mdash; An important component to writing code is writing tests to make sure that code works. I&rsquo;m not gonna help you learn how to write tests, though.</p>
+
+<p><strong>tmp</strong> &mdash; Don&rsquo;t worry about it. Just a spot for temporary files.</p>
+
+<p><strong>vendor</strong> &mdash; This is where you put code libraries from other places, like if you use Bootstrap or a JavaScript library. It&rsquo;s the same as putting it in the Assets folder in /app but it&rsquo;s polite to put code you didn&rsquo;t write or generate into this folder. It also helps keep you organized.</p>
+
+<p><strong>config.ru</strong> &mdash; The ru stands for rackup. This configures the application for use with Rack-based servers. It&rsquo;s set up as default.</p>
+
+<p><strong>Gemfile</strong> &mdash; If your app uses other gems (Ruby libraries) to accomplish tasks, the names of those gems should go here so that it can be easily loaded by anyone wanting to use the application. The Gemfile.lock file is created after it is &ldquo;bundled.&rdquo;</p>
+
+<p><strong>Rakefile</strong> &mdash; If you find yourself doing a task frequently and want to automate it, you can turn it into a rake task. If you have one of those, you can put it here so that it loads along with your application.</p>
+
+<p><strong>.gitignore</strong> &mdash; This is where you put files that you don&rsquo;t want to upload to git. This is in all git repositories, but Rails auto-populates it with stuff you never need to load to a public git directory.</p>
+
+<p><strong>README</strong> &mdash; Documentation is important. This is a good place to put information about your app and how to use it.</p>
+
+<p><img class="center" src="http://33.media.tumblr.com/7a224527d4b66b9987bb912262058de1/tumblr_mjfgq0AcrB1qd5tdto4_250.gif"></p>
+
+<p>It&rsquo;s still a lot all at once, right? And how do those pieces even work together?! That&rsquo;ll be what we go into next when we start writing code. A lot of this stuff <em>is</em> excessive for what you want to do, but it helps us get to the fun stuff right away.</p>
+
+<p>The first link in the resources is great at explaining all of this in detail, so I recommend going over it (and over it and over it) to have a good understanding of how these parts work together.</p>
+
+<p><img class="center" src="http://38.media.tumblr.com/8892c95636fd67bb843da6aa79c1ded4/tumblr_mjfgq0AcrB1qd5tdto2_250.gif"></p>
+
+<h3>Resources</h3>
+
+<p><a href="http://guides.rubyonrails.org/getting_started.html">Getting Started with Rails</a></p>
+
+<p><a href="https://upcase.com/trails">Thoughtbot&rsquo;s Learn Rails</a></p>
+
+<p><a href="https://github.com/petrjasek/rails-portfolio">Rails Portfolio</a></p>
+
+<p><a href="http://rails-3-2.railstutorial.org/book">Ruby on Rails Tutorial</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Rails Engage: Scoping]]></title>
+    <link href="http://ablwr.github.io/blog/2015/01/18/rails-engage-scoping/"/>
+    <updated>2015-01-18T15:41:11-05:00</updated>
+    <id>http://ablwr.github.io/blog/2015/01/18/rails-engage-scoping</id>
+    <content type="html"><![CDATA[<p><img class="center" src="http://ablwr.github.io/images/guinan_gun.gif" title="" > <img class="center" src="http://ablwr.github.io/images/guinan_gun2.gif" title="" ></p>
+
+<p>When you’re making your first app, it’s hard to think about scope because it’s hard to know what is and isn’t possible. Some things that seem easy are hard, and vice versa. Marleigh mentioned an idea to me and fortunately it happened to be exactly the right size for a first-app: complex enough to cover all the concepts you need to be a great junior developer but simple enough to be able to tackle as a junior developer.</p>
+
+<p>I don’t want to give away her project idea, but when she told me what she wanted to build, I was able to break it down like this: Possible to execute in one or two pages, involves at least one API, logic is relatively simple but requires insight that she already has, database is not complex, is something she is personally interested in.</p>
+
+<p>Here are a few things to try to keep in mind when planning out your first project:</p>
+
+<ol>
+<li>Keep it simple. Absolutely simple. There is a chance it’ll be too simple, but it’s more likely that you will think of something that has a lot more moving parts than you’d expect.</li>
+<li>Can this be done in one or two pages?</li>
+<li>Logic. Can you figure out how to figure something out in advance? If you don’t know the answer, how are you going to be able to code it? One of the first apps I made involved a weather API and logic that would determine whether or not the average threshold for rainfall would exceed a certain limit, so you’d know whether or not you’d need an umbrella in the morning (and the application would fire a text only if that was the case). That was something my team could easily figure out. You’ll be worried about figuring out a lot of stuff, so don’t make a complex problem part of it. There’s nothing wrong with ripping off something that already exists because the important part is your learning.</li>
+<li>Be interested. Be something you actually want to use and be proud of. This is kind of a no-brainer because you’re obviously making this app for you in your spare time while learning how to code, but it’s worth emphasizing. Do something related to what you love.</li>
+</ol>
+
+
+<p>Scoping is hard whether you are a junior or a senior developer: there&rsquo;s always going to be hiccups that you didn&rsquo;t expect or things that were much easier than anticipated. It gets easier, but it will never be easy (kinda like programming, if you&rsquo;re doing it right).</p>
+
+<p>Bonus points: APIs. This is also good for thinking up an idea: find an API that is well-made and build something based on it. You certainly don’t need to use an API for your app but I can tell you that when I was interviewing for my first developer job out of school, APIs were a hot topic. (A lot of questions about whether I’d made my own before.)</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Rails Engage: Setting up your environment]]></title>
+    <link href="http://ablwr.github.io/blog/2015/01/11/rails-engage-setting-up-your-environment/"/>
+    <updated>2015-01-11T09:11:48-05:00</updated>
+    <id>http://ablwr.github.io/blog/2015/01/11/rails-engage-setting-up-your-environment</id>
+    <content type="html"><![CDATA[<p><img src="http://38.media.tumblr.com/f360873af12a76bc4b00a549c799a2d1/tumblr_mtayo9M8JJ1rik14zo1_400.gif" alt="Data using a computer" /></p>
+
+<p><img src="http://38.media.tumblr.com/bb28f80f960d040e9d2842fed6d20ab9/tumblr_mtayo9M8JJ1rik14zo3_400.gif" alt="Data using a computer fast" /></p>
+
+<p> Disclaimer: I love this part. I love setting up environments, I love debugging problems on the command line*, and I love working on server-side problems. Ever since I was a kid. Weird, right? Most people don’t feel that way (or lacked the opportunity). And it’s hella intimidating to start your coding journey by having to stare at a huge black screen* that you don’t understand. I also used DOS when I started using computers, so it was comforting to me, a familiar screen, and even working in the terminal* now gives me this strong sense of nostalgia for childhood. SO NERDY. Most people have only used graphical user interfaces to interact with their computer, so typing things into the shell* is definitely weird.</p>
+
+<p>Weird and scary. Because you&rsquo;re looking at an empty black box, typing into the darkness, it can be intimidating because of a slight fear that you&rsquo;ll do something wrong and ruin your entire computer. This is highly, highly, highly unlikely. Everyone starting out gets the disclaimer of being wary of commands that start with <code>rm</code> (remove), and you could end up in black holes that takes a few hours to get out of because of debugging, but be brave and go forth! Environment problems don&rsquo;t take a long time because you are stupid. They take a long time because the computer is stupid and needs explicit instructions.</p>
+
+<p>It seems like programming is a lot like the opening gif, up above. You don&rsquo;t have to be Commander Data to use the command line, though. And a lot of environment setup involves pressing a button and waiting a while. We&rsquo;re gonna have you up and running like this&hellip; in theory.</p>
+
+<p><img src="http://38.media.tumblr.com/ed6df7c82c24e812dfe3c5892a65bcb8/tumblr_mohoyw4X0l1s67vyfo4_250.gif" alt="Data pressing a button" /></p>
+
+<p>The final and most difficult part about setup is that in theory it’s easy. In theory, you just run a few lines and everything is totally fine and your computer is like :) complete! :) installed! :) good! :). But most of the time, you get some crazy  jargon.</p>
+
+<p>First rule: Read what the computer gives back to you! This is the best thing you can learn from setting up your environment (assuming you run into problems). Your computer will tell you what’s wrong. Sometimes it’s good at articulating its feelings. Sometimes its not so good. It just a computer, after all. It doesn’t really have feelings. But when you get an error message, don’t panic!</p>
+
+<p>Second step: If you have no idea what the computer is trying to tell you, google it. Google the shit out of it. Copy-paste that shit right into google and you’re most likely to get a link to StackOverflow with someone else that had your same problem. Especially when you’re learning early on — at least one person, usually many people, have had the same problems you are having right now. And some kind person out there, again usually on StackOverflow, has already gently explained the right thing to do in order to fix it. If you don’t understand what they are saying, keep scrolling or start googling what they are saying. Just google forever. Or use your preferred search engine.</p>
+
+<p>Enough of these steps, let&rsquo;s get practical. Pop open that terminal open! (Use Spotlight to search for Terminal, or you can find Terminal.app in your applications folder <strong>in the Utilities folder</strong>). Windows users, sorry I am leaving you in the dust here.</p>
+
+<p>First, let&rsquo;s install <a href="http://brew.sh/">Homebrew</a>. Follow the commands on the page and listen to anything the command line gives back to you. Homebrew is great. It&rsquo;s a package manager. What does that mean? It means you can add things to your computer that you need without having to do all the work yourself, or running into problems. So when you want to install a new programming lanuage or component, you can do it with one line. Overall, from a new-user perspective, it helps protect your machine from you. It makes command-lining like a wild beast (as a new user) much safer.</p>
+
+<p><img src="http://emojipedia.org/wp-content/uploads/2013/07/160x160xbeer-mug.png.pagespeed.ic.kOjM-Un-7l.jpg" alt="beer" /></p>
+
+<p>I think you might need to install X-Code. This will vary based on your operating system. See the resources below if you have trouble doing this.</p>
+
+<p>When Homebrew is up and running, you can use it to install Ruby, RVM (this manages), and Rails by running <code>brew install</code> and the thing you want to install. Rather than repeating how to do this from memory, I recommend following the guides I link to at the bottom of this post.</p>
+
+<p>* I realize that people commonly use several words to refer to the same thing: that black (by default) screen you use to manipulate your computer, with only text on it. On OS X (Mac) operating systems, the application is called <strong>Terminal</strong>. Inside, it uses the <strong>shell</strong> (Unix term for a user interface for accessing your computer). There are a few language structures used in shell, but the most common (and default) is called <strong>bash</strong> (which is a free, open-source alternative of the Bourne shell, which is why bash stands for Bourne-again-shell). All of this brings together the ability to manipulate your computer via the <strong>command-line</strong> (as opposed to using your mouse to click where you want to go — that uses the graphical user interface).</p>
+
+<p>Windows is a different beast, of course, but it might be the beast you are stuck with. On Windows, you are looking for the Command Prompt (found via this path: Start > All Programs > Accessories > Command Prompt, if I recall correctly).</p>
+
+<p><img src="http://emojipedia.org/wp-content/uploads/2013/07/160x160xclinking-beer-mugs.png.pagespeed.ic.Gv-8d6e0qe.jpg" alt="clinking beer" /></p>
+
+<p>Although most learning can be done alone, it&rsquo;s a bit of a bummer that setting up the environment is like being forced to dive head-first into the deep end without even ever having been in the water before, much less know how to swim. If you are a non-Marleigh following along with these posts, it&rsquo;s best to try to find a friend or resource that can sit next to you and explain things. If you have no friends (that know about this stuff), you can ask me! But remember firstly that search engines are also your friend.</p>
+
+<h3>Resources:</h3>
+
+<p><a href="http://www.moncefbelyamani.com/how-to-install-xcode-homebrew-git-rvm-ruby-on-mac/">How to Install Xcode, Homebrew, Git, RVM, Ruby &amp; Rails</a></p>
+
+<p><a href="http://braumeister.org/">Braumeister &mdash; list of different brew packages</a></p>
+
+<p><a href="https://developer.apple.com/xcode/">X-Code</a></p>
+
+<p><a href="http://guides.rubyonrails.org/getting_started.html">Rails Guide: Getting Started with Rails</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Rails Engage!]]></title>
+    <link href="http://ablwr.github.io/blog/2015/01/10/rails-engage/"/>
+    <updated>2015-01-10T20:36:19-05:00</updated>
+    <id>http://ablwr.github.io/blog/2015/01/10/rails-engage</id>
+    <content type="html"><![CDATA[<p><img src="http://ablwr.github.io/images/tng-engage.gif" alt="engage picard" /></p>
+
+<p>Happy new year.</p>
+
+<ol>
+<li>I have a friend who wants to learn how to code.</li>
+<li>She has an app in mind that she wants to create.</li>
+<li>One of my goals for the new year is to write more technical blog posts.</li>
+</ol>
+
+
+<p>We also live pretty far apart — I live in New York and she lives in my home state of South Carolina (at least, for now). I think one of the best ways to help her make her app is to write blog posts explaining some of the concepts that were new to me when I was learning how to code. Ruby on Rails is one of the easiest frameworks to learn for a couple of reasons: it teaches you the core concepts of programming for the web, Ruby is one of the easiest languages to learn as a beginner (if not the easiest), and Rails is robust enough to get a fully functioning application off the ground in the matter of a few weeks, even for people new to coding. And it’s just easier for me to write if I can pretend like I’m speaking to one person directly.</p>
+
+<p>Another important note: my friend is a real Star Trek: The Next Generation nerd, so if you see an obtuse amount of TNG references and gifs on this blog in the near future&hellip; that is why.</p>
+
+<p>Here’s the rough framework I will use to explain how to make an app while keeping it general enough for anyone (and obviously subject to change).</p>
+
+<ol>
+<li><a href="http://ablwr.github.io/blog/2015/01/11/rails-engage-setting-up-your-environment/">Environment setup</a>
+1.5 <a href="http://ablwr.github.io/blog/2015/01/18/rails-engage-scoping/">Scoping</a></li>
+<li><a href="http://ablwr.github.io/blog/2015/01/24/rails-engage-rails-generate/">rails generate (What are these files?)</a></li>
+<li>Eaten by 2</li>
+<li>MVC</li>
+<li>Working with an API</li>
+<li>Logic</li>
+<li>Front-end</li>
+<li>How to deploy</li>
+</ol>
+
+
+<p>Engage!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[New Year's Resolutions]]></title>
+    <link href="http://ablwr.github.io/blog/2014/12/27/new-years-resolutions/"/>
+    <updated>2014-12-27T15:40:43-05:00</updated>
+    <id>http://ablwr.github.io/blog/2014/12/27/new-years-resolutions</id>
+    <content type="html"><![CDATA[<p><img src="http://ablwr.github.io/images/gityear.png" alt="git year" /></p>
+
+<h2>0. Be a better developer.</h2>
+
+<p>Definitely this. This was my goal in 2014 and it&rsquo;ll continue to be my #1 goal in 2015. In 2013, I had the ambiguous resolution of &ldquo;learn to code.&rdquo; Or &ldquo;learn to code more.&rdquo; In 2014, with help, I got the fundamentals down, enough to be employed full-time as a developer. 2015 is where I can continue to improve my skills and put this knowledge to good use. Which brings me to resolution 2:</p>
+
+<h2>1. Meaningful open source contributions.</h2>
+
+<p>Now that I am capable of contributing, I&rsquo;m ready to start doing so, even if I have to start small. I&rsquo;ve wanted to contribute to open source projects ever since the time I installed VLC Media Player (and read the documentation) when I was 14 or 15. I&rsquo;m not ready to become a C++ and algorithms master in a year, but there are plenty of open source projects that could benefit from my skill set.</p>
+
+<h2>2. Double my git commits.</h2>
+
+<p>I like to put something attainable and quantifiable on my list of goals. This post would have been my 1000th commit of 2014 if I&rsquo;d posted this when I started writing it (and dated: the 27th). It&rsquo;s currently at 1082. I&rsquo;d like to at least double that number by this time next year. I don&rsquo;t think I&rsquo;ll have to make much of an effort here, as I&rsquo;ve been actively contributing to the code base where I work from Week 1, intend to follow through on resolution 2, above, and have too many side projects I want to get started on.</p>
+
+<h2>3. More technical blog posts.</h2>
+
+<p>I hate writing technical posts! I worry that they will end up dry and boring, I&rsquo;m scared of being wrong, and it&rsquo;s overall not as enjoyable as a blog post talking about my ~feelings~. But I know technical blog posts help reinforce what I know, they help other people, and they can potential help me when I inevitably forget a concept or method of server setup months down the road.</p>
+
+<h2>4. Give back.</h2>
+
+<p>I have been very lucky in my life, and this year in particular. So many other people haven&rsquo;t had the opportunities that have been handed to me, but I want everyone to be able to get the education and help they need if they want to learn web development. I want to keep tutoring, keep mentoring, and keep getting others excited about code. Whether it&rsquo;s helping 1-on-1, giving educational talks, writing tutorials, or even just explaining why my list starts with 0 instead of 1, I&rsquo;m ready to help out.</p>
+
+<h2>5. Give back (field-specific).</h2>
+
+<p>I also care a lot (too much?) about moving image archiving, digital preservation, and video on the web. Leaving my previous field was very hard and worthy of its own blog post, but I am 100% dedicated to making contributions to those fields or areas of study, even if I am not actively doing it full time.</p>
+
+<p>Oh, and learn vim. Another easy one. My keyboard shortcut game is strong but I&rsquo;m ready to step it up.</p>
+
+<p>2014 has been a really great year for me and I&rsquo;m looking forward to 2015.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Flatiron School ROI and life as a #FlatironAlum]]></title>
+    <link href="http://ablwr.github.io/blog/2014/12/18/flatiron-school-roi-and-life-as-a-number-flatironalum/"/>
+    <updated>2014-12-18T19:45:10-05:00</updated>
+    <id>http://ablwr.github.io/blog/2014/12/18/flatiron-school-roi-and-life-as-a-number-flatironalum</id>
+    <content type="html"><![CDATA[<p>I’m going to break this blog post up into three Cs.</p>
+
+<h1>Cash, Confidence, Comrades.</h1>
+
+<p>Not in that order. I’m going to rank them in order of importance/significance.</p>
+
+<h1>Confidence</h1>
+
+<p>I&rsquo;ve been thinking about confidence a lot over the past several months. When I look back on my time spent at Flatiron, I felt like the program overall was an immensely valuable experience in being able to learn so much in such a short period of time, to be able to push myself to and beyond the limit, and to work with so many great people. But the biggest impact on my life is less about the knowledge I gained and more about the increase of confidence in my abilities.</p>
+
+<p>I want to emphasize here the difference between having confidence and being overly confident. I feel like I know exactly where I am at, what I know and don&rsquo;t know, that there&rsquo;s an infinite amount of things I don&rsquo;t even know I don&rsquo;t know about yet, and what I need to improve on (which is a lot!). But beyond that, I don&rsquo;t doubt my abilities. I feel confident in my ability to tackle most things, even if I know it will probably take me longer than someone who has already done a particular task before.</p>
+
+<p>Anyway: I don&rsquo;t think I ever would have reached that point if I had taken on learning web development on my own. I am sure that I would have been riddled with assuming I was always wrong, that I always knew nothing, and I&rsquo;d be afraid to speak up about anything related to coding because I wouldn&rsquo;t be able to trust myself when I felt right.</p>
+
+<p>Doubting one&rsquo;s self is a massive problem in the tech field. When there are so many asshole developers out there talking down to every non-technical person, it&rsquo;s easy to start a career off with a major inferiority complex. But just like anything else, people that act like they know the most tend to not, and people that are humble are a wealth of knowledge waiting to be uncovered.</p>
+
+<p>In this way, I&rsquo;ve overcome the &ldquo;imposter syndrome.&rdquo; Not completely, but enough.</p>
+
+<h1>Comrades</h1>
+
+<p>Culture fit was really important to me when I was applying to different web development programs and interviewing at Flatiron. I really wanted to work with people that were like me — Friendly people, not 100% grumpy dudes, etc. etc., not like the “standard tech field demographic.” I wasn’t going in thinking “Oh jeez I hope I am working with people that are 40 new BFFs 4 life!” Like, who goes into anything thinking that? Maybe really amazing people. Anyway, I feel like that’s what I got. Not only was the culture fit exactly what I was looking for, I also have so many great friends after the program and into the future. This is especially great for me as someone who moved to New York for the program. I had a bunch of friends living here in New York but it’s always a little scary to move somewhere and not know anyone. I did that when I lived in New York before and it kinda sucked. Now I know a bunch of great people and have a great network of people I can rely on. I’ve also met a bunch of Flatiron alumni and they are also super nice, super rad, and super amazing. Flatiron is excellent at selecting good people and turning them into developers (which is exactly what they advertise).</p>
+
+<h1>Cash</h1>
+
+<p>Okay, yeah. The first two are not as easily predicted as they are qualitative data, but the quantifiable data was a big concern for me. Flatiron School was not cheap, nor is living in New York, so I had to feel confident about quitting my day job and night job to go all-in on programming, something I hadn’t done for a living but had done a little bit here-and-there. At the time, the website was boasting an average of $75k annual salary for grads. I won’t go into the personal deets of others, but a recent unofficial survey of my classmates show that this data is accurate. Happy to get specific in person, but in a blog post I want to emphasize that the statistics AIN’T NO LIE. I got a Master&rsquo;s degree and took a job making less money than what I was making before. After Flatiron, my salary more than doubled AND I get crazy perks AND treated like a real person AND work with wonderful people all day AND I love writing code and figuring out problems. I have a lot of feelings about this that deserve an entire blog post. If this kind of educational track had been available to me instead of college as a 17-year-old, I would have done everything in my power to make it happen. Instead of being pushed out of computer science by stereotypes and Calculus, I could have embraced what I’ve always been good at and always have loved doing.</p>
+
+<p>So thanks, Flatiron. I&rsquo;m proud to be a #FlatironAlum.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Fog Creek Fellowship Mini-post]]></title>
+    <link href="http://ablwr.github.io/blog/2014/11/08/fog-creek-fellowship-mini-post/"/>
+    <updated>2014-11-08T09:04:18-05:00</updated>
+    <id>http://ablwr.github.io/blog/2014/11/08/fog-creek-fellowship-mini-post</id>
+    <content type="html"><![CDATA[<p>I had a great time at Fog Creek getting mentorship from the Trello team but haven&rsquo;t had time to sit down and put it all into words. Fortunately, they say a picture is worth a thousand words.</p>
+
+<!-- more -->
+
+
+<p><img class="center" src="http://ablwr.github.io/images/fogcreekfellowship_first.gif"></p>
+
+<p>Because this is a vaguely code-focused blog, I must add that one command is worth a thousand seconds screwing around with Photoshop. With ImageMagick, I just ran <code>convert -delay 20 -loop 0 image*.jpeg fellowship.gif</code> in each folder of images.</p>
+
+<p>The finest quality .gif is still gonna come out of some dedicated Photoshopping, but this works fine in a pinch.</p>
+
+<p><img class="center" src="http://ablwr.github.io/images/fogcreekfellowship_second.gif"></p>
+
+<p>These gifs are pretty jumbo (despite mediocre quality), which I don&rsquo;t care about but are cruel to slower connections or mobile platforms. ImageMagick can help with that, too, because <a href="www.imagemagick.org">ImageMagick</a> can do pretty much everything. I mean, it&rsquo;s a wizard.</p>
+
+<p><img class="center" src="http://upload.wikimedia.org/wikipedia/commons/0/0d/Imagemagick-logo.png"></p>
+
+<p><code>convert fellowship.gif -resize 50% fellowship_small.gif</code> is a quick way to make a smaller copy of an image. There&rsquo;s a zillion other things you can do that I&rsquo;m not going to go into because the primary point of this post is two simple gifs, but <a href="http://www.imagemagick.org/script/command-line-options.php">documentation</a> is always your pal, and so is <a href="http://stackoverflow.com/search?q=imagemagick">Stack Overflow</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Non-technical person's guide to becoming an open source software contributor via Github]]></title>
+    <link href="http://ablwr.github.io/blog/2014/11/03/non-technical-persons-guide-to-becoming-an-open-source-software-contributor-via-github/"/>
+    <updated>2014-11-03T21:53:42-05:00</updated>
+    <id>http://ablwr.github.io/blog/2014/11/03/non-technical-persons-guide-to-becoming-an-open-source-software-contributor-via-github</id>
+    <content type="html"><![CDATA[<p>A month ago, I was (lightly, &hellip;I think) called out for bailing on speaking about <a href="www.bavc.org/qctools">QCTools</a> for the Association of Moving Image Archivists conference. Nevermind the bait-and-switch last-minute-surprise-you’re-speaking scenario I had landed myself in and that I really really did want to see my pals give a talk on BitTorrent and private tracker communities as archives, I did still feel a twinge of guilt for dropping out last minute. Sorry, guys. The BitTorrent panel was pretty baller, though, and Lauren Sorensen did an excellent survey of using git from the command line earlier in the day.</p>
+
+<p>To make up for it, I am here today on this blog to talk about how you, non-technical or kinda-technical or just-scared-of-git person, can dig in and support open source projects like QCTools, even if you don’t speak C++ (which is what I started planning for in the 2-day scramble before leaving New York on a jet plane).</p>
+
+<p>Here it is:</p>
+
+<p>I think a lot of people are intuitively intimidated by using git because it can be hard to understand or because they don’t know how to read code. But not being able to read code is okay because you can still make valuable contributions in English! One of the biggest sore spots for most open source software (and even proprietary software) is a lack of clear, concise documentation. But at least with OSS, if something in the documentation is confusing, instead of going on Twitter or something and being like “wah wah this free thing I downloaded totally sucks,” you can actually go in there and CHANGE it. Or at least make a request to change it.</p>
+
+<p>I’m gonna go through how you might make those changes without having to do anything “techy.”</p>
+
+<p>Uh, so I went to the Flatiron School which is an immersive web development program. This is how I did things on Day 1 as a shortcut to getting what I wanted (which was to deploy a user profile for myself)*. I can’t get away with that stuff now but you totally can. It’s not bad practice or anything (well, maybe the context in which I was doing it was, but that&rsquo;s neither here nor there). Actually, I did a quick edit like this today because I wanted to fix someone else’s documentation but I didn’t want to bother going through all the other steps to copy and download the repository to my local machine.</p>
+
+<p>* One thousand blessings to Dave Rice for being extremely patient with me when I made my first changes to the QCTools documentation by submitting weird pull requests even though he had given me permission to upload directly because I didn&rsquo;t know how to push directly to the master branch.</p>
+
+<p><img class="center" src="http://ablwr.github.io/images/readme.png"></p>
+
+<p>The main block of text on the front of a Github repository is located in the README.md file. (The .md stands for <a href="http://en.wikipedia.org/wiki/Markdown">Markdown</a>, a way to format writing on the web easily. (<a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">cheatsheet here</a>)) If you click on the link, it&rsquo;ll take you to a page that only loads the README. On the right side, above the beginning of the document, there is a little pencil button. That pencil allows you to go in and edit the file without having to load the repository on your computer, use the command line, or even use the Github desktop GUI.</p>
+
+<p><img class="center" src="http://ablwr.github.io/images/edit_pencil.png"></p>
+
+<p>That&rsquo;s right, click on that pencil! You&rsquo;ll open into an in-browser text editor. It&rsquo;s pretty much the same as editing a wiki. Which you&rsquo;ve totally done, right? Just make your changes right in there. At the bottom, fill out a brief, one-line description of the change you made and why you made it and add a longer description if necessary. By the way, you can use emoji in here. Use <a href="http://emoji-cheat-sheet.com">this cheat sheet</a>.</p>
+
+<p>When you click the &ldquo;Commit changes&rdquo; button, you&rsquo;ll get a notification from Github saying that you can&rsquo;t directly contribute to the code so it has forked the repository for you and has made your changes on your branch. Does that sound confusing? Forks, branches? It just means that you aren&rsquo;t allowed to directly change the code and there&rsquo;s a process in place to make sure that only good code goes in. Everything is copied to your account and you make the changes on YOUR account. If you want the changes to go into the main product, you have to submit a pull request (just follow the steps). It&rsquo;s a pull request because you are asking the owners of the main github page to &ldquo;pull in&rdquo; changes that you made on your copy of their main codebase.</p>
+
+<p>Got a problem? Yo, you&rsquo;ll solve it! Check out this next step while the DJ revolves it:</p>
+
+<p><img class="center" src="http://ablwr.github.io/images/diff.png"></p>
+
+<p>The red is what I took away from the code and the green is what I added in.</p>
+
+<p>After you submit a pull request, people can comment on it before it can get merged into the master branch. If the code change might cause a problem (or in the case of non-technical edits, if the documentation is wrong), conversations can happen here. This peer-review process helps keep open source projects strong and sturdy. Here is someone coming in to critique my simple edit soon after I opened the pull request on it for being too verbose:</p>
+
+<p><img class="center" src="http://ablwr.github.io/images/codereview.png"></p>
+
+<p>He was right, I could make the line even simpler and not even get into the fact that the code could run in another Terminal window, so I changed my change (the screencap above was taken after that). I even changed my change after this because it still had a lingering backtick in it, as you can see in this screencap. If you change something, you don&rsquo;t have to re-open a pull request. The pull request takes the latest version of your code on your branch and assumes it is ready to move into the master if the pull request is approved. At this point, all you can do is wait and feel good about your open source contribution.</p>
+
+<p>If you want to add to the QCTools documentation, you can follow the same steps. With QCTools, the documentation is hidden a little deeper into the codebase, but you can find it <a href="https://github.com/bavc/qctools/tree/master/Source/Resource/Help">here in the Source</a>. You have to follow the rules and the code has to validate to proper HTML, but changes are easy and possible.</p>
+
+<p>If you are afraid to make your change, go ahead and try to change anything on any of the repositories I own. I think I even have one called <a href="https://github.com/ablwr/testing">testing</a>. You can&rsquo;t test out submitting pull requests on your own github folders because you already own them (which was disappointing when I was trying to pull together screen caps for this demo).</p>
+
+<p>If there’s something bigger you want to fix but you don’t know how to do it, you can open an issue. This may or may not be fulfilled and it might take a while to fulfill. Obviously the best way to fix a problem is by doing it yourself. But this is a good way to provide feedback on how something like QCTools works and bring up problems that might be easy to fix by someone else. You can see that QCTools has plenty of <a href="https://github.com/bavc/qctools/issues">open issues</a> at the moment.</p>
+
+<p><img class="center" src="http://ablwr.github.io/images/issues.png"></p>
+
+<p>The issues page is on the right-hand side of a Github repository. You can access it to see all the current issues or make your own.</p>
+
+<p><img class="center" src="http://ablwr.github.io/images/issues2.png"></p>
+
+<p>You can see Github has a lot of issues that I added to the repository earlier today. UX needs help, people! To create a new issue, click on the New Issue tab (I didn&rsquo;t need to explain that to you, did I?)</p>
+
+<p><img class="center" src="http://ablwr.github.io/images/issues3.png"></p>
+
+<p>To create a good issue that people will actually pay attention to, try to make the problem specific but concise. If it&rsquo;s a bug in the program, explain exactly what you were doing to cause the error to occur and make sure to mention if you are able to make the bug repeat, or if it only happened once and not again. If you know someone is in charge of a certain aspect of a project, assign them to it. If you don&rsquo;t know, though, don&rsquo;t assign anybody and someone in charge of the project can always direct the issue to the right person or someone else can jump in to fix it. Also, don&rsquo;t follow my above example and only submit an issue if it&rsquo;s something important that will help contribute overall to the betterment of the project.</p>
+
+<p>A final note: One thing that guides to Github or Open Source contribution usually fail to mention is that it&rsquo;s scary. It&rsquo;s SCARY, dude. It involves being assertive, telling a total stranger that you think you have a better solution to their problem, and envoking feedback from anyone in the world that cares about the project. I don&rsquo;t have much advice for this other than BE BRAVE, close your eyes, and CLICK that button (or buttons) and don&rsquo;t worry if someone wants to try to get into a fight with you on the internet. The worst thing that can happen is that you&rsquo;re wrong, and that&rsquo;s okay too. And most people are exceptionally nice and willing to work it out with you (like Dave Rice).</p>
+
+<p>The biggest advice I can give is don&rsquo;t worry about fucking things up. It&rsquo;s git. It&rsquo;s a distributed revision control system. It&rsquo;s entire purpose for existing is to protect against things getting fucked up.</p>
+
+<p>Extra final note: I&rsquo;m leading a skillshare on git later this month so expect more git-based tutorials or resources to come!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Video Sprites]]></title>
+    <link href="http://ablwr.github.io/blog/2014/10/15/video-sprites/"/>
+    <updated>2014-10-15T15:16:15-04:00</updated>
+    <id>http://ablwr.github.io/blog/2014/10/15/video-sprites</id>
+    <content type="html"><![CDATA[<p>Last week, I participated in the second <a href="http://wiki.curatecamp.org/index.php?title=Association_of_Moving_Image_Archivists_%26_Digital_Library_Federation_Hack_Day_2014">AMIA AV Hack Day</a> and paired up with NCSU libriarian/developer Jason Ronallo, CNN archivist/engineer Nicholas Zoss, and CNN archivist/engineer/manager Jay Brown. Building on Ronallo&rsquo;s <a href="http://ronallo.com/blog/a-plugin-for-mediaelement-js-for-preview-thumbnails-on-hover-over-the-time-rail/">work with WebVTT and video scrolling thumbnails</a>, we created a Ruby gem that exports thumbnail images, thumbnail sprite image, and a WebVTT metadata file with synced media fragment URLs to thumbnails within the sprite. This could allow for the integration of video thumbnail creation to happen automatically within the web access video workflow. It is also easy to install and use, making it accessible to a wider audience (always a primary goal of mine).</p>
+
+<p>One of the things I am most proud of is how seamlessly our team was able to distribute work and pair together when necessary. I was able to jump right in as the junior developer role, helping as support and Ruby syntax consultant, as well as filling out documentation and other smaller tasks. Jason Ronallo steered the ship, but welcomed many proofreading eyes to look over his code for debugging. Nick Zoss contributed plenty of engineering knowledge and helped do &ldquo;all the math parts.&rdquo; Jay Brown went to work finding and creating sample videos for testing the scripts and worked on general QA. And at the crucial end point of the day, I wrangled Dave Rice to quickly act as ffmpeg script consultant (a cool trick I learned and helped my team win one of the awards from <a href="http://wiki.curatecamp.org/index.php?title=Association_of_Moving_Image_Archivists_%26_Digital_Library_Federation_Hack_Day_2013">the first AV Hack Day</a>).</p>
+
+<p>Anyway, let&rsquo;s get down to it! This is how the app works. It&rsquo;s EASY! After you <code>gem install video-sprites</code>, you can run it in your terminal (assuming you have ffmpeg and ImageMagick installed and working)</p>
+
+<p>For example, I ran this: <code>video-sprites -i /Users/ashley/Development/kiss_from_a_rose.mpg -o /Users/ashley/Development</code></p>
+
+<p>And I got this:</p>
+
+<p><img class="center" src="http://ablwr.github.io/images/rose_export.png"></p>
+
+<p>Simple, right? And check it out&hellip;</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>00:00:00.000 --&gt; 00:00:05.000
+</span><span class='line'>http://example.com/kiss_from_a_rose-sprite-00001.jpg#xywh=0,0,200,133
+</span><span class='line'>
+</span><span class='line'>00:00:05.000 --&gt; 00:00:10.000
+</span><span class='line'>http://example.com/kiss_from_a_rose-sprite-00001.jpg#xywh=200,0,200,133
+</span><span class='line'>
+</span><span class='line'>00:00:10.000 --&gt; 00:00:15.000
+</span><span class='line'>http://example.com/kiss_from_a_rose-sprite-00001.jpg#xywh=400,0,200,133</span></code></pre></td></tr></table></div></figure>
+
+
+<p>There&rsquo;s also this WebVTT file! If I replace the example.com with the website that is hosting the image sprite (or had I specified it when I ran the gem using the -u or &mdash;url flag), I could integrate it into a scrolling video thumbnail feature!</p>
+
+<p>Play around with it yourself! The <a href="https://github.com/jronallo/video-sprites">code is up on Github</a> and we welcome feedback. Moving forward, there&rsquo;s a lot to do to keep this gem in tip-top shape and there are many features we plan to add. Like a good junior developer, I&rsquo;ve given myself the goal of writing tests to make it a healthy and happy gem. Oh, tests&hellip;</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Open Source Software at the Association of Moving Image Archivists 2014 Conference]]></title>
+    <link href="http://ablwr.github.io/blog/2014/10/13/open-source-software-at-the-association-of-moving-image-archivists-2014-conference/"/>
+    <updated>2014-10-13T16:02:07-04:00</updated>
+    <id>http://ablwr.github.io/blog/2014/10/13/open-source-software-at-the-association-of-moving-image-archivists-2014-conference</id>
+    <content type="html"><![CDATA[<p>Last week, I attended the Association of Moving Image Archivists annual conference, held this year in Savannah, GA. And <em>y&#8217;all</em>, I continue to be impressed with all of the open source projects and contributions happening in the field!! I am so pleased to see it grow in significance every year (along with my knowledge and capabilities of wrangling these projects).</p>
+
+<p>Here is a round-up of the technologies discussed during the conference and links to more information.</p>
+
+<h2>Git</h2>
+
+<ul>
+<li><a href="http://git-scm.com/">Git</a> as a technology</li>
+<li><a href="https://github.com/">Github</a> as a popular platform</li>
+<li><a href="https://education.github.com/pack">Github student pack</a> &mdash; A bundle of great software offered by Github to students for free</li>
+<li><a href="https://github.com/FredrikNoren/ungit">Ungit</a> &mdash; A version control visualizer</li>
+</ul>
+
+
+<h2>Technologies</h2>
+
+<ul>
+<li><a href="http://www.bittorrent.com/">BitTorrent</a> &mdash; Distributed filesharing</li>
+<li><a href="https://www.ffmpeg.org/">ffmpeg</a> &mdash; Audio/video manipulation framework</li>
+<li><a href="http://www.imagemagick.org/">ImageMagick</a> &mdash; Image manipulation framework</li>
+<li><a href="http://www.openannotation.org/">Open Annotation</a> &mdash; Open source annotation</li>
+<li><a href="https://www.websocket.org/">Web Sockets</a> &mdash; Or how Ronallo got those interactive slides</li>
+<li><a href="http://dev.w3.org/html5/webvtt/">WebVTT</a> &mdash; Open subtitles for the web</li>
+</ul>
+
+
+<h2>Projects</h2>
+
+<ul>
+<li><a href="https://github.com/avpreserve/AMS">American Archives Project</a></li>
+<li><a href="https://www.archivematica.org/wiki/Main_Page">Archivematica</a></li>
+<li><a href="https://www.accesstomemory.org/en/">AtoM</a></li>
+<li><a href="http://avaa.bavc.org/artifactatlas/index.php/A/V_Artifact_Atlas">AVAA</a></li>
+<li><a href="https://github.com/avalonmediasystem">Avalon</a></li>
+<li><a href="http://www.sno.phy.queensu.ca/~phil/exiftool/">ExifTool</a></li>
+<li><a href="https://github.com/avpreserve/fixity">Fixity</a></li>
+<li><a href="http://ffmprovisor.herokuapp.com">ffmprovisor</a></li>
+<li><a href="https://archive.org/index.php">Internet Archive</a></li>
+<li><a href="http://mediaarea.net/en/MediaInfo">MediaInfo</a></li>
+<li><a href="https://github.com/projecthydra">Project Hydra</a></li>
+<li><a href="https://github.com/bavc/qctools">QCTools</a></li>
+<li><a href="http://openvault.wgbh.org/">WGBH Open Vault</a></li>
+</ul>
+
+
+<h2>Projects with open source sentiment</h2>
+
+<ul>
+<li><a href="https://github.com/epiil/tape-cleaner">Arduino tape cleaner</a></li>
+<li><a href="http://calpreservation.org/projects/audiovisual-preservation/">California Audiovisual Preservation Project</a></li>
+<li><a href="http://dmia.drupalgardens.com/">Digital Moving Image Archives Guide</a></li>
+<li><a href="http://xfrcollective.wordpress.com/">XFR Collective</a></li>
+</ul>
+
+
+<h2>Hack Day!</h2>
+
+<ul>
+<li><a href="http://wiki.curatecamp.org/index.php?title=Association_of_Moving_Image_Archivists_%26_Digital_Library_Federation_Hack_Day_2014">Hack Day page</a></li>
+<li><a href="https://github.com/amiaopensource/avspace">AV_Space</a></li>
+<li><a href="https://github.com/amiaopensource/characterization_compare">characterization compare</a></li>
+<li><a href="https://github.com/amiaopensource/hackdaycapture">hackdaycapture</a></li>
+<li><a href="https://github.com/tessafallon/pbcorevalidator/">pbcorevalidator</a></li>
+<li><a href="https://github.com/jronallo/video-sprites">Video Sprites!</a></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Breaking down conference speakers by gender using Nokogiri and SexMachine]]></title>
+    <link href="http://ablwr.github.io/blog/2014/09/28/breaking-down-conference-speakers-by-gender-using-nokogiri-and-sexmachine/"/>
+    <updated>2014-09-28T14:32:49-04:00</updated>
+    <id>http://ablwr.github.io/blog/2014/09/28/breaking-down-conference-speakers-by-gender-using-nokogiri-and-sexmachine</id>
+    <content type="html"><![CDATA[<p>Last week, I was in converesation with some peers in the moving image archiving, preservation, conservation, (et al&hellip;) field and we were discussing ways to improve and empower the roles that women in the field have. One of the things that came up was it&rsquo;d be interesting to see the breakdown over time of the people presenting at the annual <a href="http://amianet.org">Association of Moving Image Archivists</a> <a href="http://www.amiaconference.com">conference</a> and whether it was appropriately stacked in terms of gender.</p>
+
+<p>With around 200 speakers, it would be great if I could just grab this data algorithmically and not have to parse it piece-by-piece using my slow human brain! Over the weekend, I went to work combining Ruby web scraping tool, <a href="http://nokogiri.org/">Nokogiri</a>, with a library that does a pretty good job at determining probable gender based on first name (<a href="https://github.com/bmuller/sexmachine">SexMachine</a>). It was fun to wrangle data around, but not without conflicts.</p>
+
+<p>Some problems:</p>
+
+<ol>
+<li><p>I wrote a parser for the most recent conference’s webpage, but that parser can’t be used for previous conferences. The layout for the previous year is different from the current layout, and the year before that is available only as a .pdf. The years prior to that aren’t (immediately and openly) available at all!</p></li>
+<li><p>The website was not marked up in a way that made it easy to pull in only the speaker names. I had to throw in a lot of remove-if exceptions because I was basically having to pull in anything that was in a p tag and removing very long strings and very short strings (and a few other things).</p></li>
+<li><p>Obviously gender is a larger spectrum than the binary male-female and assessment via name is not an ideal method, but I&rsquo;m just playin&#8217; with data here! I think the results will still hold value, but I always feel a little bit icky when I also have to push things into a gender binary.</p></li>
+</ol>
+
+
+<p>I can now take the rough breakdown of the data and just modify as needed. To do more complex problems, though, will involve more than just the parsed names in arrays separated by arrays (see below).</p>
+
+<p>I’m not going to be able to pull out the precise data I want, but it was fun project and I was excited to spend a few hours writing (and thinking) in Ruby again, which I hadn’t really had the opportunity to do in the past month or so (it’s been all Javascript and front-end work around these parts).</p>
+
+<p>Side note: Didn’t someone recently run a quick check on the gender breakdown of published authors in The Moving Image? That data is easier to grab because there’s less of it.</p>
+
+<p>Plans going forward:</p>
+
+<ol>
+<li><p>Run quick analysis on the organization’s membership directory to get a rough idea of the overall distribution of the field.</p></li>
+<li><p>Break data down with and without consideration to one person speaking multiple times. (Which is better to consider?)</p></li>
+<li><p>Break data down with consideration to time chunks and weighing one person speaking for a full block of time differently than seven people speaking in the same block of time. (Side-consideration to assess the value of poster presentation time). This involves getting down with statistics and math.</p></li>
+<li><p>VISUALIZATIONS.</p></li>
+</ol>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Why wont Octopress just upload my images]]></title>
+    <link href="http://ablwr.github.io/blog/2014/09/25/why-wont-octopress-just-upload-my-images/"/>
+    <updated>2014-09-25T13:04:20-04:00</updated>
+    <id>http://ablwr.github.io/blog/2014/09/25/why-wont-octopress-just-upload-my-images</id>
+    <content type="html"><![CDATA[<p><em>Why won’t Octopress just upload my images?!?!?!?!?!?!, or how I learned to stop worrying and love the source.</em></p>
+
+<p><img class="center" src="http://ablwr.github.io/images/glitch1.png"></p>
+
+<p>I’ve been using Git for a while and I feel like I have a good grasp on it. I’ve also been using Octopress for a while, integrated into Github pages, and I feel like I have a good grasp on it, too. Rake tasks, right? I’ve WRITTEN rake tasks before! I got this! But for some reason, uploading images for me always seemed like it was a miracle that would work sometimes and not work at other times. Y’know… computer magic.</p>
+
+<p><img class="center" src="http://ablwr.github.io/images/glitch2.png"></p>
+
+<p>Sometimes it would just straight up EAT my images and I’d have to remake a screen cap and get angry and keep pounding my head against the code-wall. That’s dumb, though. That’s no way to solve a problem, especially when dealing with logical beasts that perform as instructed. But I wasn’t sure what I was doing wrong. I would just keep moving things around and committing until it seemed to give up and take my images.</p>
+
+<p><img class="center" src="http://ablwr.github.io/images/glitch3.png"></p>
+
+<p>It’s just not a good way to live.</p>
+
+<p><img class="center" src="http://ablwr.github.io/images/glitch4.png"></p>
+
+<p>Are you having this problem, too? I decided to figure it out.</p>
+
+<p><img class="center" src="http://ablwr.github.io/images/glitch5.png"></p>
+
+<p>I was dropping my images in the wrong file! With Octopress, there are a lot of potential places to put images. It’s tempting to put it in public/images folder. It’s also tempting to put it in the _deploy/images folder. Those are bad, though. Those are bad. You want to put it in the SOURCE folder. If you stick images in source/images, they will get picked up when running rake generate / rake deploy. If they go anywhere else, the rake task doesn’t know what to do so it just overwrites them and your images will just disappear.</p>
+
+<p><img class="center" src="http://ablwr.github.io/images/glitch6.png"></p>
+
+<p>Maybe this is a no-brainer, but sometimes I feel like a no-brainer, myself.</p>
+
+<h1>P.S.</h1>
+
+<p>Another note! It&rsquo;s important to use the right syntax when adding images. One method in Markdown is to use this syntax:</p>
+
+<p> <code>![netflixforbooks](images/markdown.png)</code></p>
+
+<p>But for Octopress, you want to use this:</p>
+
+<p> <img class="center" src="http://ablwr.github.io/images/markdown.png"></p>
+
+<p>Otherwise, images will work on the front page of your blog but they won&rsquo;t work when you visit the individual pages. The more you know&hellip;!</p>
+
+<ul>
+<li>I had to use an image tag because otherwise Markdown automatically transforms it into regular html, aka <code>&lt;img class="center" src="http://ablwr.github.io/images/markdown.png"&gt;</code> So meta!</li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Netflix for Books]]></title>
+    <link href="http://ablwr.github.io/blog/2014/09/25/netflix-for-books/"/>
+    <updated>2014-09-25T12:01:14-04:00</updated>
+    <id>http://ablwr.github.io/blog/2014/09/25/netflix-for-books</id>
+    <content type="html"><![CDATA[<p><img class="center" src="http://ablwr.github.io/images/oyster.png"></p>
+
+<p>I came up with an idea to make a spoof/parody of the recently launched <a href="https://www.oysterbooks.com">Oyster</a>, a company that purports to be the <a href="http://www.nytimes.com/2014/08/07/technology/personaltech/aiming-to-be-the-netflix-of-books.html">“Netflix of books,”</a> allowing rentable access to digital books. This hit a sore spot among the librarians I know (and as a former librarian, I know many), because one of the biggest struggles in the field is increasing awareness in the capabilities of the modern library. Most libraries HAVE eBook access, plenty of it, and a lot of materials can be accessed through a library’s website without even having to go into the library. I think a service like Oyster has a lot of value, but I wanted to remind people that they can utilize the free resources available nearby.</p>
+
+<p><img class="center" src="http://ablwr.github.io/images/worldcat.png"></p>
+
+<p>So, I basically just made a splash page for WorldCat. WorldCat is a collective catalog used by over 72,000 libraries. Searching a book on WorldCat, a user can add their zip code and find the closest location of that resource, so she could know exactly where to go to pick it up. If I look up Harry Potter and request the eBook format, I can see that its available at several libraries near me, one of which is the Brooklyn Public Library. Assuming the user has a library card, she can just log in and get the book onto her preferred digital book reader in very little time. WorldCat is great, but its underused (just like our local libraries). It&rsquo;s also kinda ugly, so why not make it hip to modern internet eyes?</p>
+
+<p><img class="center" src="http://ablwr.github.io/images/netflixforbooks.png"></p>
+
+<p>I really wanted to integrate the WorldCat API into this project, but unfortunately the API is not open and available to the public. This isn’t the time or place to ramble on about the benefits of open source and open access to databases and applications, but I would have been able to put a lot more time and effort into making a more beautiful and friendlier front-end for the face of public libraries. Alas, alas.</p>
+
+<p><a href="ablwr.github.io/netflix-for-books">Let’s use libraries!</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Flatiron and Fog Creek Fellowship]]></title>
+    <link href="http://ablwr.github.io/blog/2014/09/18/flatiron-and-fog-creek-fellowship/"/>
+    <updated>2014-09-18T11:21:07-04:00</updated>
+    <id>http://ablwr.github.io/blog/2014/09/18/flatiron-and-fog-creek-fellowship</id>
+    <content type="html"><![CDATA[<p>To follow up my last <a href="http://ablwr.github.io/blog/2014/09/18/breaking-it-down/">blog about blogging</a> (meta), here is the blog post I originally intended to write. I’m pushing it up the queue over the other 13 pending posts.</p>
+
+<p>Flatiron School was hard. It was one of the toughest, enduring challenges I’ve ever done in my life, and also the most rewarding. I got completely comfortable working from 8am to 10pm every day, excited to write code and build stuff and make things happen. After graduation, it can be hard to not lose that momentum.</p>
+
+<p>Before coming to Flatiron, I had a regular 9-5 job as cataloging manager at a film archive. On top of that, I did some freelance consulting work. Well, it was really more like sub-consulting, if that is a thing. Anyway, I worked a lot independently. I have a couple of friends that, for a while, paid for desks at a coworking space here in New York and it was hard for me to understand how someone could justify paying so much money for a desk while freelancing instead of just working from home (and thus having to work less because you don&rsquo;t have to work the extra amount it takes to pay for the coworking space desk). I could understand the social benefits of working around others, but overall I just never understood the &ldquo;going to a coffee shop to work&rdquo; thing. Throughout college, I always worked from my dorm or house and hardly set foot in the library except to grab up books (which is kinda funny, since I have an advanced degree in library and information science now). Back to the point: I started getting paid to work, which means I had to pay attention to what I was doing and work efficiently. With personal projects or homework, it&rsquo;s fine to dabble around. But when it&rsquo;s business, I knew I had to stay focused or I&rsquo;d have to start billing half-hours, which means I&rsquo;d work for 4 hours but only really work for 2, which is a waste of my own time because all 4 hours certainly still felt like I was working, even if half of it was non-billed procrastination time. I also have two cats. They are very cute, but they are also capable of being very annoying.</p>
+
+<p>Anyway, this is how I discovered the joy of having a space dedicated to just working and I renounced all negative vibes I had towards paying $500 for a desk in Brooklyn. Back in South Carolina, I worked for a University on weekdays and spent my weekends working on projects at the University library. I&rsquo;d work from home on weeknights, but it was so much harder to get things done when I kept getting distracted by little things like dirty dishes, crooked books on a shelf, making tea, neighbors, or cats. Mostly the cats.</p>
+
+<p>Getting back to the point&hellip; after Flatiron, we were welcome to continue working on campus, which is great! Fortunately for me and 15 other recently minted lady developers, I was selected to participate in the <a href="http://flatironschool.com/fogcreek">Flatiron / Fog Creek Fellowship</a>.</p>
+
+<p>Here is what we all get, according to the website:</p>
+
+<blockquote><p>What Fellows get:</p>
+
+<p>• A dedicated mentor from both the Fog Creek and Trello teams</p>
+
+<p>• Events with the Fog Creek and Trello staff including Cofounders Joel Spolsky and Michael Pryor</p>
+
+<p>• A desk at Fog Creek</p>
+
+<p>• Daily lunch</p>
+
+<p>• Technical interview practice and guidance</p>
+
+<p>• Four 1:1 pairing sessions</p>
+
+<p>• Help choosing and feedback on a side project</p>
+
+<p>• 1:1 lunch with your mentor every other week</p></blockquote>
+
+<p>To summarize: A desk, a lunch, a dude telling you stuff. To be honest, I wasn&rsquo;t sure how this was going to go down at first. To be even more honest, I was a little sad to be separated from my Flatiron classmates that would still be working at the home base. But the baby bird has to leave the nest sometime&hellip; I was kinda excited about the desk, though. Because I knew being out of the Flatiron work-all-the-time mode was going to be hard, and not having a dedicated space to work was going to be even harder. Looking for a job is hard and I am just as busy now as I was when I was still in the program.</p>
+
+<p>I missed the fellowship orientation because I was driving from South Carolina to New York with two desks to not-work-at-home-at and two cats, among other things, so I was a little nervous to just pop right into such a highly regarded software company.</p>
+
+<p>Immediately, though, I was made to feel SO WELCOME. My mentor is SUPER RAD, he sent me a bunch of emails in advance, he read through my blog and had a lot of questions to ask me. He is always ready to sit down with me at any time to teach me some of the more theory-heavy aspects of computer programming that I mostly missed out on, to ask me about how my job search is going, or to just make me watch the first ten minutes of Up and explain how it relates to software engineering AND LIFE. Everyone at Fog Creek / Trello has been SOOOO extremely nice and welcoming, and I am so happy to be participating in the inaugural fellowship. The mentors all got together and came up with a dedicated time (and trello board) to helping all of us collectively train up on Computer Science fundamentals.</p>
+
+<p>It truly feels like a fellowship, by the academic definition. We all get access to resources like desks and lunch and an unlimited snack bar (oh god, the snack bar, the snack bar&hellip;) and open access to a very nice espresso machine, but more importantly we get things like Joel Spolsky personally teaching us how to use the espresso machine (something that I think many established software engineers have dreamt about at night), casual lunch conversations about time travel (this comes up a lot), talent shows, board game nights, and Friday socials.</p>
+
+<p>So&hellip; what&rsquo;s the lesson from this blog post? Desks are important for working hard, but more important than a desk and a space is the people that you surround yourself with when working, so I&rsquo;m thrilled to get to regularly hang with such a great team of people while I work on finding a place to work. Thank you so much, Flatiron and Fog Creek &amp; Trello!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Breaking it down]]></title>
+    <link href="http://ablwr.github.io/blog/2014/09/18/breaking-it-down/"/>
+    <updated>2014-09-18T10:35:54-04:00</updated>
+    <id>http://ablwr.github.io/blog/2014/09/18/breaking-it-down</id>
+    <content type="html"><![CDATA[<p>When I started at the Flatiron School in June, I told myself I was going to blog about my feelings and what I was learning every week. EVERY week. Then, when I graduated and inevitably had not written a single blog post about how it was going, I said I was gonna write a big ol’ jumbo blog post about the whole twelve weeks and everything I learned and how amazing it was.</p>
+
+<p>Anyway, I graduated a month ago and there is still no e-novella.</p>
+
+<p>This covers two important lessons in programming:</p>
+
+<ol>
+<li><p><strong>Don’t get into code debt.</strong> If I had worked a little bit at a time towards my goal, I would have a weekly summary of what I was learning and doing while at Flatiron. But to speak to the other side of code debt: not writing about my experience was a bummer, but I was definitely spending it learning how to be a better programmer, which was the higher priority at the time, so I don’t feel too bad about it.</p></li>
+<li><p><strong>Break problems down into smaller problems.</strong> Since I wasn’t a diligent blogger, I wanted to just write one big post about Flatiron. But that’s such a large task! There’s SO much I want to cover, so where would I even begin? The most important advice I have to regularly give myself is to break problems down into smaller problems, otherwise I potentially get overwhelmed and not know where to start, which would result in just never starting.</p></li>
+</ol>
+
+
+<p>Anyway, I hope to get those blog posts out in the world soon. If you are reading this because you are doing some cyber-research on the Flatiron School and are thinking of applying, do not hesitate for one second to get in touch! I love talking about it. I just haven&rsquo;t had the time to sit down and really blog it out.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Learning (and trolling) with Popcorn.js]]></title>
+    <link href="http://ablwr.github.io/blog/2014/09/08/learning-and-trolling-with-popcorn-dot-js/"/>
+    <updated>2014-09-08T11:01:02-04:00</updated>
+    <id>http://ablwr.github.io/blog/2014/09/08/learning-and-trolling-with-popcorn-dot-js</id>
+    <content type="html"><![CDATA[<p>Basically, I have a history of taking jokes too far. See also: <a href="http://instagram.com/p/ruP0rHjtbO/?modal=true">Tattoos of Avi’s face</a>. So when I was exploring <a href="https://www.mozilla.org/">Mozilla</a>’s <a href="http://popcornjs.org">Popcorn.js</a> and missing my Flatiron peers, I coded up a small app that would help me learn how to use Popcorn.js aaaaaaaand also troll my friends.</p>
+
+<p>At Flatiron, we used a shared playlist system called <a href="http://sonos.com">Sonos</a>. Everyone could add tracks from online music collections like Spotify, Hype Machine, or Songza. Near the last third of the semester, as we were all on the brink of insanity and exhaustion, one song in particular kept making a rude appearance. I don’t know who started it or why, but the entire Flatiron office had to suffer through many, many, many instances of Seal’s Kiss from a Rose.</p>
+
+<p>After Flatiron graduation, I was pretty excited to dig into some new projects while on the job hunt, but really missed hanging out with all of my Flatiron buds. To alleviate my withdrawl symptoms, I decided to integrate my Popcorn.js learning into an app to basically troll everyone I know.</p>
+
+<p>To troll successfully, though, I first had to troll myself. Because music videos on youtube don&rsquo;t come with subtitles, I had to make those subtitles happen manually. I once had a job transcribing interviews, so I&rsquo;m pretty fast. But to get the timing right, I still had to submit myself to many, many listens of the same song.</p>
+
+<p>Popcorn.js makes it easy to add supplemental media to video files based on timing.</p>
+
+<p>Within a document listener, you create an instance variable with the .youtube suffix (obviously it&rsquo;s different if you are not using the YouTube API to access a video, but for this example, I used YouTube) and then declare a landing div ID and a link to the video itself.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'>   <span class="kd">var</span> <span class="nx">pop</span> <span class="o">=</span> <span class="nx">Popcorn</span><span class="p">.</span><span class="nx">youtube</span><span class="p">(</span>
+</span><span class='line'>     <span class="s1">&#39;#video&#39;</span><span class="p">,</span>
+</span><span class='line'>     <span class="s1">&#39;https://www.youtube.com/watch?v=i4tTnIimi8E&#39;</span> <span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Afterwards, it&rsquo;s time to start adding footnotes! This takes in four options &mdash; a start time (in seconds), an end time (also in seconds, big surprise), the text you want to display, and the target div. The application of subtitle footnotes is simple, but it&rsquo;s easy to see what kind of complex and interesting things can be done based on video playback times.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'>   <span class="p">.</span><span class="nx">footnote</span><span class="p">({</span>
+</span><span class='line'>      <span class="nx">start</span><span class="o">:</span> <span class="mi">94</span><span class="p">,</span>
+</span><span class='line'>      <span class="nx">end</span><span class="o">:</span> <span class="mi">97</span><span class="p">,</span>
+</span><span class='line'>      <span class="nx">text</span><span class="o">:</span> <span class="s2">&quot;Won&#39;t you tell me is that healthy, baby?&quot;</span><span class="p">,</span>
+</span><span class='line'>      <span class="nx">target</span><span class="o">:</span> <span class="s2">&quot;footnotediv&quot;</span>
+</span><span class='line'>   <span class="p">})</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p> At the end, just trigger play.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'>    <span class="nx">pop</span><span class="p">.</span><span class="nx">play</span><span class="p">();</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Try it yourself! <a href="http://ablwr.github.io/flatiron-karaoke">Sing your heart out here</a>.</p>
+
+<p>There&rsquo;s also an easter egg, but you have to patiently wait for it (or sing sing sing for it).</p>
+
+<p>User feedback: It worked! Everyone typed in a song and got Seal back and tried it again because they thought it was a bug. NOPE. The only person that didn’t get trolled had preemptively trolled by searching for “Kiss from a Rose” so she didn’t know it was the only possible song that could be returned.</p>
+
+<p>In the future, I’d like to spend more time trying to figure out how a real karaoke app could be created by automatically generating accurate subtitles. I’d also like to spend more time on the CSS styles so I could figure out how to fake the text highlighting on karaoke videos. As I mentioned earlier, there&rsquo;s an easter egg &mdash; I&rsquo;d like to work on incorporating more complex supplemental data alongside video files, such as Google maps, Wikipedia page load triggers, and images.</p>
+]]></content>
+  </entry>
+  
+</feed>

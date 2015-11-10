@@ -1,0 +1,199 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Using videogrep to make supercuts - BLOG Progress Process</title>
+	<meta name="author" content="Ashley Blewer">
+
+	
+	<meta name="description" content="Using Videogrep to Make Supercuts Videogrep is a Python-based application that searches through a video file using its subtitles track and can cut &hellip;">
+	
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="BLOG Progress Process" type="application/atom+xml">
+	
+	<link rel="canonical" href="http://ablwr.github.io/blog/2014/07/22/using-videogrep-to-make-supercuts/">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="/stylesheets/font-awesome.min.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	
+  
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-8888310-12']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><div class="profilepic">
+	
+	<img src="http://www.gravatar.com/avatar/425f1ccc494d81dcf41f2cc7ac8d0321?s=160" alt="Profile Picture" style="width: 160px;" />
+	
+</div>
+
+<nav id="main-nav"><ul class="main">
+    <li><a href="/">Blog</a></li>
+    <li><a href="/blog/archives">Blog Archives</a></li>
+    <li><a href="http://www.ashleyblewer.com">Website</a></li>
+</ul>
+</nav>
+<nav id="sub-nav">
+	<div class="social">
+<!-- 		 -->
+		
+		
+		
+			<a class="twitter" href="http://twitter.com/ablwr" title="Twitter">Twitter</a>
+		
+		
+			<a class="github" href="https://github.com/ablwr" title="GitHub">GitHub</a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+    	
+    	
+			<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+</nav>
+</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			
+				
+			
+			<div class="mid-col-container">
+				<div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<h1 class="title" itemprop="name">Using Videogrep to Make Supercuts</h1>
+	<div class="entry-content" itemprop="articleBody"><p><a href="https://github.com/antiboredom/videogrep">Videogrep</a> is a Python-based application that searches through a video file using its subtitles track and can cut video clips based on its search criteria.</p>
+
+<p>Videogrep is SUPER easy to use&hellip; as long as ffmpeg is installed properly. If not, prepare for some configuring and installing.</p>
+
+<p>I used videogrep to search through one of my favorite movies, Terrorvision, to find every time a character refers to something as &ldquo;The Pleasure (noun).&rdquo; Hint: it happens more times than you would think.</p>
+
+<p>To do this, I only had to type one line and videogrep did the rest of the work.</p>
+
+<p><code>python videogrep.py -i Terrorvision/Terrorvision.avi -o test_video.mp4 --search 'Pleasure'</code></p>
+
+<p>It searched through the subtitles file and found six instances, which it printed to the screen along with their timestamps.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>524.357 to 527.86:  Pleasure Palace, here we come.
+</span><span class='line'>1660.284 to 1663.453: Otherwise known as the Pleasure Zone.
+</span><span class='line'>1734.4 to 1736.651: The Pleasure Den.
+</span><span class='line'>1776.859 to 1779.527: on to the Pleasure Dome.
+</span><span class='line'>1779.528 to 1782.905: To the Pleasure Dome.
+</span><span class='line'>1840.756 to 1842.548: The Pleasure Dome.</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If there is an error, at this point it will let you know. But if all goes well, the following will print to the screen:</p>
+
+<p><code>Your video is ready ! Fingers crossed for the Oscars !</code></p>
+
+<p>Here is the video supercut. Something that might have taken a few hours for me to piece together using my memory of the movie and video editing software was done in less than a minute using the powers of Python and FFMpeg.</p>
+
+<p>Voila!</p>
+
+<iframe src="//player.vimeo.com/video/99057389" width="500" height="282" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+
+<p> <p><a href="http://vimeo.com/99057389">Pleasure Supercut</a> from <a href="http://vimeo.com/orangelazarus">Ashley Blewer</a> on <a href="https://vimeo.com">Vimeo</a>.</p></p>
+
+<p>This was just a simple example, but videogrep can get more specific based on the regular expression added into the search string. In the above example, I knew &ldquo;Pleasure&rdquo; was a proper noun because its the name of many rooms in the Putterman household. If I really wanted to grab every instance of the word, I would have had to search for &lsquo;pleasure|Pleasure&rsquo; to capture both uppercase and lowercase.</p>
+
+<p>Videogrep can be even more powerful because it understands <a href="http://www.clips.ua.ac.be/pages/pattern-search">pattern recognition using pattern search</a>. I was able to extract what I wanted by just typing in one word, but it also understands word patterns. For example, you can use flags like JJ for adjective or NN for noun and it will extract every instance of a particular speech pattern.</p>
+
+<p>It can also search for hypernyms, which are words that fit into a certain category and have a semantic relation to each other. For example, if you searched for automobile, you might also want to extract similar words like car, truck, or van. If you weren&rsquo;t picky about what kind of bird you were looking for, a hypernym search would result in crows, seagulls, and eagles.</p>
+
+<p>Enjoy using videogrep and watch out for the monster!</p>
+
+<iframe src="//player.vimeo.com/video/99093635" width="500" height="282" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+
+<p> <p><a href="http://vimeo.com/99093635">TerrorVision Monster</a> from <a href="http://vimeo.com/orangelazarus">Ashley Blewer</a> on <a href="https://vimeo.com">Vimeo</a>.</p></p>
+</div>
+
+</article>
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+
+</div>
+			</div>
+			<footer id="footer" class="inner">Copyright &copy; 2015
+
+    Ashley Blewer
+
+
+Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a></footer>
+		</div>
+	</div>
+	
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+</body>
+</html>
