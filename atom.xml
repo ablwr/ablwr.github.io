@@ -4,7 +4,7 @@
   <title><![CDATA[BLOG Progress Process]]></title>
   <link href="http://ablwr.github.io/atom.xml" rel="self"/>
   <link href="http://ablwr.github.io/"/>
-  <updated>2015-11-11T09:51:38-05:00</updated>
+  <updated>2015-11-11T09:59:00-05:00</updated>
   <id>http://ablwr.github.io/</id>
   <author>
     <name><![CDATA[Ashley Blewer]]></name>
@@ -35,7 +35,7 @@
 </ol>
 
 
-<p>In 2013, Peter Vogel explained why “people” should not document or comment their code <a href="https://visualstudiomagazine.com/articles/2013/07/26/why-commenting-code-is-still-bad.aspx">1</a>. Vogel makes well-executed arguments, steeped both in conceptual logic and pragmatism.</p>
+<p>In 2013, Peter Vogel explained why “people” should not document or comment their code <a href="https://visualstudiomagazine.com/articles/2013/07/26/why-commenting-code-is-still-bad.aspx">[1]</a>. Vogel makes well-executed arguments, steeped both in conceptual logic and pragmatism.</p>
 
 <p>“Some readers suggested that comments provided insight into what previous programmers thought their code was doing. I don&rsquo;t care what those programmers thought their code was doing &mdash; I only care what their code actually does (though I do care why the previous programmers thought the code was necessary).”</p>
 
