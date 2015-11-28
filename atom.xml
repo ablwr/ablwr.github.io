@@ -4,7 +4,7 @@
   <title><![CDATA[BLOG Progress Process]]></title>
   <link href="http://ablwr.github.io/atom.xml" rel="self"/>
   <link href="http://ablwr.github.io/"/>
-  <updated>2015-11-11T09:59:45-05:00</updated>
+  <updated>2015-11-28T18:12:42-05:00</updated>
   <id>http://ablwr.github.io/</id>
   <author>
     <name><![CDATA[Ashley Blewer]]></name>
@@ -12,6 +12,29 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[ffmprovisr at AMIA #AVhack15]]></title>
+    <link href="http://ablwr.github.io/blog/2015/11/28/ffmprovisr-at-amia-number-avhack15/"/>
+    <updated>2015-11-28T17:09:47-05:00</updated>
+    <id>http://ablwr.github.io/blog/2015/11/28/ffmprovisr-at-amia-number-avhack15</id>
+    <content type="html"><![CDATA[<p>For this year&rsquo;s hackday, I brought <a href="amiaopensource.github.io/ffmprovisr">ffmprovisr</a> to the table. This was an app I made over a year ago that hadn&rsquo;t been given enough attention, primarily due to lack of time. My <a href="http://wiki.curatecamp.org/index.php/Association_of_Moving_Image_Archivists_%26_Digital_Library_Federation_Hack_Day_2015#ffmprovsr">fumbling pitch</a> went something like this: &ldquo;I think it&rsquo;d be fun to combine and continue to build up these two projects into something better because ffmpeg continues to live on as a mysterious but necessary component of a/v archival practice. This project would be mostly R&amp;D with some basic front-end web development skills (building forms). I feel this is a little out of the scope of hack day (and those greedy for rewards may seek refuge elsewhere) in that it&rsquo;s more of a REMIX project and a mostly-hack-the-docs-with-some-coding project, but if there is interest (there was last year, for ffmprovisr) &mdash; we will build the hell outta this!&rdquo;</p>
+
+<p>I envisioned building on the old version of ffmprovisr, which was a guided form for building ffmpeg scripts, but on hack day I realized it was a little too heavy on the hand-holding &mdash; archivists that at least had ffmpeg installed on their computers didn&rsquo;t need to click through forms and select their input and output. They could reasonably be expected to have the ability to look at a sample script and base their own script off of it. So we changed the structure from a form to a sample command line that also came with a description of what it did and a breakdown of how each command worked.</p>
+
+<p><img class="center" src="http://ablwr.github.io/images/thinkingffmprovisr.jpg"></p>
+
+<p>When originally pitching this idea, I thought it&rsquo;d be a good &ldquo;gateway drug&rdquo; to capture archivists and turn them into developers, anticipating a lot of git knowledge sharing and code-writing habits. In the end, I was primarily the one pushing code (but also Rebecca Fraimow) while everyone else helped to add interesting sample scripts to our shared google doc, parsing commands pulled from the ffmpeg documentation from previous hackdays or dropping in scripts they use regularly as archivists. So the project ended up being even stronger than I imagined it would be (and helped provide the biggest lack from the existing proof-of-concept application)!</p>
+
+<p>So the best part about hackday was the collabartive elements. It was great seeing collaboration happen live between <a href="https://bavc.org/">BAVC employees</a> and <a href="http://reto.ch/">Reto Kromer</a>, as well as get some in-use scripts from Catroina Schlosser from <a href="http://www.cuny.tv/">CUNY-TV</a> and Nicole Martin from <a href="https://www.hrw.org/">Human Rights Watch</a>. While Eddy Colloton (MIAP) was working on a script that converts a DCP into access copies, help came in on our shared google doc from Kieren O&#8217;Leary (<a href="http://www.ifi.ie/archive">Irish Film Archive</a>), participating remotely from Ireland.</p>
+
+<p><img class="center" src="http://ablwr.github.io/images/ffmprovisrtransfer.png"></p>
+
+<p>We had been working on a forked branch of my original repo, but when I came home from AMIA, I did the right thing and gave ffmprovisr to the people &mdash; it now has a permanent home in the <a href="https://github.com/amiaopensource/ffmprovisr">amiaopensource repo</a> where collaboration has continued to thrive, mostly thanks to the strong support from Reto, who diligently modified the code to make it consistent and easier to read. Thanks, Reto!</p>
+
+<p>P.S. super happy I went 2009-trendy-internet-tumblr-style with the name of this app because I saw tweets go out as ffmprovisor, ffmproviser, and ffmprovisr (and maybe a few other variations in between).</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Guest post: Show Your Work: Why I know commenting your code is bad]]></title>
@@ -811,66 +834,6 @@
 
 
 <p>Anyway, I hope to get those blog posts out in the world soon. If you are reading this because you are doing some cyber-research on the Flatiron School and are thinking of applying, do not hesitate for one second to get in touch! I love talking about it. I just haven&rsquo;t had the time to sit down and really blog it out.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Learning (and trolling) with Popcorn.js]]></title>
-    <link href="http://ablwr.github.io/blog/2014/09/08/learning-and-trolling-with-popcorn-dot-js/"/>
-    <updated>2014-09-08T11:01:02-04:00</updated>
-    <id>http://ablwr.github.io/blog/2014/09/08/learning-and-trolling-with-popcorn-dot-js</id>
-    <content type="html"><![CDATA[<p>Basically, I have a history of taking jokes too far. See also: <a href="http://instagram.com/p/ruP0rHjtbO/?modal=true">Tattoos of Avi’s face</a>. So when I was exploring <a href="https://www.mozilla.org/">Mozilla</a>’s <a href="http://popcornjs.org">Popcorn.js</a> and missing my Flatiron peers, I coded up a small app that would help me learn how to use Popcorn.js aaaaaaaand also troll my friends.</p>
-
-<p>At Flatiron, we used a shared playlist system called <a href="http://sonos.com">Sonos</a>. Everyone could add tracks from online music collections like Spotify, Hype Machine, or Songza. Near the last third of the semester, as we were all on the brink of insanity and exhaustion, one song in particular kept making a rude appearance. I don’t know who started it or why, but the entire Flatiron office had to suffer through many, many, many instances of Seal’s Kiss from a Rose.</p>
-
-<p>After Flatiron graduation, I was pretty excited to dig into some new projects while on the job hunt, but really missed hanging out with all of my Flatiron buds. To alleviate my withdrawl symptoms, I decided to integrate my Popcorn.js learning into an app to basically troll everyone I know.</p>
-
-<p>To troll successfully, though, I first had to troll myself. Because music videos on youtube don&rsquo;t come with subtitles, I had to make those subtitles happen manually. I once had a job transcribing interviews, so I&rsquo;m pretty fast. But to get the timing right, I still had to submit myself to many, many listens of the same song.</p>
-
-<p>Popcorn.js makes it easy to add supplemental media to video files based on timing.</p>
-
-<p>Within a document listener, you create an instance variable with the .youtube suffix (obviously it&rsquo;s different if you are not using the YouTube API to access a video, but for this example, I used YouTube) and then declare a landing div ID and a link to the video itself.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'>   <span class="kd">var</span> <span class="nx">pop</span> <span class="o">=</span> <span class="nx">Popcorn</span><span class="p">.</span><span class="nx">youtube</span><span class="p">(</span>
-</span><span class='line'>     <span class="s1">&#39;#video&#39;</span><span class="p">,</span>
-</span><span class='line'>     <span class="s1">&#39;https://www.youtube.com/watch?v=i4tTnIimi8E&#39;</span> <span class="p">);</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Afterwards, it&rsquo;s time to start adding footnotes! This takes in four options &mdash; a start time (in seconds), an end time (also in seconds, big surprise), the text you want to display, and the target div. The application of subtitle footnotes is simple, but it&rsquo;s easy to see what kind of complex and interesting things can be done based on video playback times.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'>   <span class="p">.</span><span class="nx">footnote</span><span class="p">({</span>
-</span><span class='line'>      <span class="nx">start</span><span class="o">:</span> <span class="mi">94</span><span class="p">,</span>
-</span><span class='line'>      <span class="nx">end</span><span class="o">:</span> <span class="mi">97</span><span class="p">,</span>
-</span><span class='line'>      <span class="nx">text</span><span class="o">:</span> <span class="s2">&quot;Won&#39;t you tell me is that healthy, baby?&quot;</span><span class="p">,</span>
-</span><span class='line'>      <span class="nx">target</span><span class="o">:</span> <span class="s2">&quot;footnotediv&quot;</span>
-</span><span class='line'>   <span class="p">})</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p> At the end, just trigger play.</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='javascript'><span class='line'>    <span class="nx">pop</span><span class="p">.</span><span class="nx">play</span><span class="p">();</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Try it yourself! <a href="http://ablwr.github.io/flatiron-karaoke">Sing your heart out here</a>.</p>
-
-<p>There&rsquo;s also an easter egg, but you have to patiently wait for it (or sing sing sing for it).</p>
-
-<p>User feedback: It worked! Everyone typed in a song and got Seal back and tried it again because they thought it was a bug. NOPE. The only person that didn’t get trolled had preemptively trolled by searching for “Kiss from a Rose” so she didn’t know it was the only possible song that could be returned.</p>
-
-<p>In the future, I’d like to spend more time trying to figure out how a real karaoke app could be created by automatically generating accurate subtitles. I’d also like to spend more time on the CSS styles so I could figure out how to fake the text highlighting on karaoke videos. As I mentioned earlier, there&rsquo;s an easter egg &mdash; I&rsquo;d like to work on incorporating more complex supplemental data alongside video files, such as Google maps, Wikipedia page load triggers, and images.</p>
 ]]></content>
   </entry>
   

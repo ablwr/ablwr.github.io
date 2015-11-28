@@ -1,0 +1,163 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>ffmprovisr at AMIA #AVhack15 - BLOG Progress Process</title>
+	<meta name="author" content="Ashley Blewer">
+
+	
+	<meta name="description" content="Ffmprovisr at AMIA #AVhack15 For this year&rsquo;s hackday, I brought ffmprovisr to the table. This was an app I made over a year ago that hadn& &hellip;">
+	
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="BLOG Progress Process" type="application/atom+xml">
+	
+	<link rel="canonical" href="http://ablwr.github.io/blog/2015/11/28/ffmprovisr-at-amia-number-avhack15/">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<link href="/stylesheets/font-awesome.min.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	
+  
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-8888310-12']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
+
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="left-col">
+			<div class="intrude-less">
+			<header id="header" class="inner"><div class="profilepic">
+	
+	<img src="http://www.gravatar.com/avatar/425f1ccc494d81dcf41f2cc7ac8d0321?s=160" alt="Profile Picture" style="width: 160px;" />
+	
+</div>
+
+<nav id="main-nav"><ul class="main">
+    <li><a href="/">Blog</a></li>
+    <li><a href="/blog/archives">Blog Archives</a></li>
+    <li><a href="http://www.ashleyblewer.com">Website</a></li>
+</ul>
+</nav>
+<nav id="sub-nav">
+	<div class="social">
+<!-- 		 -->
+		
+		
+		
+			<a class="twitter" href="http://twitter.com/ablwr" title="Twitter">Twitter</a>
+		
+		
+			<a class="github" href="https://github.com/ablwr" title="GitHub">GitHub</a>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+    	
+    	
+			<a class="rss" href="/atom.xml" title="RSS">RSS</a>
+		
+	</div>
+</nav>
+</header>				
+			</div>
+		</div>	
+		<div class="mid-col">
+			
+				
+			
+			<div class="mid-col-container">
+				<div id="content" class="inner"><article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	<h1 class="title" itemprop="name">Ffmprovisr at AMIA #AVhack15</h1>
+	<div class="entry-content" itemprop="articleBody"><p>For this year&rsquo;s hackday, I brought <a href="amiaopensource.github.io/ffmprovisr">ffmprovisr</a> to the table. This was an app I made over a year ago that hadn&rsquo;t been given enough attention, primarily due to lack of time. My <a href="http://wiki.curatecamp.org/index.php/Association_of_Moving_Image_Archivists_%26_Digital_Library_Federation_Hack_Day_2015#ffmprovsr">fumbling pitch</a> went something like this: &ldquo;I think it&rsquo;d be fun to combine and continue to build up these two projects into something better because ffmpeg continues to live on as a mysterious but necessary component of a/v archival practice. This project would be mostly R&amp;D with some basic front-end web development skills (building forms). I feel this is a little out of the scope of hack day (and those greedy for rewards may seek refuge elsewhere) in that it&rsquo;s more of a REMIX project and a mostly-hack-the-docs-with-some-coding project, but if there is interest (there was last year, for ffmprovisr) &mdash; we will build the hell outta this!&rdquo;</p>
+
+<p>I envisioned building on the old version of ffmprovisr, which was a guided form for building ffmpeg scripts, but on hack day I realized it was a little too heavy on the hand-holding &mdash; archivists that at least had ffmpeg installed on their computers didn&rsquo;t need to click through forms and select their input and output. They could reasonably be expected to have the ability to look at a sample script and base their own script off of it. So we changed the structure from a form to a sample command line that also came with a description of what it did and a breakdown of how each command worked.</p>
+
+<p><img class="center" src="/images/thinkingffmprovisr.jpg"></p>
+
+<p>When originally pitching this idea, I thought it&rsquo;d be a good &ldquo;gateway drug&rdquo; to capture archivists and turn them into developers, anticipating a lot of git knowledge sharing and code-writing habits. In the end, I was primarily the one pushing code (but also Rebecca Fraimow) while everyone else helped to add interesting sample scripts to our shared google doc, parsing commands pulled from the ffmpeg documentation from previous hackdays or dropping in scripts they use regularly as archivists. So the project ended up being even stronger than I imagined it would be (and helped provide the biggest lack from the existing proof-of-concept application)!</p>
+
+<p>So the best part about hackday was the collabartive elements. It was great seeing collaboration happen live between <a href="https://bavc.org/">BAVC employees</a> and <a href="http://reto.ch/">Reto Kromer</a>, as well as get some in-use scripts from Catroina Schlosser from <a href="http://www.cuny.tv/">CUNY-TV</a> and Nicole Martin from <a href="https://www.hrw.org/">Human Rights Watch</a>. While Eddy Colloton (MIAP) was working on a script that converts a DCP into access copies, help came in on our shared google doc from Kieren O&#8217;Leary (<a href="http://www.ifi.ie/archive">Irish Film Archive</a>), participating remotely from Ireland.</p>
+
+<p><img class="center" src="/images/ffmprovisrtransfer.png"></p>
+
+<p>We had been working on a forked branch of my original repo, but when I came home from AMIA, I did the right thing and gave ffmprovisr to the people &mdash; it now has a permanent home in the <a href="https://github.com/amiaopensource/ffmprovisr">amiaopensource repo</a> where collaboration has continued to thrive, mostly thanks to the strong support from Reto, who diligently modified the code to make it consistent and easier to read. Thanks, Reto!</p>
+
+<p>P.S. super happy I went 2009-trendy-internet-tumblr-style with the name of this app because I saw tweets go out as ffmprovisor, ffmproviser, and ffmprovisr (and maybe a few other variations in between).</p>
+</div>
+
+</article>
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+
+</div>
+			</div>
+			<footer id="footer" class="inner">Copyright &copy; 2015
+
+    Ashley Blewer
+
+
+Design credit: <a href="http://shashankmehta.in/archive/2012/greyshade.html">Shashank Mehta</a></footer>
+		</div>
+	</div>
+	
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+</body>
+</html>
