@@ -4,7 +4,7 @@
   <title><![CDATA[Category: amia, | BLOG Progress Process]]></title>
   <link href="http://ablwr.github.io/blog/categories/amia/atom.xml" rel="self"/>
   <link href="http://ablwr.github.io/"/>
-  <updated>2015-11-28T18:15:07-05:00</updated>
+  <updated>2015-11-29T11:13:29-05:00</updated>
   <id>http://ablwr.github.io/</id>
   <author>
     <name><![CDATA[Ashley Blewer]]></name>
@@ -26,7 +26,7 @@
 
 <p>When originally pitching this idea, I thought it&rsquo;d be a good &ldquo;gateway drug&rdquo; to capture archivists and turn them into developers, anticipating a lot of git knowledge sharing and code-writing habits. In the end, I was primarily the one pushing code (but also Rebecca Fraimow) while everyone else helped to add interesting sample scripts to our shared google doc, parsing commands pulled from the ffmpeg documentation from previous hackdays or dropping in scripts they use regularly as archivists. So the project ended up being even stronger than I imagined it would be (and helped provide the biggest lack from the existing proof-of-concept application)!</p>
 
-<p>So the best part about hackday was the collabartive elements. It was great seeing collaboration happen live between <a href="https://bavc.org/">BAVC employees</a> and <a href="http://reto.ch/">Reto Kromer</a>, as well as get some in-use scripts from Catroina Schlosser from <a href="http://www.cuny.tv/">CUNY-TV</a> and Nicole Martin from <a href="https://www.hrw.org/">Human Rights Watch</a>. While Eddy Colloton (MIAP) was working on a script that converts a DCP into access copies, help came in on our shared google doc from Kieren O'Leary (<a href="http://www.ifi.ie/archive">Irish Film Archive</a>), participating remotely from Ireland.</p>
+<p>So the best part about hackday was the collabartive elements. It was great seeing collaboration happen live between <a href="https://bavc.org/">BAVC employees</a> and <a href="http://reto.ch/">Reto Kromer</a>, as well as get some in-use scripts from Catriona Schlosser from <a href="http://www.cuny.tv/">CUNY-TV</a> and Nicole Martin from <a href="https://www.hrw.org/">Human Rights Watch</a>. While Eddy Colloton (MIAP) was working on a script that converts a DCP into access copies, help came in on our shared google doc from Kieren O'Leary (<a href="http://www.ifi.ie/archive">Irish Film Archive</a>), participating remotely from Ireland.</p>
 
 <p><img class="center" src="/images/ffmprovisrtransfer.png" width="500"></p>
 
