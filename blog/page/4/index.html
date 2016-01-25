@@ -9,7 +9,7 @@
 	<meta name="author" content="Ashley Blewer">
 
 	
-	<meta name="description" content="Jun 25th, 2014 side projects, twitter bots Twitter Bots 2: Authorizing the Bot For me, the hardest part of getting a Twitter bot up and running was &hellip;">
+	<meta name="description" content="Jun 28th, 2014 side projects, twitter bots Twitter Bots 3: Keeping Your Bot Alive @wetted_ashes @ablwr Just spent too much time coding and having so &hellip;">
 	
 
   <!-- http://t.co/dKP3o1e -->
@@ -96,6 +96,78 @@
 			<div class="mid-col-container">
 				<div id="content" class="inner">
 <div itemscope itemtype="http://schema.org/Blog">
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-06-28T20:31:52-04:00" data-updated="true" itemprop="datePublished">Jun 28<span>th</span>, 2014</time></div>
+		<div class="tags">
+
+
+	<a class='category' href='/blog/categories/side-projects/'>side projects</a>, <a class='category' href='/blog/categories/twitter-bots/'>twitter bots</a>
+
+
+</div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/blog/2014/06/28/twitter-bots-3-keeping-your-bot-alive/" itemprop="url">Twitter Bots 3: Keeping Your Bot Alive</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<blockquote class="twitter-tweet" data-partner="tweetdeck"><p><a href="https://twitter.com/wetted_ashes">@wetted_ashes</a> <a href="https://twitter.com/ablwr">@ablwr</a> Just spent too much time coding and having so many excellent things to read thanks to <a href="https://twitter.com/hashtag/timezones?src=hash">#timezones</a></p>&mdash; ¡ɹǝʍǝlq ʎǝlɥs∀ (@ablwr_ebooks) <a href="https://twitter.com/ablwr_ebooks/statuses/478713633023602688">June 17, 2014</a></blockquote>
+
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p>Once a Twitter bot has been configured, it has to stay running in order to stay alive. And for that, it needs a server. When I was debugging my bot, I was running it off of my computer and got notifications of activity in my terminal. This works if I want my bot to only be active when I am active, but I want my bot to be available all day and night!</p>
+
+<p>The most logical way to do that would be to deploy my bot&rsquo;s code to a Heroku instance. It&rsquo;s free and super easy, especially if you already have a good grasp on git workflows. Basically you just have to&hellip;</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>git init
+</span><span class='line'>git add .
+</span><span class='line'>git commit -m "BOTS"</span></code></pre></td></tr></table></div></figure>
+
+
+<p>then,</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>heroku create
+</span><span class='line'>git push heroku master</span></code></pre></td></tr></table></div></figure>
+
+
+<p>That&rsquo;s it! That is it. Actually, that is not it, because I had to log onto the heroku web interface and adjust the Dynos worker to 1 instead of 0.</p>
+
+<p><img class="center" src="/images/herokurunner.png" width="800" title="'heroku page'" ></p>
+
+<p> But after that, my bot was again operational and back to her normal (myself)
+self.</p>
+
+<blockquote class="twitter-tweet" data-partner="tweetdeck"><p><a href="https://twitter.com/ablwr">@ablwr</a> <a href="https://twitter.com/trlwagner">@trlwagner</a> The pass is lurking in the reboot, everyone get renewed at 21, and I do not like that.</p>&mdash; ¡ɹǝʍǝlq ʎǝlɥs∀ (@ablwr_ebooks) <a href="https://twitter.com/ablwr_ebooks/statuses/478715343737602049">June 17, 2014</a></blockquote>
+
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+		
+		
+	</div>
+
+</article>
 
 
     <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">

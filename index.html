@@ -9,7 +9,7 @@
 	<meta name="author" content="Ashley Blewer">
 
 	
-	<meta name="description" content="Jan 2nd, 2016 blatant, category, disregard, for, me,, system 2016 New Years Resolutions I&rsquo;m not trying to act like I don&rsquo;t care about &hellip;">
+	<meta name="description" content="Jan 25th, 2016 blacklight, rails Do You Like Blacklight but Hate MARC? Roll Your Own Instead!: Indexing Your non-MARC Data Into SOLR! Blacklight is &hellip;">
 	
 
   <!-- http://t.co/dKP3o1e -->
@@ -96,6 +96,87 @@
 			<div class="mid-col-container">
 				<div id="content" class="inner">
 <div itemscope itemtype="http://schema.org/Blog">
+
+
+    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="meta">
+		<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2016-01-25T21:41:48-05:00" data-updated="true" itemprop="datePublished">Jan 25<span>th</span>, 2016</time></div>
+		<div class="tags">
+
+
+	<a class='category' href='/blog/categories/blacklight/'>blacklight</a>, <a class='category' href='/blog/categories/rails/'>rails</a>
+
+
+</div>
+		
+	</div>
+	<h1 class="title" itemprop="name"><a href="/blog/2016/01/25/do-you-like-blacklight-but-hate-marc-roll-your-own-instead/" itemprop="url">Do You Like Blacklight but Hate MARC? Roll Your Own Instead!: Indexing Your non-MARC Data Into SOLR!</a></h1>
+	<div class="entry-content" itemprop="articleBody">
+		<p><a href="http://projectblacklight.org/">Blacklight</a> is a discovery layer intended for library catalog records, which is great. Hydra also uses Blacklight as its discovery layer. The foundation of Blacklight is built upon Rails and SOLR. Plus Bootstrap for style and Devise for user authentication. And the big bonus on top is easy MARC ingest to suit librarians. But what if you don’t have MARC records? After fussing around with getting SOLR to appreciate my beautiful, custom non-MARC data, I decided to just give up and do it myself.</p>
+
+<p>Usually that sounds like something that would end in a complete disaster, but I found that it was a lot easier to “roll my own” Blacklight using Rails, SOLR, and the gem <code>sunspot</code>, since I was using the tools I was already familiar with. I also didn’t need to set up Devise since user authentication wouldn’t be necessary for my purposes. Having worked with Devise before, I know it can get in the way (especially in the routes).</p>
+
+<p>Because I was working with custom data, it was easy to import a CSV of that data right into a Rails model instantiated with all of the necessary fields.</p>
+
+<p>After that, sunspot to the rescue! <a href="https://github.com/sunspot/sunspot">Sunspot</a> makes indexing data into SOLR incredibly easy. It comes with built-in rake tasks that help take care of starting and stopping of the SOLR engine, which runs quietly in the background as you work and debug. It also comes with a rake task that can be used to reindex, also good while developing and figuring out what needs to go where.</p>
+
+<p>For help with understanding sunspot, you could read the docs but I think you’ll have better luck, as I did, with <a href="http://railscasts.com/">Ryan Bates’s RailsCast</a> episode on it. Seriously RailsCast has saved my ass so many times in making me actually understand how different code bases work.</p>
+
+<p>Episode here: <a href="http://railscasts.com/episodes/278-search-with-sunspot?autoplay=true">http://railscasts.com/episodes/278-search-with-sunspot?autoplay=true</a></p>
+
+<p>If the supplemental code at the bottom isn’t enough, more code is here: <a href="https://github.com/railscasts/278-search-with-sunspot/tree/master/blog-after">https://github.com/railscasts/278-search-with-sunspot/tree/master/blog-after</a></p>
+
+<p>The docs are pretty good but I found that there were a lot of syntax idiosyncrasies that weren’t fully explained that had me adjusting my <code>searchable do</code> block over and over again. Aspects like <code>limit -1</code> are in the examples to show all facets, but doesn’t always work. These kinds of things had to be solved through trial and error. As a result of this, the code is also not very “DRY.” Which is okay with me because I’d rather have things that work and can be customized easily during the design stage over trying to be super-clever early on.</p>
+
+<p>The difference between string and text also was not super clear to me, which might have been my own skimming fault. Tip: You can apply facets to strings. You can perform freetext search on text. I wanted both, so I had to index every column (oh yeah, I also wanted to index everything), I have to apply text and strings to every column.</p>
+
+<p>After that setup is done, you can move into the controller.</p>
+
+<p>First, set up facets!</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>facet :DocType
+</span><span class='line'>with(:DocType, params[:DocType]) if params[:DocType].present?</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Then, set up search in a similar way:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>fulltext params[:search]
+</span><span class='line'> with( params[:category] ).equal_to( params[:search] ) if params[:category].present?</span></code></pre></td></tr></table></div></figure>
+
+
+<p>In the controller, setting <code>@videos = @search.results</code> will make it easy when moving to the next step, into the view.</p>
+
+<p>For the view, fortunately I was just able to loop through all of the potential facets set in an array and build the facet column. Only a little bit of code is needed to display the search results: just loop through the results (<code>for row in @videos</code>) and (<code>style it up however</code>) and everything is set.</p>
+
+<p>Here’s a couple of gifs demonstrating the final product, which is a database of testable Matroska videos for use with the <a href="https://mediaarea.net/MediaConch/">MediaConch project</a>, culled from ‘interesting’ Matroska videos uploaded to the <a href="https://archive.org/">Internet Archive</a>.</p>
+
+<p><img class="center" src="/images/mediaconch_repo1.gif" title="" ></p>
+
+<p><img class="center" src="/images/mediaconch_repo2.gif" title="" ></p>
+
+<p>So, moral of the story: If you are thinking about using Blacklight but don&rsquo;t have MARC records, it might be easier to use <code>sunspot</code> and skip the cruft.</p>
+
+		
+		
+	</div>
+
+</article>
 
 
     <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
@@ -701,71 +782,6 @@
 <p><a href="https://developer.apple.com/xcode/">X-Code</a></p>
 
 <p><a href="http://guides.rubyonrails.org/getting_started.html">Rails Guide: Getting Started with Rails</a></p>
-
-		
-		
-	</div>
-
-</article>
-
-
-    <article class="post" itemprop="blogPost" itemscope itemtype="http://schema.org/BlogPosting">
-	<div class="meta">
-		<div class="date">
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2015-01-10T20:36:19-05:00" data-updated="true" itemprop="datePublished">Jan 10<span>th</span>, 2015</time></div>
-		<div class="tags">
-
-
-	<a class='category' href='/blog/categories/marleigh/'>marleigh</a>, <a class='category' href='/blog/categories/rails-engage/'>rails engage</a>
-
-
-</div>
-		
-	</div>
-	<h1 class="title" itemprop="name"><a href="/blog/2015/01/10/rails-engage/" itemprop="url">Rails Engage!</a></h1>
-	<div class="entry-content" itemprop="articleBody">
-		<p><img src="/images/tng-engage.gif" alt="engage picard" /></p>
-
-<p>Happy new year.</p>
-
-<ol>
-<li>I have a friend who wants to learn how to code.</li>
-<li>She has an app in mind that she wants to create.</li>
-<li>One of my goals for the new year is to write more technical blog posts.</li>
-</ol>
-
-
-<p>We also live pretty far apart — I live in New York and she lives in my home state of South Carolina (at least, for now). I think one of the best ways to help her make her app is to write blog posts explaining some of the concepts that were new to me when I was learning how to code. Ruby on Rails is one of the easiest frameworks to learn for a couple of reasons: it teaches you the core concepts of programming for the web, Ruby is one of the easiest languages to learn as a beginner (if not the easiest), and Rails is robust enough to get a fully functioning application off the ground in the matter of a few weeks, even for people new to coding. And it’s just easier for me to write if I can pretend like I’m speaking to one person directly.</p>
-
-<p>Another important note: my friend is a real Star Trek: The Next Generation nerd, so if you see an obtuse amount of TNG references and gifs on this blog in the near future&hellip; that is why.</p>
-
-<p>Here’s the rough framework I will use to explain how to make an app while keeping it general enough for anyone (and obviously subject to change).</p>
-
-<ol>
-<li><a href="http://ablwr.github.io/blog/2015/01/11/rails-engage-setting-up-your-environment/">Environment setup</a>
-1.5 <a href="http://ablwr.github.io/blog/2015/01/18/rails-engage-scoping/">Scoping</a></li>
-<li><a href="http://ablwr.github.io/blog/2015/01/24/rails-engage-rails-generate/">rails generate (What are these files?)</a></li>
-<li>Eaten by 2</li>
-<li>MVC</li>
-<li>Working with an API</li>
-<li>Logic</li>
-<li>Front-end</li>
-<li>How to deploy</li>
-</ol>
-
-
-<p>Engage!</p>
 
 		
 		

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: blacklight | BLOG Progress Process]]></title>
+  <link href="http://ablwr.github.io/blog/categories/blacklight/atom.xml" rel="self"/>
+  <link href="http://ablwr.github.io/"/>
+  <updated>2016-01-24T22:15:12-05:00</updated>
+  <id>http://ablwr.github.io/</id>
+  <author>
+    <name><![CDATA[Ashley Blewer]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Do you like Blacklight but hate MARC? Roll your own instead!: Indexing your non-MARC data into SOLR!]]></title>
+    <link href="http://ablwr.github.io/blog/2016/01/25/do-you-like-blacklight-but-hate-marc-roll-your-own-instead/"/>
+    <updated>2016-01-25T21:41:48-05:00</updated>
+    <id>http://ablwr.github.io/blog/2016/01/25/do-you-like-blacklight-but-hate-marc-roll-your-own-instead</id>
+    <content type="html"><![CDATA[<p><a href="http://projectblacklight.org/">Blacklight</a> is a discovery layer intended for library catalog records, which is great. Hydra also uses Blacklight as its discovery layer. The foundation of Blacklight is built upon Rails and SOLR. Plus Bootstrap for style and Devise for user authentication. And the big bonus on top is easy MARC ingest to suit librarians. But what if you don’t have MARC records? After fussing around with getting SOLR to appreciate my beautiful, custom non-MARC data, I decided to just give up and do it myself.</p>
+
+<p>Usually that sounds like something that would end in a complete disaster, but I found that it was a lot easier to “roll my own” Blacklight using Rails, SOLR, and the gem <code>sunspot</code>, since I was using the tools I was already familiar with. I also didn’t need to set up Devise since user authentication wouldn’t be necessary for my purposes. Having worked with Devise before, I know it can get in the way (especially in the routes).</p>
+
+<p>Because I was working with custom data, it was easy to import a CSV of that data right into a Rails model instantiated with all of the necessary fields.</p>
+
+<p>After that, sunspot to the rescue! <a href="https://github.com/sunspot/sunspot">Sunspot</a> makes indexing data into SOLR incredibly easy. It comes with built-in rake tasks that help take care of starting and stopping of the SOLR engine, which runs quietly in the background as you work and debug. It also comes with a rake task that can be used to reindex, also good while developing and figuring out what needs to go where.</p>
+
+<p>For help with understanding sunspot, you could read the docs but I think you’ll have better luck, as I did, with <a href="http://railscasts.com/">Ryan Bates’s RailsCast</a> episode on it. Seriously RailsCast has saved my ass so many times in making me actually understand how different code bases work.</p>
+
+<p>Episode here: <a href="http://railscasts.com/episodes/278-search-with-sunspot?autoplay=true">http://railscasts.com/episodes/278-search-with-sunspot?autoplay=true</a></p>
+
+<p>If the supplemental code at the bottom isn’t enough, more code is here: <a href="https://github.com/railscasts/278-search-with-sunspot/tree/master/blog-after">https://github.com/railscasts/278-search-with-sunspot/tree/master/blog-after</a></p>
+
+<p>The docs are pretty good but I found that there were a lot of syntax idiosyncrasies that weren’t fully explained that had me adjusting my <code>searchable do</code> block over and over again. Aspects like <code>limit -1</code> are in the examples to show all facets, but doesn’t always work. These kinds of things had to be solved through trial and error. As a result of this, the code is also not very “DRY.” Which is okay with me because I’d rather have things that work and can be customized easily during the design stage over trying to be super-clever early on.</p>
+
+<p>The difference between string and text also was not super clear to me, which might have been my own skimming fault. Tip: You can apply facets to strings. You can perform freetext search on text. I wanted both, so I had to index every column (oh yeah, I also wanted to index everything), I have to apply text and strings to every column.</p>
+
+<p>After that setup is done, you can move into the controller.</p>
+
+<p>First, set up facets!</p>
+
+<p><code>
+facet :DocType
+with(:DocType, params[:DocType]) if params[:DocType].present?
+</code></p>
+
+<p>Then, set up search in a similar way:
+<code>
+fulltext params[:search]
+ with( params[:category] ).equal_to( params[:search] ) if params[:category].present?
+</code></p>
+
+<p>In the controller, setting <code>@videos = @search.results</code> will make it easy when moving to the next step, into the view.</p>
+
+<p>For the view, fortunately I was just able to loop through all of the potential facets set in an array and build the facet column. Only a little bit of code is needed to display the search results: just loop through the results (<code>for row in @videos</code>) and (<code>style it up however</code>) and everything is set.</p>
+
+<p>Here’s a couple of gifs demonstrating the final product, which is a database of testable Matroska videos for use with the <a href="https://mediaarea.net/MediaConch/">MediaConch project</a>, culled from ‘interesting’ Matroska videos uploaded to the <a href="https://archive.org/">Internet Archive</a>.</p>
+
+<p><img class="center" src="/images/mediaconch_repo1.gif" title="" ></p>
+
+<p><img class="center" src="/images/mediaconch_repo2.gif" title="" ></p>
+
+<p>So, moral of the story: If you are thinking about using Blacklight but don&rsquo;t have MARC records, it might be easier to use <code>sunspot</code> and skip the cruft.</p>
+]]></content>
+  </entry>
+  
+</feed>
