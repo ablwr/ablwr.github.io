@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: page
 title: About
 permalink: /about/
 ---
 
-I don't really know what to tell you.
+My name is Ashley Blewer!

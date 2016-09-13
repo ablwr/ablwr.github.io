@@ -8,7 +8,7 @@ simple_search: https://www.google.com/search
 description:
 
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 date_format: "ordinal"
 baseurl: /
 permalink: /blog/:year/:month/:day/:title/
