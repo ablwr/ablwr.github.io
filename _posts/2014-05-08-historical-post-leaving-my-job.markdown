@@ -1,0 +1,17 @@
+---
+layout: post
+title: "Historical post: Leaving my job"
+date: 2014-05-08 22:44:33 -0400
+comments: true
+categories: [quitting your job, moving image archiving]
+---
+
+Leaving any job is hard. Leaving a job you really love is even harder. Someone asked me when I was turning in my notice if quitting was as cathartic as it should feel, and I said I felt like I was getting a divorce. Y'know. "I love you, but this just isn't working."
+
+My job is great. However, it is also stagnant. I found myself frequently on auto-pilot, even though a lot of my work is compelling, complex, and ever-changing. I love working with newsreel outtakes from the 1910s-1940s and there's a constant change in material. I love working with students because there's always a new question about cataloging that I hadn't thought about. All in all, it's pretty good. However, it also isn't going anywhere and isn't going to lead to a more permanent position. Resources are slim, and I had to configure an eclectic, cumbersome workflow because I was not allowed to have a computer fast enough to view video files (a key component to the job).
+
+In addition to feeling stagnant, there are some severe ethical concerns in any mid-tier state University's hiring practices, but particularly the one I have been working for, that affects my department very directly. I could complain for days about this and related issues, but it doesn't make for polite blogging, so I will digress.
+
+I mention it because I am concerned about my field. I'm less concerned about my specific field (moving image archiving) but very much concerned about the larger field of archives. While obsessively researching my decision to leave, I emailed a former archivist that also did a coding bootcamp, asking basically if I was unhappy in my situation because it was specific to my location, or if it was representative of the field as a whole. I tweeted something to the tune of "I need to know that the place I work at is not representative of the field I work in." Unfortunately, her response as someone in the field longer than I have been is that my experience and fears of joblessness, jumping from grant-funded position to the next, and intense bureaucratic issues seemed very much in line with those of most others in the archival field, and that scares me. 
+
+Moving image archiving, preservation, and access to these materials are things I care about SO MUCH. However, I am faced with the reality that in order for me to have other things that I want in life (living wage, job security, job flexibility, retirement fund, adequate health care, vacations), I have to come to terms with the fact that I might have to consider doing something else, at least for a little while. At the very least, I am also very passionate about "computery stuff" and programming skills and the "world wide web," (oh boy don't get me started on the free and open web), and feel that I can really make a more tangible difference in general (world) and in specific (archive's wacky website) if I work up some deeper programming knowledge and skills. (I could mope forever about how I wish I had done that ten years ago, but I'll save that rant-o-thon and put my efforts into educating young women in computer science instead).
