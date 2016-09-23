@@ -4,7 +4,7 @@ title: "FACING / FEAR / FIRST"
 date: 2016-09-22 22:56:37 -0400
 ---
 
-Note well: I wrote this over a year ago and forgot to post it. Here it is, right in time for it to not be near graduation-time whatsoever. But also here it is, on the internet for whenever you need it.
+Note well: I wrote this over a year ago and forgot to post it. Here it is, right in time for it to not be near graduation-time whatsoever. But also here it is, a preparing-you-for-your-job-hunt pep talk on the internet for whenever you need it.
 
 # Hello. 
 
