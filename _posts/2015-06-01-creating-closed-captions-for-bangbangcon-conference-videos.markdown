@@ -14,7 +14,7 @@ Note: I wrote this up and added it to the !!Con [github README](https://github.c
 
 I know what you might be thinking: Doesn't YouTube offer [auto-captioning](https://support.google.com/youtube/answer/3038280?hl=en)? The answer is YES, it does. And it’s pretty great for some things, but not so great for live talks in terms of reliability.
 
-![](images/bad_captions.png)
+![](/images/bad_captions.png)
 
 Introducing [Amara](https://amara.org). I’ve read about Amara but had never used it before today, and it is RAD. It makes subtitling SO easy, utilizing hotkeys and hitting all of the pain points that come with transcription (which I’ve done a lot of — not super easy).
 
