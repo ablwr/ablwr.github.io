@@ -4,7 +4,7 @@ title: "2016 Reflection and 2017 Goals: Retrospective and refactoring"
 date: 2016-12-18 20:16:00 -0400
 ---
 
-It's that time of year again, where I start thinking about where I was at this time last year and where I am now. [Here](http://ablwr.github.io/blog/2016/01/02/2016-new-years-resolutions/) were my goals for 2016.
+Welcome to the Ashley Blewer annual report! It's that time of year again, where I start thinking about where I was at this time last year and where I am now. [Here](http://ablwr.github.io/blog/2016/01/02/2016-new-years-resolutions/) were my goals for 2016.
 
 # 2016
 
@@ -52,9 +52,11 @@ I went [to Disney World](https://www.instagram.com/p/BFe_bbGyckm/?taken-by=ablwr
 
 I wanted to take on less new projects and I wanted to work less (or work less on compensated things and more on personal projects). I did not do these things, but I also knew I wouldn't do these things. I joined a gym and went regularly, but then I quit going regularly. Now I am going again. But this is like a 50% success rate for goal accomplishment.
 
-Some terrible things happened to me in 2015, although didn't really start to cause damage until 2016. I do not want to carry these ghosts with me into 2017, but I'm afraid that is not totally preventable.
+Some terrible things happened to me in 2015, although didn't really start to cause damage until 2016. I do not want to carry these ghosts with me into 2017, but I'm afraid that is not totally preventable. I cut myself some slack for the time lost dealing with these things, but didn't manage to not feel guilty for not working all the time.
 
 # 2017
+
+What I said last year still rings true: **I have two problems: I care a lot and I care about a lot of things.**.
 
 Overall, I don't think much has changed. I suppose the theme for 2017 is "refactoring." I'm beginning to get nervous. I am afraid of becoming lazy, becoming complacent, of taking things for granted, for getting too comfortable. Although when I started drafting this post, I felt like I hadn't accomplished anything in 2016 but now I see that I actually did a lot, and did many of the things that I set out to do!
 
