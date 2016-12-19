@@ -56,7 +56,7 @@ Some terrible things happened to me in 2015, although didn't really start to cau
 
 # 2017
 
-What I said last year still rings true: **I have two problems: I care a lot and I care about a lot of things.**.
+What I said last year still rings true: **I have two problems: I care a lot and I care about a lot of things.**
 
 Overall, I don't think much has changed. I suppose the theme for 2017 is "refactoring." I'm beginning to get nervous. I am afraid of becoming lazy, becoming complacent, of taking things for granted, for getting too comfortable. Although when I started drafting this post, I felt like I hadn't accomplished anything in 2016 but now I see that I actually did a lot, and did many of the things that I set out to do!
 
