@@ -48,6 +48,8 @@ I went [to Disney World](https://www.instagram.com/p/BFe_bbGyckm/?taken-by=ablwr
 
 - Regarding "personal projects", I didn't make enough time for this as I wanted to but I did a couple of one-off projects like [Barthes Tarot](https://ablwr.github.io/barthes-tarot/) or [media-id-posters](https://github.com/ablwr/media-id-posters). I made a lot of progress on [an on-going, intense art project](https://www.instagram.com/p/BCWUCCpScmJ/?taken-by=ablwr) that I hope to totally wrap/ship in 2017. I made some progress on other yet-unreleased projects that deserve priority in 2017. I refreshed my personal website and this blog's layout (style update, refactoring of codebase), which makes me feel better and lighter.
 
+- There's also [this](https://ablwr.github.io/kill_yr_idols/).
+
 ## What did I want to do?
 
 I wanted to take on less new projects and I wanted to work less (or work less on compensated things and more on personal projects). I did not do these things, but I also knew I wouldn't do these things. I joined a gym and went regularly, but then I quit going regularly. Now I am going again. But this is like a 50% success rate for goal accomplishment.
