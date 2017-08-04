@@ -1,0 +1,39 @@
+---
+layout: post
+title: "Thanks, team: My time at the New York Public Library"
+date: 2017-08-04
+---
+
+*I said I wouldn't write a cheesy (or grumpy) Medium post about me leaving my current job, so I guess it's fortunate I have my own blogging platform and I don't have to be a hypocrite about it!* 😘  
+
+Today is my last day at the 🦁 New York Public Library 🦁, where I've spent the past two years as an applications developer. [Like others before me](https://medium.com/@thisismattmiller/moving-on-from-nypl-297c51cd4cb3) (it is an honor to always be in Matt's shadow 🗣), I spent some time reflecting on my work there and, more importantly, the wonderful people I spent time working with. 👩‍💻
+
+🏛 For an overview of the infrastructure of my time at the NYPL for the majority of my tenure, I recommend [this chart I made](http://ablwr.github.io/technology-is-people/). 📈 I spent most of my time there in an amalgamation-team informally known as the repository team, managing all systems and processes related to a digital archival object's life cycle -- for digital images, audio and moving image assets, and (the ever-difficult) archival finding aids: three pipelines with dozens of applications, with some weight towards maintenance and new features for our Metadata Management System, [Digital Collections](https://digitalcollections.nypl.org/), our [public-facing API](http://api.repo.nypl.org/), our [Archives Stack](http://archives.nypl.org/), a major media ingest initiative, and the links in between. 🍝 Juggling this many applications in a stack can seem at-first daunting and then seem exhausting, but I found it endlessly thrilling, with an immense number of problems to solve. 🥂 It was so thoroughly rewarding to be able to see a direct impact on the daily work lives of NYPL metadata creators, archivists, curatorial assistants, and catalogers and also to directly impact and benefit patrons located everywhere in the world. 🌞 It was truly a dream job while it was my job. ⚡️
+
+I have a lot of people to thank for sharing this time with me. 🙏
+
+💎 **Kris and Stephen**, how could I ask for a better duo of senior engineers to catch me up with the aforementioned myriad of applications served by the understated Repo Team? 🕴 **Kris**, I promise you Pretty Little Liars is the modern-day Twin Peaks, even more than the new Twin Peaks, and you just have to trust me on that, and I will miss discussing this with you. 💁 **Stephen**, you are the kindest code mentor I could fathom having and a true delight to have shared an office and multiple Spotify playlists with. You are my favorite person -- just don't tell Josh.
+
+📝 **Josh and Shawn**, thanks for stepping in and being the best managers a developer could ask for, even as it was above and beyond your existing job duties. 🛰 **Josh**, you KNOW you are my favorite person (don't tell Stephen) and I wasn't kidding when I said I was going to print out a picture of your face and hide it in my refrigerator so I can regularly greet this symbol of you with the joy and enthusiasm you've become accustomed to receiving. 🔭 **Shawn**, you are a metadata genius and I have learned so much from you. I know we will still see each other often and I hope to work with you again in the future.
+
+📖 **Metadata Services Unit and Digital Imaging Units**: Thanks for your quick feedback and patience while bug-testing in our QA environments. I miss our regularly scheduled meetings. 📮 **Sara**, I will miss your expansive expertise.
+
+🏄‍🏙📚💃🎛⛵️ **All my Labs [ladies](https://www.youtube.com/watch?v=NsBRg2fs_3U)**, thanks so much for the support, camaraderie, encouragement, gut-checking, karaoke sessions, emoji research, emergency black sesame soft serve invitations. I know we'll be jamming out together far into the future so I will save the accolades. Thanks for always being 💖 and staying 💅.
+
+🤠🚀🎼🍍😑👾🏆 **All my Labs [fellas](https://www.youtube.com/watch?v=mPRy1B4t5YA)**, I love each and every one of you. Some of you, I didn't get nearly enough time with. And others, I'm glad for the time we did have to work together, even under extremely weird circumstances, and for the time I spent working with your codebases despite your distance or absence.
+
+🕵🏻 **Front-end dev team** (the FEDs) -- Thanks for showing me your deployment patterns and all the strange ways older versions of React require workarounds. ⚛️ **Edwin and Kang**, thanks for putting up with my fumbling through a new code infrastructure. 🏃 **Edwin**, thanks for reviewing pull requests outside of work hours to keep me in place and successfully onboarded to your project even while you've been placed 100% onto other active projects. 💪 **Rafael**, thanks for being everyone's unofficial physical therapist. 🍖 **Ricardo**, keep it real. 🏂 (Lack of a sk8r emoji is bogus.)
+
+🎏 **Ho-Ling**, your enthusiasm is endless and endlessly contagious, you are infinitely funny and kind and so generous with snacks. 🔌 **Greg**, I will miss catching your face when you are trying to solve a particularly hard problem, and your pleasant demeanor even when we are both grumpy. 🎲 **Kevin**, I appreciate your board game night initiative and apologize for my partial attendance. 💻 **Jobin**, I will miss your optimism.
+
+💾 **Nick**, when you first started I thought you were a jerk because you are sometimes bad at Twitter, but I was wrong. I now know you are a true ally and valuable asset to the digital preservation community, both within NYPL and globally, and look forward to scheming with you in the future. 📟 **Alex**, you are and always will be the foremost cyberpunk archivist out there. I've already missed you and our bi-weekly archives check-ins, but will miss your genius even more. 💽 **A/V Preservation Unit and Special Collections Unit**, wish we had more time to work together and glad to know many of you socially.
+
+📱 **SimplyE team**, wish I had gotten an opportunity to work with all of you -- you are a great team. As you know, and as the world knows, I use [SimplyE](http://www.librarysimplified.org/index.html) exclusively to read library books and love it so much -- personally and for its larger mission. 🍵 **Courteney**, you are a shining beacon of light.
+
+⚖️ **Natalie**, I thank you for your ability to give us valuable self-reflection exercises during sprint retrospectives even if we seem like we are rolling our eyes at them. You are too kind and provide so many snacks. In the future, may you receive snacks ten-fold in return. 🖨 **Courtney and Kendra**, happy to share a single smushed long office desk with you for a couple of months and briefly get to work with you. Thanks for your content-production wisdom, your eternal insight and charm, your surprise and delight in the magic of the library. ✒️ **Dan**, we never got to work together but glad to know you through meetings and brief hallway interactions, always a friendly face.
+
+📉 **QA Team**, thanks for covering our asses when our code suites were subpar, for your New Relic and rspec wisdom. 🐒 **Joe**, thanks for uploading the same blurry monkey video over and over while thoroughly testing our media ingest passageways.
+
+🚥 **DevOps, IT and ILS Teams**, I don't see most of you very often since moving up to 42nd Street, even those of you that moved along with us, but I appreciate our time sharing offices and I know no branch can party as hard as the IT Crowd on 20th Street.
+
+🌀 Change is inevitable and I hope that one day, [NYPL Digital](https://www.youtube.com/watch?v=M5RoaBhlK6o) will be a great and safe place for developers (especially femme ones 👯 and ones with library experience 🤖) to work again. Even if just coming in at the tail-end, I'm so glad to have been able to catch a piece of this innovative era of NYPL while it lasted. 😍 Onwards and upwards! 🚀
