@@ -54,6 +54,13 @@ Editing is open right now, but I will change it to comment-only when it is more 
 
 Thank you! Please help and [contribute](https://docs.google.com/spreadsheets/d/1cXOug3qM0pNNeD_wssiVEv9c0W1Y5I1VDTnSPTk7fb4/edit?usp=sharing)!  
 
+
+#### See Also
+
+*As pointed out by Trevor Owens [on twitter](https://twitter.com/tjowens/status/895812521298231296),*   
+[COPTR](http://www.digipres.org/tools/)  
+[foss4lib](https://foss4lib.org/packages)  
+
 *Thanks to [Selena Chau](https://twitter.com/selena_sjsu) for initiating this idea in my mind, and for her helpful research as an [AAPB NDSR](https://ndsr.americanarchive.org/).*
 
 Public TODO for me after this: Turn it into a [sheetsee.js](http://jlord.us/sheetsee.js/) site for easy searching!
