@@ -57,6 +57,10 @@ Thank you! Please help and [contribute](https://docs.google.com/spreadsheets/d/1
 
 #### See Also
 
+*Research data more of your thing? Thanks [@einsweniger](https://twitter.com/einsweniger/status/895930763488526336)!*  
+
+[re3data](http://www.re3data.org/)  
+
 *As pointed out by Trevor Owens [on twitter](https://twitter.com/tjowens/status/895812521298231296),*   
 [COPTR](http://www.digipres.org/tools/)  
 [foss4lib](https://foss4lib.org/packages)  
