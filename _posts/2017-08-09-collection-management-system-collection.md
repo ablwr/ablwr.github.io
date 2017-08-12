@@ -57,12 +57,10 @@ Thank you! Please help and [contribute](https://docs.google.com/spreadsheets/d/1
 
 #### See Also
 
-*Research data more of your thing? Thanks [@einsweniger](https://twitter.com/einsweniger/status/895930763488526336)!*  
-* [re3data](http://www.re3data.org/)  
-
-*As pointed out by Trevor Owens [on twitter](https://twitter.com/tjowens/status/895812521298231296),*   
-* [COPTR](http://www.digipres.org/tools/)  
-* [foss4lib](https://foss4lib.org/packages)  
+* [re3data](http://www.re3data.org/) (*Research data more of your thing? Thanks [@einsweniger](https://twitter.com/einsweniger/status/895930763488526336)!)*   
+* [COPTR](http://www.digipres.org/tools/) *(As pointed out by Trevor Owens [on twitter](https://twitter.com/tjowens/status/895812521298231296))*  
+* [foss4lib](https://foss4lib.org/packages) *(As pointed out by Trevor Owens [on twitter](https://twitter.com/tjowens/status/895812521298231296))*  
+* [Results of SAA Lone Arrangers Survey on software](https://docs.google.com/spreadsheets/d/1LqsMtCj3A4vFAS_PmezLIqr9QRp3EGIRGjfA-GqogJs/edit?usp=sharing) *(Thanks to Megan Blair for compiling this data)*
 
 *Thanks to [Selena Chau](https://twitter.com/selena_sjsu) for initiating this idea in my mind, and for her helpful research as an [AAPB NDSR](https://ndsr.americanarchive.org/).*
 
