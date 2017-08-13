@@ -63,5 +63,3 @@ Thank you! Please help and [contribute](https://docs.google.com/spreadsheets/d/1
 * [Results of SAA Lone Arrangers Survey on software](https://docs.google.com/spreadsheets/d/1LqsMtCj3A4vFAS_PmezLIqr9QRp3EGIRGjfA-GqogJs/edit?usp=sharing) *(Thanks to Megan Blair for compiling this data)*
 
 *Thanks to [Selena Chau](https://twitter.com/selena_sjsu) for initiating this idea in my mind, and for her helpful research as an [AAPB NDSR](https://ndsr.americanarchive.org/).*
-
-Public TODO for me after this: Turn it into a [sheetsee.js](http://jlord.us/sheetsee.js/) site for easy searching!
