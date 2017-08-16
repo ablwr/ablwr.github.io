@@ -57,6 +57,8 @@ Thank you! Please help and [contribute](https://docs.google.com/spreadsheets/d/1
 
 #### See Also
 
+* [The DAM List](https://docs.google.com/spreadsheets/d/1xRwkQVluqtlLVeuLqHtx3EtZeNAye3n_7BwR13GKwm0/edit#gid=0) (*Started by Leala Abott in 2011. Thanks Erwin Verbruggen for the ref/link!*)
+* [FLOSS inventory](http://pro.europeana.eu/page/floss-inventory) (*A Europeana initiative. Thanks Erwin V. again!*)
 * [re3data](http://www.re3data.org/) (*Research data more of your thing? Thanks [@einsweniger](https://twitter.com/einsweniger/status/895930763488526336)!)*   
 * [COPTR](http://www.digipres.org/tools/) *(As pointed out by Trevor Owens [on twitter](https://twitter.com/tjowens/status/895812521298231296))*  
 * [foss4lib](https://foss4lib.org/packages) *(As pointed out by Trevor Owens [on twitter](https://twitter.com/tjowens/status/895812521298231296))*  
