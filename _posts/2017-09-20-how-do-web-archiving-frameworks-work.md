@@ -22,7 +22,7 @@ date: 2017-09-20
 
 *"If you wish to make apple pie from scratch, you must first create the universe."*
 
-If you wish to explain how web archiving works from a technical standpoint, you must first understand the ecosystem. I was anticipating writing a blog post about website archivability from a development perspective ("How can I make my website more archivable?") but realized I needed to provide an overview of web archiving in general (even if just for my own comprehension). I don't feel like this information is especially clear and available on the web -- but if I am just missing out on a solid resource, [let me know](https://twitter.com/ablwr). Likewise, if I'm wrong about something (which I probably am), let me know. BIG THANKS to [Karl-Rainer Blumenthal](http://landscapelibrarian.com/) for speaking at the Joint Meeting of New York City & Mid-Atlantic Archive-It partner groups at [METRO](http://metro.org/) last week, which gave me the inspo, and for clarifying my questions on the above information (and correcting my incorrect assumptions).
+If you wish to explain how web archiving works from a technical standpoint, you must first understand the ecosystem. I was anticipating (jk - it's live now, [here](https://ablwr.github.io/blog/2017/09/20/accessibility-and-archivability/)!!) writing a blog post about website archivability from a development perspective ("How can I make my website more archivable?") but realized I needed to provide an overview of web archiving in general (even if just for my own comprehension). I don't feel like this information is especially clear and available on the web -- but if I am just missing out on a solid resource, [let me know](https://twitter.com/ablwr). Likewise, if I'm wrong about something (which I probably am), let me know. BIG THANKS to [Karl-Rainer Blumenthal](http://landscapelibrarian.com/) for speaking at the Joint Meeting of New York City & Mid-Atlantic Archive-It partner groups at [METRO](http://metro.org/) last week, which gave me the inspo, and for clarifying my questions on the above information (and correcting my incorrect assumptions).
 
 ## OK COMPUTER
 
@@ -100,5 +100,6 @@ For more web archiving resources, see...
 
 - IIPC's [awesome-web-archiving list](https://github.com/iipc/awesome-web-archiving).  
 - IIPC's [OpenWayback](https://github.com/iipc/openwayback/wiki).
-- [WAIL](https://machawk1.github.io/wail/), a "GUI atop multiple web archiving tools intended to be used as an easy way for anyone to preserve and replay web pages."
-OK, stay tuned while I put together the blog post I originally intended to write, about web accessibility and website archivability, in which I argue with myself about both.
+- [WAIL](https://machawk1.github.io/wail/), a "GUI atop multiple web archiving tools intended to be used as an easy way for anyone to preserve and replay web pages."  
+
+OK, stay tuned while I put together the blog post I originally intended to write, about web accessibility and website archivability, in which I argue with myself about both. Update: [here](https://ablwr.github.io/blog/2017/09/20/accessibility-and-archivability/).
