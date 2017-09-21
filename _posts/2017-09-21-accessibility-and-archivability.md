@@ -8,6 +8,22 @@ Okay, so this is the follow-up post to [this](https://ablwr.github.io/blog/2017/
 
 The point of this post is to be able to communicate better with people who *build* websites, so their websites are more likely to be archivable in the future. (And I'm intentionally holding myself back from using technical jargon here.)
 
+<span style="float:left;">
+![pc](/images/computer_e-mail.gif)
+</span>
+<span style="float:left;">
+![pc](/images/computer_e-mail.gif)
+</span>
+<span style="float:left;">
+![pc](/images/computer_e-mail.gif)
+</span>
+<span style="float:left;">
+![pc](/images/computer_e-mail.gif)
+</span>
+<span style="float:left;">
+![pc](/images/computer_e-mail.gif)
+</span> ![pc](/images/computer_e-mail.gif)  
+
 ## What does it mean for a site to be *accessible*?
 
 There are plenty of great resources to explain the basics, but fundamentally a website should be able to be accessed and understood by anybody, regardless of their level of ability. [WebAIM](http://webaim.org/intro/) summarizes the four major categories as **visual, hearing, motor, and cognitive**. Some quick ways to assess a site without any additional programs are:
@@ -21,6 +37,22 @@ There are SO MANY other things to consider. That's just the tip-top level for te
 ## What does it mean for a site to be *archiveable*?
 
 Obviously there's a lot less written on this, but a website should be able to be saved as a WARC file by some sort of web archiving process (like [Wayback Machine](http://archive.org/web/) or [Webrecorder](https://webrecorder.io/)) and look&function the same as it did when it was "live." Can everything be "played back" in the future just as well as when it was captured for posterity?
+
+<span style="float:left;">
+![pc](/images/computer_e-mail.gif)
+</span>
+<span style="float:left;">
+![pc](/images/computer_e-mail.gif)
+</span>
+<span style="float:left;">
+![pc](/images/computer_e-mail.gif)
+</span>
+<span style="float:left;">
+![pc](/images/computer_e-mail.gif)
+</span>
+<span style="float:left;">
+![pc](/images/computer_e-mail.gif)
+</span> ![pc](/images/computer_e-mail.gif)  
 
 ## And how do these work together (or do they)?
 
@@ -57,6 +89,22 @@ Clear navigation for the entire website is crucial to archiving, and clear navig
 ## Et cetera
 
 That's all for now, thank you! I know it's not that much and I am missing a LOT of granularity. I didn't even talk about Flash and other kinds of JavaScript, well-known enemies to both of these concepts. Even though Webrecorder now makes a lot of this possible, it doesn't mean it is preferable. (Also I wasn't willing to install Flash on my computer to test it out. 😘 ) So much more work can be done here (and I'd like to see that), with more research and better examples, but I am just one little human with a finite amount of time to spend on this!
+
+<span style="float:left;">
+![pc](/images/computer_e-mail.gif)
+</span>
+<span style="float:left;">
+![pc](/images/computer_e-mail.gif)
+</span>
+<span style="float:left;">
+![pc](/images/computer_e-mail.gif)
+</span>
+<span style="float:left;">
+![pc](/images/computer_e-mail.gif)
+</span>
+<span style="float:left;">
+![pc](/images/computer_e-mail.gif)
+</span> ![pc](/images/computer_e-mail.gif)  
 
 ## Resources, Accessibility
 
