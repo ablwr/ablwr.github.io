@@ -109,8 +109,9 @@ That's all for now, thank you! I know it's not that much and I am missing a LOT 
 ## Resources, Accessibility
 
 - [Creating an Accessibility Engineering Practice](http://blog.danielna.com/2017/09/14/creating-an-accessibility-engineering-practice.html)
-- [WebAIM](http://webaim.org/) and [WAVE](http://wave.webaim.org/)
+- [Writing HTML with accessibility in mind (Pt. 1 of 4-part series)](https://medium.com/alistapart/writing-html-with-accessibility-in-mind-a62026493412)
 - [Easy Accessibility Testing with aXe](https://www.deque.com/products/axe/)
+- [WebAIM](http://webaim.org/) and [WAVE](http://wave.webaim.org/)
 
 ## Resources, Archivability
 
