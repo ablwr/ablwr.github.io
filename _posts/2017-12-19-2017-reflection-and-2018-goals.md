@@ -71,4 +71,4 @@ Addendum: I will note that I have set myself up for over-conferencing-syndrome i
 - Speaking on the technical details of web archiving at NEA/ART
 - Workshopping a/v analysis tools at ARCH2018 in D.C.
 
-Maybe after this first-quarter marathon, I will come back with a goals list with "less conferences!" at the top.
+And potentially a few more. Maybe after this first-quarter marathon, I will come back with a goals list with "less conferences!" at the top.
