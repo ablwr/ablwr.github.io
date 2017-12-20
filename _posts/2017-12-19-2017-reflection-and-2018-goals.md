@@ -62,3 +62,13 @@ You may notice the URLs for this blog have changed to my domain (as well as the 
 I've spent the past few months feeling like I am intensely in a limbo, and I find that picking definitive goals in for the next year during this time period would be ill-advised. (My [I Ching](http://bits.ashleyblewer.com/i-ching/) app tells me this constantly!) So although I have some things to propose, impatiently I will wait. 
 
 ![eevee](/images/eevee.gif)  
+
+Addendum: I will note that I have set myself up for over-conferencing-syndrome in early 2018. Maybe you'll catch me...
+
+- Teaching FFmpeg and the command line to WGBH Fellows in January 
+- Speaking about data packaging for a brighter future at Code4lib in D.C.
+- Workshopping minimum digital repositories at The Collective in Knoxville
+- Speaking on the technical details of web archiving at NEA/ART
+- Workshopping a/v analysis tools at ARCH2018 in D.C.
+
+Maybe after this first-quarter marathon, I will come back with a goals list with "less conferences!" at the top.
