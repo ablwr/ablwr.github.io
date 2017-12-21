@@ -10,6 +10,8 @@ Welcome to the Ashley Blewer annual report. [Here](https://ablwr.github.io/blog/
 
 2017 was not good. We all know it was not good. I spent a lot of time getting hurt and staying hurt. I spent a lot of time supporting those hurting near me (even if not physically near me). I've experienced a lot of heartbreak from institutions and the people within them and have had to distance myself from a lot of people who turned out to be not very good. I don't want to dwell on this, but I feel like I lost a *lot* of time to mitigating damage from multiple sources.
 
+I've learned to pay attention to what people do, not what people say they do. I feel like I've learned habits I wish I didn't have to learn.  
+
 I suppose, then, **this was the year of reinforcing personal infrastructure.**  
 
 Writing this entry was actually very cathartic and made me feel like I did accomplish things despite a mix of personal setbacks and the endless, disastrous news cycle affecting all of us.
