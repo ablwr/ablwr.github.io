@@ -33,7 +33,7 @@ It’s likely these were shot with the same camera using the same aspect ratio, 
 
 
 
-But as a bonus within this song, there’s a real home movie of lil Bey, probably recorded on good old-fashioned VHS! Some notes of aging include image ghosting, head clog, contrast too high, and dropout -- many outlined in [a previous blog post about Formation specifically](http://ablwr.github.io/blog/2016/02/07/format-ion-video-playback-errors-in-Beyoncés-latest-music-video/). But this is a good example of the real concerns for the fragility of magnetic media.
+But as a bonus within this song, there’s a real home movie of lil Bey, probably recorded on good old-fashioned VHS! Some notes of aging include image ghosting, head clog, contrast too high, and dropout -- many outlined in [a previous blog post about Formation specifically](http://bits.ashleyblewer.com/blog/2016/02/08/format-ion-video-playback-errors-in-beyonces-latest-music-video/). But this is a good example of the real concerns for the fragility of magnetic media.
 
 ![](/images/bey3/image04.png)
 
