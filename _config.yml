@@ -15,7 +15,7 @@ permalink: /blog/:year/:month/:day/:title/
 category_dir: blog/categories
 
 gems: [jekyll-paginate]
-paginate: 5
+paginate: 15
 
 titlecase: true
 
@@ -23,5 +23,3 @@ github_user: ablwr
 
 twitter_user: ablwr
 twitter_tweet_button: true
-
-google_analytics_tracking_id: UA-8888310-12
