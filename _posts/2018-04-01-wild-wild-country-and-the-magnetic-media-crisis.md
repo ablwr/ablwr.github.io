@@ -50,6 +50,8 @@ A mix of many of the above errors can all be seen together in this handi-vac vac
 
 This is a very prominent error found on a lot of the 3/4" U-matic television footage. *I don't know what this is!* Do you know and can you tell me? It is essentially a chunk of several lines that repeat the previous chunk of lines immediately above it. It is more prominent in future episodes when the media gets more directly involved with the story.
 
+Update! Thanks Dave Rice for these details, which I modified slightly from his message to me: “Lines near the top” is made by a TBC (time base corrector), basically it has a tiny digital buffer to hold a line and if the signal quality degraded too much, then it will release that buffer again and again. I have a dps575 and it outputs white vhs style speckle in that same place. I prefer the dps575 method since it looks more unprocessed."
+
 ### "Smudgy flashes of lines"
 
 ![wwc](/images/wwc/7.jpg) 
