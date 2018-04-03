@@ -14,7 +14,7 @@ baseurl: /
 permalink: /blog/:year/:month/:day/:title/
 category_dir: blog/categories
 
-gems: [jekyll-paginate]
+gems: [jekyll-paginate, jekyll-feed]
 paginate: 15
 
 titlecase: true
