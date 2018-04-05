@@ -4,7 +4,7 @@ title: "Lenticular film, lenticular codec"
 date: 2018-04-04
 ---
 
-Today I explored Reto Kromer's [Lenticular codec](https://github.com/amiaopensource/lenticular) because it is available, it is open, I know the author (always helps), it is written in C, and I know about lenticular film.
+Today I explored Reto Kromer's [Lenticular codec](https://github.com/amiaopensource/lenticular) (original code written by Joakim Reuteler in 2012, adapted and added to AMIA Open Source in 2017-2018) because it is available, it is open, I know the author (always helps), it is written in C, and I know about lenticular film.
 
 Quick crash course in lenticular film: It was a film processing format used around the early 1930s to produce simple color film (tints things green and red). It is like lenticular photos and is a cool [technical problem/solution](https://en.wikipedia.org/wiki/Lenticular_printing) all on its own.
 
