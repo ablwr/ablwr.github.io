@@ -71,7 +71,9 @@ Analog and digital video have frames toooooo, obviously something has to keep th
 
 ## Fields 
 
-Turns out when interlacing gets involved (I will forever hate it as a trouble-causing ancient compression algorithm), odd- or even-number sections can be defined as fields, and with interlacing, two frames equal one field. A field is like half the image and presumably has a pair out there, also presumably right next to it. But not necessarily a pair.
+Turns out when interlacing gets involved (I will forever hate it as a trouble-causing ancient compression algorithm), odd- or even-number sections can be defined as fields, and with interlacing, two fields equal one frame. A field is like half the image and presumably has a pair out there, also presumably right next to it. But not necessarily a pair.
+
+*Thanks Joshua Ng for the correction made here: I meant as stated above, not "two frames equal one field" as previous stated.*
 
 ## Slices
 
