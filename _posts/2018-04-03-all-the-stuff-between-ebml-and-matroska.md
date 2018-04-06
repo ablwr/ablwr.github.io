@@ -6,7 +6,10 @@ date: 2018-04-03
 
 ![magic hat](/images/magic-hat3.jpg) 
 
-*Update with more information below!*  
+*Update with more information at the bottom of this post and also immediately below this sentence!*
+
+*Moritz Bunkus, the creator of [MKVToolNix](http://mkvtoolnix.download/), also mentioned to me [on twitter](https://twitter.com/MoritzBunkus/status/982274162218754050) that "MKVToolNix v22's info tool now contains a hex view that even highlights different parts (EBML ID, length field...)." This is much more useful than the general-purpose text editor I used for exploration. Sometimes investigating the GUI instead of just the CLI tools is fruitful!*
+
 
 I was opening up a small Matroska file in my hex editor (I use Hex Fiend, I don't know if it's the best, but it works well for me) and I identified the Matroska magic numbers and the EBML magic numbers, but there was some ... other stuff interrupting them.
 
