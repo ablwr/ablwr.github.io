@@ -1,9 +1,7 @@
 ---
 layout: post
 title: "Being always gracious"
-date: 2016-02-24 23:01:13 -0500
-comments: true
-categories: 
+date: 2016-02-24
 ---
 
 Today Dr. Carla Hayden is nominated to be our [14th Librarian of Congress](https://www.facebook.com/potus/videos/457630757760103/?pnref=story), an incredibly smart and talented librarian dedicated to inclusivity. Also today was the official announcement of [Open eBooks](http://openebooks.net/), a initiative that opens up free and easy eBook access to children and lays the technical foundation for making access to ebooks easier for everyone through the [LibrarySimplified](http://www.librarysimplified.org/) project (and many other things). These are both great strides towards a more democratic society and bring greater equal opportunity towards access to knowledge, and it's great to see these things manifested in an area so close and so important to me.

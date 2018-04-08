@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The bots are coming! Twitter bots!"
-date: 2014-06-24 23:10:17 -0400
+date: 2014-06-24
 comments: true
 categories: [twitter bots, side projects]
 ---
