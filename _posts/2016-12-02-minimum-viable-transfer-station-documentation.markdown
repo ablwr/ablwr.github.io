@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Minimum Viable Station Documentation"
-date: 2016-12-02 23:16:00 -0400
+date: 2016-12-02 20:16:00 -0400
 ---
 
 Hello, internet of people!
