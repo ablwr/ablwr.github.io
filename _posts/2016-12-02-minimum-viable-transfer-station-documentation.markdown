@@ -20,4 +20,4 @@ This is the goal: Provide what the options are, then give a recommendation. If p
 
 P.S., N.B.: Don't let best practices block progress.
 
-P.P.S.: [Part two -- recipes](http://ablwr.github.io/blog/2017/01/16/minimum-viable-digitization-station-recipes/)!
+P.P.S.: [Part two -- recipes](http://ablwr.github.io/blog/2017/01/16/minimum-viable-digitization-station-recipes/)
