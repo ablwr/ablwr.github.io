@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Considering Rust"
-date: 2018-04-06
+date: 2018-04-09
 ---
 
 I am now in an informal Iron Blogging challenge with [Janice](https://contrepoint.github.io/recurse-center-starts-to-feel-like-home) and [Marianne](http://mkcor.github.io/2018/04/09/week-2-day-1-at-rc.html) in my Recurse Center batch, so I must talk about technical things and personal things and opinionated things, and NOT BE AFRAID!! This is a blog post ramping up to something more technical and more opinionated.
