@@ -52,4 +52,6 @@ So, pixel formats! FourCC says UYVY is "probably the most popular" for YUV 4:2:2
 
 Okay, so this is all for my quest of getting some seriously neutrally uncompressed data that is acceptable by even snobby codecs that only work with specific chroma subsampling patterns (looking at you, DV!).
 
+Oh, also, the [LC Sustainability of Digital Formats Guidelines](https://www.loc.gov/preservation/digital/formats/fdd/fdd000352.shtml#notes) has some useful notes on this as well that took me multiple read-throughs before I understood it, even though the hardware implications of these things have been on my mind also. I've been so impressed with the wealth of information found in this underutilized resource!
+
 As always, [let me know if I'm wronggggg](https://twitter.com/ablwr)!
