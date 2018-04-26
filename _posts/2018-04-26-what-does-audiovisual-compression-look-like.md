@@ -58,7 +58,7 @@ And round them up:
 
 ![diff-libvpx-vp9.mkv.jpg](/images/diff-libvpx-vp9.mkv.jpg)  
 
-## libvpx (v8)
+## libvpx (vp8)
 
 ![diff-libvpx.mkv.jpg](/images/diff-libvpx.mkv.jpg)  
 
@@ -92,6 +92,10 @@ And round them up:
 
 As someone who runs around a lot in mostly digital preservation circles, I think I'm most surprised by what comes out of the prores and jpeg2000 encodings, and also the ways in which they are different. DPX too, shows something.
 
-This is just a cursory analysis and while I followed loosely some scientific principles in terms of consistency of chosen source material, this is far from scientific. `ffmpeg` is known for doing things "under the hood" that may be unanticipated or unexpected by its user, like switch up the colorspace or make other assumptions, especially based on the container format. Also, I tried to run the DV video encoder as well, but I just got a totally blank result even though I was confident that compression was happening. And I tried to run the process on a64multi, defined as "Multicolor charset for Commodore 64", but it broke after 3 tries, twice, and the files wouldn't open, so I guess it was just not meant to be.
+I think the differences between VP8 and VP9 are really interesting, especially around the edges. I'm also surprised at how little mpeg1 and wmv1 changed compared to more renowned codecs. And the difference (or lack of) between h264's default high-quality encoding compared to the lowest level.
+
+This is just a cursory analysis and while I followed loosely some scientific principles in terms of consistency of chosen source material, this is far from scientific. `ffmpeg` is known for doing things "under the hood" that may be unanticipated or unexpected by its user, like switch up the colorspace or make other assumptions, especially based on the container format. 
+
+Also, I tried to run the DV video encoder as well, but I just got a totally blank result even though I was confident that compression was happening. And I tried to run the process on a64multi, defined as "Multicolor charset for Commodore 64", but it broke after 3 tries, twice, and the files wouldn't open, so I guess it was just not meant to be.
 
 Also, this was essentially done back in 2012 by expert preservationist Dave Rice using a different ffmpeg technique, you can read his results [here](http://dericed.com/2012/display-video-difference-with-ffmpegs-overlay-filter/) although the videos are no longer up.
