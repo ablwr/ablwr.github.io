@@ -10,7 +10,10 @@ Turns out the answer is yes, and it's pretty easy to do, and it's actually not a
 
 First, to get some pure data that hasn't been tainted with any particular flavor of encoding: enter [Big Buck Bunny](https://peach.blender.org/download/), everyones favorite signal processing test video.  
 
-First, I had to cURL some Big Buck Bunny sample frames in order: `curl "https://xiph-media.net/BBB/BBB-360-png/big_buck_bunny_[00400-00460].png" -o "#1.png"`  
+First, I had to cURL some Big Buck Bunny sample frames in order:   
+```
+curl "https://xiph-media.net/BBB/BBB-360-png/big_buck_bunny_[00400-00460].png" -o "#1.png"
+```
 
 Then I gathered those .png into a sample video file. I went with uncompressed v210 after [debating for a while](http://bits.ashleyblewer.com/blog/2018/04/25/uncompressed-versus-uncompressed-packed-video/).
 
