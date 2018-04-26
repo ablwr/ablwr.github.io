@@ -6,7 +6,9 @@ date: 2018-04-26
 
 This week, I'm thinking about this question: What does audiovisual compression look like? Can it be visualized? 
 
-Turns out the answer is yes, and it's pretty easy to do, and it's actually not all that interesting. Y'know, *"It is different now exactly in places you expect."* But I wanted to stick with it and try to make it interesting anyway, so here is what I did.
+Turns out the answer is (update: meehhhhh?), and it's pretty easy to do, and it's actually not all that interesting. Y'know, *"It is different now exactly in places you expect."* But I wanted to stick with it and try to make it interesting anyway, so here is what I did.
+
+TOP POST: I stick this down at the bottom vaguely but I want to point out that below isn't necessarily *compression* and can't accurately be asserted as such. A lot of things are happening other than changing codecs. This can speak to the extreme detail and care needed, and a thorough understanding required, that should go into making decisions based around long-term care of digital video objects, if that is the goal.
 
 First, to get some pure data that hasn't been tainted with any particular flavor of encoding: enter [Big Buck Bunny](https://peach.blender.org/download/), everyones favorite signal processing test video.  
 
