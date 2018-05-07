@@ -44,8 +44,8 @@ Comparing this to [The Planets Today](http://www.theplanetstoday.com/)...
 
 And that's that! The data is now successfully displaying on the page. This is a work in progress. I still need to:
 
-- Allow user input to specify date
-- Not hardcode the date and instead show current date/time by default
+- allow user input to specify date
+- not hardcode the date and instead show current date/time by default
 - make planets look great
 - fake the distance so Neptune isn't so damn far away
 - fake the distance so Mercury isn't so damn close to the emoji-sun
