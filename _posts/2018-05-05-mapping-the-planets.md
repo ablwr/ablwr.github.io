@@ -51,4 +51,6 @@ And that's that! The data is now successfully displaying on the page. This is a 
 - fake the distance so Mercury isn't so damn close to the emoji-sun
 - get Pluto on the map even if it's not a planet anymore
 
+Update: I did all of these except poor Pluto. Sorry bud.  
+
 The source code is up and available [here](https://github.com/ablwr/planets)!
