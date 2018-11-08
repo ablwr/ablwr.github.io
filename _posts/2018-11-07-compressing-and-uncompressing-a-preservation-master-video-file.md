@@ -43,9 +43,14 @@ OK, now we have two uncompressed .mov files. Let's check up on these files by ge
 and  
 `md5deep uncompressed-again.mov`  
 
-Your results should be this. Your checksum should even match.
+Your results should be this. Your checksum may even match (depending on your environment).  
+
 `19b70aad2af65586ba54638f3d45ffd3  /home/ashley/Testing/uncompressed.mov`  
 and  
 `19b70aad2af65586ba54638f3d45ffd3  /home/ashley/Testing/uncompressed-again.mov`  
 
-This works if the first and final files are .mov. If the first file is an MOV and the final is uncompressed wrapped in an MKV, the checksum won't be the same because they are using a different wrapper. But if you start with an MKV and end with an MKV, they won't also match because of how Matroska wrappers are structured. If you run a checksum on only the video stream of both of the files, that will match, it just takes a little more work to see the difference. But that's a different blog post for another time...
+Disclaimer: This works if the first and final files are .mov and it works because we are working in a controlled environment (that is, ffmpeg, and the same version of it, made the first file, and it did the conversion back with the second file). If the first file was made in a different context, the whole files will probably not match.
+
+Similarly, if the first file is an MOV and the final is uncompressed wrapped in an MKV, the checksum won't be the same because they are using a different wrapper. Likewise, if you start with an MKV and end with an MKV, they won't also match because of how Matroska wrappers are inherently structured. 
+
+But with all the above, if you run a checksum on only the video stream of both of the files, they should match, it just takes a little more work to see the difference. But that's a different blog post for another time...
