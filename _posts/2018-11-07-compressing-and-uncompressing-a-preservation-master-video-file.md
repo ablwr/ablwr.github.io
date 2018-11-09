@@ -54,3 +54,9 @@ Disclaimer: This works if the first and final files are .mov and it works becaus
 Similarly, if the first file is an MOV and the final is uncompressed wrapped in an MKV, the checksum won't be the same because they are using a different wrapper. Likewise, if you start with an MKV and end with an MKV, they won't also match because of how Matroska wrappers are inherently structured. 
 
 But with all the above, if you run a checksum on only the video stream of both of the files, they should match, it just takes a little more work to see the difference. But that's a different blog post for another time...
+
+Update: [@FFmpeg informed me](https://twitter.com/FFmpeg/status/1060662187448950784) that you can check just the streams of video files running a command like this:
+
+`ffmpeg -loglevel error -i input.mkv -map 0:v:0 -f hash -hash md5 -`
+
+And linked to [this section of their documentation](https://ffmpeg.org/ffmpeg-formats.html#hash). This is great to use on real-world files! Thanks for everything, FFmpeg!
