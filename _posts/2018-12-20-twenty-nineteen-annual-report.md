@@ -30,21 +30,31 @@ Then I thought about my personal goals, which I've never really thought about be
 
 To escape from my container, I officially "took a sabbatical," which is funny since I had been working as a contractor. In some ways, having all these side-gigs going at all times make it even harder to say "Listen, I am going to shut all this down and only focus on being a better programmer/person for 3 months." I went to the [Recurse Center](https://www.recurse.com/), a magical place that seems like it can't exist in these especially trying times of the late twenty-teens. I blogged a lot and kept an [updating syllabus](http://github.com/ablwr/my-recurse-center-syllabus). This experience fundamentally changed my life in a lot of personal ways, and I recommend anyone with the capacity to do so to [consider applying](https://www.recurse.com/apply)! I think I echo the sentiment of many people who attend Recurse Center: I guess it made me a better programmer, but definitely made me a better person. It's also nice to remember that not everyone is a big bundle of trash all the time. I never did a full retrospective of my time there, and I regret that a little bit. I also liked tracking my learning syllabus-style and am wondering if I can/would incorporate this into 2019.
 
+I taught a 4-hour course on audiovisual quality control at IS&T with my friend Julia.
+
+I didn't know what I was doing and I have an obnoxiously inflexible landlord management company, so I somewhat-begrudgingly stayed in New York, a city I still love but loves no one back.
+
 # Quarter 3!
 
 “Am I really just itching to go back to work?”
 
 My life was in a bit of a question-mark phase when planning quarter three, so my goals were very succinct: "Find a job, do yer best at this job." I quickly did find a job -- I now work on Archivematica at [Artefactual](http://artefactual.com/) full time instead of just as a part-time consultant -- and that job allows me to do all the things I like to do and use all the skills I have, something I have been looking for for a long time. I [just wrote about this](https://saaers.wordpress.com/2018/12/11/trained-in-classification-without-classification/) a little bit for the SAA ERS blog.
 
+Also, I was a guest on [Archivist's Alley](http://archivistsalley.com/ashley-blewer-digital-archiving-open-source-work-systems-of-strength/)!
+
 # Quarter 4!
 
 "Survive all this travel!"
 
-Following up on Quarter 3's simple goal, my Quarter 4 goals were pretty simple too. I had a lot of new work obligations and old work obligations, and they took me to Las Vegas, London, Houston, and Luxembourg. I felt like I was away from home as much as I was at home during these twelve weeks. [No Time To Wait](https://mediaarea.net/NoTimeToWait3) is simultaneously one of the most emotionally and professionally rewarding things in my life, while also being the most emotionally and physically exhausting. ArchivematicaCamp was also fairly exhausting, mostly because I was unsure how it would go. DLF was relatively smooth. And the workshops in Luxembourg ended up feeling breezy compared to all the rest even though it was perhaps the most labor-intensive. I felt like I had finally hit a stride in teaching open source audiovisual quality control tools. 
+Following up on Quarter 3's simple goal, my Quarter 4 goals were pretty simple too. I had a lot of new work obligations and old work obligations, and they took me to Las Vegas, London, Houston, and Luxembourg. I felt like I was away from home as much as I was at home during these twelve weeks. [No Time To Wait](https://mediaarea.net/NoTimeToWait3) is simultaneously one of the most emotionally and professionally rewarding things in my life, while also being the most emotionally and physically exhausting. ArchivematicaCamp was also fairly exhausting, mostly because I was unsure how it would go (I've never attended one before and suddenly I was leading half of it!). DLF was relatively smooth. And the workshops in Luxembourg ended up feeling breezy compared to all the rest even though it was perhaps the most labor-intensive (2.5 days and an additional conference). I felt like I had finally hit a stride in teaching open source audiovisual quality control tools. Oh, and I guest-lectured for [Pratt's Information Technologies class](https://github.com/hadro/654fa18/blob/master/syllabus/HadroLIS654Fall2018syllabus.md) (this is my all-time favorite syllabus) right after coming back from this seemingly-continuous travel! I like teaching and I hope to do more of it next year.
+
+I was asked to join the Software Preservation Network's Tech Infrastructure group, and that's been fun. I was asked to serve on the [NDSR Advisory Group](https://ndsr-program.org/2018/12/12/advisory-group-2019/) for 2019 and I'm excited to do that. 
 
 # Bonus / Next year
 
 I am now in the final four weeks of the year with no obligations as I plan for next year and, I guess, the next four quarters.
+
+Overall, I feel like I got a lot better at paying attention to myself (physically, emotionally, and when those elements combine/overlap). In some ways, I've been kinder to myself as a result, just by stopping to ask myself why I feel a certain way in a certain moment. Y'know, something that sounds like a great idea but one that is very hard to implement continuously, so I'm proud of myself for that.
 
 For next year?
 
