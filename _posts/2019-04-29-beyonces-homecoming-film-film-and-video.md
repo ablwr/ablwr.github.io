@@ -98,6 +98,13 @@ the focus, like this frame shows.
 
 ![img](/images/bey4/blurry-zoom.jpg)
 
+Also, the Super 8 footage doesn't handle blinking lights as well as digital.
+Super 8 is limited to 18 or 24 frames per second, and I have no idea what modern
+digital cameras shoot at these days, or what the target playback
+frames-per-second rate is for streaming video -- the concept of frame still
+exists in digital video but it gets much muddier when working with adaptive
+streaming video. It's a different beast in a lot of ways.
+
 I think there are times when they wanted to use some handheld camera footage
 that was shot with a digital camera, but maybe thought it would look better
 styled as small-gauge film to make the wobbliness more forgiving. Here's a shot
