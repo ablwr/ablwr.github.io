@@ -250,12 +250,12 @@ aforementioned
 [post](https://medium.com/on-archivy/invisible-defaults-and-perceived-limitations-processing-the-juan-gelman-files-4187fdd36759)
 has been very influential and has brought attention to this topic, but no
 organization has yet to take action, beyond Artefactual as a company taking on
-the unpaid maintenance work to patch as much as possible.
+the unpaid maintenance work to patch as much as possible. (See also: [The
+Maintainers community](http://themaintainers.org/))
 
 ![one tru bytch](/images/one-true-bytch.gif)
 
-
-## Questions
+## Questions of theory and practice
 
 So, back to the stewards of video art, of extracted disk images and early
 computer art, of old laptops belonging to famous artists, et al and ad
@@ -276,6 +276,12 @@ contextualization of an artwork, historical significance and research, or
 significant in the accurate presentation and replication? Or do you scrap the
 original filenames entirely and rename everything as a UUID? Do you save the
 originals in a database, and how do you connect that to the original assets?
+
+I'm not someone who works as a conservator, I'm a person ensuring that
+technology works in a way that supports the museum, archives, and library
+practitioners. So like I mentioned, I'm interested in getting systems to work as
+well as possible, as smoothly as possible, and for as many people as possible.
+So I leave the theory to those doing the theorizing.
 
 ## Conclusion?
 
