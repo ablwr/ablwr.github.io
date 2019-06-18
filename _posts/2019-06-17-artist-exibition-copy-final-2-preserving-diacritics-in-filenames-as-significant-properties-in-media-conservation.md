@@ -257,10 +257,13 @@ her last unfinished novel on the latest-at-the-time laptop with an inconsistent
 encoding pattern, or this network-based art installation is presented in English
 but the operating system prefers Cyrillic. But practically speaking, is
 retaining the language but converting it to an interoperable encoding standard
-appropriate, when the difference is indistinguishable to human perception? For
+appropriate, when the difference is indistinguishable to human perception?
+Should it be tossed in the trash like a .DS_Store? For
 those of you who work in media conservation, where do you draw the line with
-"significant properties"? Does this fit into the artist's intent, or
-contextualization, or presentation and replication?
+"significant properties"? What is meaningful, when and where is it meaningful,
+and how is it meaningful? Does this fit into the artist's intent, or
+contextualization of an artwork, historical significance and research, or
+significant in the accurate presentation and replication?
 
 ## Conclusion?
 
