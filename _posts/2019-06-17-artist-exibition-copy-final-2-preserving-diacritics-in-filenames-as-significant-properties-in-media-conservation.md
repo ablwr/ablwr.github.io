@@ -345,8 +345,6 @@ Some other significant resources:
 - ICYMI at the top, Elvia Arroyo-Ramírez's [Invisible Defaults and Perceived
   Limitations: Processing the Juan Gelman
   Files](https://medium.com/on-archivy/invisible-defaults-and-perceived-limitations-processing-the-juan-gelman-files-4187fdd36759)
-- [The beets blog: our solution for the hell that is filename encoding, such as
-  it is](http://beets.io/blog/paths.html)
 
 Thanks to the institutions I've worked with over the past year who have had
 these problems for your patience. You know who you are!
