@@ -254,6 +254,9 @@ the unpaid maintenance work to patch as much as possible.
 
 ![one tru bytch](/images/one-true-bytch.gif)
 
+
+## Questions
+
 So, back to the stewards of video art, of extracted disk images and early
 computer art, of old laptops belonging to famous artists, et al and ad
 infinitum. I suppose in an ideal situation, we are taking care to retain and
@@ -261,7 +264,8 @@ care for these aspects of filenames: It is significant that the artist was
 editing video on a Portuguese-language Mac, it matters that this author was writing
 her last unfinished novel on the latest-at-the-time laptop with an inconsistent
 encoding pattern, or this network-based art installation is presented in English
-but the operating system prefers Cyrillic. But practically speaking, is
+but the operating system prefers Cyrillic, and that needs to be represented. But
+practically speaking, is
 retaining the language but converting it to an interoperable encoding standard
 appropriate, when the difference is indistinguishable to human perception?
 Should it be tossed in the trash like a .DS_Store? For
@@ -269,7 +273,9 @@ those of you who work in media conservation, where do you draw the line with
 "significant properties"? What is meaningful, when and where is it meaningful,
 and how is it meaningful? Does this fit into the artist's intent, or
 contextualization of an artwork, historical significance and research, or
-significant in the accurate presentation and replication?
+significant in the accurate presentation and replication? Or do you scrap the
+original filenames entirely and rename everything as a UUID? Do you save the
+originals in a database, and how do you connect that to the original assets?
 
 ## Conclusion?
 
