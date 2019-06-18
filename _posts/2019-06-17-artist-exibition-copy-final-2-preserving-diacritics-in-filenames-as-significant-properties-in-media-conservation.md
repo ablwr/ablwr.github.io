@@ -42,6 +42,8 @@ one of these totally innocuous-looking accented characters, it looks like
 bomb emoji is accurate because it just blows up even though everything is looking
 fine!
 
+![sign up today](/images/sign-up-today.gif)
+
 When looking in a browser viewer, the two files with the same name but different
 character encodings might look the same, because web browsers force UTF-8
 encoding onto all the text being read on the page. Operating systems may make
@@ -145,6 +147,8 @@ have a particular kind of file encoding, or I might be able to guess the
 language of origin based on words in the filename, and then sort out what
 encoding was used on this filename.
 
+![chosen to serve](/images/chosen-to-serve.gif)
+
 ## Know the encoding
 
 If I know the encoding, I can try using the `convmv` tool to convert from one encoding
@@ -197,6 +201,8 @@ drive and the processing space you are working on, and without a configuration
 set in a specific way, it could be passing the character encoding over without
 handling or converting to UTF-8, or it attempts to convert to UTF-8 by guessing
 the character encoding and getting it wrong, mangling the files in the process.
+
+![chinese firefighters](/images/chinese.gif)
 
 ## Guess the encoding
 
@@ -286,7 +292,9 @@ Also at !!Con (East, 2018), Ahmed Abdalla gave a talk on [creating an Arabic
 Programming Language](https://www.youtube.com/watch?v=eCxqAr7LjW8), taking a lot
 of these concepts into consideration.
 
-So all of this manifests itself in more than just files coming off of legacy
+![world bar](/images/barworldflags.gif)
+
+All of this manifests itself in more than just files coming off of legacy
 file systems, and even affects major systems like phones, cars, and email
 software, resulting in lost messages, mixed messages, or an inability to play
 messages. For example:
@@ -330,8 +338,6 @@ Some other significant resources:
 
 Thanks to the institutions I've worked with over the past year who have had
 these problems for your patience. You know who you are!
-
-![world bar](/images/barworldflags.gif)
 
 Happy encoding, transcoding, and decoding!
 
