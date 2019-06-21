@@ -347,6 +347,7 @@ Some other significant resources:
   Files](https://medium.com/on-archivy/invisible-defaults-and-perceived-limitations-processing-the-juan-gelman-files-4187fdd36759)
 - [Test data from the Go programming language](https://github.com/golang/text/tree/master/encoding/testdata)
 - [Unicode programming, with examples](https://begriffs.com/posts/2019-05-23-unicode-icu.html)
+- [The differences between ASCII, ISO 8859, and Unicode](https://kb.iu.edu/d/ahfr)
 
 Thanks to the institutions I've worked with over the past year who have had
 these problems for your patience. You know who you are!
