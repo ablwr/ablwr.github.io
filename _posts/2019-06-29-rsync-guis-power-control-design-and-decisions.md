@@ -68,6 +68,15 @@ too, and getting up-and-running with Electron is extremely simple. As this
 project really is 95% visual components and 5% underlying processing, Electron
 is a great fit.
 
+People complain about Electron a lot, but the primary complaint just seems to be
+that its bloated -- carrying an entire browser engine along with something
+small. But like, all of our computers are already bloated, and there's at least
+a 40% chance that right now I am bloated, and it doesn't mean you should love me
+any less, and I think the above points I've raised override the lack of
+svelt-ness of the program. People don't care that an application is a
+streamlined 3MB or a big round 200MB boy -- they care that it works for them and
+it makes them feel good about using it.
+
 ![rsync](/images/rsync2.jpg)
 
 ## Tools that teach
