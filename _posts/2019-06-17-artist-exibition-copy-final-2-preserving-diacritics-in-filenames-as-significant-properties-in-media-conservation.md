@@ -356,3 +356,7 @@ Happy encoding, transcoding, and decoding!
 
 ![author with cat](/images/cat-rhizome-shirt.jpg)
 
+As always, please direct any comments to the [Issues
+page](https://github.com/ablwr/ablwr.github.io/issues) or to [me
+directly](https://www.twitter.com/ablwr)!
+
