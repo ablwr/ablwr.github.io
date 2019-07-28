@@ -15,6 +15,7 @@ most popular blog posts of all time:
 - [Format-ion: Video playback errors in Beyoncé’s latest music video](https://bits.ashleyblewer.com/blog/2016/02/09/format-ion-video-playback-errors-in-beyonces-latest-music-video/)
 - [Aspect Ratios in LEMONADE, Pt. 1](https://bits.ashleyblewer.com/blog/2016/04/29/lemonade/)
 - [Aspect Ratios in LEMONADE, Pt. 2](https://bits.ashleyblewer.com/blog/2016/05/24/aspect-ratios-in-lemonade/)
+- [Beyoncé's HOMECOMING: Film, film, and video](https://bits.ashleyblewer.com/blog/2019/04/29/beyonces-homecoming-film-film-and-video/)
 
 Again, I am going to try to not get into hypothesing the WHY these artistic
 choices were made, but focus on the HOW. But briefly, I want to say it's no

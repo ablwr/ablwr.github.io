@@ -6,7 +6,10 @@ comments: true
 categories: beyonce
 ---
 
-# Format-ion: Video playback errors in Beyoncé’s latest music video
+Update: There are a few other blog posts in this series --
+- [Aspect Ratios in LEMONADE, Pt. 1](https://bits.ashleyblewer.com/blog/2016/04/29/lemonade/)
+- [Aspect Ratios in LEMONADE, Pt. 2](https://bits.ashleyblewer.com/blog/2016/05/24/aspect-ratios-in-lemonade/)
+- [Beyoncé's HOMECOMING: Film, film, and video](https://bits.ashleyblewer.com/blog/2019/04/29/beyonces-homecoming-film-film-and-video/)
 
 Like most people I know, I spent most of yesterday watching "[Formation](https://www.youtube.com/watch?v=LrCHz1gwzTo)" over and over, and noticed Beyoncé really has a thing for faking media playback errors for some reason. And this new digital drop covers many errors and several formats all in one. You can also watch things get digital-ailments-buckwild in the video for [Grown Woman](https://www.youtube.com/watch?v=y3MjxWn5W9M), which mixes real home movies (that have real analog video problems) with the modern-day, grown-ass Beyoncé who has a video visual effects team to make things look bad on purpose.
 
