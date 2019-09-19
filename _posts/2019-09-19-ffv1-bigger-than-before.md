@@ -31,7 +31,9 @@ There are many appealing attributes for using Matroska as a video container and
 FFV1 as an encoding format, including more granular fixity checking, both being
 open source for integrity and integration in the future and for transparency
 purposes, reversibility ([RAWcooked](https://mediaarea.net/RAWcooked) being an
-example of this), lossless quality, and more. Another appealing attribute is the
+example of this), lossless quality, and more. 
+
+Another appealing and much-touted attribute is the
 space saving, with an example [mentioned here on
 Twitter](https://twitter.com/NKrabben/status/919948316305186816) from NYPL's
 Head of Digital Preservation. When thinking through the size of
@@ -86,7 +88,8 @@ like trying to stretch out a wool sweater that has gone through the wash. Anyone
 who has ever raised a toddler probably has their own story of some very junior person
 trying to put something back together again and pretending like the adult won't
 notice that it's been completely ruined. I haven't raised or been around
-toddlers, but I have, in fact, been a toddler.
+toddlers, but I have, in fact, been a toddler and I know a bad video transcode
+when I see one.
 
 ![elephant sweater](/images/elephant-sweater.jpg)
 
