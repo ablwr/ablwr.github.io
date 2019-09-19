@@ -11,9 +11,10 @@ more than once. I feel like that's a good guideline for when it's time to write
 something up, so that it can be referenced for future question-askers. 
 
 Something that keeps coming up in preservation circles is a lament about what
-sometimes happens when migrating audiovisual files into the ffv1.mkv format
-(Matroska wrapper for FFV1-encoded video datastream) for preservation purposes. The
-complaint is:
+sometimes happens when migrating audiovisual files into the `ffv1.mkv` format
+([Matroska](https://matroska.org/) wrapper for
+[FFV1](https://en.wikipedia.org/wiki/FFV1)-encoded video datastream) for
+preservation purposes. The complaint is:
 
 ## "It gets bigger!"
 
