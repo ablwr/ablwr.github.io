@@ -70,23 +70,30 @@ utmost-quality product, as their purpose is speed and quick consumption. Video
 coming off the web is another example of files that have been compressed for
 these purposes. *This compression is not reversible.* The damage
 has already been done (it's a different argument in what kind of damage is
-acceptable, or a quantity vs quality problem). But anyway, in this situation, trying to take
-a video file that has been intentionally shrunk down and transcoding it into a
+acceptable, or a quantity vs quality problem). In short, it's too late for
+applying "best practices."
+
+But anyway, in this situation, trying to take a video file that has been
+intentionally shrunk down and transcoding it into a
 format that is intended for storage savings on raw data streams is going to
 result in the files growing. For highly compressed files, this file growth can
 be massive. It's a situation of "once you squeeze the toothpaste out of the
 container, there's nothing you can do to put the toothpaste back in again." The
 data is gone, and making it bigger is not going to increase the quality again.
 Also since it's a weird thing to do, it might even make the quality seem worse
-because it's trying to stretch out something that has already been shrunk down.
+because it's trying to stretch out something that has already been shrunk down,
+like trying to stretch out a wool sweater that has gone through the wash. Anyone
+who has ever raised a toddler probably has their own story of some very junior person
+trying to put something back together again and pretending like the adult won't
+notice that it's been completely ruined. I haven't raised or been around
+toddlers, but I have, in fact, been a toddler.
 
 ![elephant sweater](/images/elephant-sweater.jpg)
 
 So for files that have already experienced compression, a migration to
 `ffv1.mkv` is not going to have any positive benefits. You can quit reading now
 if you just needed to know that! Otherwise, brace yourself for some *opinions*
-(thinly-veiled as advice).
-("My blog, my rules!")
+(thinly-veiled as advice). ("My blog, my rules!")
 
 I have found that people seek out and really want the one perfect solution. In
 this case, folks are looking for the one perfect format for all of
