@@ -14,7 +14,7 @@ Okay, normal stuff, what did I do this year?
 
 Workwise, I went to:
 - San Jose, California (Code4lib)
-- Baltimore (Bastard Film Symposium)
+- Baltimore (Bastard Film Encounter)
 - Amsterdam and The Hague (Artefactual)
 - Austin, Texas (Society of American Archivists)
 - Singapore (Artefactual)
