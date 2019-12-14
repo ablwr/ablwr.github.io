@@ -14,6 +14,7 @@ Okay, normal stuff, what did I do this year?
 
 Workwise, I went to:
 - San Jose, California (Code4lib)
+- Baltimore (Bastard Film Symposium)
 - Amsterdam and The Hague (Artefactual)
 - Austin, Texas (Society of American Archivists)
 - Singapore (Artefactual)
@@ -21,7 +22,7 @@ Workwise, I went to:
 - CERN (Switzerland/France) (Artefactual)
 - Budapest (No Time To Wait)
 
-Some of these places involved [me giving talks](https://bits.ashleyblewer.com/talks/), and some of them involved me talking a lot and working out software integrations and technical workflow requirements and things like that.
+And I took some personal trips courtesy of Amtrak. Some of these places involved [me giving talks](https://bits.ashleyblewer.com/talks/), and some of them involved me talking a lot and working out software integrations and technical workflow requirements and things like that.
 
 My work has been extremely fulfilling this year. It is absolutely amazing to work for a place and with people that share the same goals and values as me, and to be able to fully dedicate myself to working on and supporting open source software for archives, libraries, and museums. It's been my goal for such a long time, and I'm constantly in awe that I've been able to achieve it. Working in a fulfilling job is such a privilege, and it is an extremely rare thing to be able to do this work. I am grateful every day for the opportunity. I'm amazed at the care and grace exhibited by my colleagues. Work is interesting, challenging, and rewarding. 
 
