@@ -4,7 +4,7 @@ title: "MediaInfoInfo: General streams"
 date: 2020-01-17 03:00:00 -0500
 ---
 
-This is the third of what will be a series of blog posts on a project I call "MediaInfoInfo". This project is focused on improving documentation for the ubiquitous media analysis tool [MediaInfo](https://mediaarea.net/MediaInfo). After the [initial project idea](https://bits.ashleyblewer.com/blog/2020/01/10/mediainfoinfo-initialize-project/) and [initial project plan](https://bits.ashleyblewer.com/blog/2020/01/17/mediainfoinfo-parameters-making-a-plan/), this post will focus on work on the first and largest section of parameters: the General stream.
+This is the third in a series of blog posts on a project I call "MediaInfoInfo". This project is focused on improving documentation for the ubiquitous media analysis tool [MediaInfo](https://mediaarea.net/MediaInfo). After the [initial project idea](https://bits.ashleyblewer.com/blog/2020/01/10/mediainfoinfo-initialize-project/) and [initial project plan](https://bits.ashleyblewer.com/blog/2020/01/17/mediainfoinfo-parameters-making-a-plan/), this post will focus on work on the first and largest section of parameters: the General stream.
 
 The General stream summarizes the container information for a file. Sometimes this is known as the wrapper. And sometimes, this is assumed to be all the information about a file because it conveys what the file extension will be. But it doesn't give information from any of the codecs inside. Containers are all different -- some are very assertive and can contain a lot of information that influences how the file plays back, and others are very open and leave those decisions to the codec. Sorry -- it's complicated and can be hard to summarize so breezily!
 
