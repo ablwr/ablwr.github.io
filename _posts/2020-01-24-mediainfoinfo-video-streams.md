@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MediaInfoInfo: Video streams"
-date: 2020-01-17 03:00:00 -0500
+date: 2020-01-24 03:00:00 -0500
 ---
 
 This is the fourth in a series of blog posts on a project I call "MediaInfoInfo". This project is focused on improving documentation for the ubiquitous media analysis tool [MediaInfo](https://mediaarea.net/MediaInfo). Wow, I can't believe another week has passed and I am due to write another blog post!
