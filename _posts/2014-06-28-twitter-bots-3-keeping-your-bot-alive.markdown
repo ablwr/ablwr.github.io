@@ -2,8 +2,7 @@
 layout: post
 title: "Twitter Bots 3: Keeping your bot alive"
 date: 2014-06-28 20:31:52 -0400
-comments: true
-categories: [twitter bots, side projects]
+tags: [twitterbots, flatiron]
 ---
 
 <blockquote class="twitter-tweet" data-partner="tweetdeck"><p><a href="https://twitter.com/wetted_ashes">@wetted_ashes</a> <a href="https://twitter.com/ablwr">@ablwr</a> Just spent too much time coding and having so many excellent things to read thanks to <a href="https://twitter.com/hashtag/timezones?src=hash">#timezones</a></p>&mdash; ¡ɹǝʍǝlq ʎǝlɥs∀ (@ablwr_ebooks) <a href="https://twitter.com/ablwr_ebooks/statuses/478713633023602688">June 17, 2014</a></blockquote>

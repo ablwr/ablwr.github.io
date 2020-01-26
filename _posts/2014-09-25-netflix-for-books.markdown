@@ -2,8 +2,7 @@
 layout: post
 title: "Netflix for Books"
 date: 2014-09-25 12:01:14 -0400
-comments: true
-categories: [projects, libraries]
+tags: [small projects]
 ---
 
 ![](/images/oyster.png)

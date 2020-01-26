@@ -2,6 +2,7 @@
 layout: post
 title: "Uncompressed versus uncompressed packed video"
 date: 2018-04-25
+tags: [recurse center, video, ffmpeg]
 ---
 
 I'm thinking more ([previous post](http://bits.ashleyblewer.com/blog/2018/04/03/exploring-codecs-and-data-streams/)) about uncompressed encoding options and the information they convey and how they convey it. For something else I'm working on (update, [here](http://bits.ashleyblewer.com/blog/2018/04/26/what-does-audiovisual-compression-look-like/)), I am trying to get an extremely neutral original format that I'll be encoding, so I wanted to understand better these flavors of uncompressed that I have to choose from:

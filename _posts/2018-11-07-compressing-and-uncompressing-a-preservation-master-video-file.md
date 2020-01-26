@@ -2,6 +2,7 @@
 layout: post
 title: "Compressing and uncompressing a preservation master video file"
 date: 2018-11-07 21:50:00 -0500
+tags: [avpres, ffmpeg, ffv1]
 ---
 The other day, a friend of mine asked me...
 

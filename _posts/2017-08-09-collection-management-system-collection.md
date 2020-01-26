@@ -2,6 +2,7 @@
 layout: post
 title: "The Collection Management System Collection"
 date: 2017-08-09
+tags: [collaboration, teaching]
 ---
 
 ## Crowd-sourcing a list of digital repository options.

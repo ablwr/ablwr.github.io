@@ -2,8 +2,7 @@
 layout: post
 title: "Flatiron and Fog Creek Fellowship"
 date: 2014-09-18 11:21:07 -0400
-comments: true
-categories: [Flatiron School, Fog Creek, Trello]
+tags: [flatiron, fog creek]
 ---
 
 To follow up my last [blog about blogging](http://ablwr.github.io/blog/2014/09/18/breaking-it-down/) (meta), here is the blog post I originally intended to write. I’m pushing it up the queue over the other 13 pending posts.

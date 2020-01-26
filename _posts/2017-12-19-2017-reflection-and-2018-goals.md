@@ -2,6 +2,7 @@
 layout: post
 title: "2017 Reflection and 2018 Goals"
 date: 2017-12-19 20:16:00 -0400
+tags: [annual report]
 ---
 
 Welcome to the Ashley Blewer annual report. [Here](https://ablwr.github.io/blog/2016/12/19/2016-reflection-and-2017-goals/) is last year's.

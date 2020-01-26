@@ -2,6 +2,7 @@
 layout: post
 title: "MediaInfoInfo: Parameters and making a plan"
 date: 2020-01-17 02:00:00 -0500
+tags: [mediainfoinfo]
 ---
 
 This is the second of what will be a series of blog posts on a project I call "MediaInfoInfo". This project is focused on improving documentation for the ubiquitous media analysis tool [MediaInfo](https://mediaarea.net/MediaInfo).

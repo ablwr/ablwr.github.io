@@ -2,8 +2,7 @@
 layout: post
 title: "Form Helpers"
 date: 2014-07-15 22:38:07 -0400
-comments: true
-categories: forms, form for more like form FOUR am I right
+tags: [flatiron]
 ---
 
 Forms are hard! Forms are confusing in real life as well as on (or behind) the web. One problem with building web forms in Rails for me was that there are too many options! There are three distinct ways to create forms. And it’s also hard to tell which options are optional and which ones are required. Additionally, the syntax isn't always the same, so it can be hard to remember three different ways to do the same thing without mixing them up, especially as a beginner.

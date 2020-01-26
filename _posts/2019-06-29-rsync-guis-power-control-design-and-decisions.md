@@ -2,6 +2,7 @@
 layout: post
 title: "rsync, GUIs, power, control, design, and decisions"
 date: 2019-06-29 10:00:00 -0500
+tags: [ux/ui, design]
 ---
 
 I spent last weekend making a GUI for rsync (and this past week tidying it up a

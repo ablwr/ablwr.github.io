@@ -2,8 +2,7 @@
 layout: post
 title: "Regular Expression Options"
 date: 2014-06-16 18:26:07 -0400
-comments: true
-categories: regex
+tags: [programming]
 ---
 
 

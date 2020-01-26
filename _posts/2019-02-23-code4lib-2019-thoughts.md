@@ -2,6 +2,7 @@
 layout: post
 title: "Code4lib 2019: Thoughts and appreciation post"
 date: 2019-02-23
+tags: [conferences]
 ---
 
 I just got back from my fourth Code4lib (in five years), and it continues to be a really wonderful conference where I get to see some of my favorite people (and I was shocked that some of my fav people who were there this year were there for the first time!). I liked the initial MC and longstanding volunteer Dre's description of Code4lib, which was that it isn't an organized body, more of a collective. Code4lib continues to be one of the kindest and supportive and welcoming communities I've ever been involved in. Like any type of collective, not everything is perfect, but I am truly amazed at how much managed to get done by a handful of partially rotating unpaid volunteers. There are still a very small handful of people who are difficult to deal with, and a slightly larger handful of people that I find to have a lot of unproductive criticism, but overall I am glad that this is a space that works hard at creating as welcoming a space as possible (and there are way more difficult and rude people out in the general world, for sure).

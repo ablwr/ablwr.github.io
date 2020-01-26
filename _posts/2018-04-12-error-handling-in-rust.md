@@ -2,6 +2,7 @@
 layout: post
 title: "Error handling in Rust"
 date: 2018-04-12
+tags: [recurse center, rust]
 ---
 
 I've been working my way through [rustlings](https://github.com/carols10cents/rustlings), which is a great great resource and I highly recommend it for getting started with Rust. I especially like it because it forces me to read chapters of the excellent [Rust Programming Language book](https://doc.rust-lang.org/book/second-edition/ch01-00-introduction.html) piece-by-piece and then put the chapters into practice with tiny exercises in the [sandbox](https://play.rust-lang.org/). This is great for me because I am very impatient, especially with myself and my own learning (seriously I listen to podcasts at 2x speed and can't handle normal-speed anymore because I'm like "get to the goddamn point!"), and this pushes me to sit down and read things in specific chunks and test my reading comprehension, which can also be not-great when I'm trying to rush through things.

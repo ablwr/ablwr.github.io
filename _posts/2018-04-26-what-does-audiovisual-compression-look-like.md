@@ -2,6 +2,7 @@
 layout: post
 title: "What does audiovisual compression look like?"
 date: 2018-04-26
+tags: [recurse center, avpres, ffmpeg, video]
 ---
 
 This week, I'm thinking about this question: What does audiovisual compression look like? Can it be visualized? 

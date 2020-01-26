@@ -2,8 +2,7 @@
 layout: post
 title: "Where have you been?"
 date: 2015-05-30 12:16:10 -0400
-comments: true
-categories: [me, marleigh, life]
+tags: [rails engage, personal]
 ---
 
 Hi! I haven't updated this blog since February. What gives?!

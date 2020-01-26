@@ -2,8 +2,7 @@
 layout: post
 title: "Breaking it down"
 date: 2014-09-18 10:35:54 -0400
-comments: true
-categories: [Flatiron School, programming lessons, personal, meta]
+tags: [flatiron, programming]
 ---
 
 When I started at the Flatiron School in June, I told myself I was going to blog about my feelings and what I was learning every week. EVERY week. Then, when I graduated and inevitably had not written a single blog post about how it was going, I said I was gonna write a big ol’ jumbo blog post about the whole twelve weeks and everything I learned and how amazing it was.

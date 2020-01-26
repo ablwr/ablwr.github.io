@@ -2,8 +2,7 @@
 layout: post
 title: "Open Source Software at the Association of Moving Image Archivists 2014 Conference"
 date: 2014-10-13 16:02:07 -0400
-comments: true
-categories: [oss, open source, amia]
+tags: [open source, conferences]
 ---
 
 Last week, I attended the Association of Moving Image Archivists annual conference, held this year in Savannah, GA. And *y'all*, I continue to be impressed with all of the open source projects and contributions happening in the field!! I am so pleased to see it grow in significance every year (along with my knowledge and capabilities of wrangling these projects).

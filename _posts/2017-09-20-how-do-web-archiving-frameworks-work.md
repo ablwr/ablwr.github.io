@@ -2,6 +2,7 @@
 layout: post
 title: "How do web archiving frameworks work?"
 date: 2017-09-20
+tags: [webdev, web preservation]
 ---
 
 <span style="float:left;">

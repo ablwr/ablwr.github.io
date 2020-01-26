@@ -2,8 +2,7 @@
 layout: post
 title: "Rails Engage: Setting up your environment"
 date: 2015-01-11 09:11:48 -0500
-comments: true
-categories: [rails engage, marleigh, terminal, shell, bash, command line]
+tags: [rails engage]
 ---
 
 ![Data using a computer](http://38.media.tumblr.com/f360873af12a76bc4b00a549c799a2d1/tumblr_mtayo9M8JJ1rik14zo1_400.gif)

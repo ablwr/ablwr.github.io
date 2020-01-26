@@ -2,8 +2,7 @@
 layout: post
 title: "Why wont Octopress just upload my images"
 date: 2014-09-25 13:04:20 -0400
-comments: true
-categories: [debugging, octopress, images]
+tags: [programming]
 ---
 
 *Why won’t Octopress just upload my images?!?!?!?!?!?!, or how I learned to stop worrying and love the source.*

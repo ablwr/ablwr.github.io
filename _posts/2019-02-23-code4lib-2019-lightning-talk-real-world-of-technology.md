@@ -2,6 +2,7 @@
 layout: post
 title: "Code4lib 2019 lightning talk: The Real World of Technology (transcript)"
 date: 2019-02-23
+tags: [conferences]
 ---
 
 Below is a tidied-up transcript (a transcript++?) of a lightning talk I gave about "[a great book I've recently re-read](https://www.worldcat.org/title/real-world-of-technology/oclc/1027604262)." This is perhaps understating the weight and impact this book has had on me and how I try to work over the past several years, but nevertheless, here it is.

@@ -2,6 +2,7 @@
 layout: post
 title: "Week 3 at Recurse Center: Feelings Check-in"
 date: 2018-04-21
+tags: [recurse center]
 ---
 
 This week, I did a one-day round-trip to DC to teach a workshop on digital video, and the next day I came back and paired (although that term is very generous, essentially I was tutored-on-this, and I'm very grateful) on [making a square wave audio tone in Rust](https://gist.github.com/ablwr/c02ccd4f6c48bd90614647ec9dbd3380), which also included having to think about how soundwaves are created and digital audio can be produced, at that level. Which I think I understood in theory but not in practice. I felt funny -- like, on Tuesday I'm allegedly the expert, and the next day I'm feeling clueless about nearly the same stuff, but one layer deeper. But that's why I'm here, right? Also, I *truly* do not know how math works. I've lamented over this mediocre education a lot in my life but there's no use in dwelling on it now, but it does make me feel frustrated. Anyway, I am seeking to look on the bright side about this, because it's better to be around a bunch of impressive brilliant smart kind people and be striving towards that, growing and learning, instead of being complacent somewhere else.

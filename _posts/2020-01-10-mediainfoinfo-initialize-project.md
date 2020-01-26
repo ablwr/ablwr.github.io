@@ -2,6 +2,7 @@
 layout: post
 title: "MediaInfoInfo: Initialize Project!"
 date: 2020-01-10 02:00:00 -0500
+tags: [mediainfoinfo]
 ---
 
 This is the first of what will be a series of blog posts (probably) on a project I call "MediaInfoInfo". This project is focused on improving documentation for the ubiquitous media analysis tool [MediaInfo](https://mediaarea.net/MediaInfo).

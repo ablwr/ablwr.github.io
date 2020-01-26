@@ -2,8 +2,7 @@
 layout: post
 title: "New Year's Resolutions"
 date: 2014-12-27 15:40:43 -0500
-comments: true
-categories: [new year, goals]
+tags: [annual report]
 ---
 
 ![git year](/images/gityear.png)

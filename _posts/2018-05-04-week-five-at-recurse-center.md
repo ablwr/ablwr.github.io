@@ -2,6 +2,7 @@
 layout: post
 title: "Week 5 at Recurse Center"
 date: 2018-05-04
+tags: [recurse center]
 ---
 
 Started off this week feeling not-so-good about myself, like I was just running waist-deep in mud, just trying to move forward but feeling so stuck. On Tuesday I made the very-good decision to break from my overarching goal (which had led me into video decoders and web assembly) and make a [PBCore2.1 validator](http://bits.ashleyblewer.com/pbcore-validator/), which took only a small amount of time to produce good and useful results. I moved on from there into doing a bit of what I casually have been referring to as ["javascript shitposting,"](https://github.com/ablwr/uninsured) which is making things that don't have much value and just cobbling together junk to make myself feel better. 

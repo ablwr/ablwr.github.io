@@ -2,8 +2,7 @@
 layout: post
 title: "Rails Engage: Cooking up an MVC"
 date: 2015-02-02 21:14:34 -0500
-comments: true
-categories: [rails engage, marleigh, mvc]
+tags: [rails engage]
 ---
 
 ![](http://i183.photobucket.com/albums/x54/TrueX-Ray/TNG%20Caption%20This/TNGCaption158e.jpg)

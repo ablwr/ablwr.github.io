@@ -2,8 +2,7 @@
 layout: post
 title: "Video Sprites"
 date: 2014-10-15 15:16:15 -0400
-comments: true
-categories: [oss, amia, video sprites]
+tags: [conferences, open source, programming]
 ---
 
 

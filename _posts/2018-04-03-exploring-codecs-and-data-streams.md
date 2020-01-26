@@ -2,6 +2,7 @@
 layout: post
 title: "Exploring codecs and data streams"
 date: 2018-04-03
+tags: [recurse center, codecs, video, ffmpeg]
 ---
 
 `ffmpeg -codecs | grep "things I have heard of"`

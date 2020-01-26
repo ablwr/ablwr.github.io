@@ -2,8 +2,7 @@
 layout: post
 title: "Historical post: Leaving my job"
 date: 2014-05-08 22:44:33 -0400
-comments: true
-categories: [quitting your job, moving image archiving]
+tags: [personal]
 ---
 
 Leaving any job is hard. Leaving a job you really love is even harder. Someone asked me when I was turning in my notice if quitting was as cathartic as it should feel, and I said I felt like I was getting a divorce. Y'know. "I love you, but this just isn't working."

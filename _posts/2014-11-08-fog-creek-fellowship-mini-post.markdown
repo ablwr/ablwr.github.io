@@ -2,8 +2,7 @@
 layout: post
 title: "Fog Creek Fellowship Mini-post"
 date: 2014-11-08 09:04:18 -0500
-comments: true
-categories: [flatiron, fog creek, gif]
+tags: [flatiron, fog creek]
 ---
 
 I had a great time at Fog Creek getting mentorship from the Trello team but haven't had time to sit down and put it all into words. Fortunately, they say a picture is worth a thousand words.

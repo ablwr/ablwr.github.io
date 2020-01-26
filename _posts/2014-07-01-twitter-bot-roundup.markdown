@@ -2,8 +2,7 @@
 layout: post
 title: "Twitter bot roundup"
 date: 2014-07-01 18:27:46 -0400
-comments: true
-categories: [twitter bots, side projects]
+tags: [twitterbots, flatiron]
 ---
 
 

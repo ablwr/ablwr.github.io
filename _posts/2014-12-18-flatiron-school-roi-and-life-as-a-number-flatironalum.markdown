@@ -2,8 +2,7 @@
 layout: post
 title: "Flatiron School ROI and life as a #FlatironAlum"
 date: 2014-12-18 19:45:10 -0500
-comments: true
-categories: [feelings, flatiron, confidence, comrades, cash]
+tags: [flatiron]
 ---
 
 I’m going to break this blog post up into three Cs.

@@ -2,6 +2,7 @@
 layout: post
 title: "What is a Minimum Viable Codec?"
 date: 2018-04-21
+tags: [recurse center, video]
 ---
 
 It's my third week at the Recurse Center and this question has been on my mind. What is a minimum viable codec? (And what is the least amount of work I could do to successfully create a codec?)  

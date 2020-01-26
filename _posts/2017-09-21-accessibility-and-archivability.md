@@ -2,6 +2,7 @@
 layout: post
 title: "Accessibility and Archivability"
 date: 2017-09-20
+tags: [accessibility, webdev, web preservation]
 ---
 
 Okay, so this is the follow-up post to [this](https://ablwr.github.io/blog/2017/09/20/how-do-web-archiving-frameworks-work/) (or, rather, that was the aperitif post to this one). I was at the Joint Meeting of New York City & Mid-Atlantic Archive-It partner groups at [METRO](http://metro.org/) a little while ago, and a question came up about how to best guide creators towards good practices in the website development stage, to better support future preservation efforts. There are some guides in place for this (jump to the bottom of this page for additional resources). But, like, I'm a developer. I threw out the idea that a good guideline to use was that if a website is *accessible*, it should also be *archivable*, that these guidelines can go hand-in-hand. And people building websites should already be concerned with accessibility and aware of related best practices (and if not, they are bad at their jobs and you should replace them with good people). That sounds good, but am I right? Am I wrong? I decided to make sure I wasn't totally full of shit, and here are the results.

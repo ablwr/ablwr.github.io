@@ -2,6 +2,7 @@
 layout: post
 title: "Minimum Viable Station Documentation"
 date: 2016-12-02
+tags: [collaboration, documentation, teaching, avpres]
 ---
 
 Hello, internet of people!

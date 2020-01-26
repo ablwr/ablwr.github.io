@@ -2,8 +2,7 @@
 layout: post
 title: "Rails Engage: rails generate"
 date: 2015-01-24 12:24:23 -0500
-comments: true
-categories: [rails engage, marleigh, generate]
+tags: [rails engage]
 ---
 
 ![](http://31.media.tumblr.com/d619155808e29c0d5005f4f663d11114/tumblr_mjfgq0AcrB1qd5tdto1_250.gif)

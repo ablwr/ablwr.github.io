@@ -2,6 +2,7 @@
 layout: post
 title: "Mapping the planets with Rust+WebAssembly+JavaScript+Canvas"
 date: 2018-05-05
+tags: [recurse center, webdev]
 ---
 
 I wanted to think of a small-ish project I could work on that uses Rust, WebAssembly, and JavaScript. One of the projects I thought would be fun to make while here at RC is something that gives the ability for people to map out where all the planets were in relation to Our Spaceship Earth on the day they were born. (This is like, an astrology thing, which I don't really throw down with, but I am really into understanding and identifying and computationally recreating elements of mysticism, so this is like 100% up my alley in that regard). There's a really great Wordpress plugin that will do all of this for you and also create a picture of what it looks like, which is what I wanted to do except in JavaScript. Oh, [here's](https://github.com/isabelc/zodiacpress) the library, it's great. Anyway, turns out this stuff is actually pretty hard and involves a lot of **M A T H**, which I've already articulated as a thing that I just never learned because I was homeschooled in South Carolina and straight up didn't feel like learning it. 

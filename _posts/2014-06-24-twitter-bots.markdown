@@ -2,8 +2,7 @@
 layout: post
 title: "The bots are coming! Twitter bots!"
 date: 2014-06-24
-comments: true
-categories: [twitter bots, side projects]
+tags: [twitterbots, flatiron]
 ---
 
 When I accepted a spot in the Flatiron School Ruby005 class, I knew my social life and, uh, casual internet-browsing life (?) would be cut dramatically down while I would be focusing all of my efforts on learning Ruby. I didn't want my friends to miss me too much (which is hard, since I also had to move from South Carolina to New York), so I decided to build a twitter bot that could tweet and talk to my friends.

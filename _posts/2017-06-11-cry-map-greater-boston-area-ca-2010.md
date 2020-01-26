@@ -2,6 +2,7 @@
 layout: post
 title: "Cry Map: Greater Boston Area, ca. 2010"
 date: 2017-06-11
+tags: [small projects]
 ---
 
 ![](/images/crymap.png)

@@ -2,6 +2,7 @@
 layout: post
 title: "ffmprovisr gets a redesign"
 date: 2017-10-31
+tags: [ffmpeg, ffmprovisr, webdev, teaching, design]
 ---
 
 # Introduction

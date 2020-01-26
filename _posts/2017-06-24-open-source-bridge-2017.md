@@ -2,6 +2,7 @@
 layout: post
 title: "Open Source Bridge 2017"
 date: 2017-06-23
+tags: [conferences]
 ---
 
 This week, I went to [Open Source Bridge](http://opensourcebridge.org/) in Portland, OR. It's a conference "for developers working with open source technologies and for people interested in learning the open source way." Usually I spend a lot of time taking notes for myself and others via tweeting, but this time I decided to chill on the tweets and try to wrap things up as a blog overview instead.

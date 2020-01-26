@@ -2,8 +2,7 @@
 layout: post
 title: "ffmprovisr at AMIA #AVhack15"
 date: 2015-11-28 17:09:47 -0500
-comments: true
-categories: amia, ffmprovisr
+tags: [ffmprovisr, conferences]
 ---
 
 For this year's hackday, I brought [ffmprovisr](https://amiaopensource.github.io/ffmprovisr) to the table. This was an app I made over a year ago that hadn't been given enough attention, primarily due to lack of time. My [fumbling pitch](http://wiki.curatecamp.org/index.php/Association_of_Moving_Image_Archivists_%26_Digital_Library_Federation_Hack_Day_2015#ffmprovsr) went something like this: "I think it'd be fun to combine and continue to build up these two projects into something better because ffmpeg continues to live on as a mysterious but necessary component of a/v archival practice. This project would be mostly R&D with some basic front-end web development skills (building forms). I feel this is a little out of the scope of hack day (and those greedy for rewards may seek refuge elsewhere) in that it's more of a REMIX project and a mostly-hack-the-docs-with-some-coding project, but if there is interest (there was last year, for ffmprovisr) -- we will build the hell outta this!"

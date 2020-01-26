@@ -2,6 +2,7 @@
 layout: post
 title: "Week 6 at Recurse Center: Halfway point!"
 date: 2018-05-11
+tags: [recurse center]
 ---
 
 "Stay true to your course, despite the visible obstacles ahead."

@@ -2,8 +2,7 @@
 layout: post
 title: "Coding guide for newbs"
 date: 2014-05-22
-comments: true
-categories: coding
+tags: [programming]
 ---
 
 

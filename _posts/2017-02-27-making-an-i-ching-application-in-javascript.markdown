@@ -2,6 +2,7 @@
 layout: post
 title: "Making an I Ching application in Javascript"
 date: 2017-02-27
+tags: [small projects]
 ---
 This is the process I used to go about building a small, for-fun webpage. I hope this can help demystify the process of building a website, even if just a little bit.
 

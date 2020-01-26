@@ -2,8 +2,7 @@
 layout: post
 title: "Creating closed captions for !!Con conference videos!!!"
 date: 2015-06-30 19:43:23 -0400
-comments: true
-categories: [conferences, volunteering, open source]
+tags: [conferences]
 ---
 
 Note: I wrote this up and added it to the !!Con [github README](https://github.com/hausdorff/bangbangcon.github.io/tree/gh-pages/2014-transcripts) but CC'ing it here for ~outreach~ purposes!

@@ -2,8 +2,7 @@
 layout: post
 title: "Rails Engage: Scoping"
 date: 2015-01-18 15:41:11 -0500
-comments: true
-categories: [rails engage, marleigh, project scoping]
+tags: [rails engage]
 ---
 
 ![](/images/guinan_gun.gif) ![](/images/guinan_gun2.gif)

@@ -2,8 +2,7 @@
 layout: post
 title: "Twitter Bots 2: Authorizing the Bot"
 date: 2014-06-25 12:54:34 -0400
-comments: true
-categories: [twitter bots, side projects]
+tags: [twitterbots, flatiron]
 ---
 
 For me, the hardest part of getting a Twitter bot up and running was negotiating with Twitter's API keys and application settings. The primary reason for this was probably that I kept getting overly excited and jumping ahead, trying to finish the project too soon. I first set up an app by registering my primary twitter account. Turns out that wasn't necessary at all, and I could access and download my tweets just by using [twurl](https://github.com/marcel/twurl) to collect authenticate and grab my main account's twitter archive. I THINK. Those authentication details went into a hidden file, .ebooksrc, in my computer's main user directory. I know because I had to break into it several times and switch out the keys in order to get it to work, but most users shouldn't need to open it again, once it's in there.

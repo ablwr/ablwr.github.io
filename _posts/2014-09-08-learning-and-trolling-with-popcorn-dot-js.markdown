@@ -2,8 +2,7 @@
 layout: post
 title: "Learning (and trolling) with Popcorn.js"
 date: 2014-09-08 11:01:02 -0400
-comments: true
-categories: [Flatiron, video, Popcorn.js]
+tags: [small projects, flatiron]
 ---
 
 Basically, I have a history of taking jokes too far. See also: [Tattoos of Avi’s face](http://instagram.com/p/ruP0rHjtbO/?modal=true). So when I was exploring [Mozilla](https://www.mozilla.org/)’s [Popcorn.js](http://popcornjs.org) and missing my Flatiron peers, I coded up a small app that would help me learn how to use Popcorn.js aaaaaaaand also troll my friends.

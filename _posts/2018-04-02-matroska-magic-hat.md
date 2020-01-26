@@ -2,6 +2,7 @@
 layout: post
 title: "Making a Matroska Magic Hat"
 date: 2018-04-02
+tags: [recurse center, video]
 ---
 
 Hello! This blog post is going to scratch an itch I've had for a long time and really don't know what prevented me from doing this when it first occurred to me years ago because it's very simple. The itch is storing a Matroska file inside a Matroska file. This will go into the steps I took to make the file and what you might be able to do with it later.

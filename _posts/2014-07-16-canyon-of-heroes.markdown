@@ -2,8 +2,7 @@
 layout: post
 title: "Canyon of Heroes"
 date: 2014-07-16 08:38:39 -0400
-comments: true
-categories: [history, past life, non-technical]
+tags: [flatiron]
 ---
 
 When walking to and from class every day at the bottom of Manhattan, I've noticed plates of text on the ground with a date and name of a famous person. I didn't realize what these signs were about until I was walking out of the southmost Bowling Green stop and saw the initial plaque on the ground:

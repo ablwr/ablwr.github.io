@@ -2,6 +2,7 @@
 layout: post
 title: "Second week at Recurse Center"
 date: 2018-04-13
+tags: [recurse center]
 ---
 
 While I'm settling into the new exciting pace of being at the Recurse Center, a lot of my feelings this week have been around trying to juggle all the other things in my life outside of RC and finding a way to feel at peace with those things. Working as a freelancer means that there are always things to follow up on and continue to mentally juggle even when work is not happening (which is important to know for people who are thinking of jumping into this line of work -- you really can't underestimate the amount of work that you will have to do that you don't get paid to do, and will happen before and after the time period in which you are actively working). So I worked hard to minimize work, and that isn't a problem, but there are some unanticipated THINGS to deal with that are a lot less fun than what I'd rather be doing.

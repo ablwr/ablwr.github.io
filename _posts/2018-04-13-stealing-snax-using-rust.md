@@ -2,6 +2,7 @@
 layout: post
 title: "Stealing snax using semicolons in Rust"
 date: 2018-04-13
+tags: [recurse center, rust]
 ---
 
 

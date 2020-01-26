@@ -2,6 +2,7 @@
 layout: post
 title: "Introducing: Audiovisual Preservation Training"
 date: 2017-12-22 09:16:00 -0400
+tags: [avpres, teaching]
 ---
 
 Hello! I think a proper introduction is in order.

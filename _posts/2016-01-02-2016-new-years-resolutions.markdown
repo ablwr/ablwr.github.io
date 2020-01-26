@@ -2,8 +2,7 @@
 layout: post
 title: "2016 new years resolutions"
 date: 2016-01-02 12:04:58 -0500
-comments: true
-categories: me, blatant disregard for category system
+tags: [annual report]
 ---
 
 ![](/images/coolstorybro.png)

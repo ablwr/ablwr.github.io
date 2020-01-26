@@ -2,8 +2,7 @@
 layout: post
 title: "Aspect Ratios in LEMONADE, Pt. 1"
 date: 2016-04-29 15:16:37 -0400
-comments: true
-categories: [Beyoncé, formation, audiovisual formats, aspect ratios]
+tags: [beyonce, avpres, video]
 ---
 
 Ashley note: Super shout out to [Peter Oleksik](https://twitter.com/PeterOleksik), Assistant Conservator at MoMA, who coauthored this blog post with me, was [the impetus for the post existing at all](https://twitter.com/PeterOleksik/status/724055418381733888), and provided very thorough factual information that turned my flippant guesswork-notes into real knowledge. Thank you, thank you Peter!!!

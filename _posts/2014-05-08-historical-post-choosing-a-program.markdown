@@ -2,8 +2,7 @@
 layout: post
 title: "Historical post: Choosing a program"
 date: 2014-05-08 22:43:15 -0400
-comments: true
-categories: [bootcamps, flatiron, iron yard, makersquare, big decisions]
+tags: [flatiron]
 ---
 
 I want to talk a little bit about how I decided to go with Flatiron School, the other schools I looked at, and the reasoning behind my decision.

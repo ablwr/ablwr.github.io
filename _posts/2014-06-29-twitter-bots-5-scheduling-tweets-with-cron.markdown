@@ -2,8 +2,7 @@
 layout: post
 title: "Twitter Bots 5: Scheduling tweets with Cron"
 date: 2014-06-29 21:24:56 -0400
-comments: true
-categories: [twitter bots, side projects]
+tags: [twitterbots, sysadmin, flatiron]
 ---
 
 Cron is a software utility that is used to schedule actions in time. It's great for handling reoccuring tasks. Twitter bots use a Cron statement to generate a tweet regularly. Cron tasks are super useful, but the syntax can be a little confusing and hard to remember.

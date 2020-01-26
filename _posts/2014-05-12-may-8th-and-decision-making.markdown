@@ -2,8 +2,7 @@
 layout: post
 title: "May 8th and decision-making."
 date: 2014-05-12 13:09:35 -0400
-comments: true
-categories: 
+tags: [personal]
 ---
 
 This post is gonna be super-cheesy. I wrote this on May 8th, which is an important day for me.

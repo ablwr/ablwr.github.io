@@ -2,8 +2,7 @@
 layout: post
 title: "Blogging for hackers."
 date: 2014-05-11 15:35:15 -0400
-comments: true
-categories: 
+tags: [personal]
 ---
 
 

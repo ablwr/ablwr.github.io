@@ -2,6 +2,7 @@
 layout: post
 title: "FFV1: Bigger than before"
 date: 2019-09-19 18:00:00 -0500
+tags: [ffmpeg, ffv1, avpres]
 ---
 
 ![bigger than before already-dated egg meme](/images/bigger-than-before.webp)

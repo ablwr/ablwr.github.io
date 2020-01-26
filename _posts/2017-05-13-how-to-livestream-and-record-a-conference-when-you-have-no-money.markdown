@@ -2,6 +2,7 @@
 layout: post
 title: "How to livestream and record a conference when you have no money"
 date: 2017-05-13
+tags: [conferences, teaching, video, livestream]
 ---
 
 I've explained this to so many people and thought about this so much that I had to check and make sure I definitely have not written about this on my blog before, but it turns out that I have not.

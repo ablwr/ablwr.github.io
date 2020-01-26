@@ -2,6 +2,7 @@
 layout: post
 title: "Parsing XML into a CSV with Ruby"
 date: 2016-09-21 15:16:37 -0400
+tags: [teaching, programming]
 ---
 
 So a short while ago, my friend Lorena posed this question...

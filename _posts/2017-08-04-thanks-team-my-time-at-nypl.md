@@ -2,6 +2,7 @@
 layout: post
 title: "Thanks, team: My time at the New York Public Library"
 date: 2017-08-04
+tags: [personal]
 ---
 
 *I said I wouldn't write a cheesy (or grumpy) Medium post about me leaving my current job, so I guess it's fortunate I have my own blogging platform and I don't have to be a hypocrite about it!* 😘  

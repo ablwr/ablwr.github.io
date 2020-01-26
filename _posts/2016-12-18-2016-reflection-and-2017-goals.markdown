@@ -2,6 +2,7 @@
 layout: post
 title: "2016 Reflection and 2017 Goals: Retrospective and refactoring"
 date: 2016-12-18 20:16:00 -0400
+tags: [annual report]
 ---
 
 Welcome to the Ashley Blewer annual report! It's that time of year again, where I start thinking about where I was at this time last year and where I am now. [Here](http://ablwr.github.io/blog/2016/01/02/2016-new-years-resolutions/) were my goals for 2016.

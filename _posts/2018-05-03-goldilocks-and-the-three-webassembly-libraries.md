@@ -2,6 +2,7 @@
 layout: post
 title: "The Story of Goldilocks and the Three WebAssembly Libraries"
 date: 2018-05-03
+tags: [recurse center, webdev]
 ---
 
 # 💁 🐻 🍨 🐻 🍨 🐻 🍨 🙆

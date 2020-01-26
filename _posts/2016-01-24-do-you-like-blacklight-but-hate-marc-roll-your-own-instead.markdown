@@ -2,8 +2,7 @@
 layout: post
 title: "Do you like Blacklight but hate MARC? Roll your own instead!: Indexing your non-MARC data into SOLR!"
 date: 2016-01-25 21:41:48 -0500
-comments: true
-categories: [rails, blacklight]
+tags: [webdev]
 ---
 
 [Blacklight](http://projectblacklight.org/) is a discovery layer intended for library catalog records, which is great. Hydra also uses Blacklight as its discovery layer. The foundation of Blacklight is built upon Rails and SOLR. Plus Bootstrap for style and Devise for user authentication. And the big bonus on top is easy MARC ingest to suit librarians. But what if you don’t have MARC records? After fussing around with getting SOLR to appreciate my beautiful, custom non-MARC data, I decided to just give up and do it myself. 

@@ -2,8 +2,7 @@
 layout: post
 title: "{Lets get digital}, talking about NDSR NY Symposium"
 date: 2016-04-30 16:30:47 -0400
-comments: true
-categories: [ndsr, digital preservation, conferences]
+tags: [conferences]
 ---
 
 Last Thursday, I attended [{Let’s Get Digital}](http://ndsr.nycdigital.org/ndsrsymposium/), a symposium hosted by the National Digital Stewardship Residence program (New York) for Preservation Week. (And thanks, also, to [Brooklyn Historical Society](http://www.brooklynhistory.org/) for hosting and [Archives Round Table of Metropolitan New York](http://www.nycarchivists.org/) (A.R.T.) for sponsoring!

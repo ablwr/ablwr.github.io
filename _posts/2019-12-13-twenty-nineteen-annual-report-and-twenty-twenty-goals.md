@@ -2,6 +2,7 @@
 layout: post
 title: "Twenty Nineteen Annual Report and Twenty Twenty Goals"
 date: 2019-12-13 07:00:00 -0500
+tags: [annual report]
 ---
 
 Welcome (back?) to the Ashley Blewer annual report. This is the sixth year running! [Here](https://bits.ashleyblewer.com/blog/2018/12/20/twenty-nineteen-annual-report/) is last year's. 

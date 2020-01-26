@@ -2,8 +2,7 @@
 layout: post
 title: "Rails Engage!"
 date: 2015-01-10 20:36:19 -0500
-comments: true
-categories: [rails engage, marleigh]
+tags: [rails engage]
 ---
 
 ![engage picard](/images/tng-engage.gif)

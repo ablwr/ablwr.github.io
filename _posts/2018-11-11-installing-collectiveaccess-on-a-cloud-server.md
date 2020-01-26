@@ -2,6 +2,7 @@
 layout: post
 title: "Installing CollectiveAccess on a cloud server"
 date: 2018-11-11
+tags: [sysadmin]
 ---
 
 I've worked with CollectiveAccess (an open source collections management system for galleries, libraries, archives, and museums, see website [here](https://collectiveaccess.org/)) on-and-off for around four years. I helped with the creation of digital backups and frontend design and development for the [LaMaMa Digital Archives](http://catalog.lamama.org/), a Dance Heritage Coalition project, and I have been working this year on the development of an archive (physical and digital, with me working on the digital preservation and access components) for the [Mark Morris Dance Group](https://markmorrisdancegroup.org/). When I came into the project, the system had already been installed on a local "server" (a Mac). There were some lingering configuration issues that manifested as bugs experienced by the users when doing cataloging work. Also, as the project grows and prepares to live a full life outside of the dance center's basement, we are now ready to move to what will eventually be a public access portal.

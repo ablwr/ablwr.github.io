@@ -2,8 +2,7 @@
 layout: post
 title: "Using videogrep to make supercuts"
 date: 2014-07-22 22:36:12 -0400
-comments: true
-categories: [video, python]
+tags: [small projects, video, flatiron]
 ---
 
 [Videogrep](https://github.com/antiboredom/videogrep) is a Python-based application that searches through a video file using its subtitles track and can cut video clips based on its search criteria.

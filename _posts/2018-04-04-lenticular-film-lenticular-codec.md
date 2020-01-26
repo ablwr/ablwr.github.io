@@ -2,6 +2,7 @@
 layout: post
 title: "Lenticular film, lenticular codec"
 date: 2018-04-04
+tags: [recurse center, codecs, video]
 ---
 
 Today I explored Reto Kromer's [Lenticular codec](https://github.com/amiaopensource/lenticular) (original code written by Joakim Reuteler in 2012, adapted and added to AMIA Open Source in 2017-2018) because it is available, it is open, I know the author (always helps), it is written in C, and I know about lenticular film.

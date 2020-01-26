@@ -2,8 +2,7 @@
 layout: post
 title: "Non-technical person's guide to becoming an open source software contributor via Github"
 date: 2014-11-03 21:53:42 -0500
-comments: true
-categories: [github, tutorial, education, amia]
+tags: [teaching, conferences, open source]
 ---
 
 A month ago, I was (lightly, ...I think) called out for bailing on speaking about [QCTools](www.bavc.org/qctools) for the Association of Moving Image Archivists conference. Nevermind the bait-and-switch last-minute-surprise-you’re-speaking scenario I had landed myself in and that I really really did want to see my pals give a talk on BitTorrent and private tracker communities as archives, I did still feel a twinge of guilt for dropping out last minute. Sorry, guys. The BitTorrent panel was pretty baller, though, and Lauren Sorensen did an excellent survey of using git from the command line earlier in the day.

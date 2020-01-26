@@ -2,8 +2,7 @@
 layout: post
 title: "Breaking down conference speakers by gender using Nokogiri and SexMachine"
 date: 2014-09-28 14:32:49 -0400
-comments: true
-categories: [weekend projects, Ruby, Nokogiri, Sex Machine, data]
+tags: [conferences]
 ---
 
 Last week, I was in converesation with some peers in the moving image archiving, preservation, conservation, (et al...) field and we were discussing ways to improve and empower the roles that women in the field have. One of the things that came up was it'd be interesting to see the breakdown over time of the people presenting at the annual [Association of Moving Image Archivists](http://amianet.org) [conference](http://www.amiaconference.com) and whether it was appropriately stacked in terms of gender.

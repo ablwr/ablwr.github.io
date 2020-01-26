@@ -2,6 +2,7 @@
 layout: post
 title: "NTTW3 and making conferences more accessible"
 date: 2018-10-28
+tags: [conferences, avpres, open source, accessibility]
 ---
 
 No Time To Wait 3: We just got finished with a [truly inspiring conference](https://mediaarea.net/NoTimeToWait3), as always, and as always I'm filled with ideas about both how to do audiovisual digital preservation better. But also I'm filled with ideas on how to do conferences better.

@@ -2,8 +2,7 @@
 layout: post
 title: "Guest post: Show Your Work: Why I know commenting your code is bad"
 date: 2015-11-10 00:22:31 -0500
-comments: true
-categories: guest, programming
+tags: [guestpost, programming]
 ---
 
 I've been kinda bad at blogging. I have a new job and some old jobs and lots of things that keep me from introspecting on code and archives. Fortunately I have great friends, and one of those friends is Kathryn Gronsbell, who reached out to me as an emerging developer (whether she thinks so or not) and wanted to write a *guest blog post*! As for me, a person who has very recently had to take on the codebase of at least five web complex and non-similar applications at my job... I can appreciate some good commenting. Commented-OUT code, on the other hand...

@@ -2,6 +2,7 @@
 layout: post
 title: "First week at Recurse Center"
 date: 2018-04-06
+tags: [recurse center]
 ---
 
 Okay. How do I talk about this?

@@ -2,6 +2,7 @@
 layout: post
 title: "Beyoncé's HOMECOMING: Film, film, and video"
 date: 2019-04-29 02:00:00 -0500
+tags: [beyonce, avpres, film, video]
 ---
 
 What would this blog be, if not a platform waiting to look extra extra closely

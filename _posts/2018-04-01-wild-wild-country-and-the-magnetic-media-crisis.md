@@ -2,6 +2,7 @@
 layout: post
 title: "Wild Wild Country and the Magnetic Media Crisis"
 date: 2018-04-01 02:00:00 -0500
+tags: [video]
 ---
 
 Wild Wild Country is a six-part documentary series from Netflix about the [Rajneesh Movement](https://en.wikipedia.org/wiki/Rajneeshpuram) and especially their attempt to build a utopian city in rural Oregon in the 1980s. To tell this story, the documentary relies very heavily on archival regional television footage and "home movie" footage. And, as countless people have noted, mostly look terrible. This is largely just the state of the tapes (your home movies also probably look terrible), but I did notice that there was a lot of aesthetic choices in finding some particularly eggregious errors and using them to push the narrative forward, like when something particularly dramatic happens (although the entire saga is quite dramatic overall!). 

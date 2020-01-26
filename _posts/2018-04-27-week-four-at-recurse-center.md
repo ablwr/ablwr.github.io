@@ -2,6 +2,7 @@
 layout: post
 title: "Week 4 of 12 at Recurse Center"
 date: 2018-04-27
+tags: [recurse center]
 ---
 
 Feelings! Feelings! Feelings! 

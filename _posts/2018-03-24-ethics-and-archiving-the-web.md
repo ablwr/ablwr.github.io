@@ -2,6 +2,7 @@
 layout: post
 title: "Ethics and Archiving the Web"
 date: 2018-03-24 19:16:00 -0500
+tags: [conferences, conservation]
 ---
 
 A couple of months ago, I got an email asking me if I'd be on a panel at an upcoming conference held at the New Museum, "[Ethics and Archiving the Web](https://eaw.rhizome.org/)." What an honor! And this past weekend, the conference took place. I've been feeling a little bit burned out by conferences over the past year or so, primarily because I felt tired of like-minded people telling each other what they should be doing, while the audience nods along, reinforcing their ideas but essentially just only speaking to each other. I feel this way outside of conferences too. 

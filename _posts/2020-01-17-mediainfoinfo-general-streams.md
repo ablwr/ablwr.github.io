@@ -2,6 +2,7 @@
 layout: post
 title: "MediaInfoInfo: General streams"
 date: 2020-01-17 03:00:00 -0500
+tags: [mediainfoinfo]
 ---
 
 This is the third in a series of blog posts on a project I call "MediaInfoInfo". This project is focused on improving documentation for the ubiquitous media analysis tool [MediaInfo](https://mediaarea.net/MediaInfo). After the [initial project idea](https://bits.ashleyblewer.com/blog/2020/01/10/mediainfoinfo-initialize-project/) and [initial project plan](https://bits.ashleyblewer.com/blog/2020/01/17/mediainfoinfo-parameters-making-a-plan/), this post will focus on work on the first and largest section of parameters: the General stream.

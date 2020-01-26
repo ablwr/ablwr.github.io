@@ -2,6 +2,7 @@
 layout: post
 title: "Weeks 7 and 8 at Recurse Center"
 date: 2018-05-28
+tags: [recurse center]
 ---
 
 Well, did I fall off the blogging wagon? Two weeks ago was [Never Graduate Week](https://www.recurse.com/blog/114-never-graduate-week-2017-how-we-planned-and-ran-our-annual-alumni-week) at Recurse Center, which means alums get to return to the space and there's a lot of activity, a LOT more people, and just a lot of everything more. I feel like I spent around half of this time rolling around in this "a lot-ness" ([!!Con](http://bangbangcon.com/) was also this week) and half of it quietly resting. And last week, we got a new, fresh batch of people joining us for my batch's final six weeks, along with half a dozen people visiting for one week, which overall resulted in the same feelings as my own first week: Feeling disoriented, scattered, overwhelmed, with so many new interesting people to meet (and names to learn), and lots of new information.

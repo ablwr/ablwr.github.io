@@ -2,6 +2,7 @@
 layout: post
 title: "Considering Rust ...for Video"
 date: 2018-04-10
+tags: [recurse center, rust, video]
 ---
 
 This is a follow up on my [last post](http://bits.ashleyblewer.com/blog/2018/04/09/considering-rust/). After playing with Rust for the first time last Saturday (thanks Casey), I did a whole bundle of reading about it the next day, Sunday. I also got some tips from [Kieran O'Leary](https://twitter.com/kieranjol) on some work that had been done in the open source media space with Rust and that sent me into a spiral and flooded my [RC syllabus](https://github.com/ablwr/my-recurse-center-syllabus) with links.

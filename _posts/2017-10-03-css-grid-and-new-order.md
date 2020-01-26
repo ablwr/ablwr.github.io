@@ -2,6 +2,7 @@
 layout: post
 title: "CSS Grid and New Order"
 date: 2017-10-03
+tags: [webdev]
 ---
 
 Hi! 👋 I gave my [website](http://ashleyblewer.com/) a makeover. I gave it many makeovers! Here's how that went for me last Sunday, bored and unwilling to do actually-productive and meaningful things. This is what I did and a love letter to [CSS Grid Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout).

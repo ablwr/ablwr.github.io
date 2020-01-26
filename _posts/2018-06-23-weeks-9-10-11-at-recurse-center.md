@@ -2,6 +2,7 @@
 layout: post
 title: "Weeks 9, 10, 11 at Recurse Center"
 date: 2018-06-23
+tags: [recurse center]
 ---
 
 Where did I go? As mentioned in the [last post](https://bits.ashleyblewer.com/blog/2018/05/28/weeks-7-and-8-at-recurse-center/), I definitely started to fall off the blogging wagon in this last quarter of Recurse Center, which (after a lot of reflection have concluded) is for a few reasons, and here they are:

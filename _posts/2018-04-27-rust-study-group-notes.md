@@ -2,6 +2,7 @@
 layout: post
 title: "Rust Study Group Notes"
 date: 2018-04-27
+tags: [recurse center, rust]
 ---
 
 *Editors note: Something I love so much about Recurse Center is the amazing, interesting, knowledgeable people in this space. I initiated a study group to learn more about Rust and here are the notes from the first gathering. Meta-note, this is more for our benefit than for yours, the general public, but I hope it may be useful for casual browsers, potentially, so I am posting a modified version here instead of purely in a private document.*
