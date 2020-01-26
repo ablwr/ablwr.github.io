@@ -2,7 +2,7 @@
 layout: post
 title: "Format-ion: Video playback errors in Beyoncé’s latest music video"
 date: 2016-02-08 20:19:34 -0500
-tags: [beyonce, avpres]
+tags: [beyonce, pop culture]
 ---
 
 Update: There are a few other blog posts in this series --

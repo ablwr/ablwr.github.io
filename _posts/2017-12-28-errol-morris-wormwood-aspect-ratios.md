@@ -2,7 +2,7 @@
 layout: post
 title: "Aspect ratios in Errol Morris's Wormwood"
 date: 2017-12-28 17:16:00 -0400
-tags: [video, film, avpres]
+tags: [pop culture]
 ---
 
 Thanks to Peter Oleksik for sending me this "tip" last week: 

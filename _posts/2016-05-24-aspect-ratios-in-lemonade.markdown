@@ -2,7 +2,7 @@
 layout: post
 title: "Aspect Ratios in LEMONADE, Pt. 2"
 date: 2016-05-24 15:16:37 -0400
-tags: [beyonce, avpres, video]
+tags: [beyonce, pop culture]
 ---
 
 Hello! I’m wrapping up this (very) brief LEMONADE series by talking about home movies! This is a little bit about aspect ratios but maybe a little bit more about preservation issues with home movies. If you haven't, its worth catching up in [Pt. 1 right here](http://ablwr.github.io/blog/2016/04/29/lemonade/), because this picks up where that aspect ratio context left off.

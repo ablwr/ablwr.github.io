@@ -2,7 +2,7 @@
 layout: post
 title: "Artist_Exhibition-copy (FINAL)(2).mov: Preserving diacritics in filenames as significant properties in media conservation"
 date: 2019-06-17 09:00:00 -0500
-tags: [diacritics, conservation]
+tags: [sysadmin, conservation]
 ---
 
 ![welcome](/images/welcome-sign.gif)
