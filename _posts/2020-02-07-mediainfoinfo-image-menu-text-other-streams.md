@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MediaInfoInfo: Image, Menu, Text, and Other streams"
-date: 2020-01-07 06:00:00 -0500
+date: 2020-02-07 06:00:00 -0500
 tags: [mediainfoinfo]
 ---
 
