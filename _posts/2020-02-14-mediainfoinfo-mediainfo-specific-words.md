@@ -7,7 +7,7 @@ tags: [mediainfoinfo]
 
 This is the seventh in a series of blog posts on a project I call "MediaInfoInfo" (with weekly associated blog posts). This project is focused on improving documentation for the ubiquitous media analysis tool [MediaInfo](https://mediaarea.net/MediaInfo).
 
-Previous posts:
+Other posts:
 
 1. [MediaInfoInfo: Initialize project](https://bits.ashleyblewer.com/blog/2020/01/10/mediainfoinfo-initialize-project/)
 2. [MediaInfoInfo: Parameters / making a plan](https://bits.ashleyblewer.com/blog/2020/01/17/mediainfoinfo-parameters-making-a-plan/)
@@ -15,6 +15,8 @@ Previous posts:
 4. [MediaInfoInfo: Video streams](https://bits.ashleyblewer.com/blog/2020/01/24/mediainfoinfo-video-streams/)
 5. [MediaInfoInfo: Audio streams](https://bits.ashleyblewer.com/blog/2020/01/31/mediainfoinfo-audio-streams/)
 6. [MediaInfoInfo: Image, Menu, Text and Other streams](https://bits.ashleyblewer.com/blog/2020/02/07/mediainfoinfo-image-menu-text-other-streams/)
+7. MediaInfoInfo: MediaInfo-specific words
+8. [MediaInfoInfo: Metadata Tags](https://bits.ashleyblewer.com/blog/2020/02/21/mediainfoinfo-metadata-tags/)
 
 # MediaInfo-specific words
 

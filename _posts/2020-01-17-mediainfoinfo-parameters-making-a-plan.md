@@ -9,6 +9,17 @@ This is the second of what will be a series of blog posts on a project I call "M
 
 Following up on the [initial post](https://bits.ashleyblewer.com/blog/2020/01/10/mediainfoinfo-initialize-project/), it's time to dig into what some of these parameters are and how they are set up. This post is still a bit more "meta" and talking about taking on the project itself, but don't worry -- the next post will be getting into the details of the General stream (aka the container/wrapper).
 
+Other posts:
+
+1. [MediaInfoInfo: Initialize project](https://bits.ashleyblewer.com/blog/2020/01/10/mediainfoinfo-initialize-project/)
+2. MediaInfoInfo: Parameters / making a plan
+3. [MediaInfoInfo: General streams](https://bits.ashleyblewer.com/blog/2020/01/17/mediainfoinfo-general-streams/)
+4. [MediaInfoInfo: Video streams](https://bits.ashleyblewer.com/blog/2020/01/24/mediainfoinfo-video-streams/)
+5. [MediaInfoInfo: Audio streams](https://bits.ashleyblewer.com/blog/2020/01/31/mediainfoinfo-audio-streams/)
+6. [MediaInfoInfo: Image, Menu, Text and Other streams](https://bits.ashleyblewer.com/blog/2020/02/07/mediainfoinfo-image-menu-text-other-streams/)
+7. [MediaInfoInfo: MediaInfo-specific words](https://bits.ashleyblewer.com/blog/2020/02/14/mediainfoinfo-mediainfo-specific-words/)
+8. [MediaInfoInfo: Metadata Tags](https://bits.ashleyblewer.com/blog/2020/02/21/mediainfoinfo-metadata-tags/)
+
 The MediaInfo parameters are essentially divided up like so:
 
 - Audio -- 280 lines

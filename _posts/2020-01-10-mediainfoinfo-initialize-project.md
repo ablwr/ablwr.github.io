@@ -7,8 +7,16 @@ tags: [mediainfoinfo]
 
 This is the first of what will be a series of blog posts (probably) on a project I call "MediaInfoInfo". This project is focused on improving documentation for the ubiquitous media analysis tool [MediaInfo](https://mediaarea.net/MediaInfo).
 
-See also:
-- 2. [MediaInfoInfo: Parameters / making a plan](https://bits.ashleyblewer.com/blog/2020/01/17/mediainfoinfo-parameters-making-a-plan/)
+Other posts:
+
+1. MediaInfoInfo: Initialize project
+2. [MediaInfoInfo: Parameters / making a plan](https://bits.ashleyblewer.com/blog/2020/01/17/mediainfoinfo-parameters-making-a-plan/)
+3. [MediaInfoInfo: General streams](https://bits.ashleyblewer.com/blog/2020/01/17/mediainfoinfo-general-streams/)
+4. [MediaInfoInfo: Video streams](https://bits.ashleyblewer.com/blog/2020/01/24/mediainfoinfo-video-streams/)
+5. [MediaInfoInfo: Audio streams](https://bits.ashleyblewer.com/blog/2020/01/31/mediainfoinfo-audio-streams/)
+6. [MediaInfoInfo: Image, Menu, Text and Other streams](https://bits.ashleyblewer.com/blog/2020/02/07/mediainfoinfo-image-menu-text-other-streams/)
+7. [MediaInfoInfo: MediaInfo-specific words](https://bits.ashleyblewer.com/blog/2020/02/14/mediainfoinfo-mediainfo-specific-words/)
+8. [MediaInfoInfo: Metadata Tags](https://bits.ashleyblewer.com/blog/2020/02/21/mediainfoinfo-metadata-tags/)
 
 My initial idea was to have a slow-moving drive-by hackday-esque event where folks could contribute details, research, and feedback to the changes I would be proposing within MediaInfo, and I can collect and concatenate and parse through these extra details to come up with the best definition of each of the parameters. I wrestled with this for a long time. GitHub is still, for many, an intimidating space. Google Docs would become extremely sluggish with the necessary size of a document like this. Google Sheets is okay but it's not as easy to have robust commenting or version control. (Yes, both are in Google Sheets, but they are somewhat hidden features, relative to how I am used to working.) I didn't think too much about the "too many cooks in the kitchen" problem, but as I thought through this project, I did think about how most of the feedback I am likely to personally receive is going to come from the audiovisual preservation/conservation sector. I don't want to bias the definitions to that relatively small sector when MediaInfo is used widely in technology in general, and thus should have generic technical definitions, and I wanted to keep that perspective.
 

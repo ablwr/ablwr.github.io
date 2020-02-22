@@ -7,6 +7,17 @@ tags: [mediainfoinfo]
 
 This is the third in a series of blog posts on a project I call "MediaInfoInfo". This project is focused on improving documentation for the ubiquitous media analysis tool [MediaInfo](https://mediaarea.net/MediaInfo). After the [initial project idea](https://bits.ashleyblewer.com/blog/2020/01/10/mediainfoinfo-initialize-project/) and [initial project plan](https://bits.ashleyblewer.com/blog/2020/01/17/mediainfoinfo-parameters-making-a-plan/), this post will focus on work on the first and largest section of parameters: the General stream.
 
+Other posts:
+
+1. [MediaInfoInfo: Initialize project](https://bits.ashleyblewer.com/blog/2020/01/10/mediainfoinfo-initialize-project/)
+2. [MediaInfoInfo: Parameters / making a plan](https://bits.ashleyblewer.com/blog/2020/01/17/mediainfoinfo-parameters-making-a-plan/)
+3. MediaInfoInfo: General streams
+4. [MediaInfoInfo: Video streams](https://bits.ashleyblewer.com/blog/2020/01/24/mediainfoinfo-video-streams/)
+5. [MediaInfoInfo: Audio streams](https://bits.ashleyblewer.com/blog/2020/01/31/mediainfoinfo-audio-streams/)
+6. [MediaInfoInfo: Image, Menu, Text and Other streams](https://bits.ashleyblewer.com/blog/2020/02/07/mediainfoinfo-image-menu-text-other-streams/)
+7. [MediaInfoInfo: MediaInfo-specific words](https://bits.ashleyblewer.com/blog/2020/02/14/mediainfoinfo-mediainfo-specific-words/)
+8. [MediaInfoInfo: Metadata Tags](https://bits.ashleyblewer.com/blog/2020/02/21/mediainfoinfo-metadata-tags/)
+
 The General stream summarizes the container information for a file. Sometimes this is known as the wrapper. And sometimes, this is assumed to be all the information about a file because it conveys what the file extension will be. But it doesn't give information from any of the codecs inside. Containers are all different -- some are very assertive and can contain a lot of information that influences how the file plays back, and others are very open and leave those decisions to the codec. Sorry -- it's complicated and can be hard to summarize so breezily!
 
 Here are some highlights and painpoints from me going through all of the parameters for the General stream in MediaInfo. Many of these are applicable to all of the streams, but this is where I am first encountering them and want to get the definitions in a strong place, since they will eventually be repeated across the other streams.
