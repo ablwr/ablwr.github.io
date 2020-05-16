@@ -15,7 +15,7 @@ What are small and reasonable ways that access can be provided to open up this c
 
 I envisioned this as a series of explorations rather than one final project. This project is already dangerously close to my full-time work. Meaningful archival access is essentially what I already do all day every day. I am in the rare and lucky position of truly enjoying the work that I do, but it doesn't mean it isn't work. But so much of work is about maintaining systems over time, being stewards of those systems, and having to push on to catch all the weird edge cases until everything is perfect. So my compromise with this project was that I will be able to explore one aspect of access until I get to the point where I feel satisfied, or it starts to feel like work. And then I will stop. For example, I have no interested in [rebuilding a CMS](https://docs.google.com/spreadsheets/d/1cXOug3qM0pNNeD_wssiVEv9c0W1Y5I1VDTnSPTk7fb4/edit?ts=5ca9a929#gid=0) in 5 days.
 
-I don't know if it will be ready by the time I post this, but I am working on a webpage that contextualizes and links to all of the parts of this project. If this goes first, I'll update later.
+I don't know if it will be ready by the time I post this, but I am working on a webpage that contextualizes and links to all of the parts of this project. If this goes first, I'll update later. STAY TUNED FOR WORKING DEMOS.
 
 So for this blog post, this is going to be more like a series of fragmented notes that I wrote down while working on things, with some light context provided for you, dear reader (and for future me). It's not cleaned and tidy -- maybe I'll clean and tidy it in the future for something more formal.
 
