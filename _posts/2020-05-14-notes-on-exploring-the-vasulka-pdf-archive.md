@@ -5,6 +5,8 @@ date: 2020-05-14 09:00:00 -0500
 tags: [programming, personal, recurse center, small projects, webdev]
 ---
 
+Update: Project page is [now up, here](http://bits.ashleyblewer.com/vasulka/)! Go there if you want demos and a high-level overview of this project.
+
 In anticipation of Recurse Center's Never Graduate Week (essentially an alumni week time of celebration), a week I had planned to take off from work, I started to think of projects that might fit well into the scope of just one week, both at the angle of R&D work but also technical work. Stumbling through old notes (where my R&D projects hibernate), I came across the [Vasulka PDF Archive](http://vasulka.org/archive/sitemap.html), an open collection of documents from Steina and Woody Vasulka, video artists and founders of The Kitchen art space.
 
 I think it's incredible to have acces to a collection like this, just plopped down on the web. I think this collection was arranged and digitized in 2010 or something, and that's apparent from the web design, which hasn't been updated since. We've come a really long way in the past ten years on the web, and meaningful archival access -- something I'm super passionate about, obviously! -- can be so much more than just links.
