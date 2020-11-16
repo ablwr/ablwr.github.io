@@ -5,7 +5,7 @@ date: 2020-11-16 08:00:00 -0500
 tags: [personal, small projects, web preservation]
 ---
 
-*The below draft was included in [Screen Slate](https://www.screenslate.com/)'s ["The Year the Internet Broke"](https://screenslate.bigcartel.com/product/net95), a publication corresponding with a film series held at [Anthology Film Archive](http://anthologyfilmarchives.org/film_screenings/series/52157) earlier this year, right before the big shutdown of 2020 and the last time I used the subway, walked in Manhattan, saw people casually, hugged a person I don't live with, and ate at a restaurant this year. Copies still available through the link above, and it goes towards supporting this excellent and dedicated group covering NYC alternative cinema (and during the pandemic, global distributions).*
+*The below writing was included in [Screen Slate](https://www.screenslate.com/)'s ["The Year the Internet Broke"](https://screenslate.bigcartel.com/product/net95), a publication corresponding with a film series held at [Anthology Film Archive](http://anthologyfilmarchives.org/film_screenings/series/52157) earlier this year, right before the big shutdown of 2020 and the last time I used the subway, walked in Manhattan, saw people casually, hugged a person I don't live with, and ate at a restaurant. Copies still available through the link above, and it goes towards supporting this excellent and dedicated group covering NYC alternative cinema (and during the pandemic, global distributions).*
 
 ![MTV Tikkiland](/images/tikkiland1.png)
 
