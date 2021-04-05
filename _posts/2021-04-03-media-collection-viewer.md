@@ -13,6 +13,8 @@ tags: [programming, recurse center, small projects, webdev, video, avpres]
 
 I've spent the last few weekends working on this thing, tentatively titled [Media Collection Viewer](http://bits.ashleyblewer.com/media-collection-viewer/) (and it seems like that name might just stick!). The way it works is that you provide it with a valid JSON file derived from the audiovisual file analysis tool [MediaInfo](https://mediaarea.net/en/MediaInfo) and it produces charts based on that data, so that you can get a broad understanding of the files you are having to handle.
 
+(Note: Through some testing, I found out that older versions of MediaInfo won't give you valid JSON -- there's a gap between the experimental feature and when it became functional. oops! I think version 18.08-1 is when this was addressed; I mostly tested with v20.03.)
+
 I think this fills a few needs in the archives field and beyond, which are:
 
 - Discovering/receiving a hard drive full of videos, but you don't know much about them, or even about video in general. I encouter this pretty frequently at my job, and it helps to know what the overall specification of the files are (beyond their file extensions, which can be misleading and not tell the whole story) in order to provide recommendations for preservation management.
