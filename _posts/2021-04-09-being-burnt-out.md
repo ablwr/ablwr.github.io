@@ -54,5 +54,7 @@ Coffee chats, small casual interactions, talking it out, etc.
 **Magnesium or marijuana**  
 I've been recommended both. I do take the former, which is great for a lot of reasons! The latter just doesn't work well with me, which seems to maybe be a genetic kind of thing because my mom feels the same way (makes everything worse instead of any better).
 
+**Caring less**
+I've been told this over and over about everything for my entire life. Care less about work, don't actually work very hard, and your job/career/employer cannot love you back.
 
 This is not meant to be a comprehensive list, but it can be difficult to see what the recommendations from other people are on Twitter, given how it often obfuscates tweets in a thread and it can be very unhelpful to follow the whole story unless you are the one seeing it all (and even then, there were several tweets to me that I didn't see in my notifications at all, for no good reason -- from people I mutually follow and happen to really like!).
