@@ -57,4 +57,7 @@ I've been recommended both. I do take the former, which is great for a lot of re
 **Caring less**
 I've been told this over and over about everything for my entire life. Care less about work, don't actually work very hard, and your job/career/employer cannot love you back.
 
+**No caffeine**
+No one mentioned this but I don't think I would have made it to this point if I hadn't cut coffee out at the beginning of the pandemic. I miss drinking coffee but I don't miss the surprise anxiety and I don't have trouble sleeping.
+
 This is not meant to be a comprehensive list, but it can be difficult to see what the recommendations from other people are on Twitter, given how it often obfuscates tweets in a thread and it can be very unhelpful to follow the whole story unless you are the one seeing it all (and even then, there were several tweets to me that I didn't see in my notifications at all, for no good reason -- from people I mutually follow and happen to really like!).
