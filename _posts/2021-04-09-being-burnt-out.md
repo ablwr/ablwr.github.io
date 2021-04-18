@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Being burnt out"
+title: "Community-derived suggestions for handling burnout"
 date: 2021-04-09 09:00:00 -0500
 tags: [personal]
 ---
