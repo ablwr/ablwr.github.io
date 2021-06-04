@@ -173,3 +173,4 @@ Not going to go into all of these, but some to specifically be aware of when wor
 - [WebRTC for the Curious](https://webrtcforthecurious.com/)
 - [WebRTC 1.0: Real-Time Communication Between Browsers](https://w3c.github.io/webrtc-pc/), W3C JavaScript (technically ECMAScript) API
 - [WebRTC Glossary](https://webrtcglossary.com/) - Everything I've covered and more!
+- [I know X, what does WebRTC get me? - Sean DuBois | January 2021](https://www.youtube.com/watch?v=s4zBbyNgaMc)
