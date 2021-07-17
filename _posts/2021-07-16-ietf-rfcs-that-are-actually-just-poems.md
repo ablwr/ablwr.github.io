@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "IETF RFCs that are actually just poems"
-date: 2021-07-19 12:00:00 -0500
+date: 2021-07-16 12:00:00 -0500
 tags: [open source, webdev]
 ---
 
