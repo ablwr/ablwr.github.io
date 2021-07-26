@@ -13,3 +13,9 @@ This blog post is very short, but I just had to get these out of my head!
 - September 1989 ["Act One - The Poems"](https://tools.ietf.org/html/rfc1121) 
 - February 1992 [Remembrances of Things Past](https://tools.ietf.org/html/rfc1300)
 - December 1995 [The 12-Days of Technology Before Christmas](https://tools.ietf.org/html/rfc1882)
+
+
+Not poems but close:
+
+- September 1989  [The hitchhiker's guide to the internet](https://datatracker.ietf.org/doc/html/rfc1118)
+- 1 April 1994 [A VIEW FROM THE 21ST CENTURY](https://tools.ietf.org/html/rfc1607) (There are many April Fools Day RFCs but I like this one the best)
