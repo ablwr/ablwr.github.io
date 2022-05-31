@@ -2,7 +2,7 @@
 layout: post
 title: "I accidentally started making a book"
 date: 2022-05-09 09:00:00 -0500
-tags: [personal, productivity, book]
+tags: [book]
 ---
 
 (Why I said making instead of writing will become obvious quickly)
