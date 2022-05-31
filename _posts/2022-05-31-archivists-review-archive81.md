@@ -173,7 +173,7 @@ Moving from an analog format over to digital, it doesn't seem like RGB would mak
 
 Including this image just to emphasize that this doesn't happen while digitizing tapes.
 
-Dan moves from doing his job of rehousing Hi-8 tapes to reehousing his personal VHS that he brought with him (or maybe it is magically there?). It's the same style of process. In fact, it's easier because the VHS tape width is wider and easier to manage than Hi8 tapes that are half the size.
+Dan moves from doing his job of rehousing Hi8 tapes to rehousing his personal VHS that he brought with him (or maybe it is magically there?). It's the same style of process. In fact, it's easier because the VHS tape width is wider and easier to manage than Hi8 tapes that are half the size.
 
 
 
