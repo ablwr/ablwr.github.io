@@ -150,7 +150,7 @@ useDailyEvent(
 )
 ```
 
-Okay, those are some of my quick notes! Hope you [enjoy](https://aura-reader-for-two.vercel.app/) and please [let me know](https://github.com/ablwr/aura-reader-for-two) of any awkward bugs you find -- I'm sure there are PLENTY because I've barely tested it myself! 
+Okay, those are some of my quick notes! Hope you [enjoy](https://aura-reader-for-two.vercel.app/) and please [let me know](https://github.com/ablwr/aura-reader-for-two) of any awkward bugs you find -- I'm sure there are PLENTY because side projects are for fun and I quit as soon as it's not fun!
 
 ![aura](/images/aura-mobile.jpg)
 
