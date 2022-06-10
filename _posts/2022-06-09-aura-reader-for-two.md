@@ -9,7 +9,7 @@ This blog post starts with a contextual-maybe-philosophical overview and then go
 
 ## The first part
 
-![aura](/images/new-aura.jpg)
+![aura](/images/aura-cover.jpg)
 
 Two years ago, I made a a little [aura reader](https://bits.ashleyblewer.com/aura-reader-2020/), as part of an ongoing series I've been doing on-and-off around techno-divination and mysticism (the other two are [the i-ching](https://bits.ashleyblewer.com/i-ching/) and the [barthes-tarot](http://bits.ashleyblewer.com/barthes-tarot/)). I want to tackle tea-leaves next!
 
@@ -27,7 +27,7 @@ I thought I had written a blog post about the first aura reader, but I guess I h
 Three years into a pandemic, it's still nice to be able to connect with people who are far away, either long-term or short-term.
 
 
-![aura](/images/new-aura-2.jpg)
+![aura](/images/new-aura.jpg)
 
 So again, this works a bit like a performance piece -- you have to already be in sync with the aura-reader partner because each room only lasts for 5 minutes. You have to make the session, invite your friend, and then both join and describe your auras to each other. You won't be able to see your own aura, just your little self in the corner of the screen.
 
