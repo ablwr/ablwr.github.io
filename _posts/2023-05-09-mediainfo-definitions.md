@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Mediainfo Definitions"
-date: 2023-05-10 09:00:00 -0500
+date: 2023-05-09 09:00:00 -0500
 tags: [mediainfoinfo, small projects, webdev]
 ---
 
