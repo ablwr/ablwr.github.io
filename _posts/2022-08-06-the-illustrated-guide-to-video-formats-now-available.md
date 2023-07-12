@@ -2,7 +2,7 @@
 layout: post
 title: "The Illustrated Guide to Video Formats now available!"
 date: 2022-08-06 09:00:00 -0500
-tags: [book]
+tags: [book, publishing]
 ---
 
 Hey, I made a book! [The Illustrated Guide to Video Formats](https://archivesoftomorrow.com/books/) is widely available through most booksellers.
