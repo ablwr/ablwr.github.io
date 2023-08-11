@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Researching file formats 1: FASTA database format"
-date: 2023-08-11 09:00:00 -0500
+date: 2023-08-11 07:00:00 -0500
 tags: [file formats, fdds]
 ---
 
