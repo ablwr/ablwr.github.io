@@ -7,6 +7,8 @@ tags: [file formats, fdds]
 
 This blog post is part of a series on file formats research. See [this introduction post](https://bits.ashleyblewer.com/blog/2023/08/04/researching-file-formats-library-of-congress-sustainability-of-digital-formats/) for more information.
 
+Update: The format definitions are online here: [MySQL Table Definition](https://www.loc.gov/preservation/digital/formats/fdd/fdd000623.shtml) and [MySQL View Definition](https://www.loc.gov/preservation/digital/formats/fdd/fdd000627.shtml). [Comments welcome](https://www.loc.gov/preservation/digital/formats/contact_format.shtml) directly to the Library of Congress.
+
 This format took me on an interesting journey deep into the debts of MySQL. Not just any MySQL, but legacy, nearly-deprecated, "during or before shit hit the fan" MySQL.
 
 I laughed out loud when I came across this summary of the format:

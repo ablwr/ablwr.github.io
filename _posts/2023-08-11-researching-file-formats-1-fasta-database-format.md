@@ -7,6 +7,8 @@ tags: [file formats, fdds]
 
 This blog post is part of a series on file formats research. See [this introduction post](https://bits.ashleyblewer.com/blog/2023/08/04/researching-file-formats-library-of-congress-sustainability-of-digital-formats/) for more information.
 
+Update: The format definition is online here: [FASTA Database Format](https://www.loc.gov/preservation/digital/formats/fdd/fdd000622.shtml). [Comments welcome](https://www.loc.gov/preservation/digital/formats/contact_format.shtml) directly to the Library of Congress.
+
 First format: FASTA!
 
 This is a format used to store nucleotide acid or amino acid data.
