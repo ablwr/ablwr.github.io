@@ -34,6 +34,6 @@ There are at least two versions of this format, so it could be considered a fami
 While researching, I got to enjoy [these photos taken during SIGGRAPH 2002](http://anyhere.com/gward/snaps/SG02/index.html), among others. They are just normal image files though, not RGBE files. Still, glad people were having a good time.
 
 Are you here because you need sample files? Here you go:
-- https://radsite.lbl.gov/radiance/pub/pics/index.html
-- https://telparia.com/fileFormatSamples/image/radiance/
-- https://pfstools.sourceforge.net/hdr_gallery.html
+- [https://radsite.lbl.gov/radiance/pub/pics/index.html](https://radsite.lbl.gov/radiance/pub/pics/index.html)
+- [https://telparia.com/fileFormatSamples/image/radiance/](https://telparia.com/fileFormatSamples/image/radiance/)
+- [https://pfstools.sourceforge.net/hdr_gallery.html](https://pfstools.sourceforge.net/hdr_gallery.html)
