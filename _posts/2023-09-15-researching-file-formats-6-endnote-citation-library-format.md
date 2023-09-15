@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Researching file formats 6: EndNote Citation Library Format"
-date: 2023-09-15 09:00:00 -0500
+date: 2023-09-15 08:00:00 -0500
 tags: [file formats, fdds]
 ---
 
