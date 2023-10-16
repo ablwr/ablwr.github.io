@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Researching file formats 5: WordPerfect Document Family"
+title: "Researching file formats 7: WordPerfect Document Family"
 date: 2023-10-13 09:00:00 -0500
 tags: [file formats, fdds]
 ---
