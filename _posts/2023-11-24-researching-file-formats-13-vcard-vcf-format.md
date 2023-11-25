@@ -27,7 +27,7 @@ Resources keep using the acronym MUA, which I immediately translate to "Makeup A
 This format, and a few others in this "email" section, had me digging into very old scanned copies of books that have started to become digitally crunchy.
 
 Please enjoy this difficult-to-read text that describes what an image file looks like as text:
-![difficult-to-read text describing what an image looks like in text](/images/vcf-book.jpg)
+![difficult-to-read text describing what an image looks like in text](/images/vcf-text.jpg)
 
 The biggest drama working with this format is seemingly people coming up with what the .vcf extension stood for without any real reasoning, so some places say it stands for Virtual Card Format (including the outline of the description from Library of Congress), some say Virtual Contact File (including Wikipedia), and some say vCard File. Google also said "virgin card" because it was conflating urban dictionary knowledge with file format knowledge, but it's not that one, probably.
 
