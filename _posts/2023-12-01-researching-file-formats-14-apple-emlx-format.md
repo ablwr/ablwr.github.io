@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Researching file formats 14: Apple EMLX Format"
-date: 2023-12-01 09:00:00 -0500
+date: 2023-12-01 07:00:00 -0500
 tags: [file formats, fdds]
 ---
 
