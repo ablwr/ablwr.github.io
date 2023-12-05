@@ -5,7 +5,7 @@ date: 2023-12-04 13:00:00 -0500
 tags: [file formats, fdds, webdev]
 ---
 
-**Spoiler alert: If you want to browse what I came up with, you can check it out here: [https://lc-sdf-data-exploration.fly.dev/](https://lc-sdf-data-exploration.fly.dev/)**
+**Spoiler alert: If you want to browse what I came up with, you can check it out here: ~~[https://lc-sdf-data-exploration.fly.dev/](https://lc-sdf-data-exploration.fly.dev/)~~ Hold up, Fly.io is continuing to cause problems so its having intermittent outages ;(**
 
 Readers of this blog will know that I've been working through researching [39 formats for the Library of Congress Sustainability of Digital Formats site](https://www.loc.gov/preservation/digital/formats/fdd/fdd_workplan.shtml) because I've been blogging about it [weekly](https://bits.ashleyblewer.com/blog/2023/08/04/researching-file-formats-library-of-congress-sustainability-of-digital-formats/) since August (and that series will continue until end of next May).
 
