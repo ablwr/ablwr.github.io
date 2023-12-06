@@ -186,6 +186,12 @@ Deploying should have been straightforward, but something truly weird happened. 
 
 Other than that [_bizarre_ and seemingly not-very-secure behavior](https://community.fly.io/t/users-able-to-deploy-without-running-flyctl-auth-login/17112), it did deploy properly after only two attempts (forgot to include an additional plugin's path), and that was that!
 
+Except it wasn't just that! After that, it was working fine until it was not adhering to my config setting that enforced https, causing mixed content errors _even though it was working fine before_ which caused me to eat an entire box of reese's pieces out of frustration (away from the computer, watching `Leave the World Behind`, which I really liked)!!!!!
+
+I moved over to Vercel, also using a datasette plug-in, and it was easy-breezy-lemon-squeezy: [https://lc-sdf-data-exploration.vercel.app/](https://lc-sdf-data-exploration.vercel.app/)
+
+I'll never use fly.io again, they are my new enemy, and my blood glucose has risen.
+
 ## Next up
 
 I started this project wanting to map out relationships specifically, and I didn't really get around to doing that because it involved doing some additional boutique work instead of the work pushing puzzle pieces together to pull together some dashboards. I may return to that, because I'm still interested in understanding which FDDs relate to others, but I consider this project a good first step in shaping the data before dipping into d3.js. Especially because Datasette allows for easy conversion from database to JSON-structured data!
