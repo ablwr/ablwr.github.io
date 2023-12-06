@@ -5,7 +5,7 @@ date: 2023-12-04 13:00:00 -0500
 tags: [file formats, fdds, webdev]
 ---
 
-**Spoiler alert: If you want to browse what I came up with, you can check it out here: ~~[https://lc-sdf-data-exploration.fly.dev/](https://lc-sdf-data-exploration.fly.dev/)~~ Hold up, Fly.io is continuing to cause problems so its having intermittent outages ;(**
+**Spoiler alert: If you want to browse what I came up with, you can check it out here: [https://lc-sdf-data-exploration.vercel.app/](https://lc-sdf-data-exploration.vercel.app/)**
 
 Readers of this blog will know that I've been working through researching [39 formats for the Library of Congress Sustainability of Digital Formats site](https://www.loc.gov/preservation/digital/formats/fdd/fdd_workplan.shtml) because I've been blogging about it [weekly](https://bits.ashleyblewer.com/blog/2023/08/04/researching-file-formats-library-of-congress-sustainability-of-digital-formats/) since August (and that series will continue until end of next May).
 
@@ -180,7 +180,7 @@ There were some data issues that I was able to clean up after building these das
 
 ## App deploying
 
-The last thing to do was deploy, [which I did](https://lc-sdf-data-exploration.fly.dev/) (as also linked at the top of this post).
+The last thing to do was deploy, [which I did](https://lc-sdf-data-exploration.vercel.app/) (as also linked at the top of this post).
 
 Deploying should have been straightforward, but something truly weird happened. I chose [fly.io](https://fly.io/) to host the datasette, in part because my husband had been using it for some of his for-fun apps, and because [datasette has a fly.io publishing plugin](https://docs.datasette.io/en/stable/publish.html) that I could install and make it easy. But weirdly, inexplicably, truly beyond my wildest imagination, despite never having used flyio on my computer before, it initially threw a bunch of errors, and then deployed _to my husband's account_. I wasn't logged into his account or _any_ account at the time. What??????????????
 
