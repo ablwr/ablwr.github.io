@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Researching file formats 15: Groupwise MLM Format"
-date: 2023-12-07 09:00:00 -0500
+date: 2023-12-07 07:00:00 -0500
 tags: [file formats, fdds]
 ---
 
