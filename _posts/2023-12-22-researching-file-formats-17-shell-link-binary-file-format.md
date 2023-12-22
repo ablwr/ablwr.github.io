@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Researching file formats 17: Shell link binary file format"
-date: 2023-09-22 08:00:00 -0500
+date: 2023-12-22 08:00:00 -0500
 tags: [file formats, fdds]
 ---
 
