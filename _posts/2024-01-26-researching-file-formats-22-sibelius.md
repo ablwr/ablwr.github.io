@@ -17,7 +17,7 @@ So, that's my brief experience with this format -- frustrated musicians.
 
 It's not too difficult to export this format into a PDF, and a lot of websites offer that kind of conversion. This format's parent software company has very strict wording about prohibiting any kind of reverse engineering work done to allow for that to happen, though, so it all has to go through them. So what happens when they decide it's not lucrative to support ancient versions of the file, or just stop being a business? Digipres 101 questions, I know, but this is a good case study for something like that.
 
-"The Sibelius license agreement expressly forbids users from doing this [reverse-engineering the format]." ([http://www.sibelius.com/cgi-bin/helpcenter/chat/chat.pl?com=thread&start=689054&groupid=3&&guest=1](http://www.sibelius.com/cgi-bin/helpcenter/chat/chat.pl?com=thread&start=689054&groupid=3&&guest=1))
+"The Sibelius license agreement expressly forbids users from doing this [reverse-engineering the format](http://www.sibelius.com/cgi-bin/helpcenter/chat/chat.pl?com=thread&start=689054&groupid=3&&guest=1)."
 
 This is also a format that has different versions that changed a bit under the hood quite a lot, too, just to add to the complexity of a format that is also forbidden from being reverse-engineered.
 
