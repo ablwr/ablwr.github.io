@@ -9,7 +9,7 @@ This blog post is part of a series on file formats research. See [this introduct
 
 "Support for more codecs will be added soon." -- [Nullsoft, 2004](https://web.archive.org/web/20040715015529/http://www.nullsoft.com/nsv/)
 
-Last week was an audio codec, this week is an audio/video container. (See [my training site](https://training.ashleyblewer.com/) for nuances there,if needed!)
+Last week was an audio codec, this week is an audio/video container. (See [my training site](https://training.ashleyblewer.com/) for nuances there, if needed!)
 
 And it's a container for streaming media!
 
