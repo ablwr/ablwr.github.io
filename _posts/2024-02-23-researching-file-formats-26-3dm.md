@@ -21,4 +21,4 @@ Here's a [post on the web forum](https://discourse.mcneel.com/t/i-am-looking-for
 
 Is that open?
 
-This format feels a bit like abandonware to me, or at least it's approaching that title soon? The so-called "open" documentation has to be retrieved via a form that doesn't work, or faxing a request to a number.
+This format feels a bit like abandonware to me, or at least it's approaching that title soon? This thought series to be continued next week.
