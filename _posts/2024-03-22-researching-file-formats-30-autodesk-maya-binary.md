@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Researching file formats 30: Autodesk Maya Binary"
-date: 2024-03-22 09:00:00 -0500
+date: 2024-03-22 08:00:00 -0500
 tags: [file formats, fdds]
 ---
 
