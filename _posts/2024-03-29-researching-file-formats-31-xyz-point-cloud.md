@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Researching file formats 31: XYZ Point Cloud"
-date: 2024-03-29 08:00:00 -0500
+date: 2024-03-29 07:00:00 -0500
 tags: [file formats, fdds]
 ---
 
