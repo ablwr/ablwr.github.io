@@ -14,3 +14,7 @@ This format simply stores point clouds (a way to articulate geographic shapes) a
 The format starts with a comment (represented by a # and the text), and then coordinates separated by spaces, with new lines for each next point. That's it! That's the format.
 
 There's also some variations that include adding color, so those follow the syntax of `X Y Z R G B`!
+
+At the same time, while this format was simple, it also poses a challenge of not being officially documented in many places, as noted in this [stackoverflow post](https://stackoverflow.com/questions/41267210/point-cloud-xyz-format-specification) stating that there are no official docs. Anyway, more to come on that when the official FDD is published.
+
+Disambiguation: This format was set to cover the one I'm describing above, but there's another format that is a text-based simple data format also called XYZ, used for [storing chemicals](https://en.wikipedia.org/wiki/XYZ_file_format). That one is described [here](https://www.cgl.ucsf.edu/chimera/docs/UsersGuide/xyz.html).
