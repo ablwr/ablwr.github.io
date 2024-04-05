@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Researching file formats 27: Core Audio Format"
-date: 2024-04-05 08:00:00 -0500
+date: 2024-04-05 07:00:00 -0500
 tags: [file formats, fdds]
 ---
 
