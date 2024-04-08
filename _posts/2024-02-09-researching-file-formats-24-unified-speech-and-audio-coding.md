@@ -7,6 +7,8 @@ tags: [file formats, fdds]
 
 This blog post is part of a series on file formats research. See [this introduction post](https://bits.ashleyblewer.com/blog/2023/08/04/researching-file-formats-library-of-congress-sustainability-of-digital-formats/) for more information.
 
+Update: The official format definition is now online here: [Unified Speech and Audio Coding](https://www.loc.gov/preservation/digital/formats/fdd/fdd000606.shtml). [Comments welcome](https://www.loc.gov/preservation/digital/formats/contact_format.shtml) directly to the Library of Congress.
+
 Okay, this format was hard! First, the format is standardized via ISO/IEC, which means it's expensive. Next, the specification is extremely long and technical, with lots of math. And this is my area of expertise! It was still challenging to work through. Fortunately, there was a hype train as part of getting this codec standardized and encouraging adoption (something I'm familiar with re: the IETF CELLAR group), so there were a lot of high-level summaries out there that made this easier to translate into a generalist audience.
 
 This codec was made to improve upon past work where encoding was stronger at human speech or music, but not necessarily both. It's also just considering itself the next step in the progression of audio encoding technology. It's built on the work of MPEG-4 and AAC.

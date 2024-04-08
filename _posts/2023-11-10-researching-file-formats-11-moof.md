@@ -7,6 +7,8 @@ tags: [file formats, fdds]
 
 This blog post is part of a series on file formats research. See [this introduction post](https://bits.ashleyblewer.com/blog/2023/08/04/researching-file-formats-library-of-congress-sustainability-of-digital-formats/) for more information.
 
+Update: The official format definition is now online here: [MOOF Disk Image](https://www.loc.gov/preservation/digital/formats/fdd/fdd000612.shtml). [Comments welcome](https://www.loc.gov/preservation/digital/formats/contact_format.shtml) directly to the Library of Congress.
+
 The most interesting thing about this format is that its named after [Susan Kare](https://kare.com/)'s [dogcow](https://en.wikipedia.org/wiki/Dogcow) icon. ("Comments welcome" -- Is there something more interesting?)
 
 This might be the first very lean format I'm working with, where I have the specification (in this case, reference document) and there's not a ton of other info out there on the web. Most of the other formats have been growing and changing with time, getting adopted by other use cases, getting updated and modified and forking off into adjacent formats, all of that.

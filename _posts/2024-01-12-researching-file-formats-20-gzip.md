@@ -5,6 +5,10 @@ date: 2024-01-12 09:00:00 -0500
 tags: [file formats, fdds]
 ---
 
+This blog post is part of a series on file formats research. See [this introduction post](https://bits.ashleyblewer.com/blog/2023/08/04/researching-file-formats-library-of-congress-sustainability-of-digital-formats/) for more information.
+
+Update: The official format definition is now online here: [GZIP](https://www.loc.gov/preservation/digital/formats/fdd/fdd000599.shtml). [Comments welcome](https://www.loc.gov/preservation/digital/formats/contact_format.shtml) directly to the Library of Congress.
+
 Am I running out of steam or is there not that much to say about gzip? I think the biggest struggle in writing about the sustainability of this format is ensuring there isn't conflation between the format itself (compression algorithm, in this case) and the software tool of the same name that creates this format. They are tightly linked together, but different, so I had to make my research notes explicit in every case so it's easier for when I turn it over to the writer/editor on this project.
 
 A gzip file contains:

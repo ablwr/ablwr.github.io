@@ -5,6 +5,10 @@ date: 2024-01-19 09:00:00 -0500
 tags: [file formats, fdds]
 ---
 
+This blog post is part of a series on file formats research. See [this introduction post](https://bits.ashleyblewer.com/blog/2023/08/04/researching-file-formats-library-of-congress-sustainability-of-digital-formats/) for more information.
+
+Update: The official format definition is now online here: [bzip2](https://www.loc.gov/preservation/digital/formats/fdd/fdd000600.shtml). [Comments welcome](https://www.loc.gov/preservation/digital/formats/contact_format.shtml) directly to the Library of Congress.
+
 Last week was gzip, this week is bzip. Or, I think, bzip2. I struggled with what to say about gzip, but bzip/bzip2 is more interesting because of PATENT PROBLEMS! 
 
 bzip2 is based off of its predecessor bzip. bzip2 is widely more popular, bzip isn't really used so much anymore, because of some patent problems. There was this dude running around in the 90s being a jerk and suing everyone he could for a basic algorithm, so people had to just make better algorithms, which wasn't even very hard, but it did cause a lot of headaches. I'm oversimplifying. I found [this website](https://ethw.org/History_of_Lossless_Data_Compression_Algorithms#Legal_Issues) to be useful in explaining things better, and in general explaining a lot about the history of compression formats -- recommended! 

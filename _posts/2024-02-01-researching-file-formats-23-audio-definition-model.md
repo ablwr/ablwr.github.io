@@ -7,6 +7,8 @@ tags: [file formats, fdds]
 
 This blog post is part of a series on file formats research. See [this introduction post](https://bits.ashleyblewer.com/blog/2023/08/04/researching-file-formats-library-of-congress-sustainability-of-digital-formats/) for more information.
 
+Update: The official format definition is now online here: [Audio Definition Model](https://www.loc.gov/preservation/digital/formats/fdd/fdd000607.shtml). [Comments welcome](https://www.loc.gov/preservation/digital/formats/contact_format.shtml) directly to the Library of Congress.
+
 This format is about audio, but it's a text-based document that describes audio. You can say it _defines_ an _audio model_. It is typically stored as XML, but JSON is a valid option, too. While the rest of the software engineering field goes "ick" when it hears about XML, both the cultural heritage sector and audio/video media engineering sector still use it heavily.
 
 ADM is coming out of research from the [European Broadcasting Union](https://adm.ebu.io/), which have other hits like [EBUCore](https://tech.ebu.ch/metadata/ebucore) for describing media elements. The idea behind ADM is to standardize how audio is stored, inspired by the rise of extra high-def sounds (like, going beyond Dolby 5.1). Where does it go, physically? Or are there different language tracks? If so, what are the order? Stereo and/or mono, or something else? 

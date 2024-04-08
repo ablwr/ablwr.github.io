@@ -7,6 +7,8 @@ tags: [file formats, fdds]
 
 This blog post is part of a series on file formats research. See [this introduction post](https://bits.ashleyblewer.com/blog/2023/08/04/researching-file-formats-library-of-congress-sustainability-of-digital-formats/) for more information.
 
+Update: The official format definition is now online here: [WordPerfect Document Family](https://www.loc.gov/preservation/digital/formats/fdd/fdd000621.shtml). [Comments welcome](https://www.loc.gov/preservation/digital/formats/contact_format.shtml) directly to the Library of Congress.
+
 This is a challenging format to work on because it's an entire family, and the family changed so much over time (and the EndNote Citation Library format was even worse, in this regard). It's challenging because the file formats themselves change so much over the course of a format lifetime, and this software program went through a really volatile time for word processing, with so many fundamental transformations to the operating systems on which they lived. (In this context, it's the 1980s-2000s.)
 
 "Does anyone use WordPerfect anymore?" That's what I got as a recommended question c/o Google.

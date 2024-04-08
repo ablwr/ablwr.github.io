@@ -7,6 +7,8 @@ tags: [file formats, fdds]
 
 This blog post is part of a series on file formats research. See [this introduction post](https://bits.ashleyblewer.com/blog/2023/08/04/researching-file-formats-library-of-congress-sustainability-of-digital-formats/) for more information.
 
+Update: The official format definition is now online here: [KryoFlux Stream File](https://www.loc.gov/preservation/digital/formats/fdd/fdd000610.shtml). [Comments welcome](https://www.loc.gov/preservation/digital/formats/contact_format.shtml) directly to the Library of Congress.
+
 One of the things I know about Kryoflux is it has a bad reputation in multiple ways. [ArchiveTeam](https://wiki.archiveteam.org/index.php/Rescuing_Floppy_Disks#Kryoflux) has a strongly-worded blurb about concerns over the licensing agreement.
 
 Working on this format had me thinking a lot about the problem with companies that are closed-off or have really sketchy business practices, especially when the company does a lot of fear-mongering among members of the community, but only in ways that are elusive.

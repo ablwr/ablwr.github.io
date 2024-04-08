@@ -7,6 +7,8 @@ tags: [file formats, fdds]
 
 This blog post is part of a series on file formats research. See [this introduction post](https://bits.ashleyblewer.com/blog/2023/08/04/researching-file-formats-library-of-congress-sustainability-of-digital-formats/) for more information.
 
+Update: The official format definition is now online here: [GroupWise Email Format](https://www.loc.gov/preservation/digital/formats/fdd/fdd000614.shtml). [Comments welcome](https://www.loc.gov/preservation/digital/formats/contact_format.shtml) directly to the Library of Congress.
+
 Akin to me consistently messing up the definition of MUA when working with vCard, obviously I'm gonna think this format stands for Multilevel Marketing instead. Oh, I also (re-)learned that MLM may also stand for "men loving men" for people who are looking for a specific genre of romance books. I discovered that when looking for "novell mlm" but getting "mlm novels" instead. It also seems to be sometimes used for "machine learning model."
 
 Well, what is an MLM file?

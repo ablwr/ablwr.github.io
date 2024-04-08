@@ -7,6 +7,8 @@ tags: [file formats, fdds]
 
 This blog post is part of a series on file formats research. See [this introduction post](https://bits.ashleyblewer.com/blog/2023/08/04/researching-file-formats-library-of-congress-sustainability-of-digital-formats/) for more information.
 
+Update: The official format definition is now online here: [HFE (HxC Floppy Emulator) File Format](https://www.loc.gov/preservation/digital/formats/fdd/fdd000613.shtml). [Comments welcome](https://www.loc.gov/preservation/digital/formats/contact_format.shtml) directly to the Library of Congress.
+
 My starting point for this format was [this PDF](https://hxc2001.com/download/floppy_drive_emulator/SDCard_HxC_Floppy_Emulator_HFE_file_format.pdf) (with a sweet logo). And I spent a lot of time [deep in the forums](https://stardot.org.uk/forums/viewtopic.php?p=279138&sid=33f74a30d3a0dfb1c2581a3129a99f80#p279138) on this one.
 
 It was nice to see a forum (and associated discords) be so active on the topic of floppy disk emulation -- I had no idea, the reach. Maybe because it's relatively simple and accessible to get into? Maybe because people really love games? I don't know.

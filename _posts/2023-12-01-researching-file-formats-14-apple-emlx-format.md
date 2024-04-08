@@ -7,6 +7,8 @@ tags: [file formats, fdds]
 
 This blog post is part of a series on file formats research. See [this introduction post](https://bits.ashleyblewer.com/blog/2023/08/04/researching-file-formats-library-of-congress-sustainability-of-digital-formats/) for more information.
 
+Update: The official format definition is now online here: [Apple Mail Email Format](https://www.loc.gov/preservation/digital/formats/fdd/fdd000615.shtml). [Comments welcome](https://www.loc.gov/preservation/digital/formats/contact_format.shtml) directly to the Library of Congress.
+
 In typical Apple fashion, this is a variation of an open and well-adopted standard (the [EML format](https://www.loc.gov/preservation/digital/formats/fdd/fdd000388.shtml)), modified slightly just to be Apple-specific, and [totally undocumented](https://stackoverflow.com/questions/884440/documentation-on-apple-mails-emlx-data-structures-for-conversion-purposes).
 
 Got a kick out of this update to a blog post from [jwz](https://www.jwz.org/blog/2005/07/emlx-flags/) that reads "**Update:** Please, people, I asked a very straightfoward question. I'm not interested in your _guesses_. I can guess too. I'm looking for _facts_. I can also reverse-engineer at least some of it, if I have to. But I'd rather not, if it's actually documented somewhere. Which is why I asked. If you don't know, put your hand down." 

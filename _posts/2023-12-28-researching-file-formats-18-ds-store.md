@@ -5,6 +5,9 @@ date: 2023-12-28 17:00:00 -0500
 tags: [file formats, fdds]
 ---
 
+This blog post is part of a series on file formats research. See [this introduction post](https://bits.ashleyblewer.com/blog/2023/08/04/researching-file-formats-library-of-congress-sustainability-of-digital-formats/) for more information.
+
+Update: The official format definition is now online here: [Desktop Services Store](https://www.loc.gov/preservation/digital/formats/fdd/fdd000597.shtml). [Comments welcome](https://www.loc.gov/preservation/digital/formats/contact_format.shtml) directly to the Library of Congress.
 
 The subject of DS_Store seems to bring the drama. There's something about DS_Stores that really get people riled up. It feels like unlocking a particular trauma and people can't help but express a lot of feelings (mostly anger) around the format. Like, it feels like every person who gets up-in-arms over the DS_Store was once a young computer user who was made fun of for checking in a .DS_Store into a git repo and it reminds them of how they were yelled at by an authority figure when they were a toddler but now they are a big tuff UNIX user.
 

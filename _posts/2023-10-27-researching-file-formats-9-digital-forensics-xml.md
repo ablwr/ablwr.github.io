@@ -7,6 +7,8 @@ tags: [file formats, fdds]
 
 This blog post is part of a series on file formats research. See [this introduction post](https://bits.ashleyblewer.com/blog/2023/08/04/researching-file-formats-library-of-congress-sustainability-of-digital-formats/) for more information.
 
+Update: The official format definition is now online here: [Digital Forensics XML](https://www.loc.gov/preservation/digital/formats/fdd/fdd000611.shtml). [Comments welcome](https://www.loc.gov/preservation/digital/formats/contact_format.shtml) directly to the Library of Congress.
+
 Digital Forensics XML, XML for your digital forensics.
 
 This had me thinking about [BitCurator](https://bitcurator.net/), which is a toolkit that had several years of public funding, and some institutional tie-in, but now has a community group and I wasn't sure about what the sustainability model for the project was? There's a [consortium](https://bitcuratorconsortium.org/), but is the membership model sustainable?

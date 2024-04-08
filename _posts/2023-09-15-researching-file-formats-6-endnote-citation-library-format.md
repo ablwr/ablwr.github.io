@@ -7,6 +7,8 @@ tags: [file formats, fdds]
 
 This blog post is part of a series on file formats research. See [this introduction post](https://bits.ashleyblewer.com/blog/2023/08/04/researching-file-formats-library-of-congress-sustainability-of-digital-formats/) for more information.
 
+Update: The official format definition is now online here: [EndNote Library Format](https://www.loc.gov/preservation/digital/formats/fdd/fdd000489.shtml). [Comments welcome](https://www.loc.gov/preservation/digital/formats/contact_format.shtml) directly to the Library of Congress.
+
 **Meta-note: This blog series aims to run once a week, but there won't be posts for the next THREE weeks, as I'll be on vacation and offline. Series to resume Oct. 13th.**
 
 Big thanks to [Tyler Thorsted](https://preservation.tylerthorsted.com/) for providing me with _many_ sample files for this format (and for doing research that led to some [thorough PRONOM entries](https://www.nationalarchives.gov.uk/PRONOM/fmt/325)).

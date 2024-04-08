@@ -7,6 +7,8 @@ tags: [file formats, fdds]
 
 This blog post is part of a series on file formats research. See [this introduction post](https://bits.ashleyblewer.com/blog/2023/08/04/researching-file-formats-library-of-congress-sustainability-of-digital-formats/) for more information.
 
+Update: The official format definition is now online here: [PDF Portfolio](https://www.loc.gov/preservation/digital/formats/fdd/fdd000620.shtml). [Comments welcome](https://www.loc.gov/preservation/digital/formats/contact_format.shtml) directly to the Library of Congress.
+
 PDF Portfolio files! PDF is already such a tangled spaghetti mess of a format, and this format is just taking a whole bunch of them and making them into a mega-pasta dish.
 
 Here's an [overview](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html)

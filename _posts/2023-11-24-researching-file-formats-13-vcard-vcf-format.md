@@ -7,6 +7,8 @@ tags: [file formats, fdds]
 
 This blog post is part of a series on file formats research. See [this introduction post](https://bits.ashleyblewer.com/blog/2023/08/04/researching-file-formats-library-of-congress-sustainability-of-digital-formats/) for more information.
 
+Update: The official format definition is now online here: [Virtual Card Format (vCard)](https://www.loc.gov/preservation/digital/formats/fdd/fdd000616.shtml). [Comments welcome](https://www.loc.gov/preservation/digital/formats/contact_format.shtml) directly to the Library of Congress.
+
 vCard or VCF: Virtual Card Format? Virtual Contact File? vCard File? Sources are not consistent with this.
 
 This format has a lot of official specifications and extensions, lots of updated versions during the standardization process, several major versions, and a few different owning organizations. 

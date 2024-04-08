@@ -7,6 +7,8 @@ tags: [file formats, fdds]
 
 This blog post is part of a series on file formats research. See [this introduction post](https://bits.ashleyblewer.com/blog/2023/08/04/researching-file-formats-library-of-congress-sustainability-of-digital-formats/) for more information.
 
+Update: The official format definition is now online here: [Sibelius Music Notation Format](https://www.loc.gov/preservation/digital/formats/fdd/fdd000609.shtml). [Comments welcome](https://www.loc.gov/preservation/digital/formats/contact_format.shtml) directly to the Library of Congress.
+
 We are entering the Audio-Video set of formats! The next four posts will be a/v formats.
 
 I have had some very brief, non-hands-on experience with this format, because one of my college roommates was a music major and now a professional trombone player, and on a call one time I got the full low-down on how frustrating this application can be because of the version differences and how the format is completely vendor locked-in, and he was asking for my advice/help because he knew I was good with computers. But lock-in is lock-in! There wasn't much I could do, especially over the phone.

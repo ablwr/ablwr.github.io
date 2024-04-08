@@ -7,6 +7,8 @@ tags: [file formats, fdds]
 
 This blog post is part of a series on file formats research. See [this introduction post](https://bits.ashleyblewer.com/blog/2023/08/04/researching-file-formats-library-of-congress-sustainability-of-digital-formats/) for more information.
 
+Update: The official format definition is now online here: [JPEG File Interchange Format Family](https://www.loc.gov/preservation/digital/formats/fdd/fdd000619.shtml). [Comments welcome](https://www.loc.gov/preservation/digital/formats/contact_format.shtml) directly to the Library of Congress.
+
 As a meta-update: The formal works are starting to appear online! [Go here](https://www.loc.gov/preservation/digital/formats/fdd/fdd_workplan.shtml) to see Set 9's official format descriptions. I've updated the previous two blog posts with direct links. Going forward, I thiiink my blog posts will mostly, if not completely, run ahead of the published sets. Right now, I do the bulk of the research and wait a bit for writing/editing, and during that time I answer a lot of questions that need clarifying (and do more research). So the blog posts are all written during the  "I'm not sure" stage of the process, because the fastest and easiest way to get corrected is to be wrong on the internet. If ever the full circle completes prior to the blog post, I'll lead with the links (because that's where the useful info is, instead of these blog posts which are more like the Hot Takes Department).
 
 JFIF. Have I heard of this format family before I started working on this project? No. Do I use this format every day, multiple times a day? Yes!!!

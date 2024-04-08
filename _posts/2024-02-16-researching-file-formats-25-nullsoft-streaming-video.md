@@ -7,6 +7,8 @@ tags: [file formats, fdds]
 
 This blog post is part of a series on file formats research. See [this introduction post](https://bits.ashleyblewer.com/blog/2023/08/04/researching-file-formats-library-of-congress-sustainability-of-digital-formats/) for more information.
 
+Update: The official format definition is now online here: [Nullsoft Streaming Video](https://www.loc.gov/preservation/digital/formats/fdd/fdd000608.shtml). [Comments welcome](https://www.loc.gov/preservation/digital/formats/contact_format.shtml) directly to the Library of Congress.
+
 "Support for more codecs will be added soon." -- [Nullsoft, 2004](https://web.archive.org/web/20040715015529/http://www.nullsoft.com/nsv/)
 
 Last week was an audio codec, this week is an audio/video container. (See [my training site](https://training.ashleyblewer.com/) for nuances there, if needed!)

@@ -6,6 +6,8 @@ tags: [file formats, fdds]
 ---
 This blog post is part of a series on file formats research. See [this introduction post](https://bits.ashleyblewer.com/blog/2023/08/04/researching-file-formats-library-of-congress-sustainability-of-digital-formats/) for more information.
 
+Update: The official format definition is now online here: [Transport Neutral Encapsulation Format](https://www.loc.gov/preservation/digital/formats/fdd/fdd000485.shtml). [Comments welcome](https://www.loc.gov/preservation/digital/formats/contact_format.shtml) directly to the Library of Congress.
+
 Following up from [EMLX from a few weeks ago](https://bits.ashleyblewer.com/blog/2023/12/01/researching-file-formats-14-apple-emlx-format/), we have Microsoft's special way of handling emails: TNEF! TNEF: "Transport Neutral Encapsulation Format."
 
 TNEF is responsible for the millions of people that have been annoyed at receiving an email with an attachment that doesn't mean anything to them: the winmail.dat attachment. Turns out, this just is Outlook talking to other Outlooks about whether Susan from Accounting is using Papyrus in her email signature, stuff like that.

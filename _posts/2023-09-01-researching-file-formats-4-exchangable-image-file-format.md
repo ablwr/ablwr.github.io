@@ -7,6 +7,8 @@ tags: [file formats, fdds]
 
 This blog post is part of a series on file formats research. See [this introduction post](https://bits.ashleyblewer.com/blog/2023/08/04/researching-file-formats-library-of-congress-sustainability-of-digital-formats/) for more information.
 
+Update: The official format definition is now online here: [Exchangeable Image File Format (Exif) Family](https://www.loc.gov/preservation/digital/formats/fdd/fdd000618.shtml). [Comments welcome](https://www.loc.gov/preservation/digital/formats/contact_format.shtml) directly to the Library of Congress.
+
 Hot on the tails of the JFIF format family, time to crack into the Exif family. (That's short for "Exchangable image file format")
 
 Like JFIF, LC [already has an entry for EXIF](https://www.loc.gov/preservation/digital/formats/fdd/fdd000146.shtml) so that makes for a good starting point.
