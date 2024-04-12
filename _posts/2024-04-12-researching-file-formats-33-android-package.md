@@ -7,6 +7,8 @@ tags: [file formats, fdds]
 
 This blog post is part of a series on file formats research. See [this introduction post](https://bits.ashleyblewer.com/blog/2023/08/04/researching-file-formats-library-of-congress-sustainability-of-digital-formats/) for more information.
 
+Update: The official format definition is now online here: [APK](https://www.loc.gov/preservation/digital/formats/fdd/fdd000592.shtml). [Comments welcome](https://www.loc.gov/preservation/digital/formats/contact_format.shtml) directly to the Library of Congress.
+
 First off, this work was made incredibly easier thanks to the work of Johan van der Knijff, particularly the blog series around working with mobile apps, the latest being ["Towards a preservation workflow for mobile apps"](https://www.bitsgalore.org/2021/02/24/towards-a-preservation-workflow-for-mobile-apps) from 2021, but the older posts on Android specifically hold up well and have been very helpful, too.
 
 This format was somewhat easy because it's secretly a ZIP archive file. Even more, it's very similar to being a Java JAR file. There are just specific structures that make it an APK file instead, because that's what systems that read APK files will expect. Some folders, some XML files, and that's about it.
