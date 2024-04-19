@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Researching file formats 34: iOS App Store Package"
-date: 2024-04-19 09:00:00 -0500
+date: 2024-04-19 08:00:00 -0500
 tags: [file formats, fdds]
 ---
 
