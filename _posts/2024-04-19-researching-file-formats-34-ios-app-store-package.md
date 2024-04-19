@@ -27,6 +27,6 @@ According to this [Apple documentation](https://web.archive.org/web/201810261750
 - universal app bundle: "the decompressed universal .ipa"
 - thinned app bundle: "the decompressed thinned .ipa"
 
-LC's Recommended Format Statement defines this as a "distribution file" (https://www.loc.gov/preservation/resources/rfs/software-videogames.html), stating "Distribution file (e.g. ipa [Mac iOS], apk [Android], exe [Windows]): The distribution file is disseminated for public use regardless of the means of dissemination (on physical media or via an online source) and is comprised of one or more files from the gold standard build.
+LC's Recommended Format Statement defines this as a ["distribution file"](https://www.loc.gov/preservation/resources/rfs/software-videogames.html), stating "Distribution file (e.g. ipa [Mac iOS], apk [Android], exe [Windows]): The distribution file is disseminated for public use regardless of the means of dissemination (on physical media or via an online source) and is comprised of one or more files from the gold standard build.
 
 We all know Apple loves the "technical protections considerations" category, so this is a can-o-worms. There's [FairPlay](https://nicolo.dev/en/blog/fairplay-apple-obfuscation/), and the way it works out is a bit interesting, but I'm not going to get into it here -- I yawned while typing that, so I guess I'm lying about it being interesting, I was just using a generic word to describe it when I didn't have anything noteworthy!
