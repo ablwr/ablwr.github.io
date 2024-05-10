@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Researching file formats 37: Portable Embosser Format"
-date: 2024-05-10 09:00:00 -0500
+date: 2024-05-10 08:00:00 -0500
 tags: [file formats, fdds]
 ---
 
