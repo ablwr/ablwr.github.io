@@ -13,7 +13,7 @@ AppleDouble...........................
 
 Also known as "Dot underscore" files because that's what they look like, `._likeThis`.
 
-Are they related to .DS_Store files? Like, in a concrete way? What about MacBinary?
+Are they related to .DS_Store files? Like, in a concrete way? What about MacBinary? Those are some the questions I went through in my head while working on the FDD (now available above).
 
 macOS makes them. I don't even want to talk about them. Can I think of something else to talk about, instead? I want my brain to be empty.
 
