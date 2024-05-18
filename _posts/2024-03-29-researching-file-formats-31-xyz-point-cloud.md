@@ -7,6 +7,8 @@ tags: [file formats, fdds]
 
 This blog post is part of a series on file formats research. See [this introduction post](https://bits.ashleyblewer.com/blog/2023/08/04/researching-file-formats-library-of-congress-sustainability-of-digital-formats/) for more information.
 
+Update: The official format definition is now online here: [XYZ Point Cloud](https://www.loc.gov/preservation/digital/formats/fdd/fdd000617.shtml). [Comments welcome](https://www.loc.gov/preservation/digital/formats/contact_format.shtml) directly to the Library of Congress.
+
 After a handful of difficult and technically (or socially/politically) complex formats, it was nice to work on this simple (if unspecified) format, taking me back to one of the earliest formats I worked on, [FASTA](https://bits.ashleyblewer.com/blog/2023/08/11/researching-file-formats-1-fasta-database-format/). This format originally belonged in that initial category (see [RGBE Image Format](https://bits.ashleyblewer.com/blog/2023/09/08/researching-file-formats-5-radiance-rgbe-image-format/)), but there was a mix-up. While it is structurally similar to FASTA, it is a 3D format and has the same [quality and functionality factors](https://www.loc.gov/preservation/digital/formats/fdd/fdd_explanation.shtml#factors) as the rest of this set.
 
 This format simply stores point clouds (a way to articulate geographic shapes) aligned with the [Cartesian coordinate system](https://en.wikipedia.org/wiki/Cartesian_coordinate_system), which is, as the format name implies, X, Y, Z.

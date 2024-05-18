@@ -7,6 +7,8 @@ tags: [file formats, fdds]
 
 This blog post is part of a series on file formats research. See [this introduction post](https://bits.ashleyblewer.com/blog/2023/08/04/researching-file-formats-library-of-congress-sustainability-of-digital-formats/) for more information.
 
+Update: The official format definition is now online here: [Maya Binary Scene File Format](https://www.loc.gov/preservation/digital/formats/fdd/fdd000605.shtml). [Comments welcome](https://www.loc.gov/preservation/digital/formats/contact_format.shtml) directly to the Library of Congress.
+
 You know, I saved a spot for this format but it really is essentially the same as [last week](https://bits.ashleyblewer.com/blog/2024/03/15/researching-file-formats-29-autodesk-maya-project/)'s, except stored in a binary format instead of a text-based one. I checked to see if it was simply gzipped, but it wasn't -- it's its own secret-sauce thing courtesy of Autodesk (as usual, comments welcome, maybe it is something obvious, but since these format documents are about _solid citable proof_, these paths of investigation are fun but not directly useful to the task at hand, if that makes sense).
 
 Most users seem to come to the conclusion that saving work as MA is better, because there's a better change you'll be able to see, understand, and fix something later, whereas the binary files are totally opaque. On the other hand, there's compression happening and the files are smaller as a result, and also load into systems faster. So I suppose it can depend on if the files are meant to be actively worked on heavily, or meant more for storage and later processing.

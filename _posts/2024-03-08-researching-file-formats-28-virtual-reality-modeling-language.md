@@ -7,6 +7,8 @@ tags: [file formats, fdds]
 
 This blog post is part of a series on file formats research. See [this introduction post](https://bits.ashleyblewer.com/blog/2023/08/04/researching-file-formats-library-of-congress-sustainability-of-digital-formats/) for more information.
 
+Update: The official format definition is now online here: [Virtual Reality Modeling Language Family](https://www.loc.gov/preservation/digital/formats/fdd/fdd000602.shtml). [Comments welcome](https://www.loc.gov/preservation/digital/formats/contact_format.shtml) directly to the Library of Congress.
+
 I was getting so overwhelmed surfing the old web for this format. It was absolutely thrilling but exhausting too, like when you're on your 13th day of vacation and you're so worn out but there's so much more to see. Nothing is more exciting to me than looking into VIRTUAL WORLDS. I felt like it looked like I was having a total manic episode on Mastodon because I kept finding so many things to post. I wasn't even caffeinated, it was just pure childlike glee.
 
 Some highlights and links:

@@ -7,6 +7,8 @@ tags: [file formats, fdds]
 
 This blog post is part of a series on file formats research. See [this introduction post](https://bits.ashleyblewer.com/blog/2023/08/04/researching-file-formats-library-of-congress-sustainability-of-digital-formats/) for more information.
 
+Update: The official format definition is now online here: [Maya ASCII Scene File Format](https://www.loc.gov/preservation/digital/formats/fdd/fdd000604.shtml). [Comments welcome](https://www.loc.gov/preservation/digital/formats/contact_format.shtml) directly to the Library of Congress.
+
 This format described 3D scenes -- geometry, lighting, animation, rendering, other stuff. It's fairly straightforward, and I felt the [documentation](https://download.autodesk.com/us/maya/2010help/index.html?url=Maya_ASCII_file_format_Organization_of_Maya_ASCII_files.htm,topicNumber=d0e678001) was relatively thorough while being succinct.
 
 Preservation issues seem to mostly be around concerns with this file needing to be connected to other files:
