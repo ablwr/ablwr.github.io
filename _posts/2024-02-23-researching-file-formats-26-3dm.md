@@ -7,6 +7,8 @@ tags: [file formats, fdds]
 
 This blog post is part of a series on file formats research. See [this introduction post](https://bits.ashleyblewer.com/blog/2023/08/04/researching-file-formats-library-of-congress-sustainability-of-digital-formats/) for more information.
 
+Update: The official format definition is now online here: [3D Model File Format Family](https://www.loc.gov/preservation/digital/formats/fdd/fdd000601.shtml). [Comments welcome](https://www.loc.gov/preservation/digital/formats/contact_format.shtml) directly to the Library of Congress.
+
 The next six formats are part of Set 3: 3D, VR and Animation! All of these formats are quite different from each other (except two closely related, which will be obvious).
 
 First up: 3DM. Rhino 3D Model file format family. Or the openNURBS 3D model?
