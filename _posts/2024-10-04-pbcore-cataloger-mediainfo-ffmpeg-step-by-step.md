@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "PBCore, Mediainfo, and FFmpeg step-by-step"
-date: 2024-09-27 18:00:00 -0500
+date: 2024-10-04 18:00:00 -0500
 tags: [avpres, mediainfo, ffmpeg, metadata]
 ---
 
