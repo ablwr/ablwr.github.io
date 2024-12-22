@@ -46,3 +46,5 @@ This upcoming year feels inevitably dire, and I've been working through all of t
 I've been leaning on tarot decks as a way to force myself to be reflective about hard things, and it consistently keeps calling me a workaholic who needs to focus on enjoying life and not overworking out of fear for survival. Each time, I sigh and say "I KNOW, I KNOW," but do I know? Because I'm clearly not listening. In 2025 I want to keep utilizing this tool (and my beloved [i-ching](https://bits.ashleyblewer.com/i-ching/)) to keep reiterating these opportunities for self-reflection until I manage to fully grasp lessons I need to not just learn, but internalize.
 
 I've been trying to wrap up this post for a while, and I keep typing out goals or ambitions and then self-editing, so I think that means I've reached the conclusion of what I want to comment on publicly! If you read all of this, thank you for reading! 
+
+![tarot reading: ace of pentacles reversed, five of pentacles reversed, three of cups](/images/three-of-cups.jpg)
